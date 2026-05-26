@@ -48,7 +48,7 @@ async def search_pokemon(keyword: str, limit: int = 20):
         alias_clause = ""
         contain = f"%{keyword}%"
         prefix = f"{keyword}%"
-        params = [contain] * 5
+        params = [contain] * 6
         if alias_names:
             placeholders = ','.join(['?'] * len(alias_names))
             alias_clause = f" OR p.name_en IN ({placeholders})"
@@ -56,7 +56,7 @@ async def search_pokemon(keyword: str, limit: int = 20):
         params.extend([prefix, prefix, prefix, limit])
         cur.execute(f"""
             SELECT p.id, p.pokedex_id, p.pokeapi_id, p.is_default_form,
-                   p.name_zh, p.name_en, p.name_ja,
+                   p.name_zh, p.name_en, p.name_ja, p.name_ncp,
                    p.type1, p.type2,
                    t1.name_zh AS type1_zh, t1.color AS type1_color,
                    t2.name_zh AS type2_zh, t2.color AS type2_color,
@@ -72,6 +72,7 @@ async def search_pokemon(keyword: str, limit: int = 20):
             LEFT JOIN types t2 ON LOWER(t2.name_en) = p.type2
             WHERE p.name_zh LIKE ? OR p.name_en LIKE ? OR p.name_ja LIKE ?
                OR p.name_pinyin LIKE ? OR p.name_pinyin_abbr LIKE ?
+               OR p.name_ncp LIKE ?
                {alias_clause}
             ORDER BY CASE WHEN p.name_zh LIKE ? THEN 0
                           WHEN p.name_pinyin LIKE ? THEN 1

@@ -309,7 +309,11 @@
         // 重算能力值
         calcHP($panel);
         calcStats($panel);
-        calcEvTotal($panel);
+        if (typeof gen !== 'undefined' && gen === 10) {
+            calcStatPointTotal($panel);
+        } else {
+            calcEvTotal($panel);
+        }
     }
 
     /**
@@ -348,8 +352,40 @@
     }
 
     /**
-     * 主入口：在 document ready 之后执行（ap_calc.js 的 ready 先跑完）
+     * 仅设置 EVs/SPs/IVs（不触发其他 change handler），用于最终修正
      */
+    function applyStatValues(panelId, suffix) {
+        var $panel = $(panelId);
+        var evStr = params.get('evs' + suffix);
+        if (evStr) {
+            var evs = evStr.split(',');
+            for (var i = 0; i < STAT_CLASSES.length && i < evs.length; i++) {
+                $panel.find('.' + STAT_CLASSES[i] + ' .evs').val(parseInt(evs[i]) || 0);
+            }
+        }
+        var spsStr = params.get('sps' + suffix);
+        if (spsStr) {
+            var sps = spsStr.split(',');
+            for (var i = 0; i < STAT_CLASSES.length && i < sps.length; i++) {
+                $panel.find('.' + STAT_CLASSES[i] + ' .sps').val(parseInt(sps[i]) || 0);
+            }
+        }
+        var ivStr = params.get('ivs' + suffix);
+        if (ivStr) {
+            var ivs = ivStr.split(',');
+            for (var i = 0; i < STAT_CLASSES.length && i < ivs.length; i++) {
+                $panel.find('.' + STAT_CLASSES[i] + ' .ivs').val(parseInt(ivs[i]));
+            }
+        }
+        calcHP($panel);
+        calcStats($panel);
+        if (typeof gen !== 'undefined' && gen === 10) {
+            calcStatPointTotal($panel);
+        } else {
+            calcEvTotal($panel);
+        }
+    }
+
     $(document).ready(function () {
         // Step 1: 设置世代（会重建所有下拉列表）
         var genVal = params.get('gen') || '9';
@@ -375,6 +411,14 @@
 
                 // Step 5: 触发重新计算
                 $('.calc-trigger').first().trigger('change');
+
+                // Step 6: 最终修正 — 防止异步 handler 覆盖能力值/能力点
+                // 移动端 WebView 执行较慢，某些 change handler 可能在 fillSide 之后才完成
+                setTimeout(function () {
+                    applyStatValues('#p1', '1');
+                    applyStatValues('#p2', '2');
+                    $('.calc-trigger').first().trigger('change');
+                }, 150);
             }, 200 + extraDelay);
         }, 100);
     });

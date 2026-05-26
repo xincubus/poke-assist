@@ -86,7 +86,8 @@
     <ShellContent Route="chat" ContentTemplate="{DataTemplate views:ChatPage}" />
     <ShellContent Route="pokemon" ContentTemplate="{DataTemplate views:PokemonListPage}" />
     <ShellContent Route="teams" ContentTemplate="{DataTemplate views:TeamListPage}" />
-    <ShellContent Route="damagecalctab" ContentTemplate="{DataTemplate views:DamageCalcTabPage}" />
+    <ShellContent Route="home" ContentTemplate="{DataTemplate views:HomePage}" />
+    <ShellContent Route="damagecalctab" ContentTemplate="{DataTemplate views:DamageCalcPage}" />
     <ShellContent Route="settings" ContentTemplate="{DataTemplate views:SettingsPage}" />
 
 </Shell>

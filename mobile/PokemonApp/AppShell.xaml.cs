@@ -30,6 +30,7 @@ public partial class AppShell : Shell
 			new MenuItem { Title = "对话", Route = "chat" },
 			new MenuItem { Title = "宝可梦", Route = "pokemon" },
 			new MenuItem { Title = "队伍", Route = "teams" },
+			new MenuItem { Title = "使用率", Route = "home" },
 			new MenuItem { Title = "伤害计算器", Route = "damagecalctab" },
 			new MenuItem { Title = "设置", Route = "settings" }
 		};

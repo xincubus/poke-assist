@@ -54,8 +54,8 @@ public static class MauiProgram
 		builder.Services.AddTransient<SettingsPage>();
 		builder.Services.AddTransient<AddPokemonPage>();
 		builder.Services.AddTransient<AddTeamPage>();
+		builder.Services.AddTransient<HomePage>();
 		builder.Services.AddTransient<DamageCalcPage>();
-		builder.Services.AddTransient<DamageCalcTabPage>();
 
 		// AppShell
 		builder.Services.AddSingleton<AppShell>();

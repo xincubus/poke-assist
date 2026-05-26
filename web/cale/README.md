@@ -40,6 +40,8 @@ overlay/
 
 ### 修改记录
 
+- **2026-05-26**：`url_loader.js` 修复手机端（MAUI WebView）打开链接时能力点数被重置的问题。新增 `applyStatValues()` 函数，在所有异步 handler 完成后重新应用 EVs/SPs/IVs 值（Step 6，延迟 150ms）；`fillSide` 中 Gen 10 改用 `calcStatPointTotal()` 替代 `calcEvTotal()`
+
 - **2026-04-21**：`url_loader.js` 新增 `findOptionValue()` 函数，实现招式/特性/道具下拉选项的大小写不敏感匹配。修复 `.title()` 产生的 `Light Of Ruin` 无法匹配 move_data.js 中 `Light of Ruin`（小写介词），导致 URL 参数 move1 无法选中招式的问题
 
 - **2026-04-15**：`url_loader.js` 新增 `findPokedexKey()` 函数，实现大小写不敏感 + 连字符/空格不敏感的 pokedex key 查找。修复 URL 参数如 `p2=sneasler`（小写）或 `p2=iron-valiant`（连字符）无法匹配 pokedex 中的 `Sneasler` / `Iron Valiant`，导致回退到默认 Abomasnow 的问题
