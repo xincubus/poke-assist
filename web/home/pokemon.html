@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/appicon.png">
+  <title>搬运小匠宝可梦AI对战助手</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #1a1a2e;
+      --bg2: #16213e;
+      --bg3: #0f3460;
+      --border: #2a2a4a;
+      --text: #e0e0e0;
+      --text-sub: #888;
+      --text-dim: #555;
+      --accent: #5B75F5;
+      --header-title: #fff;
+      --stat-hp: #ff5959;
+      --stat-atk: #f5ac78;
+      --stat-def: #fae078;
+      --stat-spa: #9db7f5;
+      --stat-spd: #a7db8d;
+      --stat-spe: #fa92b2;
+    }
+    [data-theme="light"] {
+      --bg: #f5f5f5;
+      --bg2: #ffffff;
+      --bg3: #e8eaf6;
+      --border: #d0d0d0;
+      --text: #222222;
+      --text-sub: #666;
+      --text-dim: #aaa;
+      --accent: #5B75F5;
+      --header-title: #111;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    /* ===== Header ===== */
+    header {
+      width: 100%; max-width: 1200px;
+      padding: 12px 20px;
+      display: flex; align-items: center; gap: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    header .logo {
+      width: 36px; height: 36px; border-radius: 8px;
+      object-fit: contain; flex-shrink: 0;
+    }
+    header .title-block { flex: 1; }
+    header h1 {
+      font-size: 18px; font-weight: 600;
+      color: var(--header-title); line-height: 1.3;
+    }
+    header .subtitle {
+      font-size: 11px; color: var(--text-sub); margin-top: 2px;
+    }
+    .header-controls {
+      display: flex; align-items: center; gap: 8px; flex-shrink: 0;
+    }
+    .lang-wrapper { position: relative; }
+    #lang-btn {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 6px; padding: 0; color: var(--text); cursor: pointer;
+      width: 32px; height: 28px; display: inline-flex;
+      align-items: center; justify-content: center; transition: background 0.15s;
+    }
+    #lang-btn:hover { opacity: 0.8; }
+    #lang-btn svg { width: 16px; height: 16px; fill: currentColor; }
+    .lang-dropdown {
+      display: none; position: absolute; top: calc(100% + 4px); right: 0;
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 8px; overflow: hidden; z-index: 50;
+      min-width: 80px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .lang-dropdown.open { display: block; }
+    .lang-dropdown div {
+      padding: 6px 12px; font-size: 12px; color: var(--text);
+      cursor: pointer; white-space: nowrap; transition: background 0.1s;
+    }
+    .lang-dropdown div:hover { background: var(--bg3); }
+    .lang-dropdown div.active { color: var(--accent); font-weight: 600; }
+    .header-controls button {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 6px; padding: 4px 8px; color: var(--text);
+      font-size: 14px; cursor: pointer; line-height: 1;
+      transition: background 0.15s; width: 32px; height: 28px;
+      display: inline-flex; align-items: center; justify-content: center;
+    }
+    .header-controls button:hover { opacity: 0.8; }
+    .header-controls button svg {
+      width: 16px; height: 16px; fill: currentColor;
+    }
+
+    /* ===== 主内容区 ===== */
+    .main {
+      width: 100%; max-width: 1200px;
+      padding: 0 20px 20px;
+    }
+
+    /* ===== 宝可梦头部信息 ===== */
+    .pokemon-header {
+      display: flex; align-items: stretch; gap: 16px;
+      padding: 20px 0 12px;
+    }
+    .pokemon-left {
+      display: flex; align-items: center; gap: 20px;
+      flex: 1; min-width: 0;
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 12px; padding: 16px;
+    }
+    .pokemon-img-wrapper {
+      position: relative; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .pokemon-img-wrapper img {
+      width: 120px; height: 120px; object-fit: contain;
+    }
+    .pokemon-rank-badge {
+      position: absolute; top: -4px; right: -4px;
+      background: var(--accent); color: #fff;
+      font-size: 12px; font-weight: 700;
+      padding: 2px 8px; border-radius: 10px;
+    }
+    .pokemon-info { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; }
+    .header-stats {
+      flex: 1; min-width: 0;
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 12px; padding: 16px;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .pokemon-name {
+      font-size: 28px; font-weight: 700;
+      color: var(--header-title); line-height: 1.2;
+    }
+    .pokemon-name-en {
+      font-size: 14px; color: var(--text-sub); margin-top: 2px;
+    }
+    .pokemon-types {
+      display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap;
+    }
+    .type-badge {
+      display: inline-block; width: 4em;
+      border-radius: 4px; font-size: 12px; font-weight: 600;
+      color: #fff; text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+      text-align: center; line-height: 20px;
+    }
+    .pokemon-abilities-header {
+      margin-top: 8px; font-size: 13px; color: var(--text-sub);
+    }
+
+    /* ===== 形态切换 ===== */
+    .form-tabs {
+      display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap;
+    }
+    .form-tab {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 8px; padding: 6px 14px;
+      font-size: 13px; color: var(--text); cursor: pointer;
+      transition: all 0.15s;
+    }
+    .form-tab:hover { background: var(--bg3); }
+    .form-tab.active {
+      background: var(--accent); color: #fff;
+      border-color: var(--accent);
+    }
+
+    /* ===== 双栏布局 ===== */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 800px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+
+    /* ===== 卡片通用 ===== */
+    .section-card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 12px; padding: 16px;
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-size: 16px; font-weight: 700;
+      color: var(--header-title); margin-bottom: 12px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .section-title .icon { font-size: 18px; }
+
+    /* ===== 种族值 ===== */
+    .stat-row {
+      display: flex; align-items: center; gap: 8px;
+      margin-bottom: 6px;
+    }
+    .stat-label {
+      width: 48px; font-size: 12px; font-weight: 600;
+      color: var(--text-sub); text-align: right; flex-shrink: 0;
+    }
+    .stat-bar-bg {
+      flex: 1; height: 18px; background: var(--bg3);
+      border-radius: 4px; overflow: hidden; position: relative;
+    }
+    .stat-bar {
+      height: 100%; border-radius: 4px;
+      transition: width 0.4s ease;
+    }
+    .stat-value {
+      width: 36px; font-size: 13px; font-weight: 700;
+      color: var(--text); text-align: right; flex-shrink: 0;
+    }
+    .bst-row {
+      display: flex; justify-content: flex-end;
+      margin-top: 8px; padding-top: 8px;
+      border-top: 1px solid var(--border);
+    }
+    .bst-label {
+      font-size: 13px; font-weight: 700; color: var(--text-sub);
+    }
+    .bst-value {
+      font-size: 15px; font-weight: 700; color: var(--accent);
+      margin-left: 12px;
+    }
+
+    /* ===== 使用率列表 ===== */
+    .usage-list {
+      list-style: none;
+    }
+    .usage-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 6px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .usage-item:last-child { border-bottom: none; }
+    .usage-name {
+      font-size: 13px; color: var(--text); min-width: 80px;
+      flex-shrink: 0;
+    }
+    .usage-bar-bg {
+      flex: 1; height: 14px; background: var(--bg3);
+      border-radius: 3px; overflow: hidden;
+    }
+    .usage-bar {
+      height: 100%; background: var(--accent);
+      border-radius: 3px; transition: width 0.4s ease;
+      min-width: 2px;
+    }
+    .usage-rate {
+      font-size: 12px; font-weight: 600; color: var(--text-sub);
+      width: 48px; text-align: right; flex-shrink: 0;
+    }
+
+    /* ===== 招式表格 ===== */
+    .moves-table-wrapper {
+      max-height: 500px; overflow-y: auto;
+      border: 1px solid var(--border); border-radius: 8px;
+    }
+    .moves-table {
+      width: 100%; border-collapse: collapse;
+      font-size: 13px;
+    }
+    .moves-table th {
+      background: var(--bg3); color: var(--text-sub);
+      padding: 8px 12px; text-align: left;
+      font-weight: 600; position: sticky; top: 0;
+      z-index: 1; cursor: pointer; user-select: none;
+      white-space: nowrap;
+    }
+    .moves-table th:hover { color: var(--accent); }
+    .moves-table td {
+      padding: 6px 12px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+    }
+    .moves-table tr:hover td { background: var(--bg3); }
+    .moves-table .method-tag {
+      display: inline-block; padding: 1px 6px;
+      border-radius: 3px; font-size: 11px;
+      background: var(--bg3); color: var(--text-sub);
+    }
+    .moves-table .used-tag {
+      display: inline-block; padding: 1px 6px;
+      border-radius: 3px; font-size: 11px;
+      background: var(--accent); color: #fff;
+      margin-left: 4px; white-space: nowrap;
+    }
+
+    /* ===== 招式使用率筛选 ===== */
+    .moves-filter {
+      display: flex; gap: 8px; margin-bottom: 12px;
+      flex-wrap: wrap; align-items: center;
+    }
+    .moves-filter input {
+      background: var(--bg3); border: 1px solid var(--border);
+      border-radius: 6px; padding: 6px 10px; color: var(--text);
+      font-size: 13px; outline: none; flex: 1; min-width: 150px;
+    }
+    .moves-filter input:focus { border-color: var(--accent); }
+    .moves-filter select {
+      background: var(--bg3); border: 1px solid var(--border);
+      border-radius: 6px; padding: 6px 10px; color: var(--text);
+      font-size: 13px; cursor: pointer;
+    }
+
+    /* ===== 属性颜色 ===== */
+    .type-normal { background: #A8A77A; }
+    .type-fire { background: #EE8130; }
+    .type-water { background: #6390F0; }
+    .type-electric { background: #F7D02C; }
+    .type-grass { background: #7AC74C; }
+    .type-ice { background: #96D9D6; }
+    .type-fighting { background: #C22E28; }
+    .type-poison { background: #A33EA1; }
+    .type-ground { background: #E2BF65; }
+    .type-flying { background: #A98FF3; }
+    .type-psychic { background: #F95587; }
+    .type-bug { background: #A6B91A; }
+    .type-rock { background: #B6A136; }
+    .type-ghost { background: #735797; }
+    .type-dragon { background: #6F35FC; }
+    .type-dark { background: #705746; }
+    .type-steel { background: #B7B7CE; }
+    .type-fairy { background: #D685AD; }
+
+    /* ===== 加载/空状态 ===== */
+    .status-msg {
+      width: 100%; text-align: center; padding: 60px 20px;
+      color: var(--text-sub); font-size: 14px;
+    }
+    .loading-spinner {
+      display: inline-block; width: 24px; height: 24px;
+      border: 3px solid var(--border); border-top-color: var(--accent);
+      border-radius: 50%; animation: spin 0.8s linear infinite;
+      margin-bottom: 8px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ===== 分隔线 ===== */
+    .separator {
+      width: 100%; max-width: 1200px;
+      border: none; border-top: 1px solid var(--border);
+      margin: 0;
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+      width: 100%; max-width: 1200px;
+      padding: 6px 20px 10px;
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 11px; color: var(--text-sub);
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap; gap: 4px;
+    }
+    .footer a { color: var(--accent); text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+
+    /* ===== 反馈弹窗 ===== */
+    #feedback-modal {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+      z-index: 100; display: none; align-items: center; justify-content: center;
+    }
+    #feedback-box {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 14px; padding: 24px;
+      width: min(480px, 90vw);
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    #fb-title { font-size: 16px; font-weight: 600; color: var(--header-title); }
+    #fb-desc, #fb-note { font-size: 13px; color: var(--text-sub); line-height: 1.6; }
+    .fb-actions { display: flex; justify-content: flex-end; gap: 10px; }
+    .fb-actions button {
+      border: none; border-radius: 8px; padding: 8px 20px;
+      font-size: 13px; cursor: pointer; transition: opacity 0.15s;
+    }
+    #fb-cancel { background: var(--bg3); color: var(--text); }
+    #fb-submit { background: #5B75F5; color: #fff; }
+    .fb-actions button:hover { opacity: 0.85; }
+
+    /* ===== 手机端 ===== */
+    @media (max-width: 600px) {
+      header { flex-wrap: wrap; padding: 8px 12px; gap: 8px; }
+      header .logo { width: 28px; height: 28px; }
+      header h1 { font-size: 15px; }
+      header .subtitle { font-size: 10px; }
+      .header-controls { width: 100%; justify-content: flex-end; gap: 6px; }
+      .header-controls button { width: 28px; height: 26px; font-size: 12px; }
+      .header-controls button svg { width: 14px; height: 14px; }
+      #lang-btn { width: 28px; height: 26px; }
+      #lang-btn svg { width: 14px; height: 14px; }
+      .main { padding: 0 12px 12px; }
+      .pokemon-header { flex-direction: column; gap: 12px; padding: 16px 0 12px; }
+      .pokemon-left { flex-direction: column; align-items: center; text-align: center; }
+      .pokemon-img-wrapper img { width: 80px; height: 80px; }
+      .pokemon-name { font-size: 22px; }
+      .pokemon-types { justify-content: center; }
+      .header-stats { min-width: 0; }
+      .section-card { padding: 12px; }
+      .footer { flex-direction: column; align-items: center; text-align: center; padding: 6px 12px 10px; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header>
+  <img class="logo" id="app-logo" alt="logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+  <div class="logo" style="display:none;background:#0f3460;color:#fff;font-size:14px;align-items:center;justify-content:center;">匠</div>
+  <div class="title-block">
+    <h1 id="app-title">搬运小匠宝可梦AI对战助手</h1>
+    <div class="subtitle" id="app-subtitle">支持对战计算 · 属性查询 · 招式详情</div>
+  </div>
+  <div class="header-controls">
+    <button id="home-btn" onclick="openHome()" title="主页"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></button>
+    <button id="usage-btn" onclick="openUsage()" title="使用率"><svg viewBox="0 0 24 24"><path d="M5 9.2h3V19H5V9.2zM10.6 5h2.8v14h-2.8V5zm5.6 8H19v6h-2.8v-6z"/></svg></button>
+    <button id="champions-btn" onclick="openChampions()" title="赛视工具"><svg viewBox="0 0 24 24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg></button>
+    <div class="lang-wrapper">
+      <button id="lang-btn" onclick="toggleLangDropdown()" title="Language"><svg viewBox="0 0 24 24"><path d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0014.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg></button>
+      <div id="lang-dropdown" class="lang-dropdown">
+        <div data-lang="zh" onclick="pickLang('zh')">中文</div>
+        <div data-lang="ja" onclick="pickLang('ja')">日本語</div>
+        <div data-lang="en" onclick="pickLang('en')">English</div>
+      </div>
+    </div>
+    <button id="feedback-btn" onclick="openFeedback()" title="反馈问题"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM11 5h2v5h-2zm0 7h2v2h-2z"/></svg></button>
+    <button id="calc-btn" onclick="openCalc()" title="伤害计算器"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM6.25 7.72h5v1.5h-5zM13 15.75h5v1.5h-5zm0-2.5h5v1.5h-5zM8 18h1.5v-2h2v-1.5h-2v-2H8v2H6V16h2v2zm6.09-7.95l1.41-1.41 1.41 1.41 1.06-1.06-1.41-1.41 1.41-1.41-1.06-1.06-1.41 1.41-1.41-1.41-1.06 1.06 1.41 1.41-1.41 1.41 1.06 1.06z"/></svg></button>
+    <button id="download-btn" onclick="downloadApp()" title="下载App"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 8.67l1.42 1.42L11 5.83V16h2V5.83l4.25 4.26 1.42-1.42L12 2z" transform="rotate(180 12 12)"/></svg></button>
+    <button id="theme-btn" onclick="toggleTheme()" title="切换主题">🌙</button>
+  </div>
+</header>
+
+<!-- 反馈弹窗 -->
+<div id="feedback-modal">
+  <div id="feedback-box">
+    <h2 id="fb-title">反馈问题</h2>
+    <p id="fb-desc">发现回答有误或体验不佳？点击确认将本次对话记录提交给开发者，帮助我们改进。</p>
+    <p id="fb-note">提交内容仅包含本页对话，不含任何个人信息。</p>
+    <div class="fb-actions">
+      <button id="fb-cancel" onclick="closeFeedback()">取消</button>
+      <button id="fb-submit" onclick="submitFeedback()">确认提交</button>
+    </div>
+  </div>
+</div>
+
+<!-- 主内容 -->
+<div class="main" id="main-content">
+  <div class="status-msg" id="loading-msg">
+    <div class="loading-spinner"></div>
+    <div>加载中...</div>
+  </div>
+</div>
+
+<hr class="separator">
+
+<!-- Footer -->
+<div class="footer">
+  <span id="footer-author">作者：徐果虫</span>
+  <span id="footer-stats">今日访问：- | 累计访问：-</span>
+  <span id="footer-qq">加入QQ群交流：<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=rZfqKMMrl9ftttvOLkQUUkLQA45DJi1k&authKey=MtnhEcU3G2F5gPZTOdVPJ3HyMLiLlnK3Orf0UfDpXZUnZ%2FPnSCmr%2FnIxjdhxE5xT&noverify=0&group_code=2151054295" target="_blank">2151054295</a></span>
+</div>
+
+<script>
+  const API_BASE = (location.protocol === 'file:')
+    ? 'http://localhost:8000'
+    : location.origin;
+
+  const APP_ICON_LOCAL = '../../mobile/PokemonApp/Resources/AppIcon/appicon.png';
+  const APP_ICON_API = `${API_BASE}/appicon.png`;
+  const APP_ICON_URL = location.protocol === 'file:' ? APP_ICON_LOCAL : APP_ICON_API;
+  document.getElementById('app-logo').src = APP_ICON_URL;
+
+  // ===== URL 参数 =====
+  const params = new URLSearchParams(location.search);
+  const POKEMON_ID = params.get('id') || '';
+  const SOURCE = params.get('source') || 'champions';
+  const SEASON = parseInt(params.get('season') || '0');
+  const RULE = parseInt(params.get('rule') || '0');
+
+  // ===== 导航 =====
+  function openHome() { window.location.href = '../index.html'; }
+  function openUsage() {
+    const qs = `?source=${SOURCE}&season=${SEASON}&rule=${RULE}`;
+    window.location.href = `home.html${qs}`;
+  }
+  function openChampions() { window.open('https://champions.banyunxiaojiang.cn', '_blank'); }
+  function openCalc() { window.open(API_BASE + '/cale/index_zh.html', '_blank'); }
+  function downloadApp() { window.open('/download/app', '_blank'); }
+
+  // ===== 主题 =====
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  applyTheme(savedTheme);
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme === 'light' ? 'light' : '');
+    document.getElementById('theme-btn').textContent = theme === 'light' ? '☀️' : '🌙';
+    localStorage.setItem('theme', theme);
+  }
+  function toggleTheme() {
+    const cur = localStorage.getItem('theme') || 'light';
+    applyTheme(cur === 'light' ? 'dark' : 'light');
+  }
+
+  // ===== 语言 =====
+  const i18n = {
+    zh: {
+      title: '搬运小匠宝可梦AI对战助手',
+      subtitle: '支持对战计算 · 属性查询 · 招式详情',
+      author: '作者：徐果虫',
+      qq: '加入QQ群交流：',
+      statsToday: '今日访问', statsTotal: '累计访问',
+      champions: '赛视工具', home: '主页', usage: '使用率',
+      fbTitle: '反馈问题',
+      fbDesc: '发现回答有误或体验不佳？点击确认将本次对话记录提交给开发者，帮助我们改进。',
+      fbNote: '提交内容仅包含本页对话，不含任何个人信息。',
+      fbCancel: '取消', fbSubmit: '确认提交', fbSending: '提交中…',
+      fbOk: '感谢反馈！', fbFail: '提交失败，请稍后再试。',
+      statHP: 'HP', statAtk: '攻击', statDef: '防御',
+      statSpA: '特攻', statSpD: '特防', statSpe: '速度', statBST: '合计',
+      sectionStats: '种族值', sectionAbilities: '特性使用率',
+      sectionItems: '道具使用率', sectionMoves: '招式使用率',
+      sectionNatures: '性格使用率', sectionTera: '太晶属性使用率',
+      sectionMovepool: '可学招式', noData: '暂无数据',
+      searchMoves: '搜索招式...', allMethods: '全部习得方式',
+      levelUp: '升级习得', tm: '技能机', tutor: '教学', egg: '遗传', evolution: '进化',
+    },
+    ja: {
+      title: '搬運小匠ポケモンAI対戦アシスタント',
+      subtitle: 'ダメージ計算 · タイプ検索 · 技詳細',
+      author: '作者：徐果虫',
+      qq: 'QQグループに参加：',
+      statsToday: '本日のアクセス', statsTotal: '累計アクセス',
+      champions: 'チャンピオンズツール', home: 'ホーム', usage: '使用率',
+      fbTitle: '問題を報告',
+      fbDesc: '回答に誤りや不具合がありましたか？確認ボタンを押すと、この会話の記録を開発者に送信します。',
+      fbNote: '送信内容はこのページの会話のみです。個人情報は含まれません。',
+      fbCancel: 'キャンセル', fbSubmit: '送信する', fbSending: '送信中…',
+      fbOk: 'フィードバックありがとうございます！', fbFail: '送信に失敗しました。',
+      statHP: 'HP', statAtk: '攻撃', statDef: '防御',
+      statSpA: '特攻', statSpD: '特防', statSpe: '素早さ', statBST: '合計',
+      sectionStats: '種族値', sectionAbilities: '特性使用率',
+      sectionItems: '道具使用率', sectionMoves: '技使用率',
+      sectionNatures: '性格使用率', sectionTera: 'テラスタイプ使用率',
+      sectionMovepool: '習得技', noData: 'データなし',
+      searchMoves: '技を検索...', allMethods: '全ての習得方法',
+      levelUp: 'レベルアップ', tm: 'わざマシン', tutor: '指導', egg: 'タマゴ', evolution: '進化',
+    },
+    en: {
+      title: 'BanYun Pokémon AI Battle Assistant',
+      subtitle: 'Damage Calc · Type Query · Move Details',
+      author: 'Author: XuGuoChong',
+      qq: 'Join QQ Group: ',
+      statsToday: 'Today', statsTotal: 'Total',
+      champions: 'Champions Tool', home: 'Home', usage: 'Usage',
+      fbTitle: 'Report an Issue',
+      fbDesc: 'Found a wrong answer or bad experience? Click Submit to send this conversation to the developer for review.',
+      fbNote: 'Only the current conversation will be submitted. No personal information is included.',
+      fbCancel: 'Cancel', fbSubmit: 'Submit', fbSending: 'Submitting…',
+      fbOk: 'Thanks for your feedback!', fbFail: 'Submission failed. Please try again later.',
+      statHP: 'HP', statAtk: 'Atk', statDef: 'Def',
+      statSpA: 'SpA', statSpD: 'SpD', statSpe: 'Spe', statBST: 'BST',
+      sectionStats: 'Base Stats', sectionAbilities: 'Ability Usage',
+      sectionItems: 'Item Usage', sectionMoves: 'Move Usage',
+      sectionNatures: 'Nature Usage', sectionTera: 'Tera Type Usage',
+      sectionMovepool: 'Movepool', noData: 'No data',
+      searchMoves: 'Search moves...', allMethods: 'All methods',
+      levelUp: 'Level Up', tm: 'TM', tutor: 'Tutor', egg: 'Egg', evolution: 'Evolution',
+    },
+  };
+
+  let cachedStats = { today: '-', total: '-' };
+  function updateStatsLabel(t) {
+    if (!t) t = i18n[currentLang] || i18n.zh;
+    document.getElementById('footer-stats').textContent =
+      `${t.statsToday}：${cachedStats.today} | ${t.statsTotal}：${cachedStats.total}`;
+  }
+
+  let currentLang = localStorage.getItem('lang') || 'zh';
+  highlightLang(currentLang);
+  applyLang(currentLang);
+
+  function toggleLangDropdown() { document.getElementById('lang-dropdown').classList.toggle('open'); }
+  function pickLang(lang) { setLang(lang); document.getElementById('lang-dropdown').classList.remove('open'); }
+  function highlightLang(lang) {
+    document.querySelectorAll('#lang-dropdown div').forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
+  }
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.lang-wrapper')) document.getElementById('lang-dropdown').classList.remove('open');
+  });
+  function setLang(lang) { currentLang = lang; localStorage.setItem('lang', lang); highlightLang(lang); applyLang(lang); renderAll(); }
+  function applyLang(lang) {
+    const t = i18n[lang] || i18n.zh;
+    document.getElementById('app-title').textContent = t.title;
+    document.getElementById('app-subtitle').textContent = t.subtitle;
+    document.getElementById('footer-author').textContent = t.author;
+    document.getElementById('champions-btn').title = t.champions;
+    document.getElementById('home-btn').title = t.home;
+    document.getElementById('usage-btn').title = t.usage;
+    document.getElementById('footer-qq').innerHTML = t.qq + '<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=rZfqKMMrl9ftttvOLkQUUkLQA45DJi1k&authKey=MtnhEcU3G2F5gPZTOdVPJ3HyMLiLlnK3Orf0UfDpXZUnZ%2FPnSCmr%2FnIxjdhxE5xT&noverify=0&group_code=2151054295" target="_blank">2151054295</a>';
+    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang === 'ja' ? 'ja' : 'en';
+    document.getElementById('fb-title').textContent = t.fbTitle;
+    document.getElementById('fb-desc').textContent = t.fbDesc;
+    document.getElementById('fb-note').textContent = t.fbNote;
+    document.getElementById('fb-cancel').textContent = t.fbCancel;
+    document.getElementById('fb-submit').textContent = t.fbSubmit;
+    updateStatsLabel(t);
+  }
+
+  async function fetchVisitStats() {
+    try {
+      const resp = await fetch(`${API_BASE}/api/visit-stats`);
+      if (!resp.ok) return;
+      const data = await resp.json();
+      cachedStats.today = data.today ?? 0;
+      cachedStats.total = data.total ?? 0;
+      updateStatsLabel();
+    } catch (e) {}
+  }
+
+  // ===== 属性颜色映射 =====
+  const TYPE_COLORS = {
+    normal: '#A8A77A', fire: '#EE8130', water: '#6390F0', electric: '#F7D02C',
+    grass: '#7AC74C', ice: '#96D9D6', fighting: '#C22E28', poison: '#A33EA1',
+    ground: '#E2BF65', flying: '#A98FF3', psychic: '#F95587', bug: '#A6B91A',
+    rock: '#B6A136', ghost: '#735797', dragon: '#6F35FC', dark: '#705746',
+    steel: '#B7B7CE', fairy: '#D685AD',
+  };
+  const TYPE_ZH = {
+    normal: '一般', fire: '火', water: '水', electric: '电', grass: '草',
+    ice: '冰', fighting: '格斗', poison: '毒', ground: '地面', flying: '飞行',
+    psychic: '超能力', bug: '虫', rock: '岩石', ghost: '幽灵', dragon: '龙',
+    dark: '恶', steel: '钢', fairy: '妖精',
+  };
+
+  // ===== 种族值颜色 =====
+  const STAT_COLORS = ['#ff5959', '#f5ac78', '#fae078', '#9db7f5', '#a7db8d', '#fa92b2'];
+
+  // ===== 数据存储 =====
+  let pokemonData = null;
+  let currentFormIdx = 0;
+
+  // ===== 加载数据 =====
+  async function loadPokemonDetail() {
+    if (!POKEMON_ID) {
+      document.getElementById('main-content').innerHTML =
+        '<div class="status-msg" style="color:var(--accent);">缺少宝可梦 ID 参数</div>';
+      return;
+    }
+    try {
+      const url = `${API_BASE}/api/home/pokemon-detail?pokemon_id=${POKEMON_ID}&source=${SOURCE}&season=${SEASON}&rule=${RULE}`;
+      const resp = await fetch(url);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      pokemonData = await resp.json();
+
+      // 优先根据 URL 的 pokemon_id 匹配形态，否则找默认形态
+      currentFormIdx = pokemonData.forms.findIndex(f => f.home_id === POKEMON_ID);
+      if (currentFormIdx < 0) {
+        currentFormIdx = pokemonData.forms.findIndex(f => f.is_default);
+      }
+      if (currentFormIdx < 0) currentFormIdx = 0;
+
+      renderAll();
+    } catch (e) {
+      document.getElementById('main-content').innerHTML =
+        `<div class="status-msg" style="color:var(--accent);">加载失败：${e.message}</div>`;
+    }
+  }
+
+  function renderAll() {
+    if (!pokemonData) return;
+    const t = i18n[currentLang] || i18n.zh;
+    const form = pokemonData.forms[currentFormIdx];
+    const usage = pokemonData.usage;
+
+    let html = '';
+
+    // 宝可梦头部
+    const imgSrc = form.image_url && form.image_url.startsWith('/')
+      ? API_BASE + form.image_url : form.image_url;
+    const rankBadge = pokemonData.rank
+      ? `<span class="pokemon-rank-badge">#${pokemonData.rank}</span>` : '';
+    const typesArr = [];
+    if (form.type1) typesArr.push({ name: form.type1, color: form.type1_color });
+    if (form.type2) typesArr.push({ name: form.type2, color: form.type2_color });
+    const typesHtml = typesArr.map(ty =>
+      `<span class="type-badge" style="background:${ty.color}">${ty.name}</span>`
+    ).join('');
+    const abilitiesStr = [form.ability1, form.ability2, form.hidden_ability ? `(${form.hidden_ability})` : ''].filter(Boolean).join(' / ');
+
+    // 形态切换按钮
+    // 当前形态 has_moves=False（如 Mega）→ 所有按钮可用（可切回普通形态）
+    // 当前形态 has_moves=True（如普通地龙）→ 禁用其他 has_moves=True 的形态
+    let formTabsHtml = '';
+    if (pokemonData.forms.length > 1) {
+      formTabsHtml = '<div class="form-tabs">';
+      pokemonData.forms.forEach((f, i) => {
+        const active = i === currentFormIdx ? 'active' : '';
+        // 当前形态没有独立技能池 → 所有按钮可用；否则禁用其他有独立技能池的形态
+        const disabled = form.has_moves && f.has_moves && i !== currentFormIdx;
+        const style = disabled ? 'opacity:0.4;cursor:not-allowed;' : '';
+        formTabsHtml += `<div class="form-tab ${active}" style="${style}" onclick="${disabled ? '' : `switchForm(${i})`}">${f.name_zh}</div>`;
+      });
+      formTabsHtml += '</div>';
+    }
+
+    // 头部：图片+信息+形态（左） + 种族值（右）
+    html += `
+      <div class="pokemon-header">
+        <div class="pokemon-left">
+          <div class="pokemon-img-wrapper">
+            <img src="${imgSrc}" alt="${form.name_zh}"
+                 onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 120%22><rect fill=%22%23333%22 width=%22120%22 height=%22120%22 rx=%2216%22/><text x=%2260%22 y=%2268%22 text-anchor=%22middle%22 fill=%22%23666%22 font-size=%2224%22>?</text></svg>'">
+            ${rankBadge}
+          </div>
+          <div class="pokemon-info">
+            <div class="pokemon-name">${form.name_zh}</div>
+            <div class="pokemon-name-en">${form.name_en}</div>
+            <div class="pokemon-types">${typesHtml}</div>
+            <div class="pokemon-abilities-header">${abilitiesStr}</div>
+            ${formTabsHtml}
+          </div>
+        </div>
+        <div class="header-stats">
+          ${renderStats(form, t)}
+        </div>
+      </div>
+    `;
+
+    // 特性 + 性格（一行）
+    html += '<div class="two-col">';
+    html += `<div class="section-card">${renderUsageList(usage.abilities, t.sectionAbilities, '🎯')}</div>`;
+    html += `<div class="section-card">${renderUsageList(usage.personalities, t.sectionNatures, '🧬')}</div>`;
+    html += '</div>';
+
+    // 道具 + 招式（一行）
+    html += '<div class="two-col">';
+    html += `<div class="section-card">${renderUsageList(usage.items, t.sectionItems, '🎒')}</div>`;
+    html += `<div class="section-card">${renderUsageList(usage.moves, t.sectionMoves, '⚔️')}</div>`;
+    html += '</div>';
+
+    // 太晶属性（仅 SV，单独一行）
+    if (usage.tera_types && usage.tera_types.length > 0) {
+      html += `<div class="section-card">${renderUsageList(usage.tera_types, t.sectionTera, '💎')}</div>`;
+    }
+
+    // 可学招式表
+    html += `<div class="section-card">${renderMovepool(pokemonData.moves, usage.moves, t)}</div>`;
+
+    document.getElementById('main-content').innerHTML = html;
+
+    // 默认按属性排序
+    moveSortCol = 'type';
+    moveSortAsc = true;
+    sortMoves('type');
+  }
+
+  function renderStats(form, t) {
+    const stats = [
+      { label: t.statHP, value: form.hp, color: STAT_COLORS[0] },
+      { label: t.statAtk, value: form.attack, color: STAT_COLORS[1] },
+      { label: t.statDef, value: form.defense, color: STAT_COLORS[2] },
+      { label: t.statSpA, value: form.sp_attack, color: STAT_COLORS[3] },
+      { label: t.statSpD, value: form.sp_defense, color: STAT_COLORS[4] },
+      { label: t.statSpe, value: form.speed, color: STAT_COLORS[5] },
+    ];
+    const maxStat = 255;
+    let html = `<div class="section-title"><span class="icon">📊</span>${t.sectionStats}</div>`;
+    for (const s of stats) {
+      const pct = Math.min((s.value / maxStat) * 100, 100);
+      html += `
+        <div class="stat-row">
+          <span class="stat-label">${s.label}</span>
+          <div class="stat-bar-bg">
+            <div class="stat-bar" style="width:${pct}%;background:${s.color}"></div>
+          </div>
+          <span class="stat-value">${s.value}</span>
+        </div>
+      `;
+    }
+    html += `
+      <div class="bst-row">
+        <span class="bst-label">${t.statBST}</span>
+        <span class="bst-value">${form.total_stats}</span>
+      </div>
+    `;
+    return html;
+  }
+
+  function renderUsageList(items, title, icon) {
+    let html = `<div class="section-title"><span class="icon">${icon}</span>${title}</div>`;
+    if (!items || items.length === 0) {
+      html += `<div style="color:var(--text-sub);font-size:13px;padding:8px 0;">${i18n[currentLang].noData}</div>`;
+      return html;
+    }
+    html += '<ul class="usage-list">';
+    for (const item of items) {
+      const pct = item.rate;
+      const displayName = item.name_zh || item.name;
+      html += `
+        <li class="usage-item">
+          <span class="usage-name">${displayName}</span>
+          <div class="usage-bar-bg">
+            <div class="usage-bar" style="width:${Math.min(pct, 100)}%"></div>
+          </div>
+          <span class="usage-rate">${pct.toFixed(1)}%</span>
+        </li>
+      `;
+    }
+    html += '</ul>';
+    return html;
+  }
+
+  function renderMovepool(moves, usedMoves, t) {
+    // 构建已使用招式 set（英文名，小写）
+    const usedSet = new Set((usedMoves || []).map(m => (m.name_en || '').toLowerCase()));
+
+    let html = `<div class="section-title"><span class="icon">📖</span>${t.sectionMovepool}</div>`;
+
+    // 筛选控件
+    html += `
+      <div class="moves-filter">
+        <input type="text" id="move-search" placeholder="${t.searchMoves}" oninput="filterMoves()">
+        <select id="move-type-filter" onchange="filterMoves()">
+          <option value="">${currentLang === 'zh' ? '全部属性' : currentLang === 'ja' ? '全てのタイプ' : 'All Types'}</option>
+        </select>
+        <select id="move-class-filter" onchange="filterMoves()">
+          <option value="">${currentLang === 'zh' ? '全部分类' : currentLang === 'ja' ? '全ての分類' : 'All Classes'}</option>
+          <option value="物理">${currentLang === 'zh' ? '物理' : currentLang === 'ja' ? '物理' : 'Physical'}</option>
+          <option value="特殊">${currentLang === 'zh' ? '特殊' : currentLang === 'ja' ? '特殊' : 'Special'}</option>
+          <option value="变化">${currentLang === 'zh' ? '变化' : currentLang === 'ja' ? '変化' : 'Status'}</option>
+        </select>
+        <select id="move-method-filter" onchange="filterMoves()">
+          <option value="">${t.allMethods}</option>
+        </select>
+      </div>
+    `;
+
+    if (!moves || moves.length === 0) {
+      html += `<div style="color:var(--text-sub);font-size:13px;padding:8px 0;">${t.noData}</div>`;
+      return html;
+    }
+
+    // 收集所有属性（中文名）和习得方式用于筛选下拉框
+    const allTypes = [...new Set(moves.map(m => m.type).filter(Boolean))];
+    const allMethods = [...new Set(moves.map(m => m.learn_method).filter(Boolean))];
+
+    html += '<div class="moves-table-wrapper"><table class="moves-table">';
+    html += `<thead><tr>
+      <th style="cursor:pointer" onclick="sortMoves('name')">${currentLang === 'zh' ? '招式' : currentLang === 'ja' ? '技' : 'Move'}</th>
+      <th style="cursor:pointer" onclick="sortMoves('type')">${currentLang === 'zh' ? '属性' : currentLang === 'ja' ? 'タイプ' : 'Type'}</th>
+      <th style="cursor:pointer" onclick="sortMoves('class')">${currentLang === 'zh' ? '分类' : currentLang === 'ja' ? '分類' : 'Class'}</th>
+      <th style="cursor:pointer" onclick="sortMoves('power')">${currentLang === 'zh' ? '威力' : currentLang === 'ja' ? '威力' : 'Pow'}</th>
+      <th style="cursor:pointer" onclick="sortMoves('accuracy')">${currentLang === 'zh' ? '命中' : currentLang === 'ja' ? '命中' : 'Acc'}</th>
+      <th style="cursor:pointer" onclick="sortMoves('method')">${currentLang === 'zh' ? '习得方式' : currentLang === 'ja' ? '習得方法' : 'Method'}</th>
+    </tr></thead>`;
+    html += '<tbody id="moves-tbody">';
+    for (const m of moves) {
+      const isUsed = usedSet.has((m.name_en || '').toLowerCase());
+      const typeLabel = m.type || '-';
+      const typeColor = m.type_color || '#888';
+      const classLabel = m.damage_class || '-';
+      const powerLabel = m.power != null ? m.power : '-';
+      const accLabel = m.accuracy != null ? m.accuracy : '-';
+      html += `<tr data-name="${(m.name_zh || '').toLowerCase()}" data-name-en="${(m.name_en || '').toLowerCase()}" data-method="${m.learn_method || ''}" data-type="${typeLabel}" data-class="${m.damage_class || ''}">
+        <td>${m.name_zh || m.name_en}${isUsed ? '<span class="used-tag">常见</span>' : ''}</td>
+        <td><span class="type-badge" style="background:${typeColor}">${typeLabel}</span></td>
+        <td>${classLabel}</td>
+        <td>${powerLabel}</td>
+        <td>${accLabel}</td>
+        <td><span class="method-tag">${m.learn_method || '-'}</span></td>
+      </tr>`;
+    }
+    html += '</tbody></table></div>';
+
+    // 延迟填充筛选下拉框（因为需要 DOM 先渲染）
+    setTimeout(() => {
+      const typeSelect = document.getElementById('move-type-filter');
+      const methodSelect = document.getElementById('move-method-filter');
+      if (typeSelect) {
+        for (const ty of allTypes) {
+          const opt = document.createElement('option');
+          opt.value = ty;
+          opt.textContent = ty;
+          typeSelect.appendChild(opt);
+        }
+      }
+      if (methodSelect) {
+        for (const m of allMethods) {
+          const opt = document.createElement('option');
+          opt.value = m;
+          opt.textContent = m;
+          methodSelect.appendChild(opt);
+        }
+      }
+    }, 0);
+
+    return html;
+  }
+
+  function switchForm(idx) {
+    currentFormIdx = idx;
+    renderAll();
+  }
+
+  function filterMoves() {
+    const search = (document.getElementById('move-search').value || '').toLowerCase();
+    const type = document.getElementById('move-type-filter').value;
+    const cls = document.getElementById('move-class-filter').value;
+    const method = document.getElementById('move-method-filter').value;
+    const rows = document.querySelectorAll('#moves-tbody tr');
+    for (const row of rows) {
+      const name = row.dataset.name || '';
+      const nameEn = row.dataset.nameEn || '';
+      const rowMethod = row.dataset.method || '';
+      const rowType = row.dataset.type || '';
+      const rowClass = row.dataset.class || '';
+      const matchSearch = !search || name.includes(search) || nameEn.includes(search);
+      const matchType = !type || rowType === type;
+      const matchClass = !cls || rowClass === cls;
+      const matchMethod = !method || rowMethod === method;
+      row.style.display = (matchSearch && matchType && matchClass && matchMethod) ? '' : 'none';
+    }
+  }
+
+  // 表头排序
+  let moveSortCol = 'type'; // 默认按属性排序
+  let moveSortAsc = true;
+
+  function sortMoves(col) {
+    if (moveSortCol === col) {
+      moveSortAsc = !moveSortAsc;
+    } else {
+      moveSortCol = col;
+      moveSortAsc = true;
+    }
+    const tbody = document.getElementById('moves-tbody');
+    if (!tbody) return;
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    rows.sort((a, b) => {
+      let va, vb;
+      if (col === 'name') {
+        va = a.dataset.name || '';
+        vb = b.dataset.name || '';
+      } else if (col === 'type') {
+        va = a.dataset.type || '';
+        vb = b.dataset.type || '';
+      } else if (col === 'class') {
+        va = a.dataset.class || '';
+        vb = b.dataset.class || '';
+      } else if (col === 'power') {
+        va = parseInt(a.children[3]?.textContent) || 0;
+        vb = parseInt(b.children[3]?.textContent) || 0;
+        return moveSortAsc ? va - vb : vb - va;
+      } else if (col === 'accuracy') {
+        va = parseInt(a.children[4]?.textContent) || 0;
+        vb = parseInt(b.children[4]?.textContent) || 0;
+        return moveSortAsc ? va - vb : vb - va;
+      } else if (col === 'method') {
+        va = a.dataset.method || '';
+        vb = b.dataset.method || '';
+      } else {
+        return 0;
+      }
+      return moveSortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+    });
+    rows.forEach(r => tbody.appendChild(r));
+  }
+
+  // ===== 初始化 =====
+  fetchVisitStats();
+  loadPokemonDetail();
+</script>
+</body>
+</html>

@@ -1,0 +1,540 @@
+# Items 同步报告摘要
+生成时间: 2026-05-21T08:19:16.409153
+since: 2025-10-01  until: 不限
+模型: mimo-v2.5
+过期条目: 0  有变更: 0
+新条目: 518  重命名: 8
+
+## 新条目 (518 个)
+
+- 粉红色丝带 (Pink Bow) — https://wiki.52poke.com/wiki/粉红色丝带（道具）
+- 水玉色之带 (Polkadot Bow) — https://wiki.52poke.com/wiki/水玉色之带（道具）
+- 跑步鞋 (Running Shoes) — https://wiki.52poke.com/wiki/跑步鞋（道具）
+- 金南果 (Pumkin Berry) — https://wiki.52poke.com/wiki/金南果（道具）
+- 无青果 (Drash Berry) — https://wiki.52poke.com/wiki/无青果（道具）
+- 子茄果 (Eggant Berry) — https://wiki.52poke.com/wiki/子茄果（道具）
+- 青豌果 (Strib Berry) — https://wiki.52poke.com/wiki/青豌果（道具）
+- 碎瓦片 (Brick Piece) — https://wiki.52poke.com/wiki/碎瓦片（道具）
+- 烟花 (Fireworks) — https://wiki.52poke.com/wiki/烟花（道具）
+- 感冒药 (Cold Medicine) — https://wiki.52poke.com/wiki/感冒药（道具）
+- 花粉症药 (Hayfever Pills) — https://wiki.52poke.com/wiki/花粉症药（道具）
+- 废品 (Junk) — https://wiki.52poke.com/wiki/废品（道具）
+- 某种碎片 (Fragment) — https://wiki.52poke.com/wiki/某种碎片（道具）
+- 漂亮的细绳 (Pretty Cord) — https://wiki.52poke.com/wiki/漂亮的细绳（道具）
+- 臭味之玉 (Scented Orb) — https://wiki.52poke.com/wiki/臭味之玉（道具）
+- 柔软粘土 (Soft Clay) — https://wiki.52poke.com/wiki/柔软粘土（道具）
+- 漂亮铃铛 (Shiny Bell) — https://wiki.52poke.com/wiki/漂亮铃铛（道具）
+- 闪耀贝壳 (Sparkling Shell) — https://wiki.52poke.com/wiki/闪耀贝壳（道具）
+- 小小宝石 (Small Gem) — https://wiki.52poke.com/wiki/小小宝石（道具）
+- 稀有石子 (Rare Stone) — https://wiki.52poke.com/wiki/稀有石子（道具）
+- 水晶之玉 (Crystal Ball) — https://wiki.52poke.com/wiki/水晶之玉（道具）
+- 虹色玻璃 (Rainbow Glass) — https://wiki.52poke.com/wiki/虹色玻璃（道具）
+- 金饰 (Gold Ornament) — https://wiki.52poke.com/wiki/金饰（道具）
+- 银饰 (Silver Ornament) — https://wiki.52poke.com/wiki/银饰（道具）
+- 稀有茶器 (Rare Antique) — https://wiki.52poke.com/wiki/稀有茶器（道具）
+- 豪华护臂 (Ornate Gauntlet) — https://wiki.52poke.com/wiki/豪华护臂（道具）
+- 豪华盔甲 (Ornate Gauntlet) — https://wiki.52poke.com/wiki/豪华盔甲（道具）
+- 豪华头盔 (Ornate Helmet) — https://wiki.52poke.com/wiki/豪华头盔（道具）
+- 历史书 (History Tome) — https://wiki.52poke.com/wiki/历史书（道具）
+- 秘密地图 (Secret Map) — https://wiki.52poke.com/wiki/秘密地图（道具）
+- 豪华香料 (Precious Incense) — https://wiki.52poke.com/wiki/豪华香料（道具）
+- 对焦镜片 (Scope Lens) — https://wiki.52poke.com/wiki/对焦镜片（道具）
+- 宝可梦的蛋兑换券 (Egg Ticket) — https://wiki.52poke.com/wiki/宝可梦的蛋兑换券（道具）
+- 神奇的果实 (MysteryBerry) — https://wiki.52poke.com/wiki/神奇的果实（道具）
+- 消除麻痹的果实 (PRZCureBerry) — https://wiki.52poke.com/wiki/消除麻痹的果实（道具）
+- 解毒的果实 (PSNCureBerry) — https://wiki.52poke.com/wiki/解毒的果实（道具）
+- 烧烤的果实 (Burnt Berry) — https://wiki.52poke.com/wiki/烧烤的果实（道具）
+- 冰冻的果实 (Ice Berry) — https://wiki.52poke.com/wiki/冰冻的果实（道具）
+- 奇迹的果实 (MiracleBerry) — https://wiki.52poke.com/wiki/奇迹的果实（道具）
+- 音符邮件 (Music Mail) — https://wiki.52poke.com/wiki/音符邮件（道具）
+- 肖像邮件 (Portraitmail) — https://wiki.52poke.com/wiki/肖像邮件（道具）
+- 变身邮件 (Morph Mail) — https://wiki.52poke.com/wiki/变身邮件（道具）
+- 梦幻邮件 (Mirage Mail) — https://wiki.52poke.com/wiki/梦幻邮件（道具）
+- 可爱邮件 (Lovely Mail) — https://wiki.52poke.com/wiki/可爱邮件（道具）
+- 水色邮件 (Litebluemail) — https://wiki.52poke.com/wiki/水色邮件（道具）
+- 花案邮件 (Flower Mail) — https://wiki.52poke.com/wiki/花案邮件（道具）
+- 伊布邮件 (Eon Mail) — https://wiki.52poke.com/wiki/伊布邮件（道具）
+- 蓝天邮件 (Bluesky Mail) — https://wiki.52poke.com/wiki/蓝天邮件（道具）
+- 生花果 (Nutpea Berry) — https://wiki.52poke.com/wiki/生花果（道具）
+- 葱首果 (Ginema Berry) — https://wiki.52poke.com/wiki/葱首果（道具）
+- 葵秋果 (Kuo Berry) — https://wiki.52poke.com/wiki/葵秋果（道具）
+- 苦凉果 (Yago Berry) — https://wiki.52poke.com/wiki/苦凉果（道具）
+- 热椒果 (Touga Berry) — https://wiki.52poke.com/wiki/热椒果（道具）
+- 蒜蒜果 (Niniku Berry) — https://wiki.52poke.com/wiki/蒜蒜果（道具）
+- 铃薯果 (Topo Berry) — https://wiki.52poke.com/wiki/铃薯果（道具）
+- 卡比丘 (Teru-sama) — https://wiki.52poke.com/wiki/卡比丘（道具）
+- 果实 (Berry) — https://wiki.52poke.com/wiki/果实（道具）
+- 木箱 (Normal Box) — https://wiki.52poke.com/wiki/木箱（道具）
+- 桐木箱 (Gorgeous Box) — https://wiki.52poke.com/wiki/桐木箱（道具）
+- 宝可梦图鉴 (Pokédex) — https://wiki.52poke.com/wiki/宝可梦图鉴（道具）
+- 时之笛 (Time Flute) — https://wiki.52poke.com/wiki/时之笛（道具）
+- 愉悦香水 (Joy Scent) — https://wiki.52poke.com/wiki/愉悦香水（道具）
+- 兴奋香水 (Excite Scent) — https://wiki.52poke.com/wiki/兴奋香水（道具）
+- 心动香水 (Vivid Scent) — https://wiki.52poke.com/wiki/心动香水（道具）
+- 香水盒 (Cologne Case) — https://wiki.52poke.com/wiki/香水盒（道具）
+- 数据盘 (Data ROM) — https://wiki.52poke.com/wiki/数据盘（道具）
+- 电梯之钥 (Elevator Key) — https://wiki.52poke.com/wiki/电梯之钥（道具）
+- ＤＮＡ样本 (DNA Sample) — https://wiki.52poke.com/wiki/ＤＮＡ样本（道具）
+- 齿轮 (Gear) — https://wiki.52poke.com/wiki/齿轮（道具）
+- Ｆ盘 (F-Disk) — https://wiki.52poke.com/wiki/Ｆ盘（道具）
+- 太阳碎片 (Sun Shard) — https://wiki.52poke.com/wiki/太阳碎片（道具）
+- 月亮碎片 (Moon Shard) — https://wiki.52poke.com/wiki/月亮碎片（道具）
+- 冲浪邮件 (Surf Mail) — https://wiki.52poke.com/wiki/冲浪邮件（道具）
+- Ｊ． (j.) — https://wiki.52poke.com/wiki/Ｊ．（道具）
+- 蓝玉 (Blue Sphere) — https://wiki.52poke.com/wiki/蓝玉（道具）
+- 白玉 (Pale Sphere) — https://wiki.52poke.com/wiki/白玉（道具）
+- 伊利马的一般Ｚ (Ilima's Normalium Z) — https://wiki.52poke.com/wiki/伊利马的一般Ｚ（道具）
+- 时空之球 (Space Globe) — https://wiki.52poke.com/wiki/时空之球（道具）
+- 元气糖果L (Health Candy L) — https://wiki.52poke.com/wiki/元气糖果L（道具）
+- 元气糖果XL (Health Candy XL) — https://wiki.52poke.com/wiki/元气糖果XL（道具）
+- 力量糖果L (Mighty Candy L) — https://wiki.52poke.com/wiki/力量糖果L（道具）
+- 力量糖果XL (Mighty Candy XL) — https://wiki.52poke.com/wiki/力量糖果XL（道具）
+- 守护糖果L (Tough Candy L) — https://wiki.52poke.com/wiki/守护糖果L（道具）
+- 守护糖果XL (Tough Candy XL) — https://wiki.52poke.com/wiki/守护糖果XL（道具）
+- 知识糖果L (Smart Candy L) — https://wiki.52poke.com/wiki/知识糖果L（道具）
+- 知识糖果XL (Smart Candy XL) — https://wiki.52poke.com/wiki/知识糖果XL（道具）
+- 心灵糖果L (Courage Candy L) — https://wiki.52poke.com/wiki/心灵糖果L（道具）
+- 心灵糖果XL (Courage Candy XL) — https://wiki.52poke.com/wiki/心灵糖果XL（道具）
+- 敏捷糖果L (Quick Candy L) — https://wiki.52poke.com/wiki/敏捷糖果L（道具）
+- 敏捷糖果XL (Quick Candy XL) — https://wiki.52poke.com/wiki/敏捷糖果XL（道具）
+- 金条 (Gold Bar) — https://wiki.52poke.com/wiki/金条（道具）
+- 谜之碎片Ｓ (Mysterious Shard S) — https://wiki.52poke.com/wiki/谜之碎片Ｓ（道具）
+- 谜之碎片Ｌ (Mysterious Shard L) — https://wiki.52poke.com/wiki/谜之碎片Ｌ（道具）
+- 关都石板 (Kanto Slate) — https://wiki.52poke.com/wiki/关都石板（道具）
+- 城都石板 (Johto Slate) — https://wiki.52poke.com/wiki/城都石板（道具）
+- 心之石板 (Soul Slate) — https://wiki.52poke.com/wiki/心之石板（道具）
+- 引导石板 (Discovery Slate) — https://wiki.52poke.com/wiki/引导石板（道具）
+- 基因石板 (Genome Slate) — https://wiki.52poke.com/wiki/基因石板（道具）
+- 彩虹石板 (Rainbow Slate) — https://wiki.52poke.com/wiki/彩虹石板（道具）
+- 暴风石板 (Squall Slate) — https://wiki.52poke.com/wiki/暴风石板（道具）
+- 大海石板 (Oceanic Slate) — https://wiki.52poke.com/wiki/大海石板（道具）
+- 大陆石板 (Tectonic Slate) — https://wiki.52poke.com/wiki/大陆石板（道具）
+- 天空石板 (Stratospheric Slate) — https://wiki.52poke.com/wiki/天空石板（道具）
+- 毁坏石板 (Distortion Slate) — https://wiki.52poke.com/wiki/毁坏石板（道具）
+- 神秘盒子 (Mystery Box) — https://wiki.52poke.com/wiki/神秘盒子（道具）
+- 工艺套组 (Crafting Kit) — https://wiki.52poke.com/wiki/工艺套组（道具）
+- 幽尾玄鱼丸 (Basculegion Food) — https://wiki.52poke.com/wiki/幽尾玄鱼丸（道具）
+- 古老日记 (Old Journal) — https://wiki.52poke.com/wiki/古老日记（道具）
+- 起源矿石 (Origin Ore) — https://wiki.52poke.com/wiki/起源矿石（道具）
+- 由克希之爪 (Uxie's Claw) — https://wiki.52poke.com/wiki/由克希之爪（道具）
+- 亚克诺姆之牙 (Azelf's Fang) — https://wiki.52poke.com/wiki/亚克诺姆之牙（道具）
+- 艾姆利多之翅 (Mesprit's Plume) — https://wiki.52poke.com/wiki/艾姆利多之翅（道具）
+- 起源球 (Origin Ball) — https://wiki.52poke.com/wiki/起源球（道具）
+- 石板碎块 (Wall Fragment) — https://wiki.52poke.com/wiki/石板碎块（道具）
+- 破损日记 (Torn Journal) — https://wiki.52poke.com/wiki/破损日记（道具）
+- 永恒之冰 (Eternal Ice) — https://wiki.52poke.com/wiki/永恒之冰（道具）
+- 古老诗文１３ (Old Verse 13) — https://wiki.52poke.com/wiki/古老诗文１３（道具）
+- 活力蕾 (Vivichoke) — https://wiki.52poke.com/wiki/活力蕾（道具）
+- ＰＰ草 (Pep-Up Plant) — https://wiki.52poke.com/wiki/ＰＰ草（道具）
+- 疗草 (Medicinal Leek) — https://wiki.52poke.com/wiki/疗草（道具）
+- 剑舞菇 (Swordcap) — https://wiki.52poke.com/wiki/剑舞菇（道具）
+- 影分菇 (Doppel Bonnets) — https://wiki.52poke.com/wiki/影分菇（道具）
+- 要害松露 (Direshroom) — https://wiki.52poke.com/wiki/要害松露（道具）
+- 沙滩萝卜 (Sand Radish) — https://wiki.52poke.com/wiki/沙滩萝卜（道具）
+- 铁壁木耳 (Iron Barktongue) — https://wiki.52poke.com/wiki/铁壁木耳（道具）
+- 碎铁 (Iron Chunk) — https://wiki.52poke.com/wiki/碎铁（道具）
+- 黑玉石 (Black Tumblestone) — https://wiki.52poke.com/wiki/黑玉石（道具）
+- 天蓝玉石 (Sky Tumblestone) — https://wiki.52poke.com/wiki/天蓝玉石（道具）
+- 烟芋 (Sootfoot Root) — https://wiki.52poke.com/wiki/烟芋（道具）
+- 木材 (Wood) — https://wiki.52poke.com/wiki/木材（道具）
+- 皇叶 (King's Leaf) — https://wiki.52poke.com/wiki/皇叶（道具）
+- 玉石 (Tumblestone) — https://wiki.52poke.com/wiki/玉石（道具）
+- 球果果 (Apricorn) — https://wiki.52poke.com/wiki/球果果（道具）
+- 除虫草 (Bugwort) — https://wiki.52poke.com/wiki/除虫草（道具）
+- 诱团原料 (Cake-Lure Base) — https://wiki.52poke.com/wiki/诱团原料（道具）
+- 惊声藻 (Pop Pod) — https://wiki.52poke.com/wiki/惊声藻（道具）
+- 甜松露 (Candy Truffle) — https://wiki.52poke.com/wiki/甜松露（道具）
+- 弹子萁 (Caster Fern) — https://wiki.52poke.com/wiki/弹子萁（道具）
+- 材料单：烟弹 (Recipe:Smoke Bomb) — https://wiki.52poke.com/wiki/材料单：烟弹（道具）
+- 材料单：精灵球 (Recipe:Poké Ball) — https://wiki.52poke.com/wiki/材料单：精灵球（道具）
+- 材料单：声弹 (Recipe:Scatter Bang) — https://wiki.52poke.com/wiki/材料单：声弹（道具）
+- 材料单：菇诱团 (Recipe:Mushroom Cake) — https://wiki.52poke.com/wiki/材料单：菇诱团（道具）
+- 材料单：伤药 (Recipe:Potion) — https://wiki.52poke.com/wiki/材料单：伤药（道具）
+- 材料单：双倍腌菜 (Recipe:Twice-Spiced Radish) — https://wiki.52poke.com/wiki/材料单：双倍腌菜（道具）
+- 材料单：颠倒烧 (Recipe:Swap Snack) — https://wiki.52poke.com/wiki/材料单：颠倒烧（道具）
+- 材料单：活力碎片 (Recipe:Revive) — https://wiki.52poke.com/wiki/材料单：活力碎片（道具）
+- 材料单：沉重球 (Recipe:Heavy Ball) — https://wiki.52poke.com/wiki/材料单：沉重球（道具）
+- 材料单：祝庆玛芬 (Recipe:Jubilife Muffin) — https://wiki.52poke.com/wiki/材料单：祝庆玛芬（道具）
+- 材料单：匿声喷雾 (Recipe:Stealth Spray) — https://wiki.52poke.com/wiki/材料单：匿声喷雾（道具）
+- 飞羽球 (Feather Ball) — https://wiki.52poke.com/wiki/飞羽球（道具）
+- 飞梭球 (Jet Ball) — https://wiki.52poke.com/wiki/飞梭球（道具）
+- 飞翼球 (Wing Ball) — https://wiki.52poke.com/wiki/飞翼球（道具）
+- 超重球 (Leaden Ball) — https://wiki.52poke.com/wiki/超重球（道具）
+- 巨重球 (Gigaton Ball) — https://wiki.52poke.com/wiki/巨重球（道具）
+- 奋斗沙 (Grit Dust) — https://wiki.52poke.com/wiki/奋斗沙（道具）
+- 奋斗砾 (Grit Gravel) — https://wiki.52poke.com/wiki/奋斗砾（道具）
+- 奋斗石 (Grit Pebble) — https://wiki.52poke.com/wiki/奋斗石（道具）
+- 奋斗岩 (Grit Rock) — https://wiki.52poke.com/wiki/奋斗岩（道具）
+- 替身护符１ (Tempting Charm R) — https://wiki.52poke.com/wiki/替身护符１（道具）
+- 替身护符２ (Tempting Charm B) — https://wiki.52poke.com/wiki/替身护符２（道具）
+- 替身护符３ (Tempting Charm P) — https://wiki.52poke.com/wiki/替身护符３（道具）
+- 替身护符４ (Tempting Charm T) — https://wiki.52poke.com/wiki/替身护符４（道具）
+- 替身护符５ (Tempting Charm Y) — https://wiki.52poke.com/wiki/替身护符５（道具）
+- 安全护符１ (Survival Charm R) — https://wiki.52poke.com/wiki/安全护符１（道具）
+- 安全护符２ (Survival Charm B) — https://wiki.52poke.com/wiki/安全护符２（道具）
+- 安全护符３ (Survival Charm P) — https://wiki.52poke.com/wiki/安全护符３（道具）
+- 安全护符４ (Survival Charm T) — https://wiki.52poke.com/wiki/安全护符４（道具）
+- 安全护符５ (Survival Charm Y) — https://wiki.52poke.com/wiki/安全护符５（道具）
+- 健康护符１ (Warding Charm R) — https://wiki.52poke.com/wiki/健康护符１（道具）
+- 健康护符２ (Warding Charm B) — https://wiki.52poke.com/wiki/健康护符２（道具）
+- 健康护符３ (Warding Charm P) — https://wiki.52poke.com/wiki/健康护符３（道具）
+- 健康护符４ (Warding Charm T) — https://wiki.52poke.com/wiki/健康护符４（道具）
+- 健康护符５ (Warding Charm Y) — https://wiki.52poke.com/wiki/健康护符５（道具）
+- 精通种子 (Seed of Mastery) — https://wiki.52poke.com/wiki/精通种子（道具）
+- 诱饵模组 (Lure Module) — https://wiki.52poke.com/wiki/诱饵模组（道具）
+- 冰寒诱饵模组 (Glacial Lure Module) — https://wiki.52poke.com/wiki/冰寒诱饵模组（道具）
+- 药草诱饵模组 (Mossy Lure Module) — https://wiki.52poke.com/wiki/药草诱饵模组（道具）
+- 磁铁诱饵模组 (Magnetic Lure Module) — https://wiki.52poke.com/wiki/磁铁诱饵模组（道具）
+- 晶晶蜜 (Dazzling Honey) — https://wiki.52poke.com/wiki/晶晶蜜（道具）
+- 沼之镇宝 (Marsh Balm) — https://wiki.52poke.com/wiki/沼之镇宝（道具）
+- 烟弹 (Smoke Bomb) — https://wiki.52poke.com/wiki/烟弹（道具）
+- 声弹 (Scatter Bang) — https://wiki.52poke.com/wiki/声弹（道具）
+- 蜜诱团 (Honey Cake) — https://wiki.52poke.com/wiki/蜜诱团（道具）
+- 谷诱团 (Grain Cake) — https://wiki.52poke.com/wiki/谷诱团（道具）
+- 豆诱团 (Bean Cake) — https://wiki.52poke.com/wiki/豆诱团（道具）
+- 菇诱团 (Mushroom Cake) — https://wiki.52poke.com/wiki/菇诱团（道具）
+- 矿诱团 (Salt Cake) — https://wiki.52poke.com/wiki/矿诱团（道具）
+- 蛀球果 (Spoiled Apricorn) — https://wiki.52poke.com/wiki/蛀球果（道具）
+- 雪丸 (Snowball) — https://wiki.52poke.com/wiki/雪丸（道具）
+- 黏丸 (Sticky Glob) — https://wiki.52poke.com/wiki/黏丸（道具）
+- 雨露诱饵模组 (Rainy Lure Module) — https://wiki.52poke.com/wiki/雨露诱饵模组（道具）
+- 匿声喷雾 (Stealth Spray) — https://wiki.52poke.com/wiki/匿声喷雾（道具）
+- 家乡玛芬 (Hometown Muffin) — https://wiki.52poke.com/wiki/家乡玛芬（道具）
+- 厉害中药 (Superb Remedy) — https://wiki.52poke.com/wiki/厉害中药（道具）
+- 中药 (Remedy) — https://wiki.52poke.com/wiki/中药（道具）
+- 好中药 (Fine Remedy) — https://wiki.52poke.com/wiki/好中药（道具）
+- 祝庆玛芬 (Jubilife Muffin) — https://wiki.52poke.com/wiki/祝庆玛芬（道具）
+- 多重强化 (Aux Powerguard) — https://wiki.52poke.com/wiki/多重强化（道具）
+- 进攻药丸 (Aux Power) — https://wiki.52poke.com/wiki/进攻药丸（道具）
+- 防守药丸 (Aux Guard) — https://wiki.52poke.com/wiki/防守药丸（道具）
+- 闪避强化 (Aux Evasion) — https://wiki.52poke.com/wiki/闪避强化（道具）
+- 双倍腌菜 (Twice-Spiced Radish) — https://wiki.52poke.com/wiki/双倍腌菜（道具）
+- 宝可梦木娃娃 (Pokéshi Doll) — https://wiki.52poke.com/wiki/宝可梦木娃娃（道具）
+- 材料单：星星碎片 (Recipe:Star Piece) — https://wiki.52poke.com/wiki/材料单：星星碎片（道具）
+- 故勒顿的球 (Koraidon's Poké Ball) — https://wiki.52poke.com/wiki/故勒顿的球（道具）
+- 密勒顿的球 (Miraidon's Poké Ball) — https://wiki.52poke.com/wiki/密勒顿的球（道具）
+- 索财灵的硬币 (Gimmighoul Coin) — https://wiki.52poke.com/wiki/索财灵的硬币（道具）
+- 校园水壶 (Academy Bottle) — https://wiki.52poke.com/wiki/校园水壶（道具）
+- 圆点水壶 (Polka-Dot Bottle) — https://wiki.52poke.com/wiki/圆点水壶（道具）
+- 条纹水壶 (Striped Bottle) — https://wiki.52poke.com/wiki/条纹水壶（道具）
+- 菱纹水壶 (Diamond Bottle) — https://wiki.52poke.com/wiki/菱纹水壶（道具）
+- 校园水杯 (Academy Cup) — https://wiki.52poke.com/wiki/校园水杯（道具）
+- 直条纹水杯 (Striped Cup) — https://wiki.52poke.com/wiki/直条纹水杯（道具）
+- 圆点水杯 (Polka-Dot Cup) — https://wiki.52poke.com/wiki/圆点水杯（道具）
+- 花朵水杯 (Flower Pattern Cup) — https://wiki.52poke.com/wiki/花朵水杯（道具）
+- 校园桌巾 (Academy Tablecloth) — https://wiki.52poke.com/wiki/校园桌巾（道具）
+- 幻彩桌巾 (Whimsical Tablecloth) — https://wiki.52poke.com/wiki/幻彩桌巾（道具）
+- 大自然桌巾 (Leafy Tablecloth) — https://wiki.52poke.com/wiki/大自然桌巾（道具）
+- 鬼祟桌巾 (Spooky Tablecloth) — https://wiki.52poke.com/wiki/鬼祟桌巾（道具）
+- 校园球 (Academy Ball) — https://wiki.52poke.com/wiki/校园球（道具）
+- 玛力露球 (Marill Ball) — https://wiki.52poke.com/wiki/玛力露球（道具）
+- 毛线球 (Yarn Ball) — https://wiki.52poke.com/wiki/毛线球（道具）
+- 电竞球 (Cyber Ball) — https://wiki.52poke.com/wiki/电竞球（道具）
+- 金色三明治签 (Gold Pick) — https://wiki.52poke.com/wiki/金色三明治签（道具）
+- 银色三明治签 (Silver Pick) — https://wiki.52poke.com/wiki/银色三明治签（道具）
+- 红旗子三明治签 (Red-Flag Pick) — https://wiki.52poke.com/wiki/红旗子三明治签（道具）
+- 蓝旗子三明治签 (Blue-Flag Pick) — https://wiki.52poke.com/wiki/蓝旗子三明治签（道具）
+- 皮卡丘三明治签 (Pika-Pika Pick) — https://wiki.52poke.com/wiki/皮卡丘三明治签（道具）
+- 眨眼皮卡丘三明治签 (Winking Pika Pick) — https://wiki.52poke.com/wiki/眨眼皮卡丘三明治签（道具）
+- 伊布三明治签 (Vee-Vee Pick) — https://wiki.52poke.com/wiki/伊布三明治签（道具）
+- 笑脸伊布三明治签 (Smiling Vee Pick) — https://wiki.52poke.com/wiki/笑脸伊布三明治签（道具）
+- 蓝珠珠三明治签 (Blue Poké Ball Pick) — https://wiki.52poke.com/wiki/蓝珠珠三明治签（道具）
+- 粉红水壶 (Pink Bottle) — https://wiki.52poke.com/wiki/粉红水壶（道具）
+- 蓝色水壶 (Blue Bottle) — https://wiki.52poke.com/wiki/蓝色水壶（道具）
+- 黄色水壶 (Yellow Bottle) — https://wiki.52poke.com/wiki/黄色水壶（道具）
+- 红纹不锈钢水壶 (Steel Bottle (R)) — https://wiki.52poke.com/wiki/红纹不锈钢水壶（道具）
+- 黄纹不锈钢水壶 (Steel Bottle (Y)) — https://wiki.52poke.com/wiki/黄纹不锈钢水壶（道具）
+- 蓝纹不锈钢水壶 (Steel Bottle (B)) — https://wiki.52poke.com/wiki/蓝纹不锈钢水壶（道具）
+- 银钛水壶 (Silver Bottle) — https://wiki.52poke.com/wiki/银钛水壶（道具）
+- 横条纹水杯 (Barred Cup) — https://wiki.52poke.com/wiki/横条纹水杯（道具）
+- 菱纹水杯 (Diamond Pattern Cup) — https://wiki.52poke.com/wiki/菱纹水杯（道具）
+- 火焰水杯 (Fire Pattern Cup) — https://wiki.52poke.com/wiki/火焰水杯（道具）
+- 粉红水杯 (Pink Cup) — https://wiki.52poke.com/wiki/粉红水杯（道具）
+- 蓝色水杯 (Blue Cup) — https://wiki.52poke.com/wiki/蓝色水杯（道具）
+- 黄色水杯 (Yellow Cup) — https://wiki.52poke.com/wiki/黄色水杯（道具）
+- 皮卡丘水杯 (Pikachu Cup) — https://wiki.52poke.com/wiki/皮卡丘水杯（道具）
+- 伊布水杯 (Eevee Cup) — https://wiki.52poke.com/wiki/伊布水杯（道具）
+- 呆呆兽水杯 (Slowpoke Cup) — https://wiki.52poke.com/wiki/呆呆兽水杯（道具）
+- 银钛水杯 (Silver Cup) — https://wiki.52poke.com/wiki/银钛水杯（道具）
+- 瑜珈球 (Exercise Ball) — https://wiki.52poke.com/wiki/瑜珈球（道具）
+- 黄色格子桌巾 (Plaid Tablecloth (Y)) — https://wiki.52poke.com/wiki/黄色格子桌巾（道具）
+- 蓝色格子桌巾 (Plaid Tablecloth (B)) — https://wiki.52poke.com/wiki/蓝色格子桌巾（道具）
+- 红色格子桌巾 (Plaid Tablecloth (R)) — https://wiki.52poke.com/wiki/红色格子桌巾（道具）
+- 黑白草丛桌巾 (B&W Grass Tablecloth) — https://wiki.52poke.com/wiki/黑白草丛桌巾（道具）
+- 对决桌巾 (Battle Tablecloth) — https://wiki.52poke.com/wiki/对决桌巾（道具）
+- 怪兽桌巾 (Monstrous Tablecloth) — https://wiki.52poke.com/wiki/怪兽桌巾（道具）
+- 条纹桌巾 (Striped Tablecloth) — https://wiki.52poke.com/wiki/条纹桌巾（道具）
+- 菱纹桌巾 (Diamond Tablecloth) — https://wiki.52poke.com/wiki/菱纹桌巾（道具）
+- 圆点桌巾 (Polka-Dot Tablecloth) — https://wiki.52poke.com/wiki/圆点桌巾（道具）
+- 紫色桌巾 (Lilac Tablecloth) — https://wiki.52poke.com/wiki/紫色桌巾（道具）
+- 浅绿桌巾 (Mint Tablecloth) — https://wiki.52poke.com/wiki/浅绿桌巾（道具）
+- 米色桌巾 (Peach Tablecloth) — https://wiki.52poke.com/wiki/米色桌巾（道具）
+- 黄色桌巾 (Yellow Tablecloth) — https://wiki.52poke.com/wiki/黄色桌巾（道具）
+- 蓝色桌巾 (Blue Tablecloth) — https://wiki.52poke.com/wiki/蓝色桌巾（道具）
+- 粉红桌巾 (Pink Tablecloth) — https://wiki.52poke.com/wiki/粉红桌巾（道具）
+- 金钛水壶 (Gold Bottle) — https://wiki.52poke.com/wiki/金钛水壶（道具）
+- 铜钛水壶 (Bronze Bottle) — https://wiki.52poke.com/wiki/铜钛水壶（道具）
+- 金钛水杯 (Gold Cup) — https://wiki.52poke.com/wiki/金钛水杯（道具）
+- 铜钛水杯 (Bronze Cup) — https://wiki.52poke.com/wiki/铜钛水杯（道具）
+- 绿珠珠三明治签 (Green Poké Ball Pick) — https://wiki.52poke.com/wiki/绿珠珠三明治签（道具）
+- 红珠珠三明治签 (Red Poké Ball Pick) — https://wiki.52poke.com/wiki/红珠珠三明治签（道具）
+- 烟花祝庆三明治签 (Party Sparkler Pick) — https://wiki.52poke.com/wiki/烟花祝庆三明治签（道具）
+- 勇者之剑三明治签 (Heroic Sword Pick) — https://wiki.52poke.com/wiki/勇者之剑三明治签（道具）
+- 魔法星星三明治签 (Magical Star Pick) — https://wiki.52poke.com/wiki/魔法星星三明治签（道具）
+- 魔法甜心三明治签 (Magical Heart Pick) — https://wiki.52poke.com/wiki/魔法甜心三明治签（道具）
+- 阳伞三明治签 (Parasol Pick) — https://wiki.52poke.com/wiki/阳伞三明治签（道具）
+- 晴空花三明治签 (Blue-Sky Flower Pick) — https://wiki.52poke.com/wiki/晴空花三明治签（道具）
+- 夕阳花三明治签 (Sunset Flower Pick) — https://wiki.52poke.com/wiki/夕阳花三明治签（道具）
+- 朝霞花三明治签 (Sunrise Flower Pick) — https://wiki.52poke.com/wiki/朝霞花三明治签（道具）
+- 蓝色盘子 (Blue Dish) — https://wiki.52poke.com/wiki/蓝色盘子（道具）
+- 绿色盘子 (Green Dish) — https://wiki.52poke.com/wiki/绿色盘子（道具）
+- 橘色盘子 (Orange Dish) — https://wiki.52poke.com/wiki/橘色盘子（道具）
+- 红色盘子 (Red Dish) — https://wiki.52poke.com/wiki/红色盘子（道具）
+- 白色盘子 (White Dish) — https://wiki.52poke.com/wiki/白色盘子（道具）
+- 黄色盘子 (Yellow Dish) — https://wiki.52poke.com/wiki/黄色盘子（道具）
+- 复合金属 (Metal Alloy) — https://wiki.52poke.com/wiki/复合金属（道具）
+- 鸭嘴炎兽三明治签 (Fiery Pick) — https://wiki.52poke.com/wiki/鸭嘴炎兽三明治签（道具）
+- 幻之桃桃果 (Mythical Pecha Berry) — https://wiki.52poke.com/wiki/幻之桃桃果（道具）
+- 蓝莓桌巾 (Blueberry Tablecloth) — https://wiki.52poke.com/wiki/蓝莓桌巾（道具）
+- 蓝莓椅子 (Blueberry Chairs) — https://wiki.52poke.com/wiki/蓝莓椅子（道具）
+- 零之秘宝 (Briar's Book) — https://wiki.52poke.com/wiki/零之秘宝（道具）
+- 重要的宝箱 (Coin Bag) — https://wiki.52poke.com/wiki/重要的寶箱（道具）
+- ８Ｆ (8F) — https://wiki.52poke.com/wiki/８Ｆ（道具）
+- 神奥之石 (Sinnoh Stone) — https://wiki.52poke.com/wiki/神奧之石（道具）
+- 合众之石 (Unova Stone) — https://wiki.52poke.com/wiki/合眾之石（道具）
+- 品鲜蘑菇 (Tasty Mushroom) — https://wiki.52poke.com/wiki/品鮮蘑菇（道具）
+- 特选蛋 (Fancy Egg) — https://wiki.52poke.com/wiki/特選蛋（道具）
+- 萌绿大豆 (Greengrass Soybeans) — https://wiki.52poke.com/wiki/萌綠大豆（道具）
+- 萌绿玉米 (Greengrass Corn) — https://wiki.52poke.com/wiki/萌綠玉米（道具）
+- 火辣香草 (Fiery Herb) — https://wiki.52poke.com/wiki/火辣香草（道具）
+- 窝心洋芋 (Soft Potato) — https://wiki.52poke.com/wiki/窩心洋芋（道具）
+- 豆制肉 (Bean Sausage) — https://wiki.52poke.com/wiki/豆製肉（道具）
+- 放松可可 (Soothing Cacao) — https://wiki.52poke.com/wiki/放鬆可可（道具）
+- 好眠番茄 (Snoozy Tomato) — https://wiki.52poke.com/wiki/好眠番茄（道具）
+- 暖暖姜 (Warming Ginger) — https://wiki.52poke.com/wiki/暖暖薑（道具）
+- 纯粹油 (Pure Oil) — https://wiki.52poke.com/wiki/純粹油（道具）
+- ５Ｆ (5F) — https://wiki.52poke.com/wiki/５Ｆ（道具）
+- 甲贺忍蛙进化石 (Greninjite) — https://wiki.52poke.com/wiki/甲贺忍蛙进化石（道具）
+- 布里卡隆进化石 (Chesnaughtite) — https://wiki.52poke.com/wiki/布里卡隆进化石（道具）
+- 妖火红狐进化石 (Delphoxite) — https://wiki.52poke.com/wiki/妖火红狐进化石（道具）
+- 雷丘进化石Ｘ (Raichunite X) — https://wiki.52poke.com/wiki/雷丘进化石Ｘ（道具）
+- 雷丘进化石Ｙ (Raichunite Y) — https://wiki.52poke.com/wiki/雷丘进化石Ｙ（道具）
+- 快龙进化石 (Dragonitite) — https://wiki.52poke.com/wiki/快龙进化石（道具）
+- 大食花进化石 (Victreebelite) — https://wiki.52poke.com/wiki/大食花进化石（道具）
+- 乌贼王进化石 (Malamarite) — https://wiki.52poke.com/wiki/乌贼王进化石（道具）
+- 摔角鹰人进化石 (Hawluchanite) — https://wiki.52poke.com/wiki/摔角鹰人进化石（道具）
+- 皮可西进化石 (Clefablite) — https://wiki.52poke.com/wiki/皮可西进化石（道具）
+- 宝石海星进化石 (Starminite) — https://wiki.52poke.com/wiki/宝石海星进化石（道具）
+- 大竺葵进化石 (Meganiumite) — https://wiki.52poke.com/wiki/大竺葵进化石（道具）
+- 大力鳄进化石 (Feraligite) — https://wiki.52poke.com/wiki/大力鳄进化石（道具）
+- 盔甲鸟进化石 (Skarmorite) — https://wiki.52poke.com/wiki/盔甲鸟进化石（道具）
+- 雪妖女进化石 (Froslassite) — https://wiki.52poke.com/wiki/雪妖女进化石（道具）
+- 炎武王进化石 (Emboarite) — https://wiki.52poke.com/wiki/炎武王进化石（道具）
+- 龙头地鼠进化石 (Excadrite) — https://wiki.52poke.com/wiki/龙头地鼠进化石（道具）
+- 蜈蚣王进化石 (Scolipite) — https://wiki.52poke.com/wiki/蜈蚣王进化石（道具）
+- 头巾混混进化石 (Scraftinite) — https://wiki.52poke.com/wiki/头巾混混进化石（道具）
+- 麻麻鳗鱼王进化石 (Eelektrossite) — https://wiki.52poke.com/wiki/麻麻鳗鱼王进化石（道具）
+- 水晶灯火灵进化石 (Chandelurite) — https://wiki.52poke.com/wiki/水晶灯火灵进化石（道具）
+- 火炎狮进化石 (Pyroarite) — https://wiki.52poke.com/wiki/火炎狮进化石（道具）
+- 龟足巨铠进化石 (Barbaracite) — https://wiki.52poke.com/wiki/龟足巨铠进化石（道具）
+- 毒藻龙进化石 (Dragalgite) — https://wiki.52poke.com/wiki/毒藻龙进化石（道具）
+- 基格尔德进化石 (Zygardite) — https://wiki.52poke.com/wiki/基格尔德进化石（道具）
+- 老翁龙进化石 (Drampanite) — https://wiki.52poke.com/wiki/老翁龙进化石（道具）
+- 列阵兵进化石 (Falinksite) — https://wiki.52poke.com/wiki/列阵兵进化石（道具）
+- ２０２号客房的钥匙 (Key to Room 202) — https://wiki.52poke.com/wiki/２０２号客房的钥匙（道具）
+- 厉害密阿雷格雷派饼 (Super Lumiose Galette) — https://wiki.52poke.com/wiki/厉害密阿雷格雷派饼（道具）
+- 研究所的钥匙卡Ａ (Lab Key Card A) — https://wiki.52poke.com/wiki/研究所的钥匙卡Ａ（道具）
+- 研究所的钥匙卡Ｂ (Lab Key Card B) — https://wiki.52poke.com/wiki/研究所的钥匙卡Ｂ（道具）
+- 研究所的钥匙卡Ｃ (Lab Key Card C) — https://wiki.52poke.com/wiki/研究所的钥匙卡Ｃ（道具）
+- 小石头 (Pebble) — https://wiki.52poke.com/wiki/小石头（道具）
+- 纪念戒指 (Cherished Ring) — https://wiki.52poke.com/wiki/纪念戒指（道具）
+- 签名玩偶 (Autographed Plush) — https://wiki.52poke.com/wiki/签名玩偶（道具）
+- 美味垃圾 (Tasty Trash) — https://wiki.52poke.com/wiki/美味垃圾（道具）
+- 活力小树枝 (Revitalizing Twig) — https://wiki.52poke.com/wiki/活力小树枝（道具）
+- 玳萝的遗忘物 (Lida's Things) — https://wiki.52poke.com/wiki/玳萝的遗忘物（道具）
+- 超级碎片 (Mega Shard) — https://wiki.52poke.com/wiki/超级碎片（道具）
+- 彩色螺丝 (Colorful Screw) — https://wiki.52poke.com/wiki/彩色螺丝（道具）
+- 红色卡娜莉玩偶 (Red Canari Plush) — https://wiki.52poke.com/wiki/红色卡娜莉玩偶（道具）
+- 金色卡娜莉玩偶 (Gold Canari Plush) — https://wiki.52poke.com/wiki/金色卡娜莉玩偶（道具）
+- 粉红色卡娜莉玩偶 (Pink Canari Plush) — https://wiki.52poke.com/wiki/粉红色卡娜莉玩偶（道具）
+- 绿色卡娜莉玩偶 (Green Canari Plush) — https://wiki.52poke.com/wiki/绿色卡娜莉玩偶（道具）
+- 蓝色卡娜莉玩偶 (Blue Canari Plush) — https://wiki.52poke.com/wiki/蓝色卡娜莉玩偶（道具）
+- 简约椅子 (Simple Chairs) — https://wiki.52poke.com/wiki/簡約椅子（道具）
+- 校园椅子 (sets of Academy Chairs) — https://wiki.52poke.com/wiki/校園椅子（道具）
+- 幻彩椅子 (sets of Whimsical Chairs) — https://wiki.52poke.com/wiki/幻彩椅子（道具）
+- 大自然椅子 (sets of Leafy Chairs) — https://wiki.52poke.com/wiki/大自然椅子（道具）
+- 鬼祟椅子 (sets of Spooky Chairs) — https://wiki.52poke.com/wiki/鬼祟椅子（道具）
+- 黄色格子椅子 (sets of Plaid Chairs (Y)) — https://wiki.52poke.com/wiki/黃色格子椅子（道具）
+- 蓝色格子椅子 (sets of Plaid Chairs (B)) — https://wiki.52poke.com/wiki/藍色格子椅子（道具）
+- 红色格子椅子 (sets of Plaid Chairs (R)) — https://wiki.52poke.com/wiki/紅色格子椅子（道具）
+- 草丛椅子 (sets of B&W Grass Chairs) — https://wiki.52poke.com/wiki/草叢椅子（道具）
+- 对决椅子 (sets of Battle Chairs) — https://wiki.52poke.com/wiki/對決椅子（道具）
+- 怪兽椅子 (sets of Monstrous Chairs) — https://wiki.52poke.com/wiki/怪獸椅子（道具）
+- 条纹椅子 (sets of Striped Chairs) — https://wiki.52poke.com/wiki/條紋椅子（道具）
+- 菱纹椅子 (sets of Diamond Chairs) — https://wiki.52poke.com/wiki/菱紋椅子（道具）
+- 圆点椅子 (sets of Polka-Dot Chairs) — https://wiki.52poke.com/wiki/圓點椅子（道具）
+- 紫色椅子 (sets of Lilac Chairs) — https://wiki.52poke.com/wiki/紫色椅子（道具）
+- 浅绿椅子 (sets of Mint Chairs) — https://wiki.52poke.com/wiki/淺綠椅子（道具）
+- 米色椅子 (sets of Peach Chairs) — https://wiki.52poke.com/wiki/米色椅子（道具）
+- 黄色椅子 (sets of Yellow Chairs) — https://wiki.52poke.com/wiki/黃色椅子（道具）
+- 蓝色椅子 (sets of Blue Chairs) — https://wiki.52poke.com/wiki/藍色椅子（道具）
+- 粉红椅子 (sets of Pink Chairs) — https://wiki.52poke.com/wiki/粉紅椅子（道具）
+- 阿柏蛇的牙 (Ekans Fangs) — https://wiki.52poke.com/wiki/阿柏蛇的牙（道具）
+- 穿山鼠的爪子 (Sandshrew Claw) — https://wiki.52poke.com/wiki/穿山鼠的爪子（道具）
+- 皮宝宝的毛 (Cleffa Fur) — https://wiki.52poke.com/wiki/皮寶寶的毛（道具）
+- 六尾的毛 (Vulpix Fur) — https://wiki.52poke.com/wiki/六尾的毛（道具）
+- 蚊香蝌蚪的黏液 (Poliwag Slime) — https://wiki.52poke.com/wiki/蚊香蝌蚪的黏液（道具）
+- 喇叭芽的藤蔓 (Bellsprout Vine) — https://wiki.52poke.com/wiki/喇叭芽的藤蔓（道具）
+- 小拳石的碎片 (Geodude Fragment) — https://wiki.52poke.com/wiki/小拳石的碎片（道具）
+- 瓦斯弹的气体 (Koffing Gas) — https://wiki.52poke.com/wiki/瓦斯彈的氣體（道具）
+- 小卡比兽的牙 (Munchlax Fang) — https://wiki.52poke.com/wiki/小卡比獸的牙（道具）
+- 尾立的毛 (Sentret Fur) — https://wiki.52poke.com/wiki/尾立的毛（道具）
+- 咕咕的羽毛 (Hoothoot Feather) — https://wiki.52poke.com/wiki/咕咕的羽毛（道具）
+- 圆丝蛛的丝 (Spinarak Thread) — https://wiki.52poke.com/wiki/圓絲蛛的絲（道具）
+- 长尾怪手的毛 (Aipom Hair) — https://wiki.52poke.com/wiki/長尾怪手的毛（道具）
+- 蜻蜻蜓的刺 (Yanma Spike) — https://wiki.52poke.com/wiki/蜻蜻蜓的刺（道具）
+- 天蝎的牙 (Gligar Fang) — https://wiki.52poke.com/wiki/天蠍的牙（道具）
+- 熔岩虫的熔岩 (Slugma Lava) — https://wiki.52poke.com/wiki/熔岩蟲的熔岩（道具）
+- 小山猪的毛 (Swinub Hair) — https://wiki.52poke.com/wiki/小山豬的毛（道具）
+- 土狼犬的牙 (Poochyena Fang) — https://wiki.52poke.com/wiki/土狼犬的牙（道具）
+- 莲叶童子的叶片 (Lotad Leaf) — https://wiki.52poke.com/wiki/蓮葉童子的葉片（道具）
+- 橡实果的枝条 (Seedot Stem) — https://wiki.52poke.com/wiki/橡實果的枝條（道具）
+- 朝北鼻的碎片 (Nosepass Fragment) — https://wiki.52poke.com/wiki/朝北鼻的碎片（道具）
+- 电萤虫的汁液 (Volbeat Fluid) — https://wiki.52poke.com/wiki/電螢蟲的汁液（道具）
+- 甜甜萤的汁液 (Illumise Fluid) — https://wiki.52poke.com/wiki/甜甜螢的汁液（道具）
+- 龙虾小兵的壳 (Corphish Shell) — https://wiki.52poke.com/wiki/龍蝦小兵的殼（道具）
+- 丑丑鱼的鳞片 (Feebas Scales) — https://wiki.52poke.com/wiki/醜醜魚的鱗片（道具）
+- 夜巡灵的碎片 (Duskull Fragment) — https://wiki.52poke.com/wiki/夜巡靈的碎片（道具）
+- 铃铛响的碎片 (Chingling Fragment) — https://wiki.52poke.com/wiki/鈴鐺響的碎片（道具）
+- 搬运小匠的汗 (Timburr Sweat) — https://wiki.52poke.com/wiki/搬運小匠的汗（道具）
+- 虫宝包的叶片 (Sewaddle Leaf) — https://wiki.52poke.com/wiki/蟲寶包的葉片（道具）
+- 鸭宝宝的羽毛 (Ducklett Feather) — https://wiki.52poke.com/wiki/鴨寶寶的羽毛（道具）
+- 烛光灵的煤灰 (Litwick Soot) — https://wiki.52poke.com/wiki/燭光靈的煤灰（道具）
+- 功夫鼬的爪子 (Mienfoo Claw) — https://wiki.52poke.com/wiki/功夫鼬的爪子（道具）
+- 秃鹰丫头的羽毛 (Vullaby Feather) — https://wiki.52poke.com/wiki/禿鷹丫頭的羽毛（道具）
+- 小碎钻的宝石 (Carbink Jewel) — https://wiki.52poke.com/wiki/小碎鑽的寶石（道具）
+- 小木灵的枝条 (Phantump Twig) — https://wiki.52poke.com/wiki/小木靈的枝條（道具）
+- 强颚鸡母虫的丝 (Grubbin Thread) — https://wiki.52poke.com/wiki/強顎雞母蟲的絲（道具）
+- 萌虻的粉 (Cutiefly Powder) — https://wiki.52poke.com/wiki/萌虻的粉（道具）
+- 心鳞宝的鳞片 (Jangmo-o Scales) — https://wiki.52poke.com/wiki/心鱗寶的鱗片（道具）
+- 古月鸟的羽绒 (Cramorant Down) — https://wiki.52poke.com/wiki/古月鳥的羽絨（道具）
+- 莫鲁贝可的种子 (Morpeko Snack) — https://wiki.52poke.com/wiki/莫魯貝可的種子（道具）
+- 斯魔茶的粉 (Poltchageist Powder) — https://wiki.52poke.com/wiki/斯魔茶的粉（道具）
+- 走路草的叶片 (Oddish Leaf) — https://wiki.52poke.com/wiki/走路草的葉片（道具）
+- 玛瑙水母的针 (Tentacool Stinger) — https://wiki.52poke.com/wiki/瑪瑙水母的針（道具）
+- 嘟嘟的羽绒 (Doduo Down) — https://wiki.52poke.com/wiki/嘟嘟的羽絨（道具）
+- 小海狮的毛 (Seel Fur) — https://wiki.52poke.com/wiki/小海獅的毛（道具）
+- 蛋蛋的壳 (Exeggcute Shell) — https://wiki.52poke.com/wiki/蛋蛋的殼（道具）
+- 无畏小子的汗 (Tyrogue Sweat) — https://wiki.52poke.com/wiki/無畏小子的汗（道具）
+- 独角犀牛的牙 (Rhyhorn Fang) — https://wiki.52poke.com/wiki/獨角犀牛的牙（道具）
+- 墨海马的墨汁 (Horsea Ink) — https://wiki.52poke.com/wiki/墨海馬的墨汁（道具）
+- 电击怪的毛 (Elekid Fur) — https://wiki.52poke.com/wiki/電擊怪的毛（道具）
+- 鸭嘴宝宝的毛 (Magby Hair) — https://wiki.52poke.com/wiki/鴨嘴寶寶的毛（道具）
+- 拉普拉斯的眼泪 (Lapras Teardrop) — https://wiki.52poke.com/wiki/拉普拉斯的眼淚（道具）
+- 多边兽的碎片 (Porygon Fragment) — https://wiki.52poke.com/wiki/多邊獸的碎片（道具）
+- 灯笼鱼的电力 (Chinchou Sparks) — https://wiki.52poke.com/wiki/燈籠魚的電力（道具）
+- 布鲁的毛 (Snubbull Hair) — https://wiki.52poke.com/wiki/布魯的毛（道具）
+- 盔甲鸟的羽毛 (Skarmory Feather) — https://wiki.52poke.com/wiki/盔甲鳥的羽毛（道具）
+- 图图犬的墨汁 (Smeargle Paint) — https://wiki.52poke.com/wiki/圖圖犬的墨汁（道具）
+- 正电拍拍的毛 (Plusle Fur) — https://wiki.52poke.com/wiki/正電拍拍的毛（道具）
+- 负电拍拍的毛 (Minun Fur) — https://wiki.52poke.com/wiki/負電拍拍的毛（道具）
+- 大颚蚁的壳 (Trapinch Shell) — https://wiki.52poke.com/wiki/大顎蟻的殼（道具）
+- 铁哑铃的爪子 (Beldum Claw) — https://wiki.52poke.com/wiki/鐵啞鈴的爪子（道具）
+- 头盖龙的刺 (Cranidos Spike) — https://wiki.52poke.com/wiki/頭蓋龍的刺（道具）
+- 斑斑马的鬃毛 (Blitzle Mane Hair) — https://wiki.52poke.com/wiki/斑斑馬的鬃毛（道具）
+- 螺钉地鼠的爪子 (Drilbur Claw) — https://wiki.52poke.com/wiki/螺釘地鼠的爪子（道具）
+- 木棉球的棉絮 (Cottonee Fluff) — https://wiki.52poke.com/wiki/木棉球的棉絮（道具）
+- 滑滑小子的汗 (Scraggy Sweat) — https://wiki.52poke.com/wiki/滑滑小子的汗（道具）
+- 泡沫栗鼠的毛 (Minccino Fur) — https://wiki.52poke.com/wiki/泡沫栗鼠的毛（道具）
+- 单卵细胞球的凝胶 (Solosis Gel) — https://wiki.52poke.com/wiki/單卵細胞球的凝膠（道具）
+- 电电虫的丝 (Joltik Thread) — https://wiki.52poke.com/wiki/電電蟲的絲（道具）
+- 泥偶小人的碎片 (Golett Shard) — https://wiki.52poke.com/wiki/泥偶小人的碎片（道具）
+- 妙喵的毛 (Espurr Fur) — https://wiki.52poke.com/wiki/妙喵的毛（道具）
+- 好啦鱿的墨汁 (Inkay Ink) — https://wiki.52poke.com/wiki/好啦魷的墨汁（道具）
+- 小笃儿的羽毛 (Pikipek Feather) — https://wiki.52poke.com/wiki/小篤兒的羽毛（道具）
+- 滴蛛的丝 (Dewpider Thread) — https://wiki.52poke.com/wiki/滴蛛的絲（道具）
+- 花疗环环的花 (Comfey Flower) — https://wiki.52poke.com/wiki/花療環環的花（道具）
+- 小陨星的壳 (Minior Shell) — https://wiki.52poke.com/wiki/小隕星的殼（道具）
+- 小仙奶的奶油 (Milcery Cream) — https://wiki.52poke.com/wiki/小仙奶的奶油（道具）
+- 铝钢龙的锈 (Duraludon Tarnish) — https://wiki.52poke.com/wiki/鋁鋼龍的鏽（道具）
+- 戟脊龙进化石 (Baxcalibrite) — https://wiki.52poke.com/wiki/戟脊龙进化石（道具）
+- 风铃铃进化石 (Chimechite) — https://wiki.52poke.com/wiki/风铃铃进化石（道具）
+- 捷拉奥拉进化石 (Zeraorite) — https://wiki.52poke.com/wiki/捷拉奥拉进化石（道具）
+- 研究所的钥匙卡Ｍ (Lab Key Card M) — https://wiki.52poke.com/wiki/研究所的钥匙卡Ｍ（道具）
+- 研究所的钥匙卡Ｘ (Lab Key Card X) — https://wiki.52poke.com/wiki/研究所的钥匙卡Ｘ（道具）
+- 路卡利欧进化石Ｚ (Lucarionite Z) — https://wiki.52poke.com/wiki/路卡利欧进化石Ｚ（道具）
+- 姆克鹰进化石 (Staraptite) — https://wiki.52poke.com/wiki/姆克鹰进化石（道具）
+- 阿勃梭鲁进化石Ｚ (Abosolite Z) — https://wiki.52poke.com/wiki/阿勃梭鲁进化石Ｚ（道具）
+- 烈咬陆鲨进化石Ｚ (Garchompite Z) — https://wiki.52poke.com/wiki/烈咬陆鲨进化石Ｚ（道具）
+- 席多蓝恩进化石 (Heatranite) — https://wiki.52poke.com/wiki/席多蓝恩进化石（道具）
+- 达克莱伊进化石 (Darkranite) — https://wiki.52poke.com/wiki/达克莱伊进化石（道具）
+- 泥偶巨人进化石 (Golurkite) — https://wiki.52poke.com/wiki/泥偶巨人进化石（道具）
+- 超能妙喵进化石 (Meowsticite) — https://wiki.52poke.com/wiki/超能妙喵进化石（道具）
+- 好胜毛蟹进化石 (Crabominite) — https://wiki.52poke.com/wiki/好胜毛蟹进化石（道具）
+- 具甲武者进化石 (Golisopodite) — https://wiki.52poke.com/wiki/具甲武者进化石（道具）
+- 玛机雅娜进化石 (Magearnite) — https://wiki.52poke.com/wiki/玛机雅娜进化石（道具）
+- 狠辣椒进化石 (Scovillainite) — https://wiki.52poke.com/wiki/狠辣椒进化石（道具）
+- 晶光花进化石 (Glimmoranite) — https://wiki.52poke.com/wiki/晶光花进化石（道具）
+- 米立龙进化石 (Tatsugirinite) — https://wiki.52poke.com/wiki/米立龙进化石（道具）
+- 丰缘的粗盐 (Hoennian Salt) — https://wiki.52poke.com/wiki/丰缘的粗盐（道具）
+- 卡娜莉面包 (Canari Bread) — https://wiki.52poke.com/wiki/卡娜莉面包（道具）
+- 噼里啪啦糖果 (Popping Candy) — https://wiki.52poke.com/wiki/噼里啪啦糖果（道具）
+- 大师黄油 (Supreme Butter) — https://wiki.52poke.com/wiki/大师黄油（道具）
+- 奥利瓦油 (Arboliva Oil) — https://wiki.52poke.com/wiki/奥利瓦油（道具）
+- 密阿雷黄油 (Lumiosian Butter) — https://wiki.52poke.com/wiki/密阿雷黄油（道具）
+- 异次元佛柑果 (Hyper Kasib Berry) — https://wiki.52poke.com/wiki/异次元佛柑果（道具）
+- 异次元利木果 (Hyper Aspear Berry) — https://wiki.52poke.com/wiki/异次元利木果（道具）
+- 异次元刺耳果 (Hyper Colbur Berry) — https://wiki.52poke.com/wiki/异次元刺耳果（道具）
+- 异次元千香果 (Hyper Passho Berry) — https://wiki.52poke.com/wiki/异次元千香果（道具）
+- 异次元哈密果 (Hyper Hondew Berry) — https://wiki.52poke.com/wiki/异次元哈密果（道具）
+- 异次元巧可果 (Hyper Occa Berry) — https://wiki.52poke.com/wiki/异次元巧可果（道具）
+- 异次元扁樱果 (Hyper Tanga Berry) — https://wiki.52poke.com/wiki/异次元扁樱果（道具）
+- 异次元文柚果 (Hyper Sitrus Berry) — https://wiki.52poke.com/wiki/异次元文柚果（道具）
+- 异次元木子果 (Hyper Lum Berry) — https://wiki.52poke.com/wiki/异次元木子果（道具）
+- 异次元柿仔果 (Hyper Persim Berry) — https://wiki.52poke.com/wiki/异次元柿仔果（道具）
+- 异次元桃桃果 (Hyper Pecha Berry) — https://wiki.52poke.com/wiki/异次元桃桃果（道具）
+- 异次元棱瓜果 (Hyper Coba Berry) — https://wiki.52poke.com/wiki/异次元棱瓜果（道具）
+- 异次元榴石果 (Hyper Pomeg Berry) — https://wiki.52poke.com/wiki/异次元榴石果（道具）
+- 异次元樱子果 (Hyper Cheri Berry) — https://wiki.52poke.com/wiki/异次元樱子果（道具）
+- 异次元橙橙果 (Hyper Oran Berry) — https://wiki.52poke.com/wiki/异次元橙橙果（道具）
+- 异次元比巴果 (Hyper Qualot Berry) — https://wiki.52poke.com/wiki/异次元比巴果（道具）
+- 异次元洛玫果 (Hyper Roseli Berry) — https://wiki.52poke.com/wiki/异次元洛玫果（道具）
+- 异次元灯浆果 (Hyper Chilan Berry) — https://wiki.52poke.com/wiki/异次元灯浆果（道具）
+- 异次元烛木果 (Hyper Wacan Berry) — https://wiki.52poke.com/wiki/异次元烛木果（道具）
+- 异次元番荔果 (Hyper Yache Berry) — https://wiki.52poke.com/wiki/异次元番荔果（道具）
+- 异次元福禄果 (Hyper Payapa Berry) — https://wiki.52poke.com/wiki/异次元福禄果（道具）
+- 异次元罗子果 (Hyper Rindo Berry) — https://wiki.52poke.com/wiki/异次元罗子果（道具）
+- 异次元腰木果 (Hyper Shuca Berry) — https://wiki.52poke.com/wiki/异次元腰木果（道具）
+- 异次元茄番果 (Hyper Tamato Berry) — https://wiki.52poke.com/wiki/异次元茄番果（道具）
+- 异次元草蚕果 (Hyper Charti Berry) — https://wiki.52poke.com/wiki/异次元草蚕果（道具）
+- 异次元莓榴果 (Hyper Haban Berry) — https://wiki.52poke.com/wiki/异次元莓榴果（道具）
+- 异次元莓莓果 (Hyper Rawst Berry) — https://wiki.52poke.com/wiki/异次元莓莓果（道具）
+- 异次元莲蒲果 (Hyper Chople Berry) — https://wiki.52poke.com/wiki/异次元莲蒲果（道具）
+- 异次元萄葡果 (Hyper Grepa Berry) — https://wiki.52poke.com/wiki/异次元萄葡果（道具）
+- 异次元藻根果 (Hyper Kelpsy Berry) — https://wiki.52poke.com/wiki/异次元藻根果（道具）
+- 异次元通通果 (Hyper Kebia Berry) — https://wiki.52poke.com/wiki/异次元通通果（道具）
+- 异次元零余果 (Hyper Chesto Berry) — https://wiki.52poke.com/wiki/异次元零余果（道具）
+- 异次元霹霹果 (Hyper Babiri Berry) — https://wiki.52poke.com/wiki/异次元霹霹果（道具）
+- 异次元黄油 (Hyperspace Butter) — https://wiki.52poke.com/wiki/异次元黄油（道具）
+- 究极黄油 (Amazing Butter) — https://wiki.52poke.com/wiki/究极黄油（道具）
+- 脏围巾 (Dirty Scarf) — https://wiki.52poke.com/wiki/脏围巾（道具）
+- 超级黄油 (Nice Butter) — https://wiki.52poke.com/wiki/超级黄油（道具）
+- 重要信件 (Important Letter) — https://wiki.52poke.com/wiki/重要信件（道具）
+- 黑香料 (Épice Noire) — https://wiki.52poke.com/wiki/黑香料（道具）
+- 嫩亮酪梨 (Glossy Avocado) — https://wiki.52poke.com/wiki/嫩亮酪梨（道具）
+- 沉甸甸南瓜 (Plump Pumpkin) — https://wiki.52poke.com/wiki/沉甸甸南瓜（道具）
+- 醒脑咖啡豆 (Rousing Coffee) — https://wiki.52poke.com/wiki/醒腦咖啡豆（道具）
+- GO狩猎球 (GO Safari Ball) — https://wiki.52poke.com/wiki/GO狩獵球（道具）
+
+## 名称变更 (8 个)
+
+- 诅咒之符 → 咒术之符
+- 背盖化石 → 原盖海龟
+- 羽毛化石 → 始祖小鸟
+- 新月之羽 → 克雷色利亚
+- 火山镇石 → 席多蓝恩
+- 阿克罗玛机器 → 岩殿居蟹
+- 颚之化石 → 宝宝暴龙
+- 鳍之化石 → 冰雪龙
+
+## 值变更：无

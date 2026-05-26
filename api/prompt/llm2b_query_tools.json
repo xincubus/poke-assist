@@ -1,0 +1,424 @@
+[
+  {
+    "name": "search_pokemon",
+    "description": "查询宝可梦基础信息（种族值、属性、特性等）。本工具返回结构化数据 + 展开后的 wiki 百科正文。效果/规则/互动细节已包含在返回中，无需再调 fetch_wiki_page。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "宝可梦名称（中文、英文或日文均可）"
+        }
+      },
+      "required": ["name"]
+    }
+  },
+  {
+    "name": "search_moves",
+    "description": "查询招式信息（威力、命中、属性、分类、效果等）。本工具返回结构化数据 + 展开后的 wiki 百科正文。效果/规则/互动细节已包含在返回中，无需再调 fetch_wiki_page。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "招式名称（中文、英文或日文均可）"
+        }
+      },
+      "required": ["name"]
+    }
+  },
+  {
+    "name": "search_abilities",
+    "description": "查询特性信息（效果描述、拥有该特性的宝可梦）。本工具返回结构化数据 + 展开后的 wiki 百科正文。效果/规则/互动细节已包含在返回中，无需再调 fetch_wiki_page。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "特性名称（中文、英文或日文均可）"
+        }
+      },
+      "required": ["name"]
+    }
+  },
+  {
+    "name": "search_items",
+    "description": "查询道具信息（效果描述等）。本工具返回结构化数据 + 展开后的 wiki 百科正文。效果/规则/互动细节已包含在返回中，无需再调 fetch_wiki_page。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "道具名称（中文、英文或日文均可）"
+        }
+      },
+      "required": ["name"]
+    }
+  },
+  {
+    "name": "search_stat",
+    "description": "查询能力值信息（HP、攻击、防御、特攻、特防、速度等）。本工具返回结构化数据 + 展开后的 wiki 百科正文。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "能力值名称（中文或英文），如：HP、攻击、特攻、速度"
+        }
+      },
+      "required": ["name"]
+    }
+  },
+  {
+    "name": "search_status",
+    "description": "查询状态信息（异常状态、天气、场地、状态变化等）。本工具返回结构化数据 + 展开后的 wiki 百科正文。效果/规则/互动细节已包含在返回中，无需再调 fetch_wiki_page。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "状态名称（中文或英文），如：睡眠、烧伤、晴天、电气场地、戏法空间"
+        }
+      },
+      "required": ["name"]
+    }
+  },
+  {
+    "name": "search_type",
+    "description": "查询属性信息（火、水、草等18种属性）。本工具返回结构化数据 + 展开后的 wiki 百科正文。克制关系、属性互动等细节已包含在返回中，无需再调 fetch_wiki_page。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "属性名称（中文或英文），如：火、水、草、Fire"
+        }
+      },
+      "required": ["name"]
+    }
+  },
+  {
+    "name": "search_nature",
+    "description": "查询性格信息（能力值加成/减弱）。本工具返回结构化数据 + 展开后的 wiki 百科正文。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "性格名称（中文或英文），如：内敛、固执、胆小、Adamant"
+        }
+      },
+      "required": ["name"]
+    }
+  },
+  {
+    "name": "get_type_effectiveness",
+    "description": "查询属性克制关系（某属性打其他属性的倍率）",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "attacker_type": {
+          "type": "string",
+          "description": "攻击属性名称（中文），如：火、水、草、电"
+        },
+        "defender_type": {
+          "type": "string",
+          "description": "防御属性名称（中文，可选）。不指定则返回该攻击属性对所有属性的克制关系"
+        }
+      },
+      "required": ["attacker_type"]
+    }
+  },
+  {
+    "name": "get_dual_type_effectiveness",
+    "description": "查询双属性宝可梦的弱点/抗性（两个属性的倍率相乘）。如：钢+妖精被什么克制、水+地面的弱点。单属性也可用。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "type1": {
+          "type": "string",
+          "description": "第一个属性（中文），如：钢、水"
+        },
+        "type2": {
+          "type": "string",
+          "description": "第二个属性（中文，可选），如：妖精、地面"
+        }
+      },
+      "required": ["type1"]
+    }
+  },
+  {
+    "name": "get_pokemon_moves",
+    "description": "查询某宝可梦能学会的所有招式（升级、招式机、遗传等）。本工具只返回结构化数据，不含 wiki 正文。注意：Mega进化、超极巨等特殊形态无独立招式表，与基础形态共享招式池。若查询特殊形态无结果，请改用基础形态名称（如查 烈咬陆鲨（超级进化Z） 无结果→改查 烈咬陆鲨）。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "pokemon_name": {
+          "type": "string",
+          "description": "宝可梦名称"
+        }
+      },
+      "required": ["pokemon_name"]
+    }
+  },
+  {
+    "name": "get_move_learners",
+    "description": "反向查询某个招式能被哪些宝可梦学会（仅限单个招式）。优先查宝可梦冠军（pokemon_moves_champions）表，查不到则回退全世代表。若需查同时会多个招式的宝可梦，必须改用 get_pokemon_moves_intersection，禁止多次调用本工具后手动求交集。本工具只返回结构化数据，不含 wiki 正文。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "move_name": {
+          "type": "string",
+          "description": "招式名称（中文或英文）"
+        },
+        "learn_method": {
+          "type": "string",
+          "description": "学习方式筛选（可选）：level-up/machine/egg",
+          "enum": ["level-up", "machine", "egg"]
+        }
+      },
+      "required": ["move_name"]
+    }
+  },
+  {
+    "name": "search_moves_by_keyword",
+    "description": "按名称关键词批量搜索招式（中英日+拼音匹配）。本工具只返回结构化数据，不含 wiki 正文。查招式效果/规则请用 semantic_search 或 fetch_wiki_page。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "keyword": {
+          "type": "string",
+          "description": "招式名称关键词（中文/英文/日文/拼音），如：火焰、Thunder、地震"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "返回结果数量上限（可选，默认30）"
+        }
+      },
+      "required": ["keyword"]
+    }
+  },
+  {
+    "name": "get_pokemon_moves_intersection",
+    "description": "查询同时会多个招式的宝可梦（交集查询）。优先查宝可梦冠军（pokemon_moves_champions）表，查不到则回退全世代表。只要问题是「同时会A和B/A与B」或「哪些宝可梦会X和Y」，就必须用本工具，不得用多次 get_move_learners 代替。如：同时会愤怒粉和蘑菇孢子、同时会潮旋和终焉之歌、同时会顺风和看我嘛",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "move_names": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "招式名称列表（中文或英文），至少2个"
+        }
+      },
+      "required": ["move_names"]
+    }
+  },
+  {
+    "name": "filter_moves",
+    "description": "按数值条件筛选招式列表。适合：优先度+2以上、必中招式（命中率为空/null）、物理火系招式、威力120以上等条件查询。必中招式用 accuracy=\"null\"。本工具只返回结构化数据，不含 wiki 正文。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "priority_min": {
+          "type": "integer",
+          "description": "优先度下限（含），如 2 表示优先度≥2"
+        },
+        "priority_max": {
+          "type": "integer",
+          "description": "优先度上限（含）"
+        },
+        "accuracy": {
+          "type": "string",
+          "description": "命中率条件。填 \"null\" 表示必中（命中率为空）；填数字字符串如 \"100\" 表示命中率=100"
+        },
+        "damage_class": {
+          "type": "string",
+          "description": "招式分类：physical（物理）、special（特殊）、status（变化）"
+        },
+        "type_name": {
+          "type": "string",
+          "description": "属性名称，中文或英文均可，如：火、water"
+        },
+        "power_min": {
+          "type": "integer",
+          "description": "威力下限（含）"
+        },
+        "power_max": {
+          "type": "integer",
+          "description": "威力上限（含）"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "返回结果数量上限（默认50）"
+        }
+      }
+    }
+  },
+  {
+    "name": "execute_sql",
+    "description": "执行自定义 SELECT SQL 查询数据库，适合按任意条件筛选（种族值范围、双属性、特定优先度、必中招式、同时满足多个条件等）。招式/特性/道具/状态的描述和效果字段已移至 wiki，用 wiki_file_path 调 fetch_wiki_page 获取。数据库表结构：\npokemons(id, name_zh, name_ja, name_en, type1, type2, hp, attack, defense, sp_attack, sp_defense, speed, total_stats, ability1_name, ability2_name, hidden_ability_name, description_zh, wiki_file_path)\nmoves(id, name_zh, name_ja, name_en, type, damage_class, power, accuracy, priority, pp, wiki_file_path)\nabilities(id, name_zh, name_ja, name_en, pokemon_list, wiki_file_path)\nitems(id, name_zh, name_ja, name_en, category, fling_power, wiki_file_path)\ntypes(id, name_zh, name_en, wiki_file_path) -- name_zh 带后缀如'火属性','钢属性','毒','冰'（格式不统一），查询时用 LIKE '火%' 而非精确匹配\ntype_effectiveness(attacker_type_id, defender_type_id, effectiveness) -- effectiveness 值为 0/0.5/1/2\npokemon_moves(id, pokedex_id, pokemon_name_zh, pokemon_name_en, move_id, move_name_zh, move_name_en, learn_method, level, version_group, generation) -- learn_method值：等级提升/招式机/遗传; 通过 move_name_zh/move_name_en 或 move_id JOIN moves; 通过 pokemon_name_zh JOIN pokemons\npokemon_moves_champions(id, pokedex_id, pokeapi_id, pokemon_name_zh, pokemon_name_en, move_id, move_name_zh, move_name_en, learn_method, level, version_group, generation) -- 宝可梦冠军招式表，learn_method='Champions'，version_group='pokemon-champions'，generation=10; 查询招式学习优先用此表，查不到再用pokemon_moves\nnatures(id, name_zh, name_en, increased_stat_en, decreased_stat_en, increased_stat_zh, decreased_stat_zh, wiki_file_path) -- stat_zh值：攻击/防御/特攻/特防/速度（注意：物攻=攻击，物防=防御）; stat_en值：Attack/Defense/Special Attack/Special Defense/Speed\nstatus(id, name_zh, name_en, category, type_zh, duration, wiki_file_path) -- category值：weather/terrain/field/abnormal/stat_change/special; 天气和场地数据已合入此表\nstats(id, name_zh, name_en, abbr_zh, description_zh, wiki_file_path) -- 能力值：HP/攻击/防御/特攻/特防/速度/命中率/闪避率\n注意：type_effectiveness 中 effectiveness 值为 0/0.5/1/2；damage_class 为 physical/special/status；accuracy 为 NULL 表示必中。各实体表含 wiki_file_path 列，需要深挖某条的效果/规则细节时，用其值调 fetch_wiki_page。SQLite语法：字符串拼接用 || 而非 CONCAT()；查表结构用 sqlite_master 而非 information_schema；GROUP_CONCAT() 可用。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "sql": {
+          "type": "string",
+          "description": "只读 SELECT 语句，不含 INSERT/UPDATE/DELETE/DROP 等。若无 LIMIT 子句，系统自动添加 LIMIT 100。"
+        }
+      },
+      "required": ["sql"]
+    }
+  },
+  {
+    "name": "semantic_search",
+    "description": "语义向量搜索，用于回答开放性问题，如：有哪些特性能提升攻击、哪些宝可梦有回复能力等。适合无法用 SQL 精确过滤的问题。天气/场地类查询请使用 execute_sql，不要用此工具。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "搜索查询语句，尽量描述要找的内容特征，如：改变天气的招式、提升速度的特性"
+        },
+        "top_k": {
+          "type": "integer",
+          "description": "返回结果数量（可选，默认10，最大20）"
+        }
+      },
+      "required": ["query"]
+    }
+  },
+  {
+    "name": "fetch_wiki_page",
+    "description": "获取 52poke wiki 页面完整内容（模板已展开）。已知精确页面标题时使用。支持中文/英文标题，自动处理重定向。返回页面全文含招式效果、特性机制、属性互动等详细规则。找不到时返回候选标题列表。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "wiki 页面标题（中文或英文），如：血月（招式）、威吓（特性）、十万伏特、击中要害、太晶化"
+        }
+      },
+      "required": ["title"]
+    }
+  },
+  {
+    "name": "search_wiki",
+    "description": "搜索 52poke wiki 页面。不确定精确标题时使用，返回匹配的页面标题和摘要（top 10）。适合搜索机制/规则/术语类知识，如：击中要害机制、异常状态、天气效果等。找到感兴趣的页面后，用 fetch_wiki_page 读取全文。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "keywords": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "搜索关键词列表（中文），如：[\"击中要害\"]、[\"威吓\", \"特性\"]、[\"太晶化\"]"
+        }
+      },
+      "required": ["keywords"]
+    }
+  },
+  {
+    "name": "stat_calculator",
+    "description": "计算宝可梦实际能力值。输入宝可梦名、能力类型、性格、努力值、个体值、等级、能力等级变化，返回精确计算结果。适用于「XX能力值是多少」「极速XX速度」「破壳后XX速度」等涉及能力值数值计算的问题。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "pokemon_name": {
+          "type": "string",
+          "description": "宝可梦名称（中文或英文），如 水箭龟、快龙、Blastoise"
+        },
+        "stat": {
+          "type": "string",
+          "enum": ["hp", "atk", "def", "spa", "spd", "spe"],
+          "description": "要计算的能力类型：hp=HP, atk=攻击, def=防御, spa=特攻, spd=特防, spe=速度"
+        },
+        "nature": {
+          "type": "string",
+          "description": "性格名称（中文），如 胆小、固执、内敛、爽朗。不填则无性格修正"
+        },
+        "evs": {
+          "type": "integer",
+          "description": "努力值（0-252），默认 252"
+        },
+        "ivs": {
+          "type": "integer",
+          "description": "个体值（0-31），默认 31"
+        },
+        "level": {
+          "type": "integer",
+          "description": "等级，默认 50"
+        },
+        "boosts": {
+          "type": "integer",
+          "description": "能力等级变化（-6 到 +6），默认 0。例如：破壳速度+2→填2，剑舞攻击+2→填2，诡计特攻+2→填2"
+        }
+      },
+      "required": ["pokemon_name", "stat"]
+    }
+  },
+  {
+    "name": "get_home_rankings",
+    "description": "查询宝可梦 HOME 对战（Champions）使用率排名。返回赛季排名列表（宝可梦名、排名）。适合「HOME使用率前几是谁」「对战排名」「最热门宝可梦」等问题。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "season": {
+          "type": "integer",
+          "description": "赛季号，0 表示最新赛季（默认 0）"
+        },
+        "rule": {
+          "type": "integer",
+          "description": "规则：0=单打（默认），1=双打",
+          "enum": [0, 1]
+        },
+        "limit": {
+          "type": "integer",
+          "description": "返回数量上限（默认 30）"
+        }
+      }
+    }
+  },
+  {
+    "name": "get_pokemon_home_usage",
+    "description": "查询单个宝可梦在 HOME 对战中的详细使用率数据（特性、道具、招式、性格、太晶属性的使用率）。适合「XX最热门配招是什么」「XX带什么道具」「XX的使用率」等问题。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "pokemon_name": {
+          "type": "string",
+          "description": "宝可梦名称（中文或英文），如：烈咬陆鹰、水熊、Garchomp"
+        },
+        "season": {
+          "type": "integer",
+          "description": "赛季号，0 表示最新赛季（默认 0）"
+        },
+        "rule": {
+          "type": "integer",
+          "description": "规则：0=单打（默认），1=双打",
+          "enum": [0, 1]
+        }
+      },
+      "required": ["pokemon_name"]
+    }
+  },
+  {
+    "name": "get_home_teams",
+    "description": "查询 HOME 对战热门队伍配置。返回队伍排名及每队 6 只宝可梦（名称、属性、道具）。适合「热门队伍有哪些」「队伍配置」「对战队伍」等问题。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "season": {
+          "type": "integer",
+          "description": "赛季号，0 表示最新赛季（默认 0）"
+        },
+        "rule": {
+          "type": "integer",
+          "description": "规则：0=单打（默认），1=双打",
+          "enum": [0, 1]
+        },
+        "limit": {
+          "type": "integer",
+          "description": "返回队伍数量上限（默认 10）"
+        }
+      }
+    }
+  }
+]

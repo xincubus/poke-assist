@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:PokemonApp.ViewModels"
+             x:Class="PokemonApp.Views.LoginPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="{AppThemeBinding Light=White, Dark=#1f1f1f}">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="35,80,35,35" VerticalOptions="Center">
+
+            <!-- Logo -->
+            <Image Source="timburr.png" HeightRequest="120" WidthRequest="120"
+                   HorizontalOptions="Center" />
+
+            <Label Text="欢迎回来，训练家" FontSize="24" FontAttributes="Bold"
+                   HorizontalOptions="Center" TextColor="{AppThemeBinding Light=#333, Dark=#E0E0E0}" />
+
+            <!-- 用户名 -->
+            <Border Stroke="{AppThemeBinding Light=#E0E0E0, Dark=#404040}" StrokeShape="RoundRectangle 10" Padding="12,4">
+                <Entry Placeholder="用户名" Text="{Binding Username}"
+                       FontSize="16" />
+            </Border>
+
+            <!-- 密码 -->
+            <Border Stroke="{AppThemeBinding Light=#E0E0E0, Dark=#404040}" StrokeShape="RoundRectangle 10" Padding="12,4">
+                <Entry Placeholder="密码" Text="{Binding Password}"
+                       IsPassword="True" FontSize="16" />
+            </Border>
+
+            <!-- 错误提示 -->
+            <Label Text="{Binding ErrorMessage}" TextColor="Red" FontSize="14"
+                   HorizontalOptions="Center"
+                   IsVisible="{Binding ErrorMessage, Converter={StaticResource StringToBoolConverter}}" />
+
+            <!-- 登录按钮 -->
+            <Button Text="登录" Command="{Binding LoginCommand}"
+                    BackgroundColor="#5B75F5" TextColor="White"
+                    FontSize="16" HeightRequest="48"
+                    CornerRadius="10" />
+
+            <!-- 注册链接 -->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="4">
+                <Label Text="没有账号？" TextColor="{AppThemeBinding Light=#999, Dark=#AAAAAA}" FontSize="14" VerticalOptions="Center" />
+                <Label Text="去注册" TextColor="#5B75F5" FontSize="14" VerticalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GoToRegisterCommand}" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </HorizontalStackLayout>
+
+            <!-- Loading -->
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"
+                               Color="#5B75F5" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

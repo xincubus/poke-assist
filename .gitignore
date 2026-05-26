@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Environment variables (provide .env.example as template)
+*.env
+.env
+**/.env
+
+# User database (created at runtime)
+pokemon_data/users.db
+
+# Model weights (not included, download from HuggingFace)
+models/*/model.safetensors
+models/*/pytorch_model.bin
+
+# Sensitive files
+*.pem
+*.keystore
+
+# Build artifacts
+mobile/PokemonApp/obj/
+mobile/PokemonApp/bin/
+mobile/PokemonApp/app/*.apk
+
+# Logs
+*.log
+calc_debug.log
+
+# IDE
+.vscode/
+.idea/
+.vs/
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+
+# Test responses (generated data)
+api/test/responses/
+
+# RAG index (generated, can be rebuilt)
+api/data/
+
+# Crawler caches
+*_cache/
+wikitext_cache/
+expanded_pages/
+team_htmls/

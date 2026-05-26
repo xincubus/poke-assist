@@ -1,0 +1,782 @@
+{
+  "incarnate": {
+    "zh": "化身形态",
+    "ja": "けしんフォルム",
+    "en": "Incarnate Forme"
+  },
+  "therian": {
+    "zh": "灵兽形态",
+    "ja": "れいじゅうフォルム",
+    "en": "Therian Forme"
+  },
+  "alola": {
+    "zh": "阿罗拉的样子",
+    "ja": "アローラのすがた",
+    "en": "Alola Form"
+  },
+  "galar": {
+    "zh": "伽勒尔的样子",
+    "ja": "ガラルのすがた",
+    "en": "Galar Form"
+  },
+  "hisui": {
+    "zh": "洗翠的样子",
+    "ja": "ヒスイのすがた",
+    "en": "Hisui Form"
+  },
+  "paldea": {
+    "zh": "帕底亚的样子",
+    "ja": "パルデアのすがた",
+    "en": "Paldea Form"
+  },
+  "combat-breed": {
+    "zh": "斗战种",
+    "ja": "コンバットしゅ",
+    "en": "Combat Breed"
+  },
+  "blaze-breed": {
+    "zh": "火炽种",
+    "ja": "ブレイズしゅ",
+    "en": "Blaze Breed"
+  },
+  "aqua-breed": {
+    "zh": "水澜种",
+    "ja": "ウォーターしゅ",
+    "en": "Aqua Breed"
+  },
+  "mega": {
+    "zh": "超级进化",
+    "ja": "メガシンカ",
+    "en": "Mega Evolution"
+  },
+  "mega-x": {
+    "zh": "超级进化X",
+    "ja": "メガシンカX",
+    "en": "Mega Evolution X"
+  },
+  "mega-y": {
+    "zh": "超级进化Y",
+    "ja": "メガシンカY",
+    "en": "Mega Evolution Y"
+  },
+  "mega-z": {
+    "zh": "超级进化Z",
+    "ja": "メガシンカZ",
+    "en": "Mega Evolution Z"
+  },
+  "gmax": {
+    "zh": "超极巨化",
+    "ja": "キョダイマックス",
+    "en": "Gigantamax"
+  },
+  "gigantamax": {
+    "zh": "超极巨化",
+    "ja": "キョダイマックス",
+    "en": "Gigantamax"
+  },
+  "black": {
+    "zh": "暗黑",
+    "ja": "ブラック",
+    "en": "Black"
+  },
+  "white": {
+    "zh": "焰白",
+    "ja": "ホワイト",
+    "en": "White"
+  },
+  "normal": {
+    "zh": "普通形态",
+    "ja": "ノーマルフォルム",
+    "en": "Normal Forme"
+  },
+  "attack": {
+    "zh": "攻击形态",
+    "ja": "アタックフォルム",
+    "en": "Attack Forme"
+  },
+  "defense": {
+    "zh": "防御形态",
+    "ja": "ディフェンスフォルム",
+    "en": "Defense Forme"
+  },
+  "speed": {
+    "zh": "速度形态",
+    "ja": "スピードフォルム",
+    "en": "Speed Forme"
+  },
+  "aria": {
+    "zh": "歌声形态",
+    "ja": "ボイスフォルム",
+    "en": "Aria Forme"
+  },
+  "pirouette": {
+    "zh": "舞步形态",
+    "ja": "ステップフォルム",
+    "en": "Pirouette Forme"
+  },
+  "shield": {
+    "zh": "盾牌形态",
+    "ja": "シールドフォルム",
+    "en": "Shield Forme"
+  },
+  "blade": {
+    "zh": "刀剑形态",
+    "ja": "ブレードフォルム",
+    "en": "Blade Forme"
+  },
+  "confined": {
+    "zh": "惩戒形态",
+    "ja": "いましめられしすがた",
+    "en": "Confined"
+  },
+  "unbound": {
+    "zh": "解放形态",
+    "ja": "ときはなたれしすがた",
+    "en": "Unbound"
+  },
+  "dusk": {
+    "zh": "黄昏的样子",
+    "ja": "たそがれのすがた",
+    "en": "Dusk Form"
+  },
+  "dawn": {
+    "zh": "拂晓之翼",
+    "ja": "あかつきのつばさ",
+    "en": "Dawn Wings"
+  },
+  "ultra": {
+    "zh": "究极",
+    "ja": "ウルトラ",
+    "en": "Ultra"
+  },
+  "limited-build": {
+    "zh": "受限形态",
+    "ja": "せいげんけいたい",
+    "en": "Limited Build"
+  },
+  "sprinting-build": {
+    "zh": "疾跑形态",
+    "ja": "しっそうけいたい",
+    "en": "Sprinting Build"
+  },
+  "swimming-build": {
+    "zh": "游泳形态",
+    "ja": "ゆうえいけいたい",
+    "en": "Swimming Build"
+  },
+  "gliding-build": {
+    "zh": "滑翔形态",
+    "ja": "かっくうけいたい",
+    "en": "Gliding Build"
+  },
+  "low-power-mode": {
+    "zh": "节电模式",
+    "ja": "リミテッドモード",
+    "en": "Low-Power Mode"
+  },
+  "drive-mode": {
+    "zh": "驰驱模式",
+    "ja": "ドライブモード",
+    "en": "Drive Mode"
+  },
+  "aquatic-mode": {
+    "zh": "浮水模式",
+    "ja": "フロートモード",
+    "en": "Aquatic Mode"
+  },
+  "glide-mode": {
+    "zh": "滑翔模式",
+    "ja": "グライドモード",
+    "en": "Glide Mode"
+  },
+  "primal": {
+    "zh": "原始回归",
+    "ja": "ゲンシカイキ",
+    "en": "Primal Reversion"
+  },
+  "eternamax": {
+    "zh": "无极巨化",
+    "ja": "ムゲンダイマックス",
+    "en": "Eternamax"
+  },
+  "single-strike": {
+    "zh": "一击流",
+    "ja": "いちげきのかた",
+    "en": "Single Strike Style"
+  },
+  "rapid-strike": {
+    "zh": "连击流",
+    "ja": "れんげきのかた",
+    "en": "Rapid Strike Style"
+  },
+  "family-of-four": {
+    "zh": "四只家庭",
+    "ja": "よんびきかぞく",
+    "en": "Family of Four"
+  },
+  "family-of-three": {
+    "zh": "三只家庭",
+    "ja": "さんびきかぞく",
+    "en": "Family of Three"
+  },
+  "two-segment": {
+    "zh": "二节形态",
+    "ja": "ツーセグメントフォルム",
+    "en": "Two-Segment Form"
+  },
+  "three-segment": {
+    "zh": "三节形态",
+    "ja": "スリーセグメントフォルム",
+    "en": "Three-Segment Form"
+  },
+  "heat": {
+    "zh": "加热洛托姆",
+    "ja": "ヒートロトム",
+    "en": "Heat Rotom"
+  },
+  "wash": {
+    "zh": "清洗洛托姆",
+    "ja": "ウォッシュロトム",
+    "en": "Wash Rotom"
+  },
+  "frost": {
+    "zh": "结冰洛托姆",
+    "ja": "フロストロトム",
+    "en": "Frost Rotom"
+  },
+  "fan": {
+    "zh": "旋转洛托姆",
+    "ja": "スピンロトム",
+    "en": "Fan Rotom"
+  },
+  "mow": {
+    "zh": "切割洛托姆",
+    "ja": "カットロトム",
+    "en": "Mow Rotom"
+  },
+  "sunny": {
+    "zh": "晴天形态",
+    "ja": "たいようのすがた",
+    "en": "Sunny Form"
+  },
+  "rainy": {
+    "zh": "雨天形态",
+    "ja": "あまみずのすがた",
+    "en": "Rainy Form"
+  },
+  "snowy": {
+    "zh": "雪天形态",
+    "ja": "ゆきぐものすがた",
+    "en": "Snowy Form"
+  },
+  "standard": {
+    "zh": "普通模式",
+    "ja": "ノーマルモード",
+    "en": "Standard Mode"
+  },
+  "zen": {
+    "zh": "达摩模式",
+    "ja": "ダルマモード",
+    "en": "Zen Mode"
+  },
+  "ordinary": {
+    "zh": "通常的样子",
+    "ja": "いつものすがた",
+    "en": "Ordinary Form"
+  },
+  "resolute": {
+    "zh": "觉悟的样子",
+    "ja": "かくごのすがた",
+    "en": "Resolute Form"
+  },
+  "totem": {
+    "zh": "霸主",
+    "ja": "ぬし",
+    "en": "Totem"
+  },
+  "rock-star": {
+    "zh": "摇滚巨星",
+    "ja": "ロックスター",
+    "en": "Rock Star"
+  },
+  "belle": {
+    "zh": "贵妇",
+    "ja": "マダム",
+    "en": "Belle"
+  },
+  "pop-star": {
+    "zh": "流行偶像",
+    "ja": "アイドル",
+    "en": "Pop Star"
+  },
+  "phd": {
+    "zh": "博士",
+    "ja": "ドクター",
+    "en": "Ph.D"
+  },
+  "libre": {
+    "zh": "面具摔跤手",
+    "ja": "マスクド",
+    "en": "Libre"
+  },
+  "cosplay": {
+    "zh": "换装",
+    "ja": "おきがえ",
+    "en": "Cosplay"
+  },
+  "original-cap": {
+    "zh": "原始之帽",
+    "ja": "オリジナルキャップ",
+    "en": "Original Cap"
+  },
+  "hoenn-cap": {
+    "zh": "丰缘之帽",
+    "ja": "ホウエンキャップ",
+    "en": "Hoenn Cap"
+  },
+  "sinnoh-cap": {
+    "zh": "神奥之帽",
+    "ja": "シンオウキャップ",
+    "en": "Sinnoh Cap"
+  },
+  "unova-cap": {
+    "zh": "合众之帽",
+    "ja": "イッシュキャップ",
+    "en": "Unova Cap"
+  },
+  "kalos-cap": {
+    "zh": "卡洛斯之帽",
+    "ja": "カロスキャップ",
+    "en": "Kalos Cap"
+  },
+  "alola-cap": {
+    "zh": "阿罗拉之帽",
+    "ja": "アローラキャップ",
+    "en": "Alola Cap"
+  },
+  "partner-cap": {
+    "zh": "搭档之帽",
+    "ja": "キミにきめたキャップ",
+    "en": "Partner Cap"
+  },
+  "world-cap": {
+    "zh": "世界之帽",
+    "ja": "ワールドキャップ",
+    "en": "World Cap"
+  },
+  "starter": {
+    "zh": "搭档",
+    "ja": "パートナー",
+    "en": "Starter"
+  },
+  "origin": {
+    "zh": "起源形态",
+    "ja": "オリジンフォルム",
+    "en": "Origin Forme"
+  },
+  "altered": {
+    "zh": "别种形态",
+    "ja": "アナザーフォルム",
+    "en": "Altered Forme"
+  },
+  "sky": {
+    "zh": "天空形态",
+    "ja": "スカイフォルム",
+    "en": "Sky Forme"
+  },
+  "land": {
+    "zh": "陆上形态",
+    "ja": "ランドフォルム",
+    "en": "Land Forme"
+  },
+  "plant": {
+    "zh": "草木外套",
+    "ja": "くさきのミノ",
+    "en": "Plant Cloak"
+  },
+  "sandy": {
+    "zh": "砂土外套",
+    "ja": "すなちのミノ",
+    "en": "Sandy Cloak"
+  },
+  "trash": {
+    "zh": "垃圾外套",
+    "ja": "ゴミのミノ",
+    "en": "Trash Cloak"
+  },
+  "male": {
+    "zh": "雄性",
+    "ja": "オス",
+    "en": "Male"
+  },
+  "female": {
+    "zh": "雌性",
+    "ja": "メス",
+    "en": "Female"
+  },
+  "red-striped": {
+    "zh": "红色条纹",
+    "ja": "あかすじのすがた",
+    "en": "Red-Striped Form"
+  },
+  "blue-striped": {
+    "zh": "蓝色条纹",
+    "ja": "あおすじのすがた",
+    "en": "Blue-Striped Form"
+  },
+  "white-striped": {
+    "zh": "白色条纹",
+    "ja": "しろすじのすがた",
+    "en": "White-Striped Form"
+  },
+  "midday": {
+    "zh": "白昼的样子",
+    "ja": "まひるのすがた",
+    "en": "Midday Form"
+  },
+  "midnight": {
+    "zh": "黑夜的样子",
+    "ja": "まよなかのすがた",
+    "en": "Midnight Form"
+  },
+  "disguised": {
+    "zh": "化形的样子",
+    "ja": "ばけたすがた",
+    "en": "Disguised Form"
+  },
+  "busted": {
+    "zh": "现形的样子",
+    "ja": "ばれたすがた",
+    "en": "Busted Form"
+  },
+  "solo": {
+    "zh": "单独形态",
+    "ja": "たんどくのすがた",
+    "en": "Solo Form"
+  },
+  "school": {
+    "zh": "鱼群的样子",
+    "ja": "むれたすがた",
+    "en": "School Form"
+  },
+  "full-belly": {
+    "zh": "满腹花纹",
+    "ja": "まんぷくもよう",
+    "en": "Full Belly Mode"
+  },
+  "hangry": {
+    "zh": "空腹花纹",
+    "ja": "はらぺこもよう",
+    "en": "Hangry Mode"
+  },
+  "battle-bond": {
+    "zh": "牵绊变身",
+    "ja": "きずなへんげ",
+    "en": "Battle Bond"
+  },
+  "ash": {
+    "zh": "小智版",
+    "ja": "サトシゲッコウガ",
+    "en": "Ash-Greninja"
+  },
+  "eternal": {
+    "zh": "永恒之花",
+    "ja": "えいえんのはな",
+    "en": "Eternal Flower"
+  },
+  "average": {
+    "zh": "普通尺寸",
+    "ja": "ふつうのサイズ",
+    "en": "Average Size"
+  },
+  "small": {
+    "zh": "小尺寸",
+    "ja": "ちいさいサイズ",
+    "en": "Small Size"
+  },
+  "large": {
+    "zh": "大尺寸",
+    "ja": "おおきいサイズ",
+    "en": "Large Size"
+  },
+  "super": {
+    "zh": "特大尺寸",
+    "ja": "とくだいサイズ",
+    "en": "Super Size"
+  },
+  "10": {
+    "zh": "10%形态",
+    "ja": "10%フォルム",
+    "en": "10% Forme"
+  },
+  "50": {
+    "zh": "50%形态",
+    "ja": "50%フォルム",
+    "en": "50% Forme"
+  },
+  "complete": {
+    "zh": "完全体形态",
+    "ja": "パーフェクトフォルム",
+    "en": "Complete Forme"
+  },
+  "10-power-construct": {
+    "zh": "10%形态（群聚变形）",
+    "ja": "10%フォルム（スワームチェンジ）",
+    "en": "10% Forme (Power Construct)"
+  },
+  "50-power-construct": {
+    "zh": "50%形态（群聚变形）",
+    "ja": "50%フォルム（スワームチェンジ）",
+    "en": "50% Forme (Power Construct)"
+  },
+  "baile": {
+    "zh": "热辣热辣风格",
+    "ja": "めらめらスタイル",
+    "en": "Baile Style"
+  },
+  "pom-pom": {
+    "zh": "啪滋啪滋风格",
+    "ja": "ぱちぱちスタイル",
+    "en": "Pom-Pom Style"
+  },
+  "pau": {
+    "zh": "呼拉呼拉风格",
+    "ja": "ふらふらスタイル",
+    "en": "Pa'u Style"
+  },
+  "sensu": {
+    "zh": "轻盈轻盈风格",
+    "ja": "まいまいスタイル",
+    "en": "Sensu Style"
+  },
+  "own-tempo": {
+    "zh": "特殊个体",
+    "ja": "とくべつなすがた",
+    "en": "Own Tempo"
+  },
+  "red-meteor": {
+    "zh": "红色流星",
+    "ja": "あかいろコア",
+    "en": "Red Meteor"
+  },
+  "orange-meteor": {
+    "zh": "橙色流星",
+    "ja": "だいだいいろコア",
+    "en": "Orange Meteor"
+  },
+  "yellow-meteor": {
+    "zh": "黄色流星",
+    "ja": "きいろコア",
+    "en": "Yellow Meteor"
+  },
+  "green-meteor": {
+    "zh": "绿色流星",
+    "ja": "みどりいろコア",
+    "en": "Green Meteor"
+  },
+  "blue-meteor": {
+    "zh": "蓝色流星",
+    "ja": "あおいろコア",
+    "en": "Blue Meteor"
+  },
+  "indigo-meteor": {
+    "zh": "靛蓝色流星",
+    "ja": "あいいろコア",
+    "en": "Indigo Meteor"
+  },
+  "violet-meteor": {
+    "zh": "紫色流星",
+    "ja": "むらさきいろコア",
+    "en": "Violet Meteor"
+  },
+  "red": {
+    "zh": "红色核心",
+    "ja": "あかいろコア",
+    "en": "Red Core"
+  },
+  "orange": {
+    "zh": "橙色核心",
+    "ja": "だいだいいろコア",
+    "en": "Orange Core"
+  },
+  "yellow": {
+    "zh": "黄色核心",
+    "ja": "きいろコア",
+    "en": "Yellow Core"
+  },
+  "green": {
+    "zh": "绿色核心",
+    "ja": "みどりいろコア",
+    "en": "Green Core"
+  },
+  "blue": {
+    "zh": "蓝色核心",
+    "ja": "あおいろコア",
+    "en": "Blue Core"
+  },
+  "indigo": {
+    "zh": "靛蓝色核心",
+    "ja": "あいいろコア",
+    "en": "Indigo Core"
+  },
+  "violet": {
+    "zh": "紫色核心",
+    "ja": "むらさきいろコア",
+    "en": "Violet Core"
+  },
+  "gulping": {
+    "zh": "一口吞",
+    "ja": "うのみのすがた",
+    "en": "Gulping Form"
+  },
+  "gorging": {
+    "zh": "大口吞",
+    "ja": "まるのみのすがた",
+    "en": "Gorging Form"
+  },
+  "amped": {
+    "zh": "高调的样子",
+    "ja": "ハイなすがた",
+    "en": "Amped Form"
+  },
+  "low-key": {
+    "zh": "低调的样子",
+    "ja": "ローなすがた",
+    "en": "Low Key Form"
+  },
+  "ice-face": {
+    "zh": "结冻头",
+    "ja": "アイスフェイス",
+    "en": "Ice Face"
+  },
+  "noice-face": {
+    "zh": "解冻头",
+    "ja": "ナイスフェイス",
+    "en": "Noice Face"
+  },
+  "noice": {
+    "zh": "解冻头",
+    "ja": "ナイスフェイス",
+    "en": "Noice Face"
+  },
+  "ice": {
+    "zh": "白马形态",
+    "ja": "はくばじょうのすがた",
+    "en": "Ice Rider"
+  },
+  "shadow": {
+    "zh": "黑马形态",
+    "ja": "こくばじょうのすがた",
+    "en": "Shadow Rider"
+  },
+  "crowned": {
+    "zh": "百战勇者",
+    "ja": "れきせんのゆうしゃ",
+    "en": "Crowned"
+  },
+  "dada": {
+    "zh": "老爹",
+    "ja": "とうさん",
+    "en": "Dada"
+  },
+  "bloodmoon": {
+    "zh": "血月",
+    "ja": "アカツキ",
+    "en": "Bloodmoon"
+  },
+  "paradox": {
+    "zh": "矛盾宝可梦",
+    "ja": "パラドックスポケモン",
+    "en": "Paradox Pokémon"
+  },
+  "green-plumage": {
+    "zh": "绿羽毛",
+    "ja": "グリーンフェザー",
+    "en": "Green Plumage"
+  },
+  "blue-plumage": {
+    "zh": "蓝羽毛",
+    "ja": "ブルーフェザー",
+    "en": "Blue Plumage"
+  },
+  "yellow-plumage": {
+    "zh": "黄羽毛",
+    "ja": "イエローフェザー",
+    "en": "Yellow Plumage"
+  },
+  "white-plumage": {
+    "zh": "白羽毛",
+    "ja": "ホワイトフェザー",
+    "en": "White Plumage"
+  },
+  "zero": {
+    "zh": "零形态",
+    "ja": "ナイーブフォルム",
+    "en": "Zero Form"
+  },
+  "hero": {
+    "zh": "英雄形态",
+    "ja": "マイティフォルム",
+    "en": "Hero Form"
+  },
+  "curly": {
+    "zh": "下垂形态",
+    "ja": "そったすがた",
+    "en": "Curly Form"
+  },
+  "droopy": {
+    "zh": "平挺形态",
+    "ja": "たれたすがた",
+    "en": "Droopy Form"
+  },
+  "stretchy": {
+    "zh": "绷直形态",
+    "ja": "のびたすがた",
+    "en": "Stretchy Form"
+  },
+  "chest": {
+    "zh": "宝箱形态",
+    "ja": "はこフォルム",
+    "en": "Chest Form"
+  },
+  "roaming": {
+    "zh": "徘徊形态",
+    "ja": "とほフォルム",
+    "en": "Roaming Form"
+  },
+  "teal-mask": {
+    "zh": "碧草面具",
+    "ja": "みどりのめん",
+    "en": "Teal Mask"
+  },
+  "wellspring-mask": {
+    "zh": "水井面具",
+    "ja": "いどのめん",
+    "en": "Wellspring Mask"
+  },
+  "hearthflame-mask": {
+    "zh": "火灶面具",
+    "ja": "かまどのめん",
+    "en": "Hearthflame Mask"
+  },
+  "cornerstone-mask": {
+    "zh": "础石面具",
+    "ja": "いしずえのめん",
+    "en": "Cornerstone Mask"
+  },
+  "original": {
+    "zh": "500年前之色",
+    "ja": "500ねんまえのいろ",
+    "en": "Original Color"
+  },
+  "terastal": {
+    "zh": "太晶形态",
+    "ja": "テラスタルフォルム",
+    "en": "Terastal Form"
+  },
+  "stellar": {
+    "zh": "星晶形态",
+    "ja": "ステラフォルム",
+    "en": "Stellar Form"
+  }
+}

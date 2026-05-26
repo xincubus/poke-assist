@@ -1,0 +1,154 @@
+[
+  {
+    "name": "ev_threshold_calculator",
+    "description": "宝可梦对战阈值计算器，用于搜索攻击/防御投入阈值（如加多少能力值能一确、多少耐久能接住）",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "attacker_name": {
+          "type": "string",
+          "description": "攻击方宝可梦英文名（name_en），如 archaludon、kyogre-primal"
+        },
+        "defender_name": {
+          "type": "string",
+          "description": "防守方宝可梦英文名（name_en），如 sylveon、groudon"
+        },
+        "move_name": {
+          "type": "string",
+          "description": "招式英文名（name_en 转 Title Case），如 Draco Meteor、Surf"
+        },
+        "threshold_type": {
+          "type": "string",
+          "enum": ["offensive", "defensive"],
+          "description": "阈值类型：offensive=攻击阈值（加多少攻击能秒），defensive=防御阈值（加多少耐久能接住）"
+        },
+        "target_ko": {
+          "type": "integer",
+          "description": "目标确数，默认1（一确/一击秒杀）。用户问二确填2，三确填3"
+        },
+        "attacker_item": {
+          "type": "string",
+          "description": "攻击方道具英文名 Title Case（可选），如 Choice Scarf、Life Orb"
+        },
+        "defender_item": {
+          "type": "string",
+          "description": "防守方道具英文名 Title Case（可选）"
+        },
+        "attacker_ability": {
+          "type": "string",
+          "description": "攻击方特性英文名 Title Case（可选），如 Protosynthesis、Drought"
+        },
+        "defender_ability": {
+          "type": "string",
+          "description": "防守方特性英文名 Title Case（可选）"
+        },
+        "attacker_nature": {
+          "type": "string",
+          "description": "攻击方性格英文名（可选），如 Timid、Modest、Adamant"
+        },
+        "defender_nature": {
+          "type": "string",
+          "description": "防守方性格英文名（可选）"
+        },
+        "attacker_evs": {
+          "type": "object",
+          "description": "攻击方固定努力值/能力点（可选，用户显式指定时填）。系统会扫描其他未指定项的阈值",
+          "properties": {
+            "hp":  {"type": "string"},
+            "atk": {"type": "string"},
+            "def": {"type": "string"},
+            "spa": {"type": "string"},
+            "spd": {"type": "string"},
+            "spe": {"type": "string"}
+          }
+        },
+        "defender_evs": {
+          "type": "object",
+          "description": "防守方固定努力值/能力点（可选，用户显式指定时填）",
+          "properties": {
+            "hp":  {"type": "string"},
+            "atk": {"type": "string"},
+            "def": {"type": "string"},
+            "spa": {"type": "string"},
+            "spd": {"type": "string"},
+            "spe": {"type": "string"}
+          }
+        },
+        "weather": {
+          "type": "string",
+          "description": "天气英文名（可选）：Sun / Rain / Sand / Snow / Harsh Sunshine / Heavy Rain / Strong Winds"
+        },
+        "terrain": {
+          "type": "string",
+          "description": "场地英文名（可选）：Electric / Grassy / Psychic / Misty"
+        },
+        "attacker_status": {
+          "type": "string",
+          "description": "攻击方异常状态（可选）：brn / par / psn / tox / slp / frz"
+        },
+        "defender_status": {
+          "type": "string",
+          "description": "防守方异常状态（可选）：brn / par / psn / tox / slp / frz"
+        },
+        "attacker_tera_type": {
+          "type": "string",
+          "description": "攻击方太晶属性英文名（可选），如 Water、Fire、Fairy"
+        },
+        "attacker_is_terastallized": {
+          "type": "boolean",
+          "description": "攻击方是否开启太晶化（可选）"
+        },
+        "defender_tera_type": {
+          "type": "string",
+          "description": "防守方太晶属性英文名（可选）"
+        },
+        "defender_is_terastallized": {
+          "type": "boolean",
+          "description": "防守方是否开启太晶化（可选）"
+        },
+        "is_reflect": {
+          "type": "boolean",
+          "description": "是否有反射壁（可选）"
+        },
+        "is_light_screen": {
+          "type": "boolean",
+          "description": "是否有光墙（可选）"
+        },
+        "is_aurora_veil": {
+          "type": "boolean",
+          "description": "是否有极光幕（可选）"
+        },
+        "generation": {
+          "type": "integer",
+          "description": "世代（可选）。仅当用户明确提到世代时才填写"
+        },
+        "mode": {
+          "type": "string",
+          "enum": ["Singles", "Doubles"],
+          "description": "对战模式（可选）：单打Singles，双打Doubles。默认双打"
+        },
+        "attacker_boosts": {
+          "type": "object",
+          "description": "攻击方能力等级变化（可选），如 {\"atk\": 2, \"spa\": -1}",
+          "properties": {
+            "atk": {"type": "integer"}, "def": {"type": "integer"},
+            "spa": {"type": "integer"}, "spd": {"type": "integer"}, "spe": {"type": "integer"}
+          }
+        },
+        "defender_boosts": {
+          "type": "object",
+          "description": "防守方能力等级变化（可选）",
+          "properties": {
+            "atk": {"type": "integer"}, "def": {"type": "integer"},
+            "spa": {"type": "integer"}, "spd": {"type": "integer"}, "spe": {"type": "integer"}
+          }
+        },
+        "max_damage_pct": {
+          "type": "number",
+          "description": "最大掉血百分比（可选，0-100）。用户要求'只掉60%以下的血'时填60。仅防御阈值有效"
+        }
+      },
+      "required": ["attacker_name", "defender_name", "move_name", "threshold_type", "target_ko"]
+    }
+  }
+]

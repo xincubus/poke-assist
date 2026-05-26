@@ -1,0 +1,24 @@
+/* zh.css — 中文翻译覆盖层样式 */
+
+/* 中文字体适配 */
+body {
+    font-family: "Open Sans", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+}
+
+/* 中文表头微调 */
+tr.hp td:first-child,
+tr.at td:first-child,
+tr.df td:first-child,
+tr.sa td:first-child,
+tr.sd td:first-child,
+tr.sp td:first-child {
+    min-width: 3em;
+    text-align: left;
+}
+
+/* 中文天气/场地按钮宽度微调 */
+label[for="harsh-sun"],
+label[for="heavy-rain"],
+label[for="strong-winds"] {
+    font-size: 0.85em;
+}

@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-21T10:55:51.330070",
+  "entity_type": "pokemons",
+  "since": "2025-10-01",
+  "until": null,
+  "model": "mimo-v2.5",
+  "total_stale": 0,
+  "total_changes": 0,
+  "total_new": 0,
+  "total_renamed": 2,
+  "changes": [],
+  "new_entries": [],
+  "renamed_entries": [
+    {
+      "entity_type": "pokemons",
+      "name_zh": "仆斩将军",
+      "old_name": "仆刀将军",
+      "wiki_title": "仆斩将军",
+      "wiki_url": "https://wiki.52poke.com/wiki/仆斩将军",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "pokemons",
+      "name_zh": "厄鬼椪",
+      "old_name": "厄诡椪",
+      "wiki_title": "厄鬼椪",
+      "wiki_url": "https://wiki.52poke.com/wiki/厄鬼椪",
+      "change_type": "renamed"
+    }
+  ]
+}

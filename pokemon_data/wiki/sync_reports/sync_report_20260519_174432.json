@@ -1,0 +1,122 @@
+{
+  "generated_at": "2026-05-19T17:44:32.068676",
+  "summary": {
+    "new_entries": 13,
+    "renamed_entries": 2,
+    "stale_entries": 0,
+    "suggested_updates": 0
+  },
+  "new_entries": [
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗气象",
+      "wiki_title": "黑暗气象（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗气象（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "水平斩",
+      "wiki_title": "水平斩（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/水平斩（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "真空斩",
+      "wiki_title": "真空斩（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/真空斩（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗冲锋",
+      "wiki_title": "黑暗衝鋒（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗衝鋒（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗攻击",
+      "wiki_title": "黑暗攻击（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗攻击（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗终结",
+      "wiki_title": "黑暗终结（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗终结（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗恐慌",
+      "wiki_title": "黑暗恐慌（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗恐慌（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗气旋",
+      "wiki_title": "黑暗气旋（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗气旋（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗平分",
+      "wiki_title": "黑暗平分（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗平分（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "归无之光",
+      "wiki_title": "归无之光（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/归无之光（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗闪电",
+      "wiki_title": "黑暗闪电（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗闪电（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗急冻",
+      "wiki_title": "黑暗急冻（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗急冻（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗火炎",
+      "wiki_title": "黑暗火炎（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗火炎（招式）",
+      "change_type": "new"
+    }
+  ],
+  "renamed_entries": [
+    {
+      "entity_type": "moves",
+      "name_zh": "咒术",
+      "old_name": "诅咒",
+      "wiki_title": "咒术（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/咒术（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "移花接木",
+      "old_name": "欺诈",
+      "wiki_title": "移花接木（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/移花接木（招式）",
+      "change_type": "renamed"
+    }
+  ],
+  "stale_entries": [],
+  "changes": []
+}

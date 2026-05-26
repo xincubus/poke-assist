@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-05-21T10:24:20.674182",
+  "entity_type": "abilities",
+  "since": "2025-10-01",
+  "until": null,
+  "model": "mimo-v2.5",
+  "total_stale": 0,
+  "total_changes": 0,
+  "total_new": 0,
+  "total_renamed": 1,
+  "changes": [],
+  "new_entries": [],
+  "renamed_entries": [
+    {
+      "entity_type": "abilities",
+      "name_zh": "监视",
+      "old_name": "蹲守",
+      "wiki_title": "蹲守（特性）",
+      "wiki_url": "https://wiki.52poke.com/wiki/蹲守（特性）",
+      "change_type": "renamed"
+    }
+  ]
+}

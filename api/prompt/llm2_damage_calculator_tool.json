@@ -1,0 +1,129 @@
+[
+  {
+    "name": "damage_calculator",
+    "description": "宝可梦对战伤害计算器，需要提取攻击方、防守方、招式等参数",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "attacker_name": {
+          "type": "string",
+          "description": "攻击方宝可梦英文名（name_en），如 archaludon、kyogre-primal"
+        },
+        "move_name": {
+          "type": "string",
+          "description": "招式英文名（name_en 转 Title Case），如 Draco Meteor、Surf"
+        },
+        "defender_name": {
+          "type": "string",
+          "description": "防守方宝可梦英文名（name_en），如 sylveon、groudon"
+        },
+        "attacker_item": {
+          "type": "string",
+          "description": "攻击方道具英文名 Title Case（可选），如 Choice Scarf、Life Orb、Choice Band"
+        },
+        "defender_item": {
+          "type": "string",
+          "description": "防守方道具英文名 Title Case（可选）"
+        },
+        "attacker_ability": {
+          "type": "string",
+          "description": "攻击方特性英文名 Title Case（可选），如 Protosynthesis、Drought"
+        },
+        "defender_ability": {
+          "type": "string",
+          "description": "防守方特性英文名 Title Case（可选）"
+        },
+        "attacker_nature": {
+          "type": "string",
+          "description": "攻击方性格英文名（可选），如 Timid、Modest、Adamant"
+        },
+        "defender_nature": {
+          "type": "string",
+          "description": "防守方性格英文名（可选）"
+        },
+        "attacker_evs": {
+          "type": "object",
+          "description": "攻击方努力值/能力点（可选）。满投资填\"max\"（如 atk:\"max\"），用户给数字时填数字字符串（如 spa:\"252\"）。系统根据世代自动转换",
+          "properties": {
+            "hp":  {"type": "string"},
+            "atk": {"type": "string"},
+            "def": {"type": "string"},
+            "spa": {"type": "string"},
+            "spd": {"type": "string"},
+            "spe": {"type": "string"}
+          }
+        },
+        "defender_evs": {
+          "type": "object",
+          "description": "防守方努力值/能力点（可选）。满投资填\"max\"，用户给数字时填数字字符串",
+          "properties": {
+            "hp":  {"type": "string"},
+            "atk": {"type": "string"},
+            "def": {"type": "string"},
+            "spa": {"type": "string"},
+            "spd": {"type": "string"},
+            "spe": {"type": "string"}
+          }
+        },
+        "weather": {
+          "type": "string",
+          "description": "天气英文名（可选）：Sun / Rain / Sand / Snow / Harsh Sunshine / Heavy Rain / Strong Winds"
+        },
+        "terrain": {
+          "type": "string",
+          "description": "场地英文名（可选）：Electric / Grassy / Psychic / Misty"
+        },
+        "attacker_status": {
+          "type": "string",
+          "description": "攻击方异常状态（可选）：brn / par / psn / tox / slp / frz"
+        },
+        "defender_status": {
+          "type": "string",
+          "description": "防守方异常状态（可选）：brn / par / psn / tox / slp / frz"
+        },
+        "attacker_tera_type": {
+          "type": "string",
+          "description": "攻击方太晶属性英文名（可选），如 Water、Fire、Fairy"
+        },
+        "attacker_is_terastallized": {
+          "type": "boolean",
+          "description": "攻击方是否开启太晶化（可选）。用户提到太晶/Tera/太晶XX属性时填true"
+        },
+        "defender_tera_type": {
+          "type": "string",
+          "description": "防守方太晶属性英文名（可选）"
+        },
+        "defender_is_terastallized": {
+          "type": "boolean",
+          "description": "防守方是否开启太晶化（可选）。用户提到防守方太晶时填true"
+        },
+        "is_critical_hit": {
+          "type": "boolean",
+          "description": "是否暴击（可选）"
+        },
+        "is_reflect": {
+          "type": "boolean",
+          "description": "是否有反射壁（可选）。用户提到反射壁/Reflect时填true，减少物理伤害"
+        },
+        "is_light_screen": {
+          "type": "boolean",
+          "description": "是否有光墙（可选）。用户提到光墙/Light Screen时填true，减少特殊伤害"
+        },
+        "is_aurora_veil": {
+          "type": "boolean",
+          "description": "是否有极光幕（可选）。用户提到极光幕/Aurora Veil时填true，同时减少物理和特殊伤害"
+        },
+        "generation": {
+          "type": "integer",
+          "description": "世代（可选）。仅当用户明确提到世代时才填写，如用户说用Gen9算→9，朱紫/SV→9，宝可梦冠军→10。未提到则不填，系统自动推断"
+        },
+        "mode": {
+          "type": "string",
+          "enum": ["Singles", "Doubles"],
+          "description": "对战模式：单打填Singles，双打填Doubles。默认Doubles（不填则为双打）"
+        }
+      },
+      "required": ["attacker_name", "move_name", "defender_name"]
+    }
+  }
+]

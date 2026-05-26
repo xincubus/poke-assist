@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-05-20T09:51:01.362357",
+  "entity_type": "moves",
+  "since": "2026-04-01",
+  "model": "mimo-v2.5 (thinking enabled)",
+  "total_stale": 1,
+  "total_changes": 1,
+  "changes": [
+    {
+      "entity_type": "moves",
+      "name_zh": "魂舞烈音爆",
+      "name_en": "clangorous-soul",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "accuracy",
+          "current_value": 100,
+          "new_value": null,
+          "reason": "该招式为变化招式，wiki信息框中其命中率accuracy标注为‘—’，表示无命中率（不适用），数据库值应对应更新。"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/魂舞烈音爆（招式）",
+      "wiki_title": "魂舞烈音爆（招式）"
+    }
+  ]
+}

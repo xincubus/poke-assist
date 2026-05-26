@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:PokemonApp.Models"
+             xmlns:behaviors="clr-namespace:PokemonApp.Behaviors"
+             xmlns:controls="clr-namespace:PokemonApp.Controls"
+             x:Class="PokemonApp.Views.ChatPage"
+             Title="搬运小匠"
+             BackgroundColor="{AppThemeBinding Light=#F5F5F5, Dark=#1f1f1f}">
+
+    <Grid RowDefinitions="Auto,*,Auto">
+        <!-- 对话标题栏 -->
+        <Border Grid.Row="0"
+                IsVisible="{Binding ConversationTitle, Converter={StaticResource StringToBoolConverter}}"
+                BackgroundColor="{AppThemeBinding Light=White, Dark=#2d2d2d}"
+                Stroke="{AppThemeBinding Light=#E0E0E0, Dark=#404040}"
+                StrokeThickness="0,0,0,1"
+                Padding="16,8">
+            <Label Text="{Binding ConversationTitle}"
+                   FontSize="14"
+                   FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#333, Dark=#E0E0E0}"
+                   HorizontalOptions="Center"
+                   LineBreakMode="TailTruncation" />
+        </Border>
+
+        <!-- 消息列表 -->
+        <CollectionView x:Name="MessageList"
+                        Grid.Row="1"
+                        ItemsSource="{Binding Messages}"
+                        Margin="10,10,10,0">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:ChatMessage">
+                    <Grid Padding="4,4">
+                        <!-- AI 消息（左对齐） -->
+                        <VerticalStackLayout IsVisible="{Binding IsUser, Converter={StaticResource InvertBoolConverter}}"
+                                             HorizontalOptions="Start"
+                                             MaximumWidthRequest="300">
+                            <Border BackgroundColor="{AppThemeBinding Light=White, Dark=#2d2d2d}"
+                                    Stroke="Transparent"
+                                    StrokeShape="RoundRectangle 2,12,12,12"
+                                    Padding="12,10">
+                                <Border.Behaviors>
+                                    <behaviors:LongPressBehavior LongPressed="OnMessageLongPressed"
+                                                                 CommandParameter="{Binding .}" />
+                                </Border.Behaviors>
+                                <VerticalStackLayout Spacing="6">
+                                    <!-- 管线进度 -->
+                                    <CollectionView ItemsSource="{Binding ProgressSteps}"
+                                                    IsVisible="{Binding HasProgress}">
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate x:DataType="x:String">
+                                                <Label Text="{Binding .}" FontSize="12"
+                                                       TextColor="{AppThemeBinding Light=#888, Dark=#888}" />
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                                    <!-- 分隔线：进度 + 正文都有时才显示 -->
+                                    <BoxView HeightRequest="1"
+                                             IsVisible="{Binding ShowProgressSeparator}"
+                                             BackgroundColor="{AppThemeBinding Light=#E0E0E0, Dark=#404040}" />
+                                    <!-- 正文 -->
+                                    <Grid>
+                                        <!-- 普通模式：MarkdownLabel，链接可内联点击 -->
+                                        <controls:MarkdownLabel MarkdownText="{Binding Text}" FontSize="15"
+                                               IsVisible="{Binding IsNotSelectable}"
+                                               TextColor="{AppThemeBinding Light=#333, Dark=#E0E0E0}"
+                                               LinkClicked="OnMarkdownLinkClicked" />
+                                        <!-- 选择文本模式：只读 Editor，支持原生选择复制 -->
+                                        <Editor Text="{Binding PlainText, Mode=OneWay}" FontSize="15"
+                                                IsVisible="{Binding IsSelectable}"
+                                                IsReadOnly="True"
+                                                AutoSize="TextChanges"
+                                                BackgroundColor="Transparent"
+                                                TextColor="{AppThemeBinding Light=#333, Dark=#E0E0E0}" />
+                                    </Grid>
+                                </VerticalStackLayout>
+                            </Border>
+                            <!-- 选择文本模式：退出按钮 -->
+                            <Border IsVisible="{Binding IsSelectable}"
+                                    BackgroundColor="{AppThemeBinding Light=#F0F0F0, Dark=#383838}"
+                                    Stroke="{AppThemeBinding Light=#DDD, Dark=#555}"
+                                    StrokeThickness="1"
+                                    StrokeShape="RoundRectangle 8"
+                                    Padding="10,6"
+                                    Margin="0,4,0,0">
+                                <Label Text="退出选择模式"
+                                       FontSize="13"
+                                       TextColor="{AppThemeBinding Light=#666, Dark=#AAA}"
+                                       HorizontalOptions="Center">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnExitSelectMode"
+                                                              CommandParameter="{Binding .}" />
+                                    </Label.GestureRecognizers>
+                                </Label>
+                            </Border>
+                        </VerticalStackLayout>
+
+                        <!-- 用户消息（右对齐） -->
+                        <Border IsVisible="{Binding IsUser}"
+                                BackgroundColor="#5B75F5"
+                                Stroke="Transparent"
+                                StrokeShape="RoundRectangle 12,2,12,12"
+                                Padding="12,10"
+                                HorizontalOptions="End"
+                                MaximumWidthRequest="300">
+                            <Border.Behaviors>
+                                <behaviors:LongPressBehavior LongPressed="OnMessageLongPressed"
+                                                             CommandParameter="{Binding .}" />
+                            </Border.Behaviors>
+                            <Grid>
+                                <!-- 普通模式 -->
+                                <Label Text="{Binding Text}" FontSize="15"
+                                       IsVisible="{Binding IsNotSelectable}"
+                                       TextColor="White" LineBreakMode="WordWrap" />
+                                <!-- 选择文本模式 -->
+                                <Editor Text="{Binding PlainText, Mode=OneWay}" FontSize="15"
+                                        IsVisible="{Binding IsSelectable}"
+                                        IsReadOnly="True"
+                                        AutoSize="TextChanges"
+                                        BackgroundColor="Transparent"
+                                        TextColor="White" />
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- 底部输入区 -->
+        <Border Grid.Row="2" BackgroundColor="{AppThemeBinding Light=White, Dark=#2d2d2d}" Stroke="{AppThemeBinding Light=#E0E0E0, Dark=#404040}"
+                StrokeShape="RoundRectangle 20" Margin="10,6,10,10" Padding="6,2">
+            <Grid ColumnDefinitions="*,Auto">
+                <Entry x:Name="MessageEntry"
+                       Placeholder="给搬运小匠发消息"
+                       Text="{Binding InputText}"
+                       ReturnCommand="{Binding SendCommand}"
+                       FontSize="15" Margin="8,0" />
+
+                <!-- 发送/停止按钮 -->
+                <Button Grid.Column="1"
+                        Text="{Binding IsBusy, Converter={StaticResource BusyToButtonTextConverter}}"
+                        Command="{Binding SendCommand}"
+                        BackgroundColor="#5B75F5" TextColor="White"
+                        CornerRadius="18" WidthRequest="44" HeightRequest="36"
+                        FontSize="16" Padding="0" />
+            </Grid>
+        </Border>
+    </Grid>
+</ContentPage>

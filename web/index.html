@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/appicon.png">
+  <title>搬运小匠宝可梦AI对战助手</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ===== 主题变量 ===== */
+    :root {
+      --bg: #1a1a2e;
+      --bg2: #16213e;
+      --bg3: #0f3460;
+      --border: #2a2a4a;
+      --text: #e0e0e0;
+      --text-sub: #888;
+      --text-dim: #555;
+      --accent: #5B75F5;
+      --header-title: #fff;
+    }
+    [data-theme="light"] {
+      --bg: #f5f5f5;
+      --bg2: #ffffff;
+      --bg3: #e8eaf6;
+      --border: #d0d0d0;
+      --text: #222222;
+      --text-sub: #666;
+      --text-dim: #aaa;
+      --accent: #5B75F5;
+      --header-title: #111;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    header {
+      width: 100%;
+      max-width: 1200px;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header .logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    header .title-block { flex: 1; }
+
+    header h1 {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--header-title);
+      line-height: 1.3;
+    }
+
+    header .subtitle {
+      font-size: 11px;
+      color: var(--text-sub);
+      margin-top: 2px;
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    /* 语言选择 */
+    .lang-wrapper { position: relative; }
+    #lang-btn {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0;
+      color: var(--text);
+      cursor: pointer;
+      width: 32px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s;
+    }
+    #lang-btn:hover { opacity: 0.8; }
+    #lang-btn svg { width: 16px; height: 16px; fill: currentColor; }
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 4px);
+      right: 0;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      z-index: 50;
+      min-width: 80px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .lang-dropdown.open { display: block; }
+    .lang-dropdown div {
+      padding: 6px 12px;
+      font-size: 12px;
+      color: var(--text);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.1s;
+    }
+    .lang-dropdown div:hover { background: var(--bg3); }
+    .lang-dropdown div.active { color: var(--accent); font-weight: 600; }
+
+    /* 头部控制按钮统一样式 */
+    .header-controls button {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px 8px;
+      color: var(--text);
+      font-size: 14px;
+      cursor: pointer;
+      line-height: 1;
+      transition: background 0.15s;
+      width: 32px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .header-controls button:hover { opacity: 0.8; }
+
+    #messages {
+      flex: 1;
+      width: 100%;
+      max-width: 1200px;
+      overflow-y: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .msg {
+      display: flex;
+      gap: 10px;
+      max-width: 90%;
+      animation: fadeIn 0.15s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .msg.user { align-self: flex-end; flex-direction: row-reverse; }
+    .msg.assistant { align-self: flex-start; }
+
+    .avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .msg.user .avatar { background: var(--accent); }
+    .msg.assistant .avatar {
+      background: var(--bg3);
+      overflow: hidden;
+      padding: 2px;
+    }
+    .msg.assistant .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    .bubble {
+      padding: 10px 14px;
+      border-radius: 16px;
+      font-size: 14px;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    .msg.user .bubble {
+      background: var(--accent);
+      color: #fff;
+      border-bottom-right-radius: 4px;
+    }
+
+    .msg.assistant .bubble {
+      background: var(--bg2);
+      color: var(--text);
+      border-bottom-left-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 2px;
+      height: 1em;
+      background: var(--accent);
+      margin-left: 2px;
+      vertical-align: text-bottom;
+      animation: blink 0.7s step-end infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    /* ===== 管线进度 ===== */
+    .progress-container {
+      font-size: 13px;
+      color: var(--text-sub);
+      min-width: 160px;
+    }
+    .progress-container.has-separator {
+      padding-bottom: 8px;
+      margin-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .progress-step {
+      line-height: 1.7;
+    }
+    /* 任务规划子任务分组 */
+    .plan-header {
+      font-size: 12px;
+      color: var(--text-dim);
+      padding: 2px 0;
+      margin-top: 2px;
+    }
+    .progress-step.plan-task {
+      padding-left: 20px;
+    }
+    .progress-step.plan-task .progress-line .icon {
+      font-size: 12px;
+    }
+    .progress-line {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .progress-line .icon {
+      font-size: 14px;
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px;
+    }
+    .progress-line.done .icon { color: #4caf50; }
+    .progress-line.active .icon { color: var(--accent); }
+    .progress-line .detail {
+      color: var(--text-dim);
+      font-size: 12px;
+      margin-left: 4px;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .spinner {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border: 2px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    /* ===== 思考折叠块 ===== */
+    .thinking-block {
+      margin: 4px 0 4px 20px;
+      font-size: 12px;
+      color: var(--text-sub);
+      border: 1px dashed var(--border);
+      border-radius: 8px;
+      background: rgba(91,117,245,0.04);
+    }
+    .thinking-block > summary {
+      cursor: pointer;
+      padding: 6px 10px;
+      list-style: none;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+    }
+    .thinking-block > summary::-webkit-details-marker { display: none; }
+    .thinking-block > summary::after {
+      content: "▾";
+      font-size: 16px;
+      line-height: 1;
+      color: var(--accent);
+      transition: transform 0.15s;
+      margin-left: auto;
+    }
+    .thinking-block[open] > summary::after {
+      transform: rotate(180deg);
+    }
+    .thinking-block .thinking-body {
+      padding: 0 10px 8px 10px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      color: var(--text);
+      line-height: 1.55;
+      max-height: 280px;
+      overflow-y: auto;
+    }
+
+    .typing-indicator {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      padding: 12px 14px;
+    }
+
+    .typing-indicator span {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--text-sub);
+      animation: bounce 1.2s infinite;
+    }
+
+    .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+    .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes bounce {
+      0%, 60%, 100% { transform: translateY(0); }
+      30%            { transform: translateY(-6px); }
+    }
+
+    .input-area {
+      width: 100%;
+      max-width: 1200px;
+      padding: 12px 20px 8px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-end;
+    }
+
+    #input {
+      flex: 1;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 14px;
+      color: var(--text);
+      font-size: 14px;
+      resize: none;
+      outline: none;
+      max-height: 120px;
+      line-height: 1.5;
+    }
+
+    #input:focus { border-color: var(--accent); }
+    #input::placeholder { color: var(--text-dim); }
+
+    #send-btn {
+      background: var(--accent);
+      border: none;
+      border-radius: 10px;
+      width: 42px;
+      height: 42px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: opacity 0.15s;
+    }
+
+    #send-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    #send-btn:hover:not(:disabled) { opacity: 0.85; }
+    #send-btn svg { width: 20px; height: 20px; fill: #fff; }
+
+    .suggestions {
+      width: 100%;
+      max-width: 1200px;
+      padding: 0 20px 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 5px 12px;
+      font-size: 12px;
+      color: var(--text-sub);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .chip:hover {
+      border-color: var(--accent);
+      color: var(--text);
+    }
+
+    .error-msg {
+      color: var(--accent);
+      font-size: 12px;
+      padding: 4px 14px;
+      border-radius: 8px;
+      background: rgba(91,117,245,0.1);
+      align-self: center;
+    }
+
+    /* 底部信息栏 */
+    .footer {
+      width: 100%;
+      max-width: 1200px;
+      padding: 6px 20px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: var(--text-sub);
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .footer a:hover { text-decoration: underline; }
+
+    /* ===== 下载按钮SVG ===== */
+    .header-controls button svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    /* ===== 反馈弹窗 ===== */
+    #feedback-modal {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+    }
+    #feedback-box {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      width: min(480px, 90vw);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    #fb-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--header-title);
+    }
+    #fb-desc, #fb-note {
+      font-size: 13px;
+      color: var(--text-sub);
+      line-height: 1.6;
+    }
+    #fb-preview {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 12px;
+      color: var(--text-sub);
+      max-height: 160px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .fb-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+    .fb-actions button {
+      border: none;
+      border-radius: 8px;
+      padding: 8px 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    #fb-cancel {
+      background: var(--bg3);
+      color: var(--text);
+    }
+    #fb-submit {
+      background: #5B75F5;
+      color: #fff;
+    }
+    .fb-actions button:hover { opacity: 0.85; }
+    #fb-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    /* ===== 手机端适配 ===== */
+    @media (max-width: 600px) {
+      header {
+        flex-wrap: wrap;
+        padding: 8px 12px;
+        gap: 8px;
+      }
+      header .logo {
+        width: 28px;
+        height: 28px;
+      }
+      header h1 {
+        font-size: 15px;
+      }
+      header .subtitle {
+        font-size: 10px;
+      }
+      .header-controls {
+        width: 100%;
+        justify-content: flex-end;
+        gap: 6px;
+      }
+      .header-controls button {
+        width: 28px;
+        height: 26px;
+        font-size: 12px;
+      }
+      .header-controls button svg {
+        width: 14px;
+        height: 14px;
+      }
+      #lang-btn {
+        width: 28px;
+        height: 26px;
+      }
+      #lang-btn svg { width: 14px; height: 14px; }
+      #messages {
+        padding: 12px;
+      }
+      .input-area {
+        padding: 10px 12px 6px;
+      }
+      .suggestions {
+        padding: 0 12px 6px;
+      }
+      .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 6px 12px 10px;
+        gap: 2px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img class="logo" id="app-logo" alt="logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+  <div class="logo" style="display:none;background:#0f3460;color:#fff;font-size:14px;align-items:center;justify-content:center;">匠</div>
+  <div class="title-block">
+    <h1 id="app-title">搬运小匠宝可梦AI对战助手</h1>
+    <div class="subtitle" id="app-subtitle">支持对战计算 · 属性查询 · 招式详情</div>
+  </div>
+  <div class="header-controls">
+    <button id="home-btn" onclick="openHome()" title="使用率"><svg viewBox="0 0 24 24"><path d="M5 9.2h3V19H5V9.2zM10.6 5h2.8v14h-2.8V5zm5.6 8H19v6h-2.8v-6z"/></svg></button>
+    <button id="champions-btn" onclick="openChampions()" title="赛视工具"><svg viewBox="0 0 24 24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg></button>
+    <div class="lang-wrapper">
+      <button id="lang-btn" onclick="toggleLangDropdown()" title="Language"><svg viewBox="0 0 24 24"><path d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0014.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg></button>
+      <div id="lang-dropdown" class="lang-dropdown">
+        <div data-lang="zh" onclick="pickLang('zh')">中文</div>
+        <div data-lang="ja" onclick="pickLang('ja')">日本語</div>
+        <div data-lang="en" onclick="pickLang('en')">English</div>
+      </div>
+    </div>
+    <button id="feedback-btn" onclick="openFeedback()" title="反馈问题"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM11 5h2v5h-2zm0 7h2v2h-2z"/></svg></button>
+    <button id="calc-btn" onclick="openCalc()" title="伤害计算器"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM6.25 7.72h5v1.5h-5zM13 15.75h5v1.5h-5zm0-2.5h5v1.5h-5zM8 18h1.5v-2h2v-1.5h-2v-2H8v2H6V16h2v2zm6.09-7.95l1.41-1.41 1.41 1.41 1.06-1.06-1.41-1.41 1.41-1.41-1.06-1.06-1.41 1.41-1.41-1.41-1.06 1.06 1.41 1.41-1.41 1.41 1.06 1.06z"/></svg></button>
+    <button id="download-btn" onclick="downloadApp()" title="下载App"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 8.67l1.42 1.42L11 5.83V16h2V5.83l4.25 4.26 1.42-1.42L12 2z" transform="rotate(180 12 12)"/></svg></button>
+    <button id="theme-btn" onclick="toggleTheme()" title="切换主题">🌙</button>
+  </div>
+</header>
+
+<!-- 反馈弹窗 -->
+<div id="feedback-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:100;display:none;align-items:center;justify-content:center;">
+  <div id="feedback-box">
+    <h2 id="fb-title">反馈问题</h2>
+    <p id="fb-desc">发现回答有误或体验不佳？点击确认将本次对话记录提交给开发者，帮助我们改进。</p>
+    <div id="fb-preview"></div>
+    <p id="fb-note">提交内容仅包含本页对话，不含任何个人信息。</p>
+    <div class="fb-actions">
+      <button id="fb-cancel" onclick="closeFeedback()">取消</button>
+      <button id="fb-submit" onclick="submitFeedback()">确认提交</button>
+    </div>
+  </div>
+</div>
+
+<div id="messages"></div>
+
+<div class="suggestions" id="suggestions"></div>
+
+<div class="input-area">
+  <textarea id="input" rows="1" placeholder="输入问题，按 Enter 发送…" maxlength="500"></textarea>
+  <button id="send-btn" onclick="sendMessage()">
+    <svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+  </button>
+</div>
+
+<div class="footer">
+  <span id="footer-author">作者：徐果虫</span>
+  <span id="footer-stats">今日访问：- | 累计访问：-</span>
+  <span id="footer-qq">加入QQ群交流：<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=rZfqKMMrl9ftttvOLkQUUkLQA45DJi1k&authKey=MtnhEcU3G2F5gPZTOdVPJ3HyMLiLlnK3Orf0UfDpXZUnZ%2FPnSCmr%2FnIxjdhxE5xT&noverify=0&group_code=2151054295" target="_blank">2151054295</a></span>
+</div>
+
+<script>
+  const API_BASE = (location.protocol === 'file:')
+    ? 'http://localhost:8000'
+    : location.origin;
+
+  // 图标路径：file:// 用相对路径，线上用 API 路由
+  const APP_ICON_LOCAL = '../mobile/PokemonApp/Resources/AppIcon/appicon.png';
+  const APP_ICON_API = `${API_BASE}/appicon.png`;
+  const APP_ICON_URL = location.protocol === 'file:' ? APP_ICON_LOCAL : APP_ICON_API;
+
+  // 设置 logo 图标
+  document.getElementById('app-logo').src = APP_ICON_URL;
+
+  const messagesEl    = document.getElementById('messages');
+  const inputEl       = document.getElementById('input');
+  const sendBtn       = document.getElementById('send-btn');
+  const suggestionsEl = document.getElementById('suggestions');
+
+  let isStreaming = false;
+  let context = [];
+
+  // ===== 访问量统计 =====
+  let cachedStats = { today: '-', total: '-' };
+
+  function updateStatsLabel(t) {
+    const el = document.getElementById('footer-stats');
+    if (!t) t = i18n[currentLang] || i18n.zh;
+    el.textContent = `${t.statsToday}：${cachedStats.today} | ${t.statsTotal}：${cachedStats.total}`;
+  }
+
+  async function fetchVisitStats() {
+    try {
+      const resp = await fetch(`${API_BASE}/api/visit-stats`);
+      if (!resp.ok) return;
+      const data = await resp.json();
+      cachedStats.today = data.today ?? 0;
+      cachedStats.total = data.total ?? 0;
+      updateStatsLabel();
+    } catch (e) { console.warn('visit-stats fetch failed:', e); }
+  }
+
+  // ===== 主题 =====
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  applyTheme(savedTheme);
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme === 'light' ? 'light' : '');
+    document.getElementById('theme-btn').textContent = theme === 'light' ? '☀️' : '🌙';
+    localStorage.setItem('theme', theme);
+  }
+
+  function toggleTheme() {
+    const cur = localStorage.getItem('theme') || 'light';
+    applyTheme(cur === 'light' ? 'dark' : 'light');
+  }
+
+  function downloadApp() {
+    window.open('/download/app', '_blank');
+  }
+
+  function openCalc() {
+    window.open(API_BASE + '/cale/index_zh.html', '_blank');
+  }
+
+  function openChampions() {
+    window.open('https://champions.banyunxiaojiang.cn', '_blank');
+  }
+
+  function openHome() {
+    window.open('home/home.html', '_blank');
+  }
+
+  // ===== 语言 =====
+  const i18n = {
+    zh: {
+      title: '搬运小匠宝可梦AI对战助手',
+      subtitle: '支持对战计算 · 属性查询 · 招式详情',
+      placeholder: '输入问题，按 Enter 发送…',
+      author: '作者：徐果虫',
+      qq: '加入QQ群交流：',
+      connFail: '连接失败',
+      connHint: '请确认服务状态。',
+      statsToday: '今日访问',
+      statsTotal: '累计访问',
+      champions: '赛视工具',
+      home: '使用率',
+      chips: ['Mega喷火龙Y热风打Mega妙蛙花多少伤害', '妙蛙种子的属性和种族值', '极速水箭龟破壳后速度是多少', '谁同时会再来一次和同命', 'mega雪妖女的暗影球需要多少特攻才能一确无耐久mega耿鬼？'],
+      fbTitle: '反馈问题',
+      fbDesc: '发现回答有误或体验不佳？点击确认将本次对话记录提交给开发者，帮助我们改进。',
+      fbNote: '提交内容仅包含本页对话，不含任何个人信息。',
+      fbEmpty: '当前没有对话记录。',
+      fbCancel: '取消',
+      fbSubmit: '确认提交',
+      fbSending: '提交中…',
+      fbOk: '感谢反馈！',
+      fbFail: '提交失败，请稍后再试。',
+    },
+    ja: {
+      title: '搬運小匠ポケモンAI対戦アシスタント',
+      subtitle: 'ダメージ計算 · タイプ検索 · 技詳細',
+      placeholder: '質問を入力してEnterで送信…',
+      author: '作者：徐果虫',
+      qq: 'QQグループに参加：',
+      connFail: '接続失敗',
+      connHint: 'サービス状態を確認してください。',
+      statsToday: '本日のアクセス',
+      statsTotal: '累計アクセス',
+      champions: 'チャンピオンズツール',
+      home: '使用率',
+      chips: ['メガリザードンYのねっぷうでメガフシギバナに何ダメージ？', 'フシギダネのタイプと種族値', 'メガカメックスのからをやぶる後のすばやさは？', 'アンコールとみちづれを両方覚えるポケモンは？', 'メガユキメノコのシャドーボールでメガゲンガーを一撃に必要な特攻は？'],
+      fbTitle: '問題を報告',
+      fbDesc: '回答に誤りや不具合がありましたか？確認ボタンを押すと、この会話の記録を開発者に送信します。',
+      fbNote: '送信内容はこのページの会話のみです。個人情報は含まれません。',
+      fbEmpty: '会話記録がありません。',
+      fbCancel: 'キャンセル',
+      fbSubmit: '送信する',
+      fbSending: '送信中…',
+      fbOk: 'フィードバックありがとうございます！',
+      fbFail: '送信に失敗しました。後でもう一度お試しください。',
+    },
+    en: {
+      title: 'BanYun Pokémon AI Battle Assistant',
+      subtitle: 'Damage Calc · Type Query · Move Details',
+      placeholder: 'Type a question and press Enter…',
+      author: 'Author: XuGuoChong',
+      qq: 'Join QQ Group: ',
+      connFail: 'Connection failed',
+      connHint: 'Please check the service status.',
+      statsToday: 'Today',
+      statsTotal: 'Total',
+      champions: 'Champions Tool',
+      home: 'Usage',
+      chips: ['How much damage does Mega Charizard Y Heat Wave do to Mega Venusaur?', 'Bulbasaur type and base stats', 'What is Mega Blastoise speed after Shell Smash?', 'Which Pokémon learn both Encore and Destiny Bond?', 'How much SpA does Mega Froslass need to OHKO Mega Gengar with Shadow Ball?'],
+      fbTitle: 'Report an Issue',
+      fbDesc: 'Found a wrong answer or bad experience? Click Submit to send this conversation to the developer for review.',
+      fbNote: 'Only the current conversation will be submitted. No personal information is included.',
+      fbEmpty: 'No conversation to report.',
+      fbCancel: 'Cancel',
+      fbSubmit: 'Submit',
+      fbSending: 'Submitting…',
+      fbOk: 'Thanks for your feedback!',
+      fbFail: 'Submission failed. Please try again later.',
+    },
+  };
+
+  let currentLang = localStorage.getItem('lang') || 'zh';
+  highlightLang(currentLang);
+  applyLang(currentLang);
+
+  function toggleLangDropdown() {
+    document.getElementById('lang-dropdown').classList.toggle('open');
+  }
+
+  function pickLang(lang) {
+    setLang(lang);
+    document.getElementById('lang-dropdown').classList.remove('open');
+  }
+
+  function highlightLang(lang) {
+    const items = document.querySelectorAll('#lang-dropdown div');
+    items.forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
+  }
+
+  // 点击外部关闭语言菜单
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.lang-wrapper')) {
+      document.getElementById('lang-dropdown').classList.remove('open');
+    }
+  });
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('lang', lang);
+    highlightLang(lang);
+    applyLang(lang);
+  }
+
+  function applyLang(lang) {
+    const t = i18n[lang] || i18n.zh;
+    document.getElementById('app-title').textContent = t.title;
+    document.getElementById('app-subtitle').textContent = t.subtitle;
+    document.getElementById('input').placeholder = t.placeholder;
+    document.getElementById('footer-author').textContent = t.author;
+    document.getElementById('champions-btn').title = t.champions;
+    document.getElementById('home-btn').title = t.home;
+    document.getElementById('footer-qq').innerHTML = t.qq + '<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=rZfqKMMrl9ftttvOLkQUUkLQA45DJi1k&authKey=MtnhEcU3G2F5gPZTOdVPJ3HyMLiLlnK3Orf0UfDpXZUnZ%2FPnSCmr%2FnIxjdhxE5xT&noverify=0&group_code=2151054295" target="_blank">2151054295</a>';
+    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang === 'ja' ? 'ja' : 'en';
+    // 更新样例问题
+    suggestionsEl.innerHTML = t.chips.map(c =>
+      `<span class="chip" onclick="fillInput(this)">${c}</span>`
+    ).join('');
+    // 更新弹窗文案
+    document.getElementById('fb-title').textContent = t.fbTitle;
+    document.getElementById('fb-desc').textContent = t.fbDesc;
+    document.getElementById('fb-note').textContent = t.fbNote;
+    document.getElementById('fb-cancel').textContent = t.fbCancel;
+    document.getElementById('fb-submit').textContent = t.fbSubmit;
+    // 更新访问量标签（保留数字）
+    updateStatsLabel(t);
+  }
+
+  // ===== 反馈弹窗 =====
+  function openFeedback() {
+    if (context.length === 0) {
+      const t = i18n[currentLang] || i18n.zh;
+      alert(t.fbEmpty);
+      return;
+    }
+    // 生成对话预览
+    const preview = context.map(m =>
+      (m.role === 'user' ? '👤 ' : '🤖 ') + m.content
+    ).join('\n\n');
+    document.getElementById('fb-preview').textContent = preview;
+    const modal = document.getElementById('feedback-modal');
+    modal.style.display = 'flex';
+  }
+
+  function closeFeedback() {
+    document.getElementById('feedback-modal').style.display = 'none';
+  }
+
+  // 点击遮罩关闭
+  document.getElementById('feedback-modal').addEventListener('click', function(e) {
+    if (e.target === this) closeFeedback();
+  });
+
+  async function submitFeedback() {
+    const t = i18n[currentLang] || i18n.zh;
+    const btn = document.getElementById('fb-submit');
+    btn.disabled = true;
+    btn.textContent = t.fbSending;
+    try {
+      const resp = await fetch(`${API_BASE}/api/feedback`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ context, lang: currentLang })
+      });
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      closeFeedback();
+      alert(t.fbOk);
+    } catch (err) {
+      alert(t.fbFail);
+    } finally {
+      btn.disabled = false;
+      btn.textContent = t.fbSubmit;
+    }
+  }
+
+  // ===== 输入框自动高度 =====
+  inputEl.addEventListener('input', () => {
+    inputEl.style.height = 'auto';
+    inputEl.style.height = Math.min(inputEl.scrollHeight, 120) + 'px';
+  });
+
+  inputEl.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      sendMessage();
+    }
+  });
+
+  function fillInput(el) {
+    inputEl.value = el.textContent;
+    inputEl.focus();
+    inputEl.style.height = 'auto';
+    inputEl.style.height = Math.min(inputEl.scrollHeight, 120) + 'px';
+  }
+
+  // 将 markdown 链接 [text](url) 转为 <a> 标签，其余文本转义
+  function renderMarkdownLinks(text) {
+    const escaped = text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    return escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g,
+      '<a href="$2" target="_blank" rel="noopener" style="color:var(--accent)">$1</a>');
+  }
+
+  function addMessage(role, text) {
+    const div = document.createElement('div');
+    div.className = `msg ${role}`;
+    if (role === 'user') {
+      div.innerHTML = `<div class="avatar">👤</div><div class="bubble"></div>`;
+    } else {
+      div.innerHTML = `
+        <div class="avatar">
+          <img src="${APP_ICON_URL}" alt="bot"
+               onerror="this.parentElement.innerHTML='匠'" />
+        </div>
+        <div class="bubble"></div>`;
+    }
+    const bubble = div.querySelector('.bubble');
+    if (role === 'assistant') {
+      bubble.innerHTML = renderMarkdownLinks(text);
+    } else {
+      bubble.textContent = text;
+    }
+    messagesEl.appendChild(div);
+    scrollBottom();
+    return bubble;
+  }
+
+  function addTypingIndicator() {
+    const div = document.createElement('div');
+    div.className = 'msg assistant';
+    div.id = 'typing';
+    div.innerHTML = `
+      <div class="avatar">
+        <img src="${APP_ICON_URL}" alt="bot"
+             onerror="this.parentElement.innerHTML='匠'" />
+      </div>
+      <div class="bubble typing-indicator">
+        <span></span><span></span><span></span>
+      </div>`;
+    messagesEl.appendChild(div);
+    scrollBottom();
+    return div;
+  }
+
+  function removeTypingIndicator() {
+    const el = document.getElementById('typing');
+    if (el) el.remove();
+  }
+
+  function addError(msg) {
+    const div = document.createElement('div');
+    div.className = 'error-msg';
+    div.textContent = msg;
+    messagesEl.appendChild(div);
+    scrollBottom();
+  }
+
+  function scrollBottom() {
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+  }
+
+  async function sendMessage() {
+    const text = inputEl.value.trim();
+    if (!text || isStreaming) return;
+
+    suggestionsEl.style.display = 'none';
+
+    isStreaming = true;
+    sendBtn.disabled = true;
+    inputEl.value = '';
+    inputEl.style.height = 'auto';
+
+    addMessage('user', text);
+    const typingEl = addTypingIndicator();
+
+    const payload = { message: text, context: context.slice(-6) };
+
+    let assistantBubble = null;
+    let cursor = null;
+    let contentEl = null;
+    let fullText = '';
+    let progressEl = null;
+    let progressSteps = {};   // step → {label, detail, status}
+    let thinkingByStep = {};  // step → {source → <details>}
+    let unassignedThinking = []; // step 缺失时暂存
+
+    function ensureBubble() {
+      if (assistantBubble) return;
+      removeTypingIndicator();
+      assistantBubble = addMessage('assistant', '');
+      contentEl = document.createElement('span');
+      assistantBubble.appendChild(contentEl);
+      cursor = document.createElement('span');
+      cursor.className = 'cursor';
+      assistantBubble.appendChild(cursor);
+    }
+
+    function renderProgressStep(step, evt) {
+      const isDone = evt.status === 'done';
+      const isPlanTask = Number(step) >= 50 && Number(step) < 60;
+      let icon;
+      if (isPlanTask) {
+        // 规划子任务：用数字圆圈
+        const taskNum = Number(step) - 49;
+        icon = isDone
+          ? `<span style="color:#4caf50;font-weight:bold">${taskNum}</span>`
+          : `<span style="color:var(--accent);font-weight:bold">${taskNum}</span>`;
+      } else {
+        icon = isDone ? '✓' : '<span class="spinner"></span>';
+      }
+      const detail = evt.detail ? ` <span class="detail">${evt.detail}</span>` : '';
+      return `<div class="progress-line ${evt.status}"><span class="icon">${icon}</span>${evt.label}${detail}</div>`;
+    }
+
+    function updateProgressUI() {
+      if (!progressEl) return;
+      // 按 step 升序；每个 step 一个 <div data-step>，里面先放进度行，思考框会动态追加到行的后面
+      const keys = Object.keys(progressSteps).sort((a, b) => Number(a) - Number(b));
+      // 记录已有思考框引用，重建时搬回去
+      const savedThinking = {};
+      for (const key of Object.keys(thinkingByStep)) {
+        savedThinking[key] = { ...thinkingByStep[key] };
+      }
+      progressEl.innerHTML = '';
+      thinkingByStep = {};
+      let planHeaderInserted = false;
+      for (const step of keys) {
+        const evt = progressSteps[step];
+        const isPlanTask = Number(step) >= 50 && Number(step) < 60;
+        // 在第一个规划子任务前插入分组标题
+        if (isPlanTask && !planHeaderInserted) {
+          planHeaderInserted = true;
+          const header = document.createElement('div');
+          header.className = 'plan-header';
+          header.textContent = '任务规划';
+          progressEl.appendChild(header);
+        }
+        const wrap = document.createElement('div');
+        wrap.className = 'progress-step' + (isPlanTask ? ' plan-task' : '');
+        wrap.dataset.step = step;
+        wrap.innerHTML = renderProgressStep(step, evt);
+        progressEl.appendChild(wrap);
+        // 把此 step 已有的思考框挂回来
+        if (savedThinking[step]) {
+          thinkingByStep[step] = {};
+          for (const src of Object.keys(savedThinking[step])) {
+            const block = savedThinking[step][src];
+            wrap.appendChild(block);
+            thinkingByStep[step][src] = block;
+          }
+        }
+      }
+      // 处理 step 缺失的暂存项
+      if (unassignedThinking.length > 0) {
+        const pending = unassignedThinking;
+        unassignedThinking = [];
+        for (const item of pending) {
+          appendThinking(item.source, item.text, item.step);
+        }
+      }
+    }
+
+    function showProgressContainer() {
+      if (progressEl) return;
+      ensureBubble();
+      progressEl = document.createElement('div');
+      progressEl.className = 'progress-container';
+      assistantBubble.insertBefore(progressEl, contentEl);
+      if (cursor) cursor.style.display = 'none';
+    }
+
+    function appendThinking(source, text, step) {
+      ensureBubble();
+      showProgressContainer();
+      // 找到对应 step 的行
+      const target = step != null ? progressEl.querySelector(`.progress-step[data-step="${step}"]`) : null;
+      if (!target) {
+        // 对应 step 还没到，先暂存
+        unassignedThinking.push({ source, text, step });
+        return;
+      }
+      if (!thinkingByStep[step]) thinkingByStep[step] = {};
+      let block = thinkingByStep[step][source];
+      if (!block) {
+        block = document.createElement('details');
+        block.className = 'thinking-block';
+        // 最终总结的思考默认展开
+        if (source === '整理回答') block.open = true;
+        const summary = document.createElement('summary');
+        summary.innerHTML = `<span>思考过程（${source}）</span>`;
+        const body = document.createElement('div');
+        body.className = 'thinking-body';
+        block.appendChild(summary);
+        block.appendChild(body);
+        target.appendChild(block);
+        thinkingByStep[step][source] = block;
+      }
+      const body = block.querySelector('.thinking-body');
+      body.textContent = (body.textContent || '') + text;
+      scrollBottom();
+    }
+
+    function finalizeProgress() {
+      let changed = false;
+      for (const step of Object.keys(progressSteps)) {
+        if (progressSteps[step].status === 'active') {
+          progressSteps[step].status = 'done';
+          changed = true;
+        }
+      }
+      if (changed) updateProgressUI();
+      if (progressEl && !progressEl.classList.contains('has-separator')) {
+        progressEl.classList.add('has-separator');
+      }
+    }
+
+    try {
+      const resp = await fetch(`${API_BASE}/api/chat/stream`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+
+      const reader = resp.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = '';
+      let currentEventType = '';
+      let firstChunkSeen = false;
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop();
+
+        for (const line of lines) {
+          if (line.startsWith('event: ')) {
+            currentEventType = line.slice(7);
+            continue;
+          }
+          if (line.startsWith('data: ')) {
+            const raw = line.slice(6);
+            if (raw === '[DONE]') break;
+
+            if (currentEventType === 'progress') {
+              try {
+                const evt = JSON.parse(raw);
+                progressSteps[evt.step] = evt;
+                showProgressContainer();
+                updateProgressUI();
+              } catch {}
+              currentEventType = '';
+              continue;
+            }
+            if (currentEventType === 'thinking') {
+              try {
+                const evt = JSON.parse(raw);
+                if (evt && typeof evt.text === 'string' && evt.text.trim()) {
+                  appendThinking(evt.source || '思考', evt.text, evt.step);
+                }
+              } catch {}
+              currentEventType = '';
+              continue;
+            }
+            currentEventType = '';
+
+            // 第一个文字 chunk：把残留 active 转 done、恢复光标
+            ensureBubble();
+            if (!firstChunkSeen) {
+              finalizeProgress();
+              if (cursor) cursor.style.display = '';
+              firstChunkSeen = true;
+            }
+
+            let chunk;
+            try { chunk = JSON.parse(raw); } catch { chunk = raw; }
+            fullText += chunk;
+            contentEl.innerHTML = renderMarkdownLinks(fullText);
+            scrollBottom();
+          }
+        }
+      }
+
+      // 结束收尾
+      finalizeProgress();
+      if (cursor) cursor.remove();
+      if (contentEl) contentEl.innerHTML = renderMarkdownLinks(fullText);
+
+      context.push({ role: 'user', content: text });
+      context.push({ role: 'assistant', content: fullText });
+
+    } catch (err) {
+      removeTypingIndicator();
+      if (assistantBubble) assistantBubble.closest('.msg').remove();
+      const t = i18n[currentLang] || i18n.zh;
+      addError(`${t.connFail}：${err.message}。${t.connHint}`);
+    } finally {
+      isStreaming = false;
+      sendBtn.disabled = false;
+      inputEl.focus();
+    }
+  }
+  fetchVisitStats();
+
+</script>
+</body>
+</html>

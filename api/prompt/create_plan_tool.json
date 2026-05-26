@@ -1,0 +1,47 @@
+[
+  {
+    "name": "create_plan",
+    "description": "当用户问题需要多步解决时调用，生成任务清单并逐个执行。简单问题（查一个实体、问一个事实、伤害计算、阈值计算）不要调用，直接用对应工具。适用场景：多步查询汇总、批量计算对比、分析类问题。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "goal": {
+          "type": "string",
+          "description": "用户目标一句话概括"
+        },
+        "tasks": {
+          "type": "array",
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer",
+                "description": "任务序号，从 1 开始"
+              },
+              "action": {
+                "type": "string",
+                "description": "具体做什么（一句话）"
+              },
+              "tool": {
+                "type": "string",
+                "description": "建议工具名（如 search_pokemon、execute_sql、filter_moves 等）"
+              },
+              "args": {
+                "type": "object",
+                "description": "工具参数。若依赖前置任务结果，用 {\"from_task\": N} 标记"
+              },
+              "depends_on": {
+                "type": "array",
+                "items": {"type": "integer"},
+                "description": "依赖的前置任务 ID 列表"
+              }
+            },
+            "required": ["id", "action"]
+          }
+        }
+      },
+      "required": ["goal", "tasks"]
+    }
+  }
+]

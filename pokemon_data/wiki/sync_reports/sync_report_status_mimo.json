@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-05-21T10:34:59.923660",
+  "entity_type": "status",
+  "since": "2025-10-01",
+  "until": null,
+  "model": "mimo-v2.5",
+  "total_stale": 0,
+  "total_changes": 0,
+  "total_new": 0,
+  "total_renamed": 0,
+  "changes": [],
+  "new_entries": [],
+  "renamed_entries": []
+}

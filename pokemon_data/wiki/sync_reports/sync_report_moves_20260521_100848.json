@@ -1,0 +1,142 @@
+{
+  "generated_at": "2026-05-21T10:08:48.038791",
+  "entity_type": "moves",
+  "since": "2025-10-01",
+  "until": null,
+  "model": "mimo-v2.5",
+  "total_stale": 0,
+  "total_changes": 0,
+  "total_new": 1,
+  "total_renamed": 13,
+  "changes": [],
+  "new_entries": [
+    {
+      "entity_type": "moves",
+      "name_zh": "ＤＤ金勾臂",
+      "wiki_title": "ＤＤ金勾臂（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/ＤＤ金勾臂（招式）",
+      "change_type": "new",
+      "wiki_info": {
+        "name_zh": "ＤＤ金勾臂",
+        "name_en": "Darkest Lariat",
+        "name_ja": "ＤＤラリアット",
+        "type": "dark",
+        "damage_class": "physical",
+        "power": 85,
+        "accuracy": 100,
+        "pp": 10,
+        "target": 2,
+        "makes_contact": 1,
+        "can_protect": 1,
+        "effect_zh": "攻击目标造成伤害。无视目标的闪避率和防御。",
+        "file_path": "pokemon_data/wiki/wikitext_cache/103485_ＤＤ金勾臂（招式）.wiki"
+      }
+    }
+  ],
+  "renamed_entries": [
+    {
+      "entity_type": "moves",
+      "name_zh": "断头钳",
+      "old_name": "极落钳",
+      "wiki_title": "极落钳（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/极落钳（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "自爆",
+      "old_name": "玉石俱碎",
+      "wiki_title": "玉石俱碎（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/玉石俱碎（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "吸血",
+      "old_name": "汲取",
+      "wiki_title": "汲取（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/汲取（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "起死回生",
+      "old_name": "绝处逢生",
+      "wiki_title": "绝处逢生（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/绝处逢生（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "鬼面",
+      "old_name": "可怕面孔",
+      "wiki_title": "可怕面孔（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/可怕面孔（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "灭亡之歌",
+      "old_name": "终焉之歌",
+      "wiki_title": "终焉之歌（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/终焉之歌（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "鬼火",
+      "old_name": "磷火",
+      "wiki_title": "磷火（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/磷火（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "流沙地狱",
+      "old_name": "流沙深渊",
+      "wiki_title": "流沙深渊（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/流沙深渊（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "空气斩",
+      "old_name": "空气之刃",
+      "wiki_title": "空气之刃（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/空气之刃（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "炼狱",
+      "old_name": "烈火深渊",
+      "wiki_title": "烈火深渊（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/烈火深渊（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "死缠烂打",
+      "old_name": "纠缠不休",
+      "wiki_title": "纠缠不休（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/纠缠不休（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "森林诅咒",
+      "old_name": "森林咒术",
+      "wiki_title": "森林咒术（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/森林咒术（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "地狱突刺",
+      "old_name": "深渊突刺",
+      "wiki_title": "深渊突刺（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/深渊突刺（招式）",
+      "change_type": "renamed"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "request_damage_calc",
+    "description": "请求伤害计算。当用户问伤害/秒杀/几发能秒/能OHKO/打多少血等问题时调用此工具，不需要提取具体参数，系统会自动处理。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "user_message": {
+          "type": "string",
+          "description": "用户原始消息原文"
+        }
+      },
+      "required": ["user_message"]
+    }
+  }
+]

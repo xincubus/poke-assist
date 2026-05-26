@@ -1,0 +1,185 @@
+{
+  "generated_at": "2026-05-19T19:27:40.837848",
+  "summary": {
+    "new_entries": 0,
+    "renamed_entries": 0,
+    "stale_entries": 19,
+    "suggested_updates": 0
+  },
+  "new_entries": [],
+  "renamed_entries": [],
+  "stale_entries": [
+    {
+      "entity_type": "moves",
+      "name_zh": "光墙",
+      "wiki_updated": "2026-05-13T02:55:05Z",
+      "local_downloaded": "2026-05-04T19:17:36Z",
+      "needs_update": false,
+      "filter_reason": "效果描述未变，无需更新",
+      "wiki_url": "https://wiki.52poke.com/wiki/光墙（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "反射壁",
+      "wiki_updated": "2026-05-13T02:55:07Z",
+      "local_downloaded": "2026-05-04T20:49:24Z",
+      "needs_update": true,
+      "filter_reason": "LLM 解析失败: Unterminated string starting at: line 1 column 34 ",
+      "wiki_url": "https://wiki.52poke.com/wiki/反射壁（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "忍耐",
+      "wiki_updated": "2026-05-11T06:55:14Z",
+      "local_downloaded": "2026-05-04T20:48:45Z",
+      "needs_update": true,
+      "filter_reason": "招式效果描述或机制变化",
+      "wiki_url": "https://wiki.52poke.com/wiki/忍耐（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "鹦鹉学舌",
+      "wiki_updated": "2026-05-11T00:51:07Z",
+      "local_downloaded": "2026-05-04T18:04:19Z",
+      "needs_update": false,
+      "filter_reason": "无数值或机制变化",
+      "wiki_url": "https://wiki.52poke.com/wiki/鹦鹉学舌（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "蟹钳锤",
+      "wiki_updated": "2026-05-12T07:54:33Z",
+      "local_downloaded": "2026-05-05T05:21:35Z",
+      "needs_update": true,
+      "filter_reason": "机制说明：专属招式历史变化",
+      "wiki_url": "https://wiki.52poke.com/wiki/蟹钳锤（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "气象球",
+      "wiki_updated": "2026-05-09T14:04:01Z",
+      "local_downloaded": "2026-05-04T18:15:00Z",
+      "needs_update": false,
+      "filter_reason": "描述无数值/机制变化",
+      "wiki_url": "https://wiki.52poke.com/wiki/气象球（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "近身战",
+      "wiki_updated": "2026-05-11T10:54:58Z",
+      "local_downloaded": "2026-05-04T20:50:49Z",
+      "needs_update": false,
+      "filter_reason": "未涉及任何数据库字段变更",
+      "wiki_url": "https://wiki.52poke.com/wiki/近身战（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "精神利刃",
+      "wiki_updated": "2026-05-11T10:57:43Z",
+      "local_downloaded": "2026-05-06T00:29:51Z",
+      "needs_update": false,
+      "filter_reason": "仅更新译名，无数值/机制变化",
+      "wiki_url": "https://wiki.52poke.com/wiki/精神利刃（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "画龙点睛",
+      "wiki_updated": "2026-05-11T10:57:17Z",
+      "local_downloaded": "2026-05-04T21:29:30Z",
+      "needs_update": false,
+      "filter_reason": "摘要仅描述基本效果，无数值/机制变化",
+      "wiki_url": "https://wiki.52poke.com/wiki/畫龍點睛（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "异次元猛攻",
+      "wiki_updated": "2026-05-10T13:01:17Z",
+      "local_downloaded": "2026-05-04T21:29:28Z",
+      "needs_update": true,
+      "filter_reason": "涉及状态取消机制变更",
+      "wiki_url": "https://wiki.52poke.com/wiki/异次元猛攻（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "极光幕",
+      "wiki_updated": "2026-05-13T02:55:51Z",
+      "local_downloaded": "2026-05-04T21:14:03Z",
+      "needs_update": true,
+      "filter_reason": "招式效果描述机制变更",
+      "wiki_url": "https://wiki.52poke.com/wiki/极光幕（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "闪闪雷光",
+      "wiki_updated": "2026-05-10T16:47:51Z",
+      "local_downloaded": "2026-05-04T23:16:46Z",
+      "needs_update": true,
+      "filter_reason": "LLM 解析失败: Expecting value: line 1 column 1 (char 0)",
+      "wiki_url": "https://wiki.52poke.com/wiki/闪闪雷光（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "哗哗气场",
+      "wiki_updated": "2026-05-13T02:55:10Z",
+      "local_downloaded": "2026-05-05T01:13:46Z",
+      "needs_update": true,
+      "filter_reason": "新增招式需添加数据库记录",
+      "wiki_url": "https://wiki.52poke.com/wiki/哗哗气场（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "坏坏领域",
+      "wiki_updated": "2026-05-13T02:55:45Z",
+      "local_downloaded": "2026-05-05T01:13:50Z",
+      "needs_update": true,
+      "filter_reason": "新增招式，需补充数据库字段",
+      "wiki_url": "https://wiki.52poke.com/wiki/坏坏领域（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "砰砰击破",
+      "wiki_updated": "2026-05-10T16:48:01Z",
+      "local_downloaded": "2026-05-04T23:16:54Z",
+      "needs_update": true,
+      "filter_reason": "新招式初次出现需添加",
+      "wiki_url": "https://wiki.52poke.com/wiki/砰砰击破（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "蛸固",
+      "wiki_updated": "2026-05-10T17:57:37Z",
+      "local_downloaded": "2026-05-05T08:56:16Z",
+      "needs_update": true,
+      "filter_reason": "招式附加效果描述变化",
+      "wiki_url": "https://wiki.52poke.com/wiki/蛸固（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "突飞猛扑",
+      "wiki_updated": "2026-05-11T10:55:35Z",
+      "local_downloaded": "2026-05-05T04:46:27Z",
+      "needs_update": false,
+      "filter_reason": "仅描述基本效果，无数值或机制变化",
+      "wiki_url": "https://wiki.52poke.com/wiki/突飞猛扑（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "起草",
+      "wiki_updated": "2026-05-10T07:48:17Z",
+      "local_downloaded": "2026-05-05T06:18:25Z",
+      "needs_update": false,
+      "filter_reason": "摘要无数值或机制变化",
+      "wiki_url": "https://wiki.52poke.com/wiki/起草（招式）"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "铠农炮",
+      "wiki_updated": "2026-05-11T10:56:03Z",
+      "local_downloaded": "2026-05-05T05:36:41Z",
+      "needs_update": false,
+      "filter_reason": "摘要仅为基本描述，无字段变化",
+      "wiki_url": "https://wiki.52poke.com/wiki/铠农炮（招式）"
+    }
+  ],
+  "changes": []
+}

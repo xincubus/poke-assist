@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PokemonApp.Views.AddTeamPage"
+             Title="{Binding PageTitle}"
+             BackgroundColor="{AppThemeBinding Light=#F5F5F5, Dark=#1f1f1f}">
+
+    <Grid RowDefinitions="Auto,Auto,*,Auto" Padding="20" RowSpacing="12">
+
+        <VerticalStackLayout Grid.Row="0" Spacing="6">
+            <Label Text="队伍名称" FontSize="13" TextColor="{AppThemeBinding Light=#666, Dark=#AAA}" />
+            <Entry Placeholder="输入队伍名称" Text="{Binding TeamName}" />
+        </VerticalStackLayout>
+
+        <Label Grid.Row="1" Text="选择成员（最多6只，点击切换选中）" FontSize="13" FontAttributes="Bold"
+               TextColor="{AppThemeBinding Light=#333, Dark=#CCC}" />
+
+        <CollectionView Grid.Row="2" ItemsSource="{Binding AllPokemons}"
+                        x:Name="PokemonPicker">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="3"
+                                 HorizontalItemSpacing="8" VerticalItemSpacing="8" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border StrokeShape="RoundRectangle 8" Padding="6"
+                            BackgroundColor="{Binding SelectionColor}"
+                            Stroke="Transparent">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnPokemonTapped" />
+                        </Border.GestureRecognizers>
+                        <VerticalStackLayout HorizontalOptions="Center">
+                            <Image Source="{Binding ImageUrl}" HeightRequest="48" WidthRequest="48"
+                                   Aspect="AspectFit" />
+                            <Label Text="{Binding Name}" FontSize="11" HorizontalOptions="Center"
+                                   LineBreakMode="TailTruncation" />
+                        </VerticalStackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            <CollectionView.EmptyView>
+                <Label Text="还没有宝可梦，请先添加" HorizontalOptions="Center"
+                       TextColor="{AppThemeBinding Light=#999, Dark=#AAA}" />
+            </CollectionView.EmptyView>
+        </CollectionView>
+
+        <Button Grid.Row="3" Text="保存队伍" BackgroundColor="#5B75F5" TextColor="White"
+                CornerRadius="8" Clicked="OnSaveClicked" />
+
+    </Grid>
+</ContentPage>

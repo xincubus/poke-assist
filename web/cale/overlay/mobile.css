@@ -1,0 +1,416 @@
+/* ===== Mobile Damage Calculator CSS (cale version) ===== */
+
+/* Reset the desktop min-width */
+body {
+    min-width: 0 !important;
+    padding: 0 !important;
+    margin: 0;
+    font-size: 14px;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Chinese font stack */
+body, input, select, textarea, button {
+    font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Hiragino Sans GB", sans-serif;
+}
+
+/* Main wrapper */
+.mobile-wrapper {
+    max-width: 100vw;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Hide desktop-only elements */
+.mobile-wrapper .title-text { display: none; }
+.mobile-wrapper .header { display: none; }
+.mobile-wrapper > .wrapper { min-width: 0 !important; padding: 0; }
+#switchTheme { display: none; }
+.mobile-wrapper .footer { display: none; }
+#april_fools { display: none; }
+.mobile-wrapper .sidebarSlot { display: none !important; }
+.mobile-wrapper .sidebarAdd { display: none !important; }
+.mobile-wrapper .sidebarExportDelete { display: none !important; }
+.mobile-wrapper .set-checkbox { display: none; }
+
+/* ===== Generation selector ===== */
+.mob-gen-bar {
+    padding: 8px 8px 0;
+    text-align: center;
+}
+.mob-gen-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+.mob-gen-row .btn {
+    flex: 1;
+    font-size: 12px;
+    padding: 6px 2px;
+    min-width: 0;
+    white-space: nowrap;
+}
+.mob-gen-extras {
+    margin-top: 4px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.mob-gen-extras .btn {
+    margin-left: 0 !important;
+    width: auto;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+/* ===== Tab bar ===== */
+.mob-tab-bar {
+    display: flex;
+    border-bottom: 2px solid #e0e0e0;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.dark .mob-tab-bar {
+    background: #2d2d2d;
+    border-bottom-color: #444;
+}
+.mob-tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #666;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.15s, border-color 0.15s;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.dark .mob-tab {
+    color: #999;
+}
+.mob-tab.active {
+    color: #3498db;
+    border-bottom-color: #3498db;
+    font-weight: 600;
+}
+
+/* ===== Tab content ===== */
+.mob-tab-content {
+    padding: 8px;
+    overflow-x: hidden;
+}
+
+/* ===== Override panel layout for mobile ===== */
+.mob-tab-content .panel {
+    float: none !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    margin: 0 !important;
+}
+/* 面板整体左右内边距，让所有内容统一缩进 */
+.mob-tab-content .poke-info,
+.mob-tab-content .field-info {
+    width: 100% !important;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+.mob-tab-content .panel-body {
+    padding: 4px 0;
+}
+/* 场地面板按钮组：inline-block 按钮在固定宽度容器内默认左对齐，需居中 */
+.mob-tab-content .field-info .panel-body {
+    text-align: center;
+}
+
+/* ===== Stats table ===== */
+.mob-tab-content table {
+    width: auto;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+.mob-tab-content table input {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+.mob-tab-content table td {
+    padding: 2px 1px;
+}
+/* 表格第一列与 div 区 label 同宽，统一左对齐 */
+.mob-tab-content .poke-info table td:first-child,
+.mob-tab-content .poke-info table th:first-child {
+    width: 4em;
+    padding-left: 0;
+}
+.mob-tab-content .base { width: 40px !important; }
+.mob-tab-content .ivs { width: 32px !important; }
+.mob-tab-content .evs { width: 48px !important; }
+.mob-tab-content .sps { width: 40px !important; }
+.mob-tab-content .dvs { width: 32px !important; }
+
+/* ===== Input fields ===== */
+.mob-tab-content .set-selector {
+    width: 100% !important;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 6px 8px;
+}
+.mob-tab-content .level { width: 50px !important; }
+.mob-tab-content .weight { width: 50px !important; }
+
+/* ===== Info groups ===== */
+.mob-tab-content .info-group {
+    margin: 6px 0;
+}
+.mob-tab-content .info-group label {
+    font-size: 13px;
+    min-width: 50px;
+    display: inline-block;
+}
+/* 属性/形态等标签左对齐 */
+.mob-tab-content .poke-info label {
+    width: 4em;
+    text-align: left;
+}
+.mob-tab-content .info-selectors select {
+    max-width: calc(100% - 5em);
+}
+
+/* ===== Moves ===== */
+.mob-tab-content .move1,
+.mob-tab-content .move2,
+.mob-tab-content .move3,
+.mob-tab-content .move4 {
+    margin: 4px 0;
+    padding: 4px 0;
+    border-top: 1px solid rgba(128,128,128,0.15);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    overflow: hidden;
+    max-width: 500px;
+}
+.mob-tab-content .move-selector { flex: 1; min-width: 0; max-width: 280px; }
+.mob-tab-content .move-bp { width: 36px !important; flex: 0 0 36px; }
+.mob-tab-content .move-type { flex: 0 0 auto; }
+.mob-tab-content .move-cat { flex: 0 0 auto; width: auto !important; }
+/* 暴击等按钮 — 防止溢出 */
+.mob-tab-content .crit-btn {
+    font-size: 11px;
+    width: auto !important;
+    padding: 3px 6px;
+    flex: 0 0 auto;
+}
+.mob-tab-content .x-btn {
+    font-size: 11px;
+    width: auto !important;
+    padding: 3px 6px;
+    flex: 0 0 auto;
+}
+.mob-tab-content .xx-btn {
+    font-size: 11px;
+    width: auto !important;
+    padding: 3px 6px;
+    flex: 0 0 auto;
+}
+.mob-tab-content .move-hits,
+.mob-tab-content .move-double,
+.mob-tab-content .move-stellar,
+.mob-tab-content .move-pledge,
+.mob-tab-content .move-linearAddedBP,
+.mob-tab-content .move-opponent {
+    width: auto !important;
+    font-size: 12px;
+    flex: 0 0 auto;
+}
+
+/* ===== Result area ===== */
+.mob-tab-content .move-result-group {
+    display: block;
+    min-width: 0 !important;
+    max-width: 100%;
+    margin: 0.5em 0 1em !important;
+    overflow: hidden;
+}
+.mob-tab-content .move-result-subgroup {
+    float: none !important;
+    width: 100% !important;
+    display: block;
+    margin-bottom: 12px;
+}
+.mob-tab-content .result-move-header {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 4px;
+}
+.dark .mob-tab-content .result-move-header { color: #999; }
+.mob-tab-content .btn-xxxwide {
+    min-width: 8em;
+    width: auto !important;
+    max-width: 45%;
+    font-size: 13px;
+    padding: 6px 8px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 8px;
+}
+/* 伤害结果行：按钮+伤害值不超出屏幕 */
+.mob-tab-content .move-result-subgroup > div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    overflow: hidden;
+}
+.mob-tab-content .move-result-subgroup > div > span {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+}
+.mob-tab-content .main-result-group {
+    margin: 12px 0;
+    padding: 8px;
+    background: rgba(52, 152, 219, 0.08);
+    border-radius: 8px;
+    word-break: break-all;
+}
+.mob-tab-content .main-result-group .big-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.mob-tab-content .main-result-group .small-text {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #666;
+    word-break: break-all;
+}
+.dark .mob-tab-content .main-result-group .small-text { color: #999; }
+
+/* ===== Field panel ===== */
+/* 让 panel-heading 黑色背景顶到屏幕两侧边界 */
+.mob-tab-content .panel-heading {
+    padding: 4px 0 4px 16px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.mob-tab-content .panel-heading h4 {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.mob-tab-content #autolevel {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+/* 场地面板内按钮组：覆盖 inline 固定 em 宽度，让容器紧贴按钮内容 */
+.mob-tab-content .field-info .panel-body > div[style] {
+    width: auto !important;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.mob-tab-content .field-info .btn {
+    font-size: 11px;
+    padding: 4px 4px;
+}
+.mob-tab-content .btn-xxxxwide {
+    width: auto !important;
+    font-size: 11px;
+    padding: 4px 6px;
+}
+.mob-tab-content .ruin-group {
+    width: 100% !important;
+}
+
+/* Paired L/R field conditions */
+.mob-tab-content .btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 0;
+}
+.mob-tab-content .btn-group .left,
+.mob-tab-content .btn-group .right {
+    flex: 1;
+    text-align: center;
+}
+
+/* ===== Select widths ===== */
+.mob-tab-content select.small-select { max-width: calc(100% - 5em); }
+.mob-tab-content .nature { max-width: calc(100% - 5em); }
+
+/* ===== HP ===== */
+.mob-tab-content .current-hp { width: 50px !important; }
+.mob-tab-content .percent-hp { width: 40px !important; }
+.mob-tab-content .hp-bar { display: none; }
+
+/* ===== Export button ===== */
+.mob-tab-content .mob-export-btn {
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    padding: 10px;
+    font-size: 14px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+.mob-tab-content .mob-export-btn:active { opacity: 0.8; }
+
+/* ===== Custom set editor ===== */
+.mob-tab-content #customMon { width: 100%; box-sizing: border-box; }
+.mob-tab-content #spreadName { width: 60% !important; }
+
+/* ===== Misc ===== */
+.mob-tab-content .boost { width: auto; min-width: 40px; font-size: 12px; }
+.mob-tab-content .p1-speed-mods,
+.mob-tab-content .p2-speed-mods { font-size: 12px; }
+.mob-tab-content .btn-xxxxwide { font-size: 11px; padding: 4px 4px; width: auto !important; }
+.mob-tab-content .divider { display: none; }
+.mob-tab-content .ev-total,
+.mob-tab-content .ev-left { font-size: 12px; }
+
+/* ===== Gen 10 result display toggle (in P1/P2 tabs) ===== */
+.mob-toggle-result-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+}
+.mob-toggle-result-row label {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+    white-space: nowrap;
+}
+.mob-toggle-result-row select {
+    font-size: 13px;
+    padding: 4px 8px;
+}
+
+/* Select2 mobile */
+.mob-tab-content .select2-container { max-width: 100% !important; }
+.select2-drop { max-width: 90vw !important; }
+
+/* Hidden power select */
+.mob-tab-content .hidden-power { max-width: 100%; }

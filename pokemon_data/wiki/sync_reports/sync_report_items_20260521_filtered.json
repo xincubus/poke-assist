@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-05-21T01:35:12.550311",
+  "entity_type": "items",
+  "since": "2026-04-01",
+  "model": "mimo-v2.5 (thinking enabled)",
+  "total_stale": 480,
+  "total_changes": 4,
+  "changes": [
+    {
+      "entity_type": "items",
+      "name_zh": "龙之牙",
+      "name_en": "dragon-fang",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "fling_power",
+          "current_value": 70,
+          "new_value": 30,
+          "reason": "Wiki道具信息框throw字段明确为数字30"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/龙之牙（道具）",
+      "wiki_title": "龙之牙（道具）"
+    },
+    {
+      "entity_type": "items",
+      "name_zh": "咒术之铠",
+      "name_en": "malicious-armor",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "fling_power",
+          "current_value": "",
+          "new_value": 30,
+          "reason": "Wiki道具信息框throw字段明确为数字30"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/咒术之铠（道具）",
+      "wiki_title": "咒术之铠（道具）"
+    },
+    {
+      "entity_type": "items",
+      "name_zh": "驱劲能量",
+      "name_en": "booster-energy",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "fling_power",
+          "current_value": "",
+          "new_value": 30,
+          "reason": "Wiki道具信息框throw字段明确为数字30"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/驱劲能量（道具）",
+      "wiki_title": "驱劲能量（道具）"
+    },
+    {
+      "entity_type": "items",
+      "name_zh": "头领凭证",
+      "name_en": "leader’s-crest",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "fling_power",
+          "current_value": "",
+          "new_value": 30,
+          "reason": "Wiki道具信息框throw字段明确为数字30"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/头领凭证（道具）",
+      "wiki_title": "头领凭证（道具）"
+    }
+  ],
+  "note": "已过滤：移除428条category误报（PokeAPI英文分类vs wiki中文分类）和3条树果fling_power误报（throw字段是效果描述非数字），修正龙之牙1500->30（LLM误取价格）"
+}

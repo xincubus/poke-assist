@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PokemonApp.Views.AddPokemonPage"
+             Title="{Binding PageTitle}"
+             BackgroundColor="{AppThemeBinding Light=#F5F5F5, Dark=#1f1f1f}">
+
+    <Grid RowDefinitions="*,Auto">
+        <ScrollView Grid.Row="0" x:Name="MainScrollView">
+            <VerticalStackLayout Padding="16" Spacing="12">
+
+                <!-- 宝可梦搜索 -->
+                <Border BackgroundColor="{AppThemeBinding Light=White, Dark=#2d2d2d}"
+                        Stroke="Transparent" StrokeShape="RoundRectangle 10" Padding="14">
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="宝可梦" FontSize="12" TextColor="{AppThemeBinding Light=#888, Dark=#AAA}" />
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Entry x:Name="PokemonSearchEntry" Placeholder="输入名称搜索（中/英/日）"
+                                   Text="{Binding SearchKeyword}"
+                                   TextChanged="OnSearchTextChanged"
+                                   Focused="OnSearchEntryFocused" />
+                            <ActivityIndicator Grid.Column="1" IsRunning="{Binding IsSearching}"
+                                               IsVisible="{Binding IsSearching}"
+                                               Color="#5B75F5" WidthRequest="20" HeightRequest="20" />
+                        </Grid>
+                        <!-- 搜索下拉结果 -->
+                        <Border x:Name="SearchDropdown" IsVisible="{Binding ShowDropdown}"
+                                BackgroundColor="{AppThemeBinding Light=White, Dark=#333}"
+                                Stroke="#E0E0E0" StrokeShape="RoundRectangle 8">
+                            <CollectionView ItemsSource="{Binding SearchResults}"
+                                            SelectionMode="Single"
+                                            SelectionChanged="OnPokemonSelected"
+                                            MaximumHeightRequest="200">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid Padding="12,8" ColumnDefinitions="Auto,*">
+                                            <Image Grid.Column="0" Source="{Binding ImageUrl}"
+                                                   HeightRequest="36" WidthRequest="36" Aspect="AspectFit" />
+                                            <VerticalStackLayout Grid.Column="1" Margin="8,0,0,0" VerticalOptions="Center">
+                                                <Label Text="{Binding NameZh}" FontSize="14" />
+                                                <Label Text="{Binding NameEn}" FontSize="11"
+                                                       TextColor="{AppThemeBinding Light=#888, Dark=#AAA}" />
+                                            </VerticalStackLayout>
+                                        </Grid>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </Border>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- 宝可梦图片预览 -->
+                <Border BackgroundColor="{AppThemeBinding Light=White, Dark=#2d2d2d}"
+                        Stroke="Transparent" StrokeShape="RoundRectangle 10" Padding="14"
+                        IsVisible="{Binding HasPokemon}">
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="16">
+                        <Image Source="{Binding SelectedImageUrl}" HeightRequest="100" WidthRequest="100"
+                               Aspect="AspectFit" />
+                        <VerticalStackLayout VerticalOptions="Center" Spacing="4">
+                            <Label Text="{Binding SelectedNameZh}" FontSize="18" FontAttributes="Bold" />
+                            <Label Text="{Binding SelectedNameEn}" FontSize="13"
+                                   TextColor="{AppThemeBinding Light=#888, Dark=#AAA}" />
+                            <HorizontalStackLayout Spacing="6">
+                                <Border BackgroundColor="{Binding Type1Color}" StrokeShape="RoundRectangle 4"
+                                        Padding="8,3" IsVisible="{Binding HasType1}" Stroke="Transparent">
+                                    <Label Text="{Binding SelectedType1}" FontSize="12" TextColor="White" />
+                                </Border>
+                                <Border BackgroundColor="{Binding Type2Color}" StrokeShape="RoundRectangle 4"
+                                        Padding="8,3" IsVisible="{Binding HasType2}" Stroke="Transparent">
+                                    <Label Text="{Binding SelectedType2}" FontSize="12" TextColor="White" />
+                                </Border>
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+
+                <!-- 能力值表格 -->
+                <Border BackgroundColor="{AppThemeBinding Light=White, Dark=#2d2d2d}"
+                        Stroke="Transparent" StrokeShape="RoundRectangle 10" Padding="14"
+                        IsVisible="{Binding HasPokemon}">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="能力值" FontSize="12" TextColor="{AppThemeBinding Light=#888, Dark=#AAA}" />
+                        <!-- 表头 -->
+                        <Grid ColumnDefinitions="60,*,*,60" Padding="0,4">
+                            <Label Grid.Column="0" Text="" />
+                            <Label Grid.Column="1" Text="基础能力值" FontSize="11" HorizontalOptions="Center"
+                                   TextColor="{AppThemeBinding Light=#888, Dark=#AAA}" />
+                            <Label Grid.Column="2" Text="能力点数" FontSize="11" HorizontalOptions="Center"
+                                   TextColor="{AppThemeBinding Light=#888, Dark=#AAA}" />
+                            <Label Grid.Column="3" Text="总和" FontSize="11" HorizontalOptions="Center"
+                                   TextColor="{AppThemeBinding Light=#888, Dark=#AAA}" />
+                        </Grid>
+                        <BoxView HeightRequest="1" Color="{AppThemeBinding Light=#F0F0F0, Dark=#404040}" />
+                        <!-- HP -->
+                        <Grid ColumnDefinitions="60,*,*,60" Padding="0,2">
+                            <Label Grid.Column="0" Text="HP" FontSize="13" VerticalOptions="Center"
+                                   FontAttributes="Bold" />
+                            <Label Grid.Column="1" Text="{Binding BaseAbilityHp}" FontSize="13"
+                                   HorizontalOptions="Center" VerticalOptions="Center" />
+                            <Entry Grid.Column="2" Text="{Binding EvHp}" Keyboard="Numeric"
+                                   FontSize="13" HorizontalTextAlignment="Center"
+                                   TextChanged="OnEvChanged" />
+                            <Label Grid.Column="3" Text="{Binding StatHp}" FontSize="13"
+                                   HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" />
+                        </Grid>
+                        <!-- 攻击 -->
+                        <Grid ColumnDefinitions="60,*,*,60" Padding="0,2">
+                            <Label Grid.Column="0" Text="攻击" FontSize="13" VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="{Binding BaseAbilityAttack}" FontSize="13"
+                                   HorizontalOptions="Center" VerticalOptions="Center" />
+                            <Entry Grid.Column="2" Text="{Binding EvAttack}" Keyboard="Numeric"
+                                   FontSize="13" HorizontalTextAlignment="Center"
+                                   TextChanged="OnEvChanged" />
+                            <Label Grid.Column="3" Text="{Binding StatAttack}" FontSize="13"
+                                   HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold"
+                                   TextColor="{Binding StatAttackColor}" />
+                        </Grid>
+                        <!-- 防御 -->
+                        <Grid ColumnDefinitions="60,*,*,60" Padding="0,2">
+                            <Label Grid.Column="0" Text="防御" FontSize="13" VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="{Binding BaseAbilityDefense}" FontSize="13"
+                                   HorizontalOptions="Center" VerticalOptions="Center" />
+                            <Entry Grid.Column="2" Text="{Binding EvDefense}" Keyboard="Numeric"
+                                   FontSize="13" HorizontalTextAlignment="Center"
+                                   TextChanged="OnEvChanged" />
+                            <Label Grid.Column="3" Text="{Binding StatDefense}" FontSize="13"
+                                   HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold"
+                                   TextColor="{Binding StatDefenseColor}" />
+                        </Grid>
+                        <!-- 特攻 -->
+                        <Grid ColumnDefinitions="60,*,*,60" Padding="0,2">
+                            <Label Grid.Column="0" Text="特攻" FontSize="13" VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="{Binding BaseAbilitySpAttack}" FontSize="13"
+                                   HorizontalOptions="Center" VerticalOptions="Center" />
+                            <Entry Grid.Column="2" Text="{Binding EvSpAttack}" Keyboard="Numeric"
+                                   FontSize="13" HorizontalTextAlignment="Center"
+                                   TextChanged="OnEvChanged" />
+                            <Label Grid.Column="3" Text="{Binding StatSpAttack}" FontSize="13"
+                                   HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold"
+                                   TextColor="{Binding StatSpAttackColor}" />
+                        </Grid>
+                        <!-- 特防 -->
+                        <Grid ColumnDefinitions="60,*,*,60" Padding="0,2">
+                            <Label Grid.Column="0" Text="特防" FontSize="13" VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="{Binding BaseAbilitySpDefense}" FontSize="13"
+                                   HorizontalOptions="Center" VerticalOptions="Center" />
+                            <Entry Grid.Column="2" Text="{Binding EvSpDefense}" Keyboard="Numeric"
+                                   FontSize="13" HorizontalTextAlignment="Center"
+                                   TextChanged="OnEvChanged" />
+                            <Label Grid.Column="3" Text="{Binding StatSpDefense}" FontSize="13"
+                                   HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold"
+                                   TextColor="{Binding StatSpDefenseColor}" />
+                        </Grid>
+                        <!-- 速度 -->
+                        <Grid ColumnDefinitions="60,*,*,60" Padding="0,2">
+                            <Label Grid.Column="0" Text="速度" FontSize="13" VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="{Binding BaseAbilitySpeed}" FontSize="13"
+                                   HorizontalOptions="Center" VerticalOptions="Center" />
+                            <Entry Grid.Column="2" Text="{Binding EvSpeed}" Keyboard="Numeric"
+                                   FontSize="13" HorizontalTextAlignment="Center"
+                                   TextChanged="OnEvChanged" />
+                            <Label Grid.Column="3" Text="{Binding StatSpeed}" FontSize="13"
+                                   HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold"
+                                   TextColor="{Binding StatSpeedColor}" />
+                        </Grid>
+                        <!-- 努力值总和提示 -->
+                        <Label Text="{Binding EvTotalText}" FontSize="11"
+                               TextColor="{Binding EvTotalColor}" HorizontalOptions="End" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- 性格 / 特性 / 道具 -->
+                <Border BackgroundColor="{AppThemeBinding Light=White, Dark=#2d2d2d}"
+                        Stroke="Transparent" StrokeShape="RoundRectangle 10" Padding="14"
+                        IsVisible="{Binding HasPokemon}">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="配置" FontSize="12" TextColor="{AppThemeBinding Light=#888, Dark=#AAA}" />
+                        <!-- 性格 -->
+                        <Grid ColumnDefinitions="60,*">
+                            <Label Grid.Column="0" Text="性格" FontSize="13" VerticalOptions="Center" />
+                            <Picker Grid.Column="1" x:Name="NaturePicker"
+                                    ItemsSource="{Binding AllNatures}"
+                                    SelectedItem="{Binding SelectedNature}"
+                                    FontSize="13" />
+                        </Grid>
+                        <!-- 特性 -->
+                        <Grid ColumnDefinitions="60,*">
+                            <Label Grid.Column="0" Text="特性" FontSize="13" VerticalOptions="Center" />
+                            <Picker Grid.Column="1" x:Name="AbilityPicker"
+                                    ItemsSource="{Binding AvailableAbilities}"
+                                    SelectedItem="{Binding SelectedAbility}"
+                                    FontSize="13" />
+                        </Grid>
+                        <!-- 道具 -->
+                        <Grid ColumnDefinitions="60,*">
+                            <Label Grid.Column="0" Text="道具" FontSize="13" VerticalOptions="Center" />
+                            <VerticalStackLayout Grid.Column="1" Spacing="4">
+                                <Entry x:Name="ItemSearchEntry" Placeholder="搜索道具..." Text="{Binding ItemSearchKeyword}"
+                                       FontSize="13" TextChanged="OnItemSearchChanged"
+                                       Focused="OnSearchEntryFocused" />
+                                <Border IsVisible="{Binding ShowItemDropdown}"
+                                        BackgroundColor="{AppThemeBinding Light=White, Dark=#333}"
+                                        Stroke="#E0E0E0" StrokeShape="RoundRectangle 8">
+                                    <CollectionView ItemsSource="{Binding ItemResults}"
+                                                    SelectionMode="Single"
+                                                    SelectionChanged="OnItemSelected"
+                                                    MaximumHeightRequest="160">
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate>
+                                                <Label Text="{Binding DisplayName}" Padding="12,8" FontSize="13" />
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                                </Border>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- 配招 -->
+                <Border BackgroundColor="{AppThemeBinding Light=White, Dark=#2d2d2d}"
+                        Stroke="Transparent" StrokeShape="RoundRectangle 10" Padding="14"
+                        IsVisible="{Binding HasPokemon}">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="配招" FontSize="12" TextColor="{AppThemeBinding Light=#888, Dark=#AAA}" />
+                        <!-- 招式1 -->
+                        <VerticalStackLayout Spacing="4">
+                            <Entry x:Name="MoveSearch1Entry" Placeholder="招式 1（搜索）" Text="{Binding MoveSearch1}"
+                                   FontSize="13" TextChanged="OnMove1SearchChanged"
+                                   Focused="OnSearchEntryFocused" />
+                            <Border IsVisible="{Binding ShowMoveDropdown1}"
+                                    BackgroundColor="{AppThemeBinding Light=White, Dark=#333}"
+                                    Stroke="#E0E0E0" StrokeShape="RoundRectangle 8">
+                                <CollectionView ItemsSource="{Binding MoveResults1}" SelectionMode="Single"
+                                                SelectionChanged="OnMove1Selected" MaximumHeightRequest="160">
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid Padding="12,8" ColumnDefinitions="*,Auto,Auto">
+                                                <Label Grid.Column="0" Text="{Binding DisplayName}" FontSize="13" />
+                                                <Label Grid.Column="1" Text="{Binding Type}" FontSize="11"
+                                                       TextColor="#5B75F5" Margin="4,0" />
+                                                <Label Grid.Column="2" Text="{Binding Power}" FontSize="11"
+                                                       TextColor="{AppThemeBinding Light=#888, Dark=#AAA}" />
+                                            </Grid>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
+                            </Border>
+                        </VerticalStackLayout>
+                        <!-- 招式2 -->
+                        <VerticalStackLayout Spacing="4">
+                            <Entry x:Name="MoveSearch2Entry" Placeholder="招式 2（搜索）" Text="{Binding MoveSearch2}"
+                                   FontSize="13" TextChanged="OnMove2SearchChanged"
+                                   Focused="OnSearchEntryFocused" />
+                            <Border IsVisible="{Binding ShowMoveDropdown2}"
+                                    BackgroundColor="{AppThemeBinding Light=White, Dark=#333}"
+                                    Stroke="#E0E0E0" StrokeShape="RoundRectangle 8">
+                                <CollectionView ItemsSource="{Binding MoveResults2}" SelectionMode="Single"
+                                                SelectionChanged="OnMove2Selected" MaximumHeightRequest="160">
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid Padding="12,8" ColumnDefinitions="*,Auto,Auto">
+                                                <Label Grid.Column="0" Text="{Binding DisplayName}" FontSize="13" />
+                                                <Label Grid.Column="1" Text="{Binding Type}" FontSize="11"
+                                                       TextColor="#5B75F5" Margin="4,0" />
+                                                <Label Grid.Column="2" Text="{Binding Power}" FontSize="11"
+                                                       TextColor="{AppThemeBinding Light=#888, Dark=#AAA}" />
+                                            </Grid>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
+                            </Border>
+                        </VerticalStackLayout>
+                        <!-- 招式3 -->
+                        <VerticalStackLayout Spacing="4">
+                            <Entry x:Name="MoveSearch3Entry" Placeholder="招式 3（搜索）" Text="{Binding MoveSearch3}"
+                                   FontSize="13" TextChanged="OnMove3SearchChanged"
+                                   Focused="OnSearchEntryFocused" />
+                            <Border IsVisible="{Binding ShowMoveDropdown3}"
+                                    BackgroundColor="{AppThemeBinding Light=White, Dark=#333}"
+                                    Stroke="#E0E0E0" StrokeShape="RoundRectangle 8">
+                                <CollectionView ItemsSource="{Binding MoveResults3}" SelectionMode="Single"
+                                                SelectionChanged="OnMove3Selected" MaximumHeightRequest="160">
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid Padding="12,8" ColumnDefinitions="*,Auto,Auto">
+                                                <Label Grid.Column="0" Text="{Binding DisplayName}" FontSize="13" />
+                                                <Label Grid.Column="1" Text="{Binding Type}" FontSize="11"
+                                                       TextColor="#5B75F5" Margin="4,0" />
+                                                <Label Grid.Column="2" Text="{Binding Power}" FontSize="11"
+                                                       TextColor="{AppThemeBinding Light=#888, Dark=#AAA}" />
+                                            </Grid>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
+                            </Border>
+                        </VerticalStackLayout>
+                        <!-- 招式4 -->
+                        <VerticalStackLayout Spacing="4">
+                            <Entry x:Name="MoveSearch4Entry" Placeholder="招式 4（搜索）" Text="{Binding MoveSearch4}"
+                                   FontSize="13" TextChanged="OnMove4SearchChanged"
+                                   Focused="OnSearchEntryFocused" />
+                            <Border IsVisible="{Binding ShowMoveDropdown4}"
+                                    BackgroundColor="{AppThemeBinding Light=White, Dark=#333}"
+                                    Stroke="#E0E0E0" StrokeShape="RoundRectangle 8">
+                                <CollectionView ItemsSource="{Binding MoveResults4}" SelectionMode="Single"
+                                                SelectionChanged="OnMove4Selected" MaximumHeightRequest="160">
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid Padding="12,8" ColumnDefinitions="*,Auto,Auto">
+                                                <Label Grid.Column="0" Text="{Binding DisplayName}" FontSize="13" />
+                                                <Label Grid.Column="1" Text="{Binding Type}" FontSize="11"
+                                                       TextColor="#5B75F5" Margin="4,0" />
+                                                <Label Grid.Column="2" Text="{Binding Power}" FontSize="11"
+                                                       TextColor="{AppThemeBinding Light=#888, Dark=#AAA}" />
+                                            </Grid>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
+                            </Border>
+                        </VerticalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- 底部保存按钮 -->
+        <Button Grid.Row="1" Text="保存" BackgroundColor="#5B75F5" TextColor="White"
+                FontSize="16" HeightRequest="50" CornerRadius="0"
+                Clicked="OnSaveClicked" IsEnabled="{Binding HasPokemon}" />
+    </Grid>
+</ContentPage>

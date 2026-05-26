@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-05-19T18:11:38.830620",
+  "summary": {
+    "new_entries": 1,
+    "renamed_entries": 1,
+    "stale_entries": 0,
+    "suggested_updates": 0
+  },
+  "new_entries": [
+    {
+      "entity_type": "abilities",
+      "name_zh": "杂音",
+      "wiki_title": "杂音（特性）",
+      "wiki_url": "https://wiki.52poke.com/wiki/杂音（特性）",
+      "change_type": "new"
+    }
+  ],
+  "renamed_entries": [
+    {
+      "entity_type": "abilities",
+      "name_zh": "监视",
+      "old_name": "蹲守",
+      "wiki_title": "蹲守（特性）",
+      "wiki_url": "https://wiki.52poke.com/wiki/蹲守（特性）",
+      "change_type": "renamed"
+    }
+  ],
+  "stale_entries": [],
+  "changes": []
+}

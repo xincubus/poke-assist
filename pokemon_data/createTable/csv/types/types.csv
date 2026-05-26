@@ -1,0 +1,164 @@
+﻿id,name_en,name_zh,name_ja,description_zh,description_en,description_ja,effect_zh,effect_en,effect_ja,image_path
+1,Normal,一般属性,ノーマル,一般属性（日文︰ノーマルタイプ，英文︰Normal type）是宝可梦的属性之一。,"The Normal type (Japanese: ノーマルタイプ Normal type) is one of the eighteen types. Normal-type moves are not super effective against any Pokémon, while Normal-type Pokémon are weak to Fighting-type moves.",他のタイプに比べて特徴がない、他のタイプへ強く属さないような性質を持つのがノーマルタイプの特徴と言える。可愛い容姿をした、いわゆるファンシーポケモンが多く属するタイプだが、一部はX・Yからフェアリータイプに変更となった。他には陸上動物の獣類、さらに鳥類（後述のノーマル・ひこうの類）をモチーフとしたポケモンにノーマルタイプが多い。またそのような性質からか、ノーマルとの複合タイプは、ひこうを除いて少ない。ひこうポケモンの内ノーマルタイプを有するものは3割以上にもなる。,,"Note: Type effectiveness multipliers may vary in other games outside the core series .
+The Steel type was introduced in Generation II .
+Additional effects
+If the user has the Ability Scrappy or Mind's Eye , or the target is under the effect of the moves Foresight or Odor Sleuth , Normal-type moves will deal ×1 damage to Ghost-type Pokémon .
+In Generation I , Normal-type Pokémon cannot be paralyzed by Body Slam . Normal-type Pokémon are also affected by Night Shade , despite the move being Ghost-type, which the Normal type is normally immune to. From Generation II onwards, Normal-type Pokémon can be paralyzed by Body Slam and are unaffected by Night Shade.",相性 ゴースト タイプのわざは、効果無しとなる。 かくとう タイプのわざは、効果が抜群となる。 関係する わざ ひこう 単タイプのポケモンが はねやすめ を使用すると、ノーマルタイプの相性で判定される。 関係する もちもの ねらいのまと を持つと、ゴーストタイプの技が当たるようになる。 関係する とくせい てんき がなし・ すなあらし ・ きり のとき、とくせいが てんきや のポケモンはノーマルタイプになる。 過去の仕様 第一世代 のみ、 のしかかり の 追加効果 では まひ 状態にならない仕様があった。,typeImage/normal.png
+2,Fighting,格斗属性,かくとう,格斗属性（日文︰かくとうタイプ，英文︰Fighting type）是宝可梦的属性之一。,"The Fighting type (Japanese: かくとうタイプ Fighting type) is one of the eighteen types. Fighting-type moves are super effective against Dark-, Ice-, Normal-, Rock-, and Steel-type Pokémon, while Fighting-type Pokémon are weak to Flying-, Fairy-, and Psychic-type moves.",このタイプには格闘を得意とするポケモンや格闘技をモチーフとしたポケモンが分類される。二足歩行で手やそれに準ずる器官を持ち、ヒトに近い姿をしていることが多い。物理攻撃の象徴とも言えるタイプでありこうげきが高い傾向が顕著。反対にとくこうが低い傾向にあり、こうげきよりもとくこうが高いものはごく一部である。また、性別が♂のみか、♂の比率が高いポケモンが多い。,,"Note: Type effectiveness multipliers may vary in other games outside the core series .
+The Dark and Steel types were introduced in Generation II . The Fairy type was introduced in Generation VI .
+Additional effects
+If the user has the Ability Scrappy or Mind's Eye , or the target is under the effect of the moves Foresight or Odor Sleuth , Fighting-type moves will deal ×1 damage to Ghost-type Pokémon.",相性 ひこう ・ エスパー ・ フェアリー タイプの技は、効果が抜群となる。 むし ・ あく ・ いわ タイプの技は、効果が今一つとなる。 関係する とくせい とくせいが マルチタイプ のポケモンが こぶしのプレート を持つとかくとうタイプになる。 とくせいが ARシステム のポケモンが ファイトメモリ を持つとかくとうタイプになる。,typeImage/fighting.png
+3,Flying,飞行属性,ひこう,飞行属性（日文︰ひこうタイプ，英文︰Flying type）是宝可梦的属性之一。,"The Flying type (Japanese: ひこうタイプ Flying type) is one of the eighteen types. Flying-type moves are super effective against Bug-, Fighting-, and Grass-type Pokémon, while Flying-type Pokémon are weak to Electric-, Ice-, and Rock-type moves.",鳥など、主に翼で空を飛ぶポケモンが分類される。そらをとぶの使い手として第六世代以前のストーリーではほぼ必須のタイプであった。ポケットモンスター X・Yではこのタイプがメインのスカイバトルというバトル形式が存在する。,"第二世代起
+飞行属性宝可梦通常情况下不属于 地面上的宝可梦 。
+第六世代起
+飞行属性宝可梦在 天气型状态 乱流 中不会被 电属性 、 冰属性 和 岩石属性 的技能造成 效果绝佳 。
+反转对战 中，飞行属性宝可梦在 天气型状态 乱流 中不会被 草属性 、 虫属性 、 地面属性 和 格斗属性 的技能造成 效果绝佳 。","Note: Type effectiveness multipliers may vary in other games outside the core series .
+The Steel type was introduced in Generation II .
+Additional effects
+From Generation II onwards, Flying-type Pokémon are not considered grounded for effects that affect grounded Pokémon (e.g. entry hazards ). This makes Flying-type Pokémon immune to the Ability Arena Trap , the move Rototiller , and all entry hazards (except Stealth Rock ), but also from the benefits of terrains (though they can still use Seeds). If Flying-type Pokémon lose their ungrounded status by methods like holding Iron Ball or being under the effect of moves such as Ingrain ( Generation IV onward), Gravity , Smack Down or Thousand Arrows , they also lose their immunity to Ground-type Pokémon in addition to those benefitted from being ungrounded. Holding Ring Target makes them lose their type immunity to Ground type moves, but keeps ungrounded status for other effects.
+When a Flying-type uses the move Roost , introduced in Generation IV , it temporarily loses its Flying type for a turn. If a pure Flying-type Pokémon uses Roost, then it will become a ??? type in Generation IV and a Normal type in Generation V onward.
+The move Sky Drop , introduced in Generation V , allows the user to pick up a Flying-type Pokémon and make it unable to move. However, on the next turn, Sky Drop will fail and free the target, even if the target is grounded.
+The effectiveness of the move Flying Press , introduced in Generation VI , is calculated by multiplying the effectiveness of its move type (usually Fighting ) and the Flying type.",相性 でんき ・ こおり ・ いわ タイプの技は、効果が抜群となる。 くさ ・ かくとう ・ むし タイプの技は、効果が今一つとなる。 じめん タイプの技は、効果無しとなる。 関係する わざ はねやすめ を使用したターンは、ひこうタイプがなくなる。 フリーフォール を受けてもダメージがない。 地面にいないときに サウザンアロー を受けた場合、自分のタイプに関係なく 等倍 でダメージを受け、 うちおとす 状態となる。 例えば くさ ・ひこうタイプの ワタッコ であっても、 はがね ・ひこうタイプの エアームド であっても地面にいなければサウザンアローは等倍で入る。 地面にいるときにサウザンアローを受けた場合は、ひこうタイプのじめん技耐性を無視し、他のタイプ相性も考慮に入れた相性計算がされる。 関係する状態（ 状態異常 ・ 状態変化 ・ 場の状態 ） ひこうタイプを持つポケモンは 地面にいない 状態となり、地面にいるポケモンに対して発動するあらゆる効果を受けない（ 地面にいる#効果 も参照）。 まきびし ・ どくびし ・ ねばねばネット の影響を受けない。例え どく タイプであってもどくびしを解除できない。 ひこうタイプであっても地面にいる場合は影響を受け、どくタイプであればどくびしを解除できる。 場が エレキフィールド 状態・ グラスフィールド 状態・ ミストフィールド 状態・ サイコフィールド 状態でも、その恩恵を受けられない。 自分が うちおとす 状態・ ねをはる 状態のとき、場が じゅうりょく 状態のときは、地面にいると見なされる。 てんき が らんきりゅう である場合、ひこうタイプを持つポケモンに対する、 でんき ・ こおり ・ いわ タイプ技のダメージが0.5倍になる（ らんきりゅう も参照）。 関係する もちもの くろいてっきゅう を持つと、 地面にいる 状態になる。 ねらいのまと を持つと、じめんタイプの技に対する耐性がなくなる。 関係する とくせい 相手にとくせいが ありじごく のポケモンがいても、 交代 や 逃亡 を制限されない。 自分が 地面にいる ときは制限される。,typeImage/flying.png
+4,Poison,毒,どく,毒重定向至此。如果您在寻找一种异常状态，请移步中毒（状态）。,"The Poison type (Japanese: どくタイプ Poison type) is one of the eighteen types. Poison-type moves are super effective against Fairy- and Grass-type Pokémon, while Poison-type Pokémon are weak to Ground- and Psychic-type moves.",毒を持つポケモンや毒そのものでできたポケモンはこのタイプに分類される。ロケットだんをはじめ悪の組織の手持ちとして使われやすく、悪役のイメージが強い。大半は紫色をしていて見た目のインパクトも強烈だが、ゴミを食べるといったように汚れを引き受ける設定のポケモンも存在し、必ずしも害があるわけではない。,"第一世代起
+毒属性宝可梦不会陷入 中毒 和 剧毒 状态。
+第四世代起
+毒属性宝可梦替换宝可梦上场时不受到 毒菱 的影响。如果是 地面上的宝可梦 ，则可清除毒菱。
+第六世代起
+毒属性的宝可梦使用招式 剧毒 的时候，命中率从90变为必中，即使目标正在使用蓄力的招式并不在场地上。
+第七世代起
+拥有 腐蚀 特性的宝可梦使用可使对方中毒的招式时，可以令毒属性和钢属性的宝可梦中毒。","Note: Type effectiveness multipliers may vary in other games outside the core series .
+In Generation I only, Poison-type moves were super effective against Bug-type Pokémon and Bug-type moves were super effective against Poison-type Pokémon. The Steel type was introduced in Generation II . The Fairy type was introduced in Generation VI .
+Additional effects
+Poison-type Pokémon cannot become poisoned , except by a Pokémon with the Ability Corrosion , introduced in Generation VII .
+Grounded Poison-type Pokémon will remove Toxic Spikes from their side when switched in .
+From Generation VI onward, when a Poison-type Pokémon uses the move Toxic , it cannot miss, bypassing accuracy checks and semi-invulnerable turns from moves such as Fly and Dig .",相性 じめん ・ エスパー タイプの技は、効果が抜群となる。 くさ ・ かくとう ・どく・ むし ・ フェアリー タイプの技は、効果が今一つとなる。 関係する わざ どくどく が必中する。相手が姿を消していても有効（ 第六世代 から）。 関係する状態（ 状態異常 ・ 状態変化 ・ 場の状態 ） どく 状態・ もうどく 状態にならない。 相手が特性 ふしょく を持つ場合はこの限りでない。 地面にいる どくタイプのポケモンが場に出たとき、味方の場の どくびし を解除できる。 関係する もちもの どくタイプのポケモンのみ、 くろいヘドロ で毎ターンHPが回復する。 関係する とくせい とくせいが マルチタイプ のポケモンが もうどくプレート を持つとどくタイプになる。 とくせいが ARシステム のポケモンが ポイズンメモリ を持つとどくタイプになる。 過去の仕様 第一世代 ではむしタイプの技との相性は効果が抜群であった。,typeImage/poison.png
+5,Ground,地面属性,じめん,地面属性（日文︰じめんタイプ，英文︰Ground type）是宝可梦的属性之一。,"The Ground type (Japanese: じめんタイプ Ground type) is one of the eighteen types. Ground-type moves are super effective against Electric-, Fire-, Poison-, Rock-, and Steel-type Pokémon, while Ground-type Pokémon are weak to Grass-, Ice-, and Water-type moves.",地中などに棲むポケモンがこのタイプに分類される。ゲームでは洞窟や砂漠のマップで入手することが多い。じしんのわざマシンが手に入るストーリー終盤から頼もしさを増すタイプである。一方、野生やトレーナーが繰り出すじめんタイプはくさやみずの御三家で弱点を突きやすいこともあって楽に対処しやすい。,"第二世代起
+地面属性宝可梦不会受到 天气型状态 沙暴 的伤害。","Note: Type effectiveness multipliers may vary in other games outside the core series .
+The Steel type was introduced in Generation II .
+Additional effects
+Ground-type Pokémon are immune to Thunder Wave , unless they are holding the Ring Target , introduced in Generation V . Ground-type Pokémon are also immune to damage from the sandstorm weather condition, introduced in Generation II , which also increases the power of Ground-type moves by 30% if they have the Ability Sand Force .
+From Generation II onwards, Ground-type moves cannot hit Pokémon under the effects of Magnet Rise or Telekinesis , the Air Balloon item , or the Abilities Levitate or Earth Eater , though all Pokémon except those with Earth Eater lose their immunity to Ground-type moves when they are grounded (such as by holding an Iron Ball or being under the effects of the moves Ingrain ( Generation IV onward), Gravity , Smack Down , or Thousand Arrows ). Ground-type moves will also affect Flying-type Pokémon when they lose their ungrounded status.",相性 みず ・ くさ ・ こおり タイプの技は、効果が抜群となる。 どく ・ いわ タイプの技は、効果が今一つとなる。 でんき タイプの 攻撃技 は、効果無しとなる。 関係する わざ でんきタイプの でんじは は効果がない。 その他のでんきタイプの へんかわざ （ かいでんぱ ・ そうでん ）は効果がある。 ノーマル タイプに変化したでんじはは無効化できない。 関係する状態（ 状態異常 ・ 状態変化 ・ 場の状態 ） すなあらし のダメージを受けない。 関係する とくせい とくせいが マルチタイプ のポケモンが だいちのプレート を持つとじめんタイプになる。 とくせいが ARシステム のポケモンが グラウンドメモリ を持つとじめんタイプになる。,typeImage/ground.png
+6,Rock,岩石属性,いわ,岩石属性（日文︰いわタイプ，英文︰Rock type）是宝可梦的属性之一。,"The Rock type (Japanese: いわタイプ Rock type) is one of the eighteen types. Rock-type moves are super effective against Bug-, Fire-, Flying-, and Ice-type Pokémon, while Rock-type Pokémon are weak to Fighting-, Grass-, Ground-, Steel-, and Water-type moves.",主に体が岩石で構成されているポケモンが属す。洞窟にのみ出現したり化石から復元することで手に入るレアなポケモンが多い。タケシを筆頭にストーリー最序盤のジムリーダーに使われることが多く、最初の関門として立ちはだかる。弱点がわかりやすいタイプであるため、新米トレーナーがタイプ相性を正しく学んでいるかを試す役割を担っていると言えるだろう。,"岩石属性宝可梦不受 超极巨炎石喷发 的影响。
+第二世代起
+岩石属性宝可梦不会受到 天气型状态 沙暴 的伤害。
+第四世代起
+岩石属性宝可梦在 天气型状态 沙暴 中 特防 ×1.5。","Note: Type effectiveness multipliers may vary in other games outside the core series .
+The Steel type was introduced in Generation II .
+Additional effects
+Rock-type Pokémon are immune to damage from the sandstorm weather condition, introduced in Generation II , which also boosts their Special Defense stat by 50% starting in Generation IV .",相性 みず ・ くさ ・ かくとう ・ じめん ・ はがね タイプの技は、効果が抜群となる。 ノーマル ・ ほのお ・ どく ・ ひこう タイプの技は、効果が今一つとなる。 関係する状態（ 状態異常 ・ 状態変化 ・ 場の状態 ） すなあらし のとき、 とくぼう が1.5倍になる（第四世代以降）。 すなあらしのダメージを受けない。 自分の場が キョダイフンセキ 状態であってもダメージを受けない。 関係する とくせい とくせいが マルチタイプ のポケモンが がんせきプレート を持つといわタイプになる。 とくせいが ARシステム のポケモンが ロックメモリ を持つといわタイプになる。,typeImage/rock.png
+7,Bug,Bug,むし,Bug重定向至此。如果您在寻找常被玩家称为“bug”的名词，请移步游戏漏洞。,"The Bug type (Japanese: むしタイプ Bug type) is one of the eighteen types. Bug-type moves are super effective against Dark-, Grass-, and Psychic-type Pokémon, while Bug-type Pokémon are weak to Fire-, Flying-, and Rock-type moves.",むしタイプのポケモンは現実で昆虫類に属する生物をモチーフにしたものが多い。一般的に成長が早いこともあってストーリー序盤の戦力となる。また、ほとんどの世代では序盤のジムリーダーが使うタイプとされる。,,"Note: Type effectiveness multipliers may vary in other games outside the core series .
+In Generation I only, Bug-type moves were super effective against Poison-type Pokémon and Poison-type moves were super effective against Bug-type Pokémon. The Dark and Steel types were introduced in Generation II . The Fairy type was introduced in Generation VI .",相性 ほのお ・ ひこう ・ いわ タイプの技は、効果が抜群となる。 くさ ・ かくとう ・ じめん タイプの技は、効果が今一つとなる。 関係する とくせい とくせいが マルチタイプ のポケモンが たまむしプレート を持つとむしタイプになる。 とくせいが ARシステム のポケモンが バグメモリ を持つとむしタイプになる。,typeImage/bug.png
+8,Ghost,幽灵属性,ゴースト (タイプ),幽灵属性（日文︰ゴーストタイプ，英文︰Ghost type）是宝可梦的属性之一。,"The Ghost type (Japanese: ゴーストタイプ Ghost type) is one of the eighteen types. Ghost-type moves are super effective against Ghost- and Psychic-type Pokémon, while Ghost-type Pokémon are weak to Dark- and Ghost-type moves.",幽霊がモデルのポケモンが分類される。ホラー要素のあるマップやゲーム内の時間帯が夜のときに出現しやすい。,"第一世代起
+幽灵属性宝可梦对 一般属性 和 格斗属性 的免疫效果可被招式 识破 解除。
+无论速度如何，幽灵属性的宝可梦总是能在对战中 逃走 。
+第三世代起
+幽灵属性宝可梦对 一般属性 和 格斗属性 的免疫效果可被招式 气味侦测 解除。
+第四世代起
+幽灵属性宝可梦对 一般属性 和 格斗属性 的免疫效果可被具有特性 胆量 的宝可梦解除。
+第六世代起
+幽灵属性宝可梦免疫任何阻止交换的效果。
+第九世代起
+幽灵属性宝可梦对 一般属性 和 格斗属性 的免疫效果可被具有特性 心眼 的宝可梦解除。","Note: Type effectiveness multipliers may vary in other games outside the core series .
+In Generation I only, Ghost-type moves had no effect on Psychic-type Pokémon . The Dark and Steel types were introduced in Generation II . In Generations II - V , Ghost-type moves were not very effective against Steel-type Pokémon.
+Additional effects
+If the user has the Ability Scrappy or Mind's Eye , or the target is under the effect of the moves Foresight or Odor Sleuth , Normal - and Fighting-type moves will deal ×1 damage to Ghost-type Pokémon.
+The move Curse , introduced in Generation II , functions differently when used by a Ghost-type Pokémon.
+From Generation VI onwards, Ghost-type Pokémon are immune to effects that prevent recall or escape (such as Mean Look and Shadow Tag ), and they are also guaranteed to flee from any wild battle regardless of their Speed stat .
+The move Trick-or-Treat , introduced in Generation VI, adds the Ghost type to the target's types.
+In Generation I only, Ghost-type Pokémon cannot be paralyzed by Lick , and are affected by Bide , Counter , Seismic Toss , SonicBoom , and Super Fang , despite these moves being Normal- and Fighting-type, which the Ghost type is normally immune to.
+In Generations II and III only, Ghost-type Pokémon are immune to Glare .",相性 ゴースト・ あく タイプのわざは、効果が抜群となる。 むし ・ どく タイプのわざは、効果が今一つとなる。 かくとう ・ ノーマル タイプのわざは、効果無しとなる。 関係する わざ ハロウィン を受けたポケモンはタイプにゴーストタイプが追加される。 のろい は、ゴーストタイプのポケモンが使ったときのみ相手を のろい 状態にする。 関係する状態（ 状態異常 ・ 状態変化 ・ 場の状態 ） みやぶられている 状態になったとき、ノーマル・かくとうタイプのわざのとの相性は等倍に変わる。 にげられない 状態・ バインド 状態・ ねをはる 状態・ フェアリーロック 状態で 交代 や 逃亡 を制限されない（ 第六世代 から）。 はがね タイプを併せ持っていても、 じりょく の効果を受けない。 関係する もちもの ねらいのまと を持つと、ノーマル・かくとうタイプのわざが当たるようになる。 関係する とくせい 相手にとくせいが ありじごく ・ かげふみ ・ じりょく のポケモンがいても、交代や逃亡を制限されない（第六世代から）。 とくせいが きもったま ・ しんがん のポケモンが出すノーマル・かくとうタイプのわざは命中する。 とくせいが マルチタイプ の アルセウス が もののけプレート を持つとゴーストタイプになる。 とくせいが ARシステム のポケモンが ゴーストメモリ を持つとゴーストタイプになる。 その他の仕様 野生のポケモンとの戦闘において にげる が必ず成功する（第六世代から）。,typeImage/ghost.png
+9,Steel,钢属性,はがね,钢属性（日文︰はがねタイプ，英文︰Steel type）是宝可梦的属性之一。于第二世代引入。,"The Steel type (Japanese: はがねタイプ Steel type), originally called the メタルタイプ Metal type in the Pokémon Gold and Silver Spaceworld '97 demo, is one of the eighteen types. It was introduced in Generation II, along with the Dark type. As well as introducing new Pokémon and moves with the Steel type, two Pokémon were changed to have the Steel type. Steel-type moves are super effective against Fairy-, Ice-, and Rock-type Pokémon, while Steel-type Pokémon are weak to Fighting-, Fire-, and Ground-type moves.",金属をイメージする硬い表皮を持つポケモンや刃物のように鋭いポケモン、金属（鉱物）そのものであるポケモンが分類される。第二世代より登場。タイプのなかで最も多い11個（第五世代までは12個）の耐性を持つ。ストーリー序盤ではダメージを与えにくすぎるためか、ある程度手持ちのタイプが充実する中盤以降に登場したり、進化によってはがねタイプを得るものが多い。,"第二世代起
+钢属性宝可梦不会因 毒属性 招式陷入 中毒 状态 * 。
+第三世代起
+钢属性宝可梦不会陷入 中毒 和 剧毒 状态。
+钢属性宝可梦不会受到 天气型状态 沙暴 的伤害。
+第七世代起
+拥有 腐蚀 特性的宝可梦使用能使对方中毒的 变化招式 可以让钢属性宝可梦中毒。","Note: Type effectiveness multipliers may vary in other games outside the core series .
+In Generations II - V , Steel-type Pokémon resisted Ghost - and Dark-type moves . The Fairy type was introduced in Generation VI .
+Additional effects
+Steel-type Pokémon are immune to damage from the sandstorm weather condition.
+In Generation II , Steel-type Pokémon can only be poisoned by the Bug-type move, Twineedle , due to their immunity to Poison-type moves, and cannot be badly poisoned . Starting from Generation III , Steel-type Pokémon cannot be poisoned or badly poisoned at all unless the opposing Pokémon has the Ability Corrosion , introduced in Generation VII .",相性 ほのお ・ かくとう ・ じめん タイプの技は、効果が抜群となる。 ノーマル ・ くさ ・ こおり ・ ひこう ・ エスパー ・ むし ・ いわ ・ ドラゴン ・はがね・ フェアリー タイプの技は、効果が今一つとなる。 どく タイプの技は、効果無しとなる。 関係する状態（ 状態異常 ・ 状態変化 ・ 場の状態 ） どく 状態にならない。 すなあらし によるダメージを受けない。 しおづけ 状態になったとき、最大HPの1/4のダメージを受ける。 関係する もちもの ねらいのまと を持つと、どくタイプの技が当たるようになる。 関係する とくせい じりょく によって 交代 や 逃亡 を制限される。 ゴースト タイプを併せ持っているポケモンは交代を制限されない。 とくせいが マルチタイプ のポケモンが こうてつプレート を持つとはがねタイプになる。 とくせいが ARシステム のポケモンが スチールメモリ を持つとはがねタイプになる。 とくせいがじりょくのポケモンを 手持ち の先頭にすると、はがねタイプの 野生ポケモン が出現しやすくなる。 過去の仕様 第二世代 では ダブルニードル でのみはがねタイプをどく状態にできた。 第五世代 までは、ゴースト・ あく タイプの技との相性はいまひとつであった。,typeImage/steel.png
+10,Fire,火属性,ほのお,火属性（日文︰ほのおタイプ，英文︰Fire type）是一种属性。,"The Fire type (Japanese: ほのおタイプ Flame type) is one of the eighteen types. Fire-type moves are super effective against Bug-, Grass-, Ice-, and Steel-type Pokémon, while Fire-type Pokémon are weak to Ground-, Rock-, and Water-type moves.",このタイプに分類されるポケモンは火や炎、火山などをモチーフとしたポケモンが多い。,"火属性宝可梦不会陷入 灼伤 状态，不受 火海 和 超极巨深渊灭焰 的影响。
+火属性攻击招式可解除目标的 冰冻 状态。
+第二世代
+新增效果： 火属性宝可梦可因 三重攻击 而陷入灼伤状态。
+第三世代
+效果变更： 火焰旋涡 不能 解除目标的 冰冻 状态→ 可以 。 取消效果： 火属性宝可梦可因 三重攻击 而陷入灼伤状态。
+第四世代
+效果变更：火属性攻击招式 全部为 特殊招式 → 有 物理招式 也有特殊招式 。","Note: Type effectiveness multipliers may vary in other games outside the core series .
+In Generation I only, Fire-type Pokémon received neutral damage from Ice-type moves. The Steel type was introduced in Generation II . The Fairy type was introduced in Generation VI .
+Additional effects
+In Generation I , Fire-type Pokémon cannot get burned by damage -dealing Fire-type moves . However, in Generation II , they can get burned by the Normal-type move Tri Attack . Starting in Generation III , Fire-type Pokémon cannot get burned at all. They are also immune to the sea of fire caused by Grass Pledge and Fire Pledge , both of which were introduced in Generation V .
+During the harsh sunlight (introduced in Generation II) or extremely harsh sunlight (introduced in Pokémon Omega Ruby and Alpha Sapphire ) weather conditions, the power of Fire-type moves is increased by 50%. During rain (introduced in Generation II), the power of Fire-type moves is decreased by 50%. During heavy rain (introduced in Pokémon Omega Ruby and Alpha Sapphire), all Fire-type moves will fail. When the move Water Sport (introduced in Generation III) is in effect, the power of Fire-type moves is decreased by 67%.
+If a Pokémon affected by the move Powder (introduced in Generation VI ) attempts to use a Fire-type move, they take damage equal to 25% of their maximum HP and cannot execute the move ( PP is still consumed).
+Only Fire-type Pokémon can use the move Burn Up (introduced in Generation VII ), which will cause the user to no longer be Fire-type unless Terastalized .",相性 みず ・ じめん ・ いわ タイプの技は、効果が抜群となる。 ほのお・ くさ ・ こおり ・ むし ・ はがね ・ フェアリー タイプの技は、効果が今一つとなる。 関係する状態（ 状態異常 ・ 状態変化 ・ 場の状態 ） やけど 状態にならない。 自分の場が ひのうみ 状態であってもダメージを受けない。 自分の場が キョダイゴクエン 状態であってもダメージを受けない。 関係する とくせい にほんばれ ・ おおひでり のとき、とくせいが てんきや のポケモンはほのおタイプになる。 とくせいが マルチタイプ のポケモンが ひのたまプレート を持つとほのおタイプになる。 とくせいが ARシステム のポケモンが ファイヤーメモリ を持つとほのおタイプになる。 過去の仕様 第一世代 ではこおりタイプの技との相性は等倍であった。,typeImage/fire.png
+11,Water,水属性,みず,水属性（日文︰みずタイプ，英文︰Water type）是宝可梦的属性之一。,"The Water type (Japanese: みずタイプ Water type) is one of the eighteen types. Water-type moves are super effective against Fire-, Ground-, and Rock-type Pokémon, while Water-type Pokémon are weak to Electric- and Grass-type moves.",河川や海を生息地とする水棲生物をモチーフとしたポケモンが多くこのタイプに分類されている。そのため水上移動や釣りで入手する形になりやすいのが特徴である。,"水属性宝可梦不受 超极巨水炮轰灭 的影响。
+第四世代
+效果变更：水属性攻击招式 全部为 特殊招式 → 有 物理招式 也有特殊招式 。","Note: Type effectiveness multipliers may vary in other games outside the core series .
+The Steel type was introduced in Generation II .
+Additional effects
+During the rain (introduced in Generation II ) or heavy rain (introduced in Pokémon Omega Ruby and Alpha Sapphire ) weather conditions, the power of Water-type moves is increased by 50%. During harsh sunlight (introduced in Generation II), the power of Water-type moves is decreased by 50%. During extremely harsh sunlight (introduced in Pokémon Omega Ruby and Alpha Sapphire), all Water-type moves will fail.
+The move Soak , introduced in Generation V , causes the target to become a pure Water-type Pokémon (except if it is Terastalized , which will cause the move to fail).
+Water-type Pokémon are weak to the Ice-type move Freeze-Dry , introduced in Generation VI , despite normally being resistant to Ice-type moves.",相性 ほのお ・ こおり ・ はがね ・みずタイプの技は、効果が今一つとなる。 でんき ・ くさ タイプの技は、効果が抜群となる。 関係する わざ みずびたし を受けたポケモンはタイプがみず単タイプになる。 フリーズドライ は通常の相性ではなく、効果が抜群で技を受ける。 関係する状態（ 状態異常 ・ 状態変化 ・ 場の状態 ） 自分の場が キョダイホウゲキ 状態であってもダメージを受けない。 しおづけ 状態になったとき、最大HPの1/4のダメージを受ける。 関係する とくせい あめ ・ おおあめ のとき、とくせいが てんきや のポケモンはみずタイプになる。 とくせいが マルチタイプ のポケモンが しずくプレート を持つとみずタイプになる。 とくせいが ARシステム のポケモンが ウオーターメモリ を持つとみずタイプになる。,typeImage/water.png
+12,Grass,草属性,くさ,草属性（日文︰くさタイプ，英文︰Grass type）是宝可梦的属性之一。,"The Grass type (Japanese: くさタイプ Grass type) is one of the eighteen types. Grass-type moves are super effective against Ground-, Rock-, and Water-type Pokémon, while Grass-type Pokémon are weak to Bug-, Fire-, Flying-, Ice-, and Poison-type moves.",このタイプには植物系のポケモンが分類される。ノーマルと同じく、ストーリー序盤から登場することが多い。御三家の一つであるほか、森や公園のマップに出現しやすい。,"草属性宝可梦不会陷入 寄生种子 状态，除非受到 接棒 招式的影响。 草属性宝可梦不受 超极巨灰飞鞭灭 的影响。
+第四世代
+效果变更：草属性攻击招式 全部为 特殊招式 → 有 物理招式 也有特殊招式 。
+第六世代
+新增效果： 草属性宝可梦免疫 粉末类招式 。","Note: Type effectiveness multipliers may vary in other games outside the core series .
+The Steel type was introduced in Generation II .
+Additional effects
+Grass-type Pokémon are immune to Leech Seed . Starting in Generation VI , they are also immune to powder and spore moves and Effect Spore .
+Grass-type Pokémon are the only Pokémon affected by the stat -raising moves Rototiller and Flower Shield , introduced in Generation VI.
+Forest's Curse , introduced in Generation VI, adds the Grass type to the target's types.
+When Grassy Terrain is in effect, the power of Grass-type moves is increased by 30% (50% prior to Generation VIII ) if the user is grounded .",相性 ほのお ・ こおり ・ どく ・ ひこう ・ むし タイプの技は、効果が抜群となる。 みず ・ でんき ・くさ・ じめん タイプの技は、効果が今一つとなる。 関係する わざ やどりぎのタネ が無効である。 粉・胞子のわざ が無効である（ 第六世代 以降）。 たがやす を受けると こうげき と とくこう が上がる。 フラワーガード を受けると ぼうぎょ が上がる。 もりののろい を受けたポケモンはタイプにくさタイプが追加される。 関係する状態（ 状態異常 ・ 状態変化 ・ 場の状態 ） 自分の場が キョダイベンタツ 状態であってもダメージを受けない。 関係する とくせい とくせい ほうし の影響を受けない（第六世代以降）。 とくせいが フラワーベール のポケモンが味方の場にいるとき、相手から 能力 を下げられず、 状態異常 にもならない。 とくせいが マルチタイプ のポケモンが みどりのプレート を持つとくさタイプになる。 とくせいが ARシステム のポケモンが グラスメモリ を持つとくさタイプになる。 とくせいが しゅうかく のポケモンを 手持ち の先頭にすると、くさタイプの 野生ポケモン が出現しやすくなる( 第八世代 )。,typeImage/grass.png
+13,Electric,Electric,でんき,Electric重定向至此。如果您在寻找凯蒂·佩里演唱的英文歌曲，请移步Electric（歌曲）。,"The Electric type (Japanese: でんきタイプ Electric type) is one of the eighteen types. Electric-type moves are super effective against Flying- and Water-type Pokémon, while Electric-type Pokémon are weak to Ground-type moves.",電気・雷をイメージさせるポケモンが分類される。ポケモンの代名詞でもあるピカチュウをはじめ、マスコット系のポケモンや伝説のポケモンが多数存在する人気の高いタイプである。,"第一世代
+电属性宝可梦在受到电属性 伤害 招式时不会陷入 麻痹 状态。
+第二世代至第五世代
+电属性宝可梦在受到电属性 伤害 招式仍然可能会陷入 麻痹 状态。
+第六世代起
+电属性宝可梦不会被陷入 麻痹 状态。","Note: Type effectiveness multipliers may vary in other games outside the core series .
+The Steel type was introduced in Generation II .
+Additional effects
+In Generation I , Electric-type Pokémon cannot get paralyzed by damage-dealing Electric-type moves , but can get paralyzed by other means. From Generation VI onward, Electric-type Pokémon cannot get paralyzed at all.
+When the move Mud Sport (introduced in Generation III ) is in effect, the power of Electric-type moves is decreased by 67% (50% prior to Generation V ). When Electric Terrain (introduced in Generation VI ) is in effect, the power of Electric-type moves is increased by 30% (50% prior to Generation VIII ) if the user is grounded .
+All Normal-type moves become Electric-type moves when affected by the moves Ion Deluge (introduced in Generation VI) or Plasma Fists (introduced in Pokémon Ultra Sun and Ultra Moon ). If the target is affected by the move Electrify (introduced in Generation VI) before it uses a move, the target's move becomes Electric-type for that turn.
+Only Electric-type Pokémon can use the move Double Shock , which will cause the user to no longer be Electric-type unless Terastalized .",相性 じめん タイプの技は、効果が抜群となる。 でんき・ ひこう ・ はがね タイプの技は、効果が今一つとなる。 関係する状態（ 状態異常 ・ 状態変化 ・ 場の状態 ） まひ 状態にならない（ 第六世代 から）。 関係する とくせい とくせいが マルチタイプ のポケモンが いかずちプレート を持つとでんきタイプになる。 とくせいが ARシステム のポケモンが エレクトロメモリ を持つとでんきタイプになる。 とくせいが せいでんき のポケモンを 手持ち の先頭にすると、でんきタイプの 野生ポケモン が出現しやすくなる。 とくせいが ひらいしん のポケモンを手持ちの先頭にすると、でんきタイプの野生ポケモンが出現しやすくなる( 第八世代 )。,typeImage/electric.png
+14,Psychic,超能力属性,エスパー,超能力属性（日文︰エスパータイプ，英文︰Psychic type）是宝可梦的属性之一。,"The Psychic type (Japanese: エスパータイプ Esper type) is one of the eighteen types. Psychic-type moves are super effective against Fighting- and Poison-type Pokémon, while Psychic-type Pokémon are weak to Bug-, Dark-, and Ghost-type moves.",主に超能力を持つ者がこのタイプに分類される（そのためかエスパータイプの伝説のポケモンも多い）。ポケモンの世界では人間もまた超能力を持つことができる。ナツメによると超能力の素養は人間なら誰でも持つが、多くの者はただそれに気づかないだけだという。,,"Note: Type effectiveness multipliers may vary in other games outside the core series .
+In Generation I only, likely due to a glitch , Psychic-type Pokémon were immune to Ghost-type moves . The Dark - and Steel types were introduced in Generation II .
+Additional effects
+If the move Miracle Eye affects a Dark-type Pokémon, its immunity to Psychic-type attacks will be removed.
+When Psychic Terrain (introduced in Generation VII ) is in effect, the power of Psychic-type moves is increased by 30% (50% prior to Generation VIII ) if the user is grounded .
+Generation I balance issues
+In the Generation I games, Psychic-type Pokémon were at the center of a balance issue. [ 1 ] This issue was rectified in Generation II , with the addition of the Steel and Dark types as well as more moves that are strong against Psychic-types.
+Additionally, Psychic-type Pokémon were immune to Ghost-type moves instead of being weak to them, although the Psychic Johan's statement in Saffron Gym suggests that this was unintended. However, his dialogue was adjusted in the English version of Pokémon Yellow to reflect the observed behavior, whereas the Japanese versions preserved the original text from Pokémon Red, Green , and Blue .",相性 むし ・ ゴースト ・ あく タイプのわざは、効果が抜群となる。 かくとう ・エスパータイプのわざは、効果が今一つとなる。 関係する わざ まほうのこな を受けたポケモンはタイプがエスパー単タイプになる。 関係する とくせい とくせいが マルチタイプ のポケモンが ふしぎのプレート を持つとエスパータイプになる。 とくせいが ARシステム のポケモンが サイキックメモリ を持つとエスパータイプになる。 過去の仕様 第一世代 ではゴーストタイプのわざとの相性は効果なしであった。,typeImage/psychic.png
+15,Ice,冰,こおり,"冰重定向至此。如果您在寻找一种异常状态，请移步冰冻（状态）。
+Ice重定向至此。如果您在寻找地狱三人组的头领，请移步皑世。","The Ice type (Japanese: こおりタイプ Ice type) is one of the eighteen types. Ice-type moves are super effective against Dragon-, Flying-, Grass-, and Ground-type Pokémon, while Ice-type Pokémon are weak to Fighting-, Fire-, Rock-, and Steel-type moves.",氷河など、寒いところに棲むポケモン、または雪や氷をイメージをさせるポケモンが分類される。ストーリーでは後半の寒冷なマップや洞窟に出現することが多く、序盤では手に入りにくい。そのこともあってかこのタイプのジムリーダーは第八世代時点で6番目より早くは出てこない。,"冰属性宝可梦不会陷入 冰冻 状态，不受 冰雹 的伤害，在 下雪 天气下防御×1.5。
+绝对零度 无法对冰属性宝可梦生效。冰属性宝可梦使用 绝对零度 时，命中率会比非冰属性宝可梦高。
+第二世代
+新增效果： 冰属性宝可梦可因 三重攻击 而陷入冰冻状态。
+第三世代
+取消效果： 冰属性宝可梦可因 三重攻击 而陷入冰冻状态。
+第四世代
+效果变更：冰属性攻击招式 全部为 特殊招式 → 有 物理招式 也有特殊招式 。
+第七世代
+新增效果： 绝对零度 无法对冰属性宝可梦生效。 新增效果： 冰属性宝可梦使用 绝对零度 时，命中率会比非冰属性宝可梦高。
+第九世代
+新增效果： 冰属性宝可梦在 下雪 天气下防御×1.5。","Note: Type effectiveness multipliers may vary in other games outside the core series .
+In Generation I only, Ice-type moves dealt neutral damage to Fire-type Pokémon . The Steel type was introduced in Generation II .
+Additional effects
+In Generation I , Ice-type Pokémon cannot get frozen by Ice-type moves . However, In Generation II , they can get frozen by the Normal-type move Tri Attack . Starting in Generation III , Ice-type Pokémon cannot get frozen at all.
+Ice-type Pokémon are immune to the hail weather condition and, as of Generation VII , the move Sheer Cold . From Generation VII onwards, Sheer Cold also has increased accuracy when used by an Ice-type Pokémon.
+In Generation IX , the Defense stat of Ice-type Pokémon is increased by 50% during snow .",相性 ほのお ・ かくとう ・ いわ ・ はがね タイプの技は、効果が抜群となる。 こおりタイプの技は、効果が今一つとなる。 関係するわざ ぜったいれいど が効かない（ 第七世代 から）。 関係する状態（ 状態異常 ・ 状態変化 ・ 場の状態 ） こおり 状態にならない。 あられ のダメージを受けない。 関係する とくせい あられ のとき、とくせいが てんきや のポケモンはこおりタイプになる。 とくせいが マルチタイプ のポケモンが つららのプレート を持つとこおりタイプになる。 とくせいが ARシステム のポケモンが アイスメモリ を持つとこおりタイプになる。,typeImage/ice.png
+16,Dragon,龙属性,ドラゴン,龙属性（日文︰ドラゴンタイプ，英文︰Dragon type）是宝可梦的属性之一。,"The Dragon type (Japanese: ドラゴンタイプ Dragon type) is one of the eighteen types. Dragon-type moves are super effective against Dragon-type Pokémon, while Dragon-type Pokémon are weak to Dragon-, Fairy-, and Ice-type moves.",ドラゴンタイプには竜をイメージしたポケモンが多く分類される。入手困難なうえ最終進化形態になるまでの期間が長いため育成が困難だが、その分最終進化系のパワーは絶大。またドラゴンタイプの伝説のポケモンは第三世代以降ほぼ毎作品登場しており、パッケージを飾ることも多い。威厳のあるタイプと言える。,,"Note: Type effectiveness multipliers may vary in other games outside the core series .
+The Steel type was introduced in Generation II . The Fairy type was introduced in Generation VI .
+Additional effects
+When Misty Terrain is in effect, the power of Dragon-type moves is decreased by 50% if the target is grounded .",相性 こおり ・ドラゴン・ フェアリー タイプの技は、効果が抜群となる。 ほのお ・ みず ・ くさ ・ でんき タイプの技は、効果が今一つとなる。 関係する わざ ドラゴンエール はドラゴンタイプのポケモンが受けた時のみ急所ランクが+2される。 関係する とくせい とくせいが マルチタイプ のポケモンが りゅうのプレート を持つとドラゴンタイプになる。 とくせいが ARシステム のポケモンが ドラゴンメモリ を持つとドラゴンタイプになる。,typeImage/dragon.png
+17,Dark,恶属性,あく,恶属性（日文︰あくタイプ，英文︰Dark type）是宝可梦的属性之一。于第二世代引入。,"The Dark type (Japanese: あくタイプ Evil type) is one of the eighteen types. It was introduced in Generation II, along with the Steel type. As well as introducing new Pokémon and moves with the Dark type, one move was changed to be the Dark type. Dark-type moves are super effective against Ghost- and Psychic-type Pokémon, while Dark-type Pokémon are weak to Bug-, Fairy-, and Fighting-type moves.",主に設定で凶悪、獰猛なポケモンが多く分類される。悪のイメージからか黒色のものが多い。第二世代より登場。どくタイプと同じく悪の組織の手持ちであることが多く、どくタイプがしたっぱに使われやすいのに対し、こちらは幹部クラスやボスクラスのトレーナーによく使われている。最近は御三家の最終進化系にこのタイプが付くことも増えており、ゲッコウガやガオガエンは高い人気を誇る。,"第七世代起
+恶属性宝可梦不会受到对方 恶作剧之心 特性的宝可梦所使用的变化招式影响，但在 双打对战 和 三打对战 中，同伴之间不受此限。","Note: Type effectiveness multipliers may vary in other games outside the core series .
+In Generations II - V , Dark-type moves were not very effective against Steel-type Pokémon . The Fairy type was introduced in Generation VI .
+Additional effects
+If the target is under the effect of the move Miracle Eye , Psychic-type moves will deal ×1 damage to Dark-type Pokémon.
+As of Generation VII , Dark-type Pokémon are immune to opposing Pokémon's moves that gain priority due to the Ability Prankster ; this includes moves called by other moves (such as Assist and Nature Power ), but not moves indirectly caused by Instruct or After You .",相性 むし や かくとう や フェアリー タイプの技は、効果が抜群となる。 ゴースト やあくタイプの技は、効果が今一つとなる。 エスパー タイプの技は、効果無しとなる。 関係する状態（ 状態異常 ・ 状態変化 ・ 場の状態 ） ミラクルアイ 状態になったとき、エスパータイプの技との相性は等倍に変わる。 関係する もちもの ねらいのまと を持つと、エスパータイプの技が当たるようになる。 関係する とくせい とくせいが マルチタイプ のポケモンが こわもてプレート を持つとあくタイプになる。 とくせいが ARシステム のポケモンが ダークメモリ を持つとあくタイプになる。 相手のとくせいの いたずらごころ により優先度が上がった技は無効になる。( 第七世代 以降) 無効化できる技は 変化技 に限定されず、 他のわざが出る変化技 により出た攻撃技も無効化する。 いたずらごころにより優先度が上がった さいはい により出された技である場合のみは有効。 いたずらごころのポケモンが自分・味方である場合は有効。 場を対象とする技は有効。,typeImage/dark.png
+18,Fairy,妖精属性,フェアリー,妖精属性（日文︰フェアリータイプ，英文︰Fairy type）是宝可梦的属性之一。于第六世代引入。,"The Fairy type (Japanese: フェアリータイプ Fairy type) is one of the eighteen types. It was introduced in Generation VI. As well as introducing new Pokémon and moves with the Fairy type, 22 Pokémon and three moves were changed to have the Fairy type. Fairy-type moves are super effective against Dark-, Dragon-, and Fighting-type Pokémon, while Fairy-type Pokémon are weak to Poison- and Steel-type moves.",フェアリー（妖精）という名のとおり、外見としては可愛らしいポケモンやメルヘンチックな雰囲気を持つポケモンが分類される。,,"Note: Type effectiveness multipliers may vary in other games outside the core series .
+Additional effects
+The Dragon-type move Nihil Light , introduced in Generation IX , deals 1x damage to Fairy-type Pokémon even though they are normally immune to Dragon-type moves.",相性 どく ・ はがね タイプの技は、効果が抜群となる。 かくとう ・ むし ・ あく タイプの技は、効果が今一つとなる。 ドラゴン タイプの技は、効果無しとなる。 関係する わざ 無に帰す光 を受けても無効化できない。 関係する もちもの ねらいのまと を持つと、ドラゴンタイプの技が当たるようになる。 関係する とくせい とくせいが マルチタイプ のポケモンが せいれいプレート を持つとフェアリータイプになる。 とくせいが ARシステム のポケモンが フェアリーメモリ を持つとフェアリータイプになる。,typeImage/fairy.png

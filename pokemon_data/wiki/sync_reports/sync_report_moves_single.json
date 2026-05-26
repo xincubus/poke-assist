@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-05-20T10:27:50.982802",
+  "entity_type": "moves",
+  "since": "2026-04-01",
+  "model": "mimo-v2.5 (thinking enabled)",
+  "total_stale": 1,
+  "total_changes": 1,
+  "changes": [
+    {
+      "entity_type": "moves",
+      "name_zh": "拦堵",
+      "name_en": "obstruct",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "pp",
+          "current_value": "10",
+          "new_value": "5",
+          "reason": "根据招式变更章节，在Champions版本中PP从10变更为5"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/拦堵（招式）",
+      "wiki_title": "拦堵（招式）"
+    }
+  ]
+}

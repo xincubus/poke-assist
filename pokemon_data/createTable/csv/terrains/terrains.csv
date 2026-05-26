@@ -1,0 +1,132 @@
+﻿id	name_en	name_ja	name_zh	description_zh	description_en	description_ja	effect_zh	effect_en	effect_ja
+1	Psychic Terrain	サイコフィールド	精神场地	精神场地（日文︰サイコフィールド，英文︰Psychic Terrain）是宝可梦游戏中的一种状态变化。	Psychic Terrain (Japanese: サイコフィールド Psycho Field) is a non-damaging Psychic-type move introduced in Generation VII. It was TM91 in Pokémon Sword and Shield, and is TM138 in Pokémon Scarlet and Violet.	サイコフィールドとは、場の状態の一つ。	"对战场地处于精神场地状态时：
+任何地面上的宝可梦的超能力属性招式的威力提升30%。
+任何宝可梦使用的自然之力都将变为精神强念。
+保护色、拟态会将宝可梦的属性变为超能力属性。
+所有地面上的宝可梦不会受到对手先制招式的攻击或影响；
+在双打对战中，同伴之间使用的招式不受此限。
+该效果与出招顺序无关。只要是先制招式，即使慢于优先度为0的招式使出，招式目标仍会受到精神场地的保护。
+携带道具精神种子的宝可梦，在精神场地中会消耗道具并提升1级特防。
+大地波动变为超能力属性及威力提升100%。
+使用者为地面上的宝可梦，使用广域战力则攻击目标变为全部可以攻击到的对手宝可梦及威力提升50%。"	"Generation VII
+Psychic Terrain creates terrain that envelops the field and replaces the background environment and any other terrain that is already in effect. The terrain fades after five turns.
+This terrain has the following effects on Pokémon that are on the ground and not in the semi-invulnerable turn of a move.
+It boosts the power of Psychic-type moves used by affected Pokémon by 50% (regardless of whether the target of the move is affected by Psychic Terrain).
+Affected Pokémon become immune to opponents' moves with increased priority (including moves boosted by Prankster, Gale Wings, or Triage).
+Moves that target all Pokémon (except Perish Song, Flower Shield, and Rototiller) cannot be blocked by Psychic Terrain even if they become priority moves.
+Nature Power becomes Psychic.
+Secret Power uses the animation of Confusion and may lower its target's Speed.
+Camouflage causes the user to become Psychic-type.
+When a Pokémon with the Ability Psychic Surge enters battle, Psychic Terrain is automatically created. Upon successfully doing damage, Genesis Supernova creates Psychic Terrain on the field.
+If a Pokémon is holding a Psychic Seed while the field is Psychic Terrain, it consumes the Psychic Seed and its Special Defense is increased by one stage (even if it is not otherwise affected by the terrain). If a Terrain Extender is held when Psychic Terrain is used, the terrain will last 8 turns instead of 5.
+If powered up by a Psychium Z into Z-Psychic Terrain, the user's Special Attack stat rises by one stage.
+Generation VIII onwards
+Psychic Terrain now:
+Boosts the power of Psychic-type moves used by affected Pokémon by 30% instead of the previous 50%.
+Boosts the power of Expanding Force by 1.5×, and if the setting is a Double Battle, the move's target will be changed to hit both opposing Pokémon.
+Changes Terrain Pulse's type to Psychic and doubles its base power from 50 to 100.
+Changes a Pokémon's type to Psychic if it has the Ability Mimicry.
+Psychic Terrain is automatically created when Max Mindstorm is used. Defog, G-Max Wind Rage, Steel Roller and Ice Spinner remove Psychic Terrain and any other terrain upon being used. Steel Roller also fails if Psychic Terrain or other terrains are absent.
+Psychic Terrain cannot be selected in a battle."	"地面にいるポケモンのエスパーわざの威力が第七世代までは1.5倍に、第八世代では1.3倍に上がる。
+地面にいるポケモンは敵が使用した優先度+1以上のわざを受けなくなる。"
+2	Electric Terrain	エレキフィールド	电气场地	电气场地（日文︰エレキフィールド，英文︰Electric Terrain）是宝可梦游戏中的一种状态变化。	Electric Terrain (Japanese: エレキフィールド Elec Field) is a non-damaging Electric-type move introduced in Generation VI. It was TM90 in Pokémon Sword and Shield, and is TM136 in Pokémon Scarlet and Violet.	エレキフィールドとは、場の状態の一つ。	"对战场地处于电气场地状态时：
+任何地面上的宝可梦的电属性招式威力将会提高30%，并且不会陷入睡眠状态以及瞌睡状态。
+宝可梦仍会因为不听话而陷入睡眠状态。
+任何宝可梦使用的自然之力都将变为十万伏特，秘密之力的追加效果变为有30%几率使目标陷入麻痹。
+保护色、拟态会将宝可梦的属性变为电属性。
+拥有冲浪之尾特性的宝可梦的速度翻倍。
+携带道具电气种子的宝可梦，在电气场地中会消耗道具并提升1级防御。
+大地波动变为电属性及威力提升100%。
+若对手为地面上的宝可梦，我方使用电力上升威力提升100%。
+拥有夸克充能特性的宝可梦除ＨＰ以外最高的能力会提高30%，若该项能力为速度，则会提高50%。
+拥有强子引擎特性的宝可梦特攻提高33%。
+精神剑威力提升50%。"	"Generations VI to VII
+Electric Terrain creates terrain that envelops the field and replaces the background environment and any other terrain that is already in effect. The terrain fades after five turns.
+This terrain has the following effects on Pokémon that are on the ground and not in the semi-invulnerable turn of a move.
+It boosts the power of Electric-type moves used by affected Pokémon by 50% (regardless of whether the target of the move is affected by Electric Terrain). This boost includes moves that became Electric type due to type-changing moves like Electrify.
+It prevents affected Pokémon from being afflicted by sleep or Yawn.
+If an affected Pokémon is already drowsy due to Yawn, it is prevented from falling asleep and the drowsy effect will end.
+Rest will fail if used by an affected Pokémon.
+Nature Power becomes Thunderbolt.
+Secret Power uses the animation of Thunder Shock and has a 30% chance of causing paralysis.
+Camouflage causes the user to become Electric-type.
+Natural objects disappear and cannot be destroyed while Electric Terrain is in effect.
+When a Pokémon with the Ability Electric Surge enters battle, Electric Terrain is automatically created. Pokémon with the Ability Surge Surfer have their Speed stat doubled when under the effects of Electric Terrain.
+If a Terrain Extender is held when Electric Terrain is used, the terrain will last 8 turns instead of 5. If a Pokémon is holding an Electric Seed while the field is Electric Terrain, it consumes the Electric Seed and its Defense is increased by one stage (even if it is not otherwise affected by the terrain).
+Electric Terrain is removed if Splintered Stormshards is used.
+If powered up by an Electrium Z into Z-Electric Terrain, the user's Speed stat is raised by one stage.
+Generation VIII onwards
+Electric Terrain now:
+Boosts the power of Electric-type moves used by affected Pokémon by 30% instead of the previous 50%.
+Doubles Rising Voltage's base power from 70 to 140 if used on a target on Electric Terrain.
+Changes Terrain Pulse's type to Electric and doubles its base power from 50 to 100.
+Changes a Pokémon's type to Electric if it has the Ability Mimicry.
+Boosts the highest stat of a Pokémon with Quark Drive by 30% (50% if speed is the highest stat), even if it is not otherwise affected by the terrain due to not being grounded.
+Boosts the Special Attack stat of a Pokémon with Hadron Engine by roughly 33% (or more precisely, by a factor of 5461/4096), even if it is not otherwise affected by the terrain due to not being grounded.
+Gives Psyblade's power a 50% boost from 80 to 120.
+Electric Terrain is automatically created for 5 turns (8 turns with Terrain Extender) when Max Lightning is used or when a Pokémon with the Ability Hadron Engine enters the field. Defog, G-Max Wind Rage, Steel Roller and Ice Spinner remove Electric Terrain and any other terrain upon being used. Steel Roller also fails if Electric Terrain or other terrains are absent."	"地面にいるポケモンはねむり状態およびねむけ状態にならない。
+地面にいるポケモンが使用するでんきタイプの技の威力が、第七世代までは1.5倍に、第八世代では1.3倍になる。"
+3	Misty Terrain	ミストフィールド	薄雾场地	薄雾场地（日文︰ミストフィールド，英文︰Misty Terrain）是宝可梦游戏中的一种状态变化。	Misty Terrain (Japanese: ミストフィールド Mist Field) is a non-damaging Fairy-type move introduced in Generation VI. It is TM89 in Pokémon Sword and Shield, and is TM139 in Pokémon Scarlet and Violet.	ミストフィールドとは、場の状態の一つ。	"对战场地处于薄雾场地状态时：
+所有地面上的宝可梦不会陷入任何异常状态以及混乱状态。
+所有地面上的宝可梦所受到的龙属性招式的伤害降低50%。
+任何宝可梦使用的自然之力都将变为月亮之力，秘密之力的追加效果变为有30%几率使目标特攻下降1级。
+保护色、拟态会将宝可梦的属性变为妖精属性。
+携带道具薄雾种子的宝可梦，在薄雾场地中会消耗道具并提升1级特防。
+大地波动变为妖精属性及威力提升100%。
+使用者为地面上的宝可梦，使用薄雾炸裂则威力提升50%。"	"Generation VI
+Misty Terrain creates terrain that envelops the field and replaces the background environment and any other terrain that is already in effect. The terrain fades after five turns.
+This terrain has the following effects on Pokémon that are on the ground and not in the semi-invulnerable turn of a move.
+It halves the power of Dragon-type moves used against affected Pokémon (regardless of whether the user of the move is affected by Misty Terrain).
+It prevents affected Pokémon from being afflicted by non-volatile status conditions (but does not cure Pokémon already afflicted with one).
+If an affected Pokémon is drowsy due to Yawn, it is prevented from falling asleep.
+Rest will fail if used by an affected Pokémon.
+Nature Power becomes Moonblast.
+Secret Power uses the animation of Fairy Wind and may lower its target's Special Attack.
+Camouflage causes the user to become Fairy-type.
+Natural objects disappear and cannot be destroyed while Misty Terrain is in effect. Misty Terrain does not prevent Pokémon from being confused.
+Generation VII
+Pokémon affected by Misty Terrain can no longer become confused.
+When a Pokémon with the Ability Misty Surge enters battle, Misty Terrain is automatically created.
+If a Pokémon is holding a Misty Seed while the field is Misty Terrain, it consumes the Misty Seed and its Special Defense is increased by one stage (even if it is not otherwise affected by the terrain). If a Terrain Extender is held when Misty Terrain is used, the terrain will last 8 turns instead of 5.
+If powered up by a Fairium Z into Z-Misty Terrain, the user's Special Defense stat rises by one stage.
+Generation VIII onwards
+Misty Terrain now:
+Increases Misty Explosion's base power by 1.5×.
+Changes Terrain Pulse's type to Fairy and its base power doubles from 50 to 100.
+Changes a Pokémon's type to Fairy if it has the Ability Mimicry.
+Prevents an affected Pokémon who has become drowsy from the effect of G-Max Snooze from falling asleep.
+Misty Terrain is automatically created when Max Starfall is used. Defog, G-Max Wind Rage, Steel Roller and Ice Spinner remove Misty Terrain and any other terrain upon being used. Steel Roller also fails if Misty Terrain or other terrains are absent."	"地面にいるポケモンは状態異常にならない。
+こんらんは第六世代では防げないが、第七世代以降では防ぐことができる。
+地面にいるポケモンに対するドラゴンタイプの技の威力が半減する。"
+4	Grassy Terrain	グラスフィールド	青草场地	青草场地（日文︰グラスフィールド，英文︰Grassy Terrain）是宝可梦游戏中的一种状态变化。	Grassy Terrain (Japanese: グラスフィールド Grass Field) is a non-damaging Grass-type move introduced in Generation VI. It was TM88 in Pokémon Sword and Shield, and is TM137 in Pokémon Scarlet and Violet.	グラスフィールドとは、場の状態の一つ。	"对战场地处于青草场地状态时：
+任何地面上的宝可梦每回合结束时恢复最大ＨＰ的1⁄16，且使用草属性招式的威力提升30%。
+任何地面上的宝可梦受到地震、重踏及震级的伤害减半。
+任何宝可梦使用的自然之力都将变为能量球，秘密之力的追加效果变为有30%几率使目标陷入睡眠。
+保护色、拟态会将宝可梦的属性变为草属性。
+拥有草之毛皮特性的宝可梦的防御提升50%。
+花疗恢复的ＨＰ值提升到最大ＨＰ的2⁄3。
+携带道具青草种子的宝可梦，在青草场地中会消耗道具并提升1级防御。
+大地波动变为草属性及威力提升100%。
+地面上的宝可梦使用青草滑梯时，优先度变为+1。"	"Generations VI to VII
+Grassy Terrain creates terrain that envelops the field and replaces the background environment and any other terrain that is already in effect. The terrain fades after five turns.
+This terrain has the following effects on Pokémon that are on the ground and not in the semi-invulnerable turn of a move:
+It boosts the power of Grass-type moves used by affected Pokémon by 50% (regardless of whether the target of the move is affected by Grassy Terrain).
+At the end of each turn, the terrain restores the HP of each affected Pokémon by 1/16 of its maximum HP.
+It causes Floral Healing to restore up to ⅔ of the target's maximum HP instead of the usual ½.
+The power of Bulldoze, Earthquake, and Magnitude is halved against affected targets (regardless of whether the user of the move is affected by Grassy Terrain).
+Nature Power becomes Energy Ball.
+Secret Power uses the animation of Vine Whip and has a 30% chance of causing the target to sleep.
+Camouflage causes the user to become Grass-type.
+Natural objects disappear and cannot be destroyed while Grassy Terrain is in effect.
+When a Pokémon with the Ability Grassy Surge enters battle, Grassy Terrain is automatically created. When a Pokémon with the Ability Grass Pelt enters battle, its Defense stat is boosted by 50%.
+If a Terrain Extender is held when Grassy Terrain is used, the terrain will last 8 turns instead of 5. If a Pokémon is holding a Grassy Seed while the field is Grassy Terrain, it consumes the Grassy Seed and its Defense is increased by one stage (even if it is not otherwise affected by the terrain).
+If powered up by a Grassium Z into Z-Grassy Terrain, the user's Defense stat rises by one stage.
+Generation VIII onwards
+Grassy Terrain now:
+boosts the power of Grass-type moves used by affected Pokémon by 30% instead of the previous 50%
+changes Terrain Pulse's type to Grass and doubles its base power from 50 to 100
+increases Grassy Glide's priority by one
+changes a Pokémon's type to Grass if it has the Ability Mimicry
+Grassy Terrain is automatically created when Max Overgrowth is used or when a Pokémon with Seed Sower is hit by an attack. Defog, G-Max Wind Rage, Steel Roller and Ice Spinner remove Grassy Terrain and any other terrain upon being used. Steel Roller also fails if Grassy Terrain or other terrains are absent."	"地面にいるポケモンが使用するくさタイプの技の威力が第七世代までは1.5倍に、第八世代では1.3倍にになる
+地面にいるポケモンはターン終了時に最大HPの1/16だけ回復する。
+地面にいるポケモンが受けるじしん・じならし・マグニチュードの威力が0.5倍になる。"

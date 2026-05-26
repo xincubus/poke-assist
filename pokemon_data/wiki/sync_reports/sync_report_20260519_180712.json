@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-05-19T18:07:12.917802",
+  "summary": {
+    "new_entries": 3,
+    "renamed_entries": 0,
+    "stale_entries": 0,
+    "suggested_updates": 0
+  },
+  "new_entries": [
+    {
+      "entity_type": "moves",
+      "name_zh": "水平斩",
+      "wiki_title": "水平斩（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/水平斩（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "真空斩",
+      "wiki_title": "真空斩（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/真空斩（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "归无之光",
+      "wiki_title": "归无之光（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/归无之光（招式）",
+      "change_type": "new"
+    }
+  ],
+  "renamed_entries": [],
+  "stale_entries": [],
+  "changes": []
+}

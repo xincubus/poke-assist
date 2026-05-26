@@ -1,0 +1,368 @@
+﻿id,name_en,name_zh,name_ja,description_zh,description_en,description_ja
+1,Stench,恶臭,あくしゅう,通过释放臭臭的气味， 在攻击的时候， 有时会使对手畏缩。,Has a 10% chance of making target Pokémon flinch with each hit.,臭い　においを　放つことによって 攻撃した　ときに　相手を ひるませることが　ある。
+2,Drizzle,降雨,あめふらし,出场时， 会将天气变为下雨。,Summons rain that lasts indefinitely upon entering battle.,登場　したときに 天気を　雨に　する。
+3,Speed Boost,加速,かそく,每一回合速度会变快。,Raises Speed one stage after each turn.,毎ターン　素早さが　上がる。
+4,Battle Armor,战斗盔甲,カブトアーマー,被坚硬的甲壳守护着， 不会被对手的攻击击中要害。,Protects against critical hits.,硬い　甲羅に　守られて 相手の　攻撃が 急所に　当たらない。
+5,Sturdy,结实,がんじょう,即使受到对手的招式攻击， 也不会被一击打倒。 一击必杀的招式也没有效果。,"Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP.",相手の　技を　受けても 一撃で　倒されることが　ない。 一撃必殺技も　効かない。
+6,Damp,湿气,しめりけ,通过把周围都弄湿， 使谁都无法使用自爆等爆炸类的招式。,"Prevents self destruct, explosion, and aftermath from working while the Pokémon is in battle.",あたりを　湿らせることに　よって じばく　などの　爆発する　技を だれも　使えなくなる。
+7,Limber,柔软,じゅうなん,因为身体柔软， 不会变为麻痹状态。,Prevents paralysis.,柔軟な　体によって まひ状態に　ならない。
+8,Sand Veil,沙隐,すながくれ,在沙暴的时候， 闪避率会提高。,Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage.,砂あらしの　とき 回避率が　上がる。
+9,Static,静电,せいでんき,身上带有静电， 有时会让接触到的对手麻痹。,Has a 30% chance of paralyzing attacking Pokémon on contact.,静電気を　体に　まとい 触った　相手を まひさせる　ことがある。
+10,Volt Absorb,蓄电,ちくでん,受到电属性的招式攻击时， 不会受到伤害，而是会回复。,"Absorbs electric moves, healing for 1/4 max HP.",でんきタイプの　技を　受けると ダメージを　受けずに　回復する。
+11,Water Absorb,储水,ちょすい,受到水属性的招式攻击时， 不会受到伤害，而是会回复。,"Absorbs water moves, healing for 1/4 max HP.",みずタイプの　技を　受けると ダメージを　受けずに　回復する。
+12,Oblivious,迟钝,どんかん,因为感觉迟钝， 不会变为着迷和被挑衅状态。,Prevents infatuation and protects against captivate.,鈍感なので メロメロや　ちょうはつ状態に ならない。
+13,Cloud Nine,无关天气,ノーてんき,任何天气的影响都会消失。,"Negates all effects of weather, but does not prevent the weather itself.",あらゆる　天気の　影響が なくなって　しまう。
+14,Compound Eyes,复眼,ふくがん,因为拥有复眼， 招式的命中率会提高。,Increases moves' accuracy to 1.3×.,複眼を　持っているため 技の　命中率が　上がる。
+15,Insomnia,不眠,ふみん,因为有着睡不着的体质， 所以不会陷入睡眠状态。,Prevents sleep.,眠れない　体質　なので ねむり状態に　ならない。
+16,Color Change,变色,へんしょく,自己的属性会变为 从对手处所受招式的属性。,Changes type to match when hit by a damaging move.,相手から　受けた　技の　タイプに 自分の　タイプが　変化　する。
+17,Immunity,免疫,めんえき,因为体内拥有免疫能力， 不会变为中毒状态。,Prevents poison.,体内に　免疫を　持っているため どく状態に　ならない。
+18,Flash Fire,引火,もらいび,受到火属性的招式攻击时， 吸收火焰，自己使出的 火属性招式会变强。,"Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle.",ほのおタイプの　技を　受けると 炎を　もらい　自分が　出す ほのおタイプの　技が　強くなる。
+19,Shield Dust,鳞粉,りんぷん,被鳞粉守护着， 不会受到招式的追加效果影响。,Protects against incoming moves' extra effects.,りんぷんに　守られて 技の　追加効果を　受けなくなる。
+20,Own Tempo,我行我素,マイペース,因为我行我素， 不会变为混乱状态。,Prevents confusion.,マイペースなので こんらん状態に　ならない。
+21,Suction Cups,吸盘,きゅうばん,用吸盘牢牢贴在地面上， 让替换宝可梦的招式和道具无效。,Prevents being forced out of battle by other Pokémon's moves.,吸盤で　地面に　張り付き ポケモンを　入れ替えさせる 技や　道具が　効かなくなる。
+22,Intimidate,威吓,いかく,出场时威吓对手， 让其退缩， 降低对手的攻击。,Lowers opponents' Attack one stage upon entering battle.,登場　したとき　威嚇して 相手を　萎縮させ 相手の　攻撃を　下げて　しまう。
+23,Shadow Tag,踩影,かげふみ,踩住对手的影子 使其无法逃走或替换。,Prevents opponents from fleeing or switching out.,相手の　影を　踏み 逃げたり　交代　できなくする。
+24,Rough Skin,粗糙皮肤,さめはだ,受到攻击时， 用粗糙的皮肤弄伤 接触到自己的对手。,Damages attacking Pokémon for 1/8 their max HP on contact.,攻撃を　受けたとき 自分に　触れた　相手を ざらざらの　肌で　キズつける。
+25,Wonder Guard,神奇守护,ふしぎなまもり,不可思议的力量， 只有效果绝佳的招式才能击中。,Protects against damaging moves that are not super effective.,効果バツグンの　技しか 当たらない　不思議な　力。
+26,Levitate,飘浮,ふゆう,从地面浮起， 从而不会受到地面属性招式的攻击。,Evades ground moves.,地面から　浮くことによって じめんタイプの　技を　受けない。
+27,Effect Spore,孢子,ほうし,受到攻击时， 有时会把接触到自己的对手 变为中毒、麻痹或睡眠状态。,"Has a 30% chance of inflcting either paralysis, poison, or sleep on attacking Pokémon on contact.",攻撃で　自分に　触れた　相手を どくや　まひや　ねむり状態に する　ことがある。
+28,Synchronize,同步,シンクロ,将自己的中毒、麻痹 或灼伤状态传染给对手。,"Copies burns, paralysis, and poison received onto the Pokémon that inflicted them.",自分が　なってしまった どくや　まひや　やけどを 相手に　うつす。
+29,Clear Body,恒净之躯,クリアボディ,不会因为对手的招式或特性 而被降低能力。,Prevents stats from being lowered by other Pokémon.,相手の　技や　特性で 能力を　下げられない。
+30,Natural Cure,自然回复,しぜんかいふく,回到同行队伍后， 异常状态就会被治愈。,Cures any major status ailment upon switching out.,手持ちに　ひっこむと 状態異常が　治る。
+31,Lightning Rod,避雷针,ひらいしん,将电属性的招式吸引到自己身上， 不会受到伤害，而是会提高特攻。,"Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage.",でんきタイプの　技を　自分に 寄せつけ　ダメージを　受けずに 特攻が　上がる。
+32,Serene Grace,天恩,てんのめぐみ,托天恩的福， 招式的追加效果容易出现。,Doubles the chance of moves' extra effects occurring.,天の恵みの　おかげで 技の　追加効果が　でやすい。
+33,Swift Swim,悠游自如,すいすい,下雨天气时， 速度会提高。,Doubles Speed during rain.,天気が　雨のとき 素早さが　上がる。
+34,Chlorophyll,叶绿素,ようりょくそ,晴朗天气时， 速度会提高。,Doubles Speed during strong sunlight.,天気が　晴れのとき 素早さが　上がる。
+35,Illuminate,发光,はっこう,通过让周围变亮， 变得容易遇到野生的宝可梦。,Doubles the wild encounter rate.,あたりを　明るくする　ことで 野生の　ポケモンに 遭遇　しやすくなる。
+36,Trace,复制,トレース,出场时，复制对手的特性， 变为与之相同的特性。,Copies an opponent's ability upon entering battle.,登場　したとき 相手の　特性を　トレースして 同じ　特性に　なる。
+37,Huge Power,大力士,ちからもち,物理攻击的威力会变为２倍。,Doubles Attack in battle.,物理攻撃の 威力が　２倍になる。
+38,Poison Point,毒刺,どくのトゲ,有时会让接触到自己的 对手变为中毒状态。,Has a 30% chance of poisoning attacking Pokémon on contact.,自分に　触った　相手を どく状態に　することがある。
+39,Inner Focus,精神力,せいしんりょく,拥有经过锻炼的精神， 而不会因对手的攻击而畏缩。,Prevents flinching.,鍛えられた　精神に　よって 相手の　攻撃に　ひるまない。
+40,Magma Armor,熔岩铠甲,マグマのよろい,将炽热的熔岩覆盖在身上， 不会变为冰冻状态。,Prevents freezing.,熱い　マグマを　身にまとい こおり状態に　ならない。
+41,Water Veil,水幕,みずのベール,将水幕裹在身上， 不会变为灼伤状态。,Prevents burns.,水のベールを　身にまとい やけど状態に　ならない。
+42,Magnet Pull,磁力,じりょく,用磁力吸住钢属性的宝可梦， 使其无法逃走。,Prevents steel opponents from fleeing or switching out.,はがねタイプの　ポケモンを 磁力で　引きつけて 逃げられなくする。
+43,Soundproof,隔音,ぼうおん,通过屏蔽声音， 不受到声音招式的攻击。,Protects against sound-based moves.,音を　遮断　することに　よって 音の　攻撃を　受けない。
+44,Rain Dish,雨盘,あめうけざら,下雨天气时， 会缓缓回复ＨＰ。,Heals for 1/16 max HP after each turn during rain.,天気が　雨のとき 少しずつ　ＨＰを　回復する。
+45,Sand Stream,扬沙,すなおこし,出场时， 会把天气变为沙暴。,Summons a sandstorm that lasts indefinitely upon entering battle.,登場　したとき 天気を　砂あらしにする。
+46,Pressure,压迫感,プレッシャー,给予对手压迫感， 大量减少其使用招式的ＰＰ。,Increases the PP cost of moves targetting the Pokémon by one.,プレッシャーを　あたえて 相手の　使う　技の　ＰＰを 多く　減らす。
+47,Thick Fat,厚脂肪,あついしぼう,因为被厚厚的脂肪保护着， 会让火属性和冰属性的招式伤害减半。,Halves damage from fire and ice moves.,厚い　脂肪で　守られているので ほのおタイプと　こおりタイプの 技の　ダメージを　半減させる。
+48,Early Bird,早起,はやおき,即使变为睡眠状态， 也能以２倍的速度提早醒来。,Makes sleep pass twice as quickly.,ねむり状態に　なっても ２倍の　早さで 目覚める　ことが　できる。
+49,Flame Body,火焰之躯,ほのおのからだ,有时会让接触到自己的 对手变为灼伤状态。,Has a 30% chance of burning attacking Pokémon on contact.,自分に　触った　相手を やけど状態に　する　ことがある。
+50,Run Away,逃跑,にげあし,一定能从野生宝可梦 那儿逃走。,Ensures success fleeing from wild battles.,野生の　ポケモンから 必ず　逃げられる。
+51,Keen Eye,锐利目光,するどいめ,多亏了锐利的目光， 命中率不会被降低。,Prevents accuracy from being lowered.,鋭い　目の　おかげで 命中率を　下げられない。
+52,Hyper Cutter,怪力钳,かいりきバサミ,因为拥有以力量自豪的钳子， 不会被对手降低攻击。,Prevents Attack from being lowered by other Pokémon.,力自慢の　ハサミを　持っているので 相手に　攻撃を　下げられない。
+53,Pickup,捡拾,ものひろい,有时会捡来对手用过的道具， 冒险过程中也会捡到。,Picks up other Pokémon's used and Flung held items.  May also pick up an item after battle.,相手の　使った　道具を 拾ってくることが　ある。 冒険中も　拾ってくる。
+54,Truant,懒惰,なまけ,如果使出招式， 下一回合就会休息。,Skips every second turn.,技を　出すと 次の　ターンは　休んでしまう。
+55,Hustle,活力,はりきり,自己的攻击变高， 但命中率会降低。,"Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×.",自分の　攻撃が　高くなるが 命中率が　下がる。
+56,Cute Charm,迷人之躯,メロメロボディ,有时会让接触到自己的对手着迷。,Has a 30% chance of infatuating attacking Pokémon on contact.,自分に　触った　相手を メロメロに　することが　ある。
+57,Plus,正电,プラス,出场的伙伴之间 如果有正电或负电特性的宝可梦， 自己的特攻会提高。,Increases Special Attack to 1.5× when a friendly Pokémon has plus or minus.,プラスか　マイナスの　特性を　持つ ポケモンが　仲間に　いると 自分の　特攻が　上がる。
+58,Minus,负电,マイナス,出场的伙伴之间 如果有正电或负电特性的宝可梦， 自己的特攻会提高。,Increases Special Attack to 1.5× when a friendly Pokémon has plus or minus.,プラスか　マイナスの　特性を　持つ ポケモンが　仲間に　いると 自分の　特攻が　上がる。
+59,Forecast,阴晴不定,てんきや,受天气的影响， 会变为水属性、火属性 或冰属性中的某一个。,Changes castform's type and form to match the weather.,天気の　影響を　受けて みずタイプ　ほのおタイプ　こおりタイプの どれかに　変化する。
+60,Sticky Hold,黏着,ねんちゃく,因为道具是粘在黏性身体上的， 所以不会被对手夺走。,Prevents a held item from being removed by other Pokémon.,粘着質の　体に 道具が　くっついているため 相手に　道具を　奪われない。
+61,Shed Skin,蜕皮,だっぴ,通过蜕去身上的皮， 有时会治愈异常状态。,Has a 33% chance of curing any major status ailment after each turn.,体の　皮を　脱ぎ捨てることで 状態異常を 治すことが　ある。
+62,Guts,毅力,こんじょう,如果变为异常状态， 会拿出毅力， 攻击会提高。,Increases Attack to 1.5× with a major status ailment.,状態異常に　なると 根性を　だして 攻撃が　上がる。
+63,Marvel Scale,神奇鳞片,ふしぎなうろこ,如果变为异常状态， 神奇鳞片会发生反应， 防御会提高。,Increases Defense to 1.5× with a major status ailment.,状態異常に　なると 不思議なウロコが　反応して 防御が　上がる。
+64,Liquid Ooze,污泥浆,ヘドロえき,吸收了污泥浆的对手 会因强烈的恶臭 而受到伤害，减少ＨＰ。,Damages opponents using leeching moves for as much as they would heal.,ヘドロ液を　吸い取った　相手は 強烈な　悪臭で ダメージを　受けて　ＨＰを　減らす。
+65,Overgrow,茂盛,しんりょく,ＨＰ减少的时候， 草属性的招式威力会提高。,Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less.,ＨＰが　減ったとき くさタイプの　技の 威力が　上がる。
+66,Blaze,猛火,もうか,ＨＰ减少的时候， 火属性的招式威力会提高。,Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less.,ＨＰが　減ったとき ほのおタイプの　技の 威力が　上がる。
+67,Torrent,激流,げきりゅう,ＨＰ减少的时候， 水属性的招式威力会提高。,Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less.,ＨＰが　減ったとき みずタイプの　技の 威力が　上がる。
+68,Swarm,虫之预感,むしのしらせ,ＨＰ减少的时候， 虫属性的招式威力会提高。,Strengthens bug moves to inflict 1.5× damage at 1/3 max HP or less.,ＨＰが　減ったとき むしタイプの　技の 威力が　上がる。
+69,Rock Head,坚硬脑袋,いしあたま,即使使出会受反作用力伤害的招式， ＨＰ也不会减少。,Protects against recoil damage.,反動を　受ける　技を　出しても ＨＰが　減らない。
+70,Drought,日照,ひでり,出场时， 会将天气变为晴朗。,Summons strong sunlight that lasts indefinitely upon entering battle.,登場　したときに 天気を　晴れに　する。
+71,Arena Trap,沙穴,ありじごく,在战斗中让对手无法逃走。,Prevents opponents from fleeing or switching out.  Eluded by flying-types and Pokémon in the air.,戦闘で　相手を 逃げられなくする。
+72,Vital Spirit,干劲,やるき,通过激发出干劲， 不会变为睡眠状态。,Prevents sleep.,やる気を　だすことに　よって ねむり状態に　ならない。
+73,White Smoke,白色烟雾,しろいけむり,被白色烟雾保护着， 不会被对手降低能力。,Prevents stats from being lowered by other Pokémon.,白い煙に　守られて 相手に　能力を　下げられない。
+74,Pure Power,瑜伽之力,ヨガパワー,因瑜伽的力量， 物理攻击的威力会变为２倍。,Doubles Attack in battle.,ヨガの　力で 物理攻撃の　威力が ２倍に　なる。
+75,Shell Armor,硬壳盔甲,シェルアーマー,被坚硬的壳保护着， 对手的攻击不会击中要害。,Protects against critical hits.,硬い　殻に　守られ 相手の　攻撃が 急所に　当たらない。
+76,Air Lock,气闸,エアロック,所有天气的影响都会消失。,"Negates all effects of weather, but does not prevent the weather itself.",あらゆる　天気の　影響が 消えて　しまう。
+77,Tangled Feet,蹒跚,ちどりあし,在混乱状态时， 闪避率会提高。,Doubles evasion when confused.,こんらん状態の　ときは 回避率が　アップする。
+78,Motor Drive,电气引擎,でんきエンジン,受到电属性的招式攻击时， 不会受到伤害，而是速度会提高。,"Absorbs electric moves, raising Speed one stage.",でんきタイプの　技を　受けると ダメージを　受けずに 素早さが　上がる。
+79,Rivalry,斗争心,とうそうしん,面对性别相同的对手， 会燃起斗争心，变得更强。 而面对性别不同的，则会变弱。,"Increases damage inflicted to 1.25× against Pokémon of the same gender, but decreases damage to 0.75× against the opposite gender.",性別が　同じだと 闘争心を　燃やして　強くなる。 性別が　違うと　弱くなる。
+80,Steadfast,不屈之心,ふくつのこころ,每次畏缩时， 不屈之心就会燃起， 速度也会提高。,Raises Speed one stage upon flinching.,ひるむ　たびに 不屈の心を　燃やして 素早さが　上がる。
+81,Snow Cloak,雪隐,ゆきがくれ,冰雹天气时， 闪避率会提高。,Increases evasion to 1.25× during hail.  Protects against hail damage.,天気が　あられのとき 回避率が　上がる。
+82,Gluttony,贪吃鬼,くいしんぼう,原本ＨＰ变得很少时才会吃树果， 在ＨＰ还有一半时就会把它吃掉。,Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP.,ＨＰが　少なくなったら　食べる きのみを　ＨＰ　半分の 時に　食べてしまう。
+83,Anger Point,愤怒穴位,いかりのつぼ,要害被击中时， 会大发雷霆， 攻击力变为最大。,Raises Attack to the maximum of six stages upon receiving a critical hit.,急所に　攻撃が　当たると 怒りくるって　攻撃力が 最大に　なる。
+84,Unburden,轻装,かるわざ,失去所持有的道具时， 速度会提高。,Doubles Speed upon using or losing a held item.,持っていた　道具が　なくなると 素早さが　上がる。
+85,Heatproof,耐热,たいねつ,耐热的体质会 让火属性的招式威力减半。,Halves damage from fire moves and burns.,耐熱の　体に　よって ほのおタイプの　技の 威力を　半減させる。
+86,Simple,单纯,たんじゅん,能力变化会变为平时的２倍。,Doubles the Pokémon's stat modifiers.  These doubled modifiers are still capped at -6 or 6 stages.,能力　変化が いつもの　２倍に　なる。
+87,Dry Skin,干燥皮肤,かんそうはだ,下雨天气时和受到水属性的招式时， ＨＰ会回复。晴朗天气时和受到火属性的 招式时，ＨＰ会减少。,"Causes 1/8 max HP in damage each turn during strong sunlight, but heals for 1/8 max HP during rain.  Increases damage from fire moves to 1.25×, but absorbs water moves, healing for 1/4 max HP.",天気が　雨の時や　みずタイプの 技で　ＨＰが　回復し　はれの時や ほのおタイプの　技で　減ってしまう。
+88,Download,下载,ダウンロード,比较对手的防御和特防， 根据较低的那项能力 相应地提高自己的攻击或特攻。,Raises the attack stat corresponding to the opponents' weaker defense one stage upon entering battle.,相手の　防御と　特防を　くらべて 低い　ほうの　能力に　あわせて 自分の　攻撃か　特攻を　上げる。
+89,Iron Fist,铁拳,てつのこぶし,使用拳类招式的威力会提高。,Strengthens punch-based moves to 1.2× their power.,パンチを　使う　技の 威力が　上がる。
+90,Poison Heal,毒疗,ポイズンヒール,变为中毒状态时， ＨＰ不会减少，反而会增加起来。,Heals for 1/8 max HP after each turn when poisoned in place of damage.,どく状態に　なると ＨＰが　減らずに　増えていく。
+91,Adaptability,适应力,てきおうりょく,与自身同属性的招式 威力会提高。,Increases the same-type attack bonus from 1.5× to 2×.,自分と　おなじ　タイプの 技の　威力が　上がる。
+92,Skill Link,连续攻击,スキルリンク,如果使用连续招式， 总是能使出最高次数。,Extends two-to-five-hit moves and triple kick to their full length every time.,連続技を　使うと　いつも 最高回数　出すことが　できる。
+93,Hydration,湿润之躯,うるおいボディ,下雨天气时， 异常状态会治愈。,Cures any major status ailment after each turn during rain.,天気が　雨のとき 状態異常が　治る。
+94,Solar Power,太阳之力,サンパワー,晴朗天气时， 特攻会提高， 而每回合ＨＰ会减少。,Increases Special Attack to 1.5× but costs 1/8 max HP after each turn during strong sunlight.,天気が　晴れると 特攻が　上がるが 毎ターン　ＨＰが　減る。
+95,Quick Feet,飞毛腿,はやあし,变为异常状态时， 速度会提高。,Increases Speed to 1.5× with a major status ailment.,状態異常に　なると 素早さが　上がる。
+96,Normalize,一般皮肤,ノーマルスキン,无论是什么属性的招式， 全部会变为一般属性。 威力会少量提高。,Makes the Pokémon's moves all act normal-type.,どんな　タイプの　技でも すべて　ノーマルタイプに　なる。 威力が　少し　上がる。
+97,Sniper,狙击手,スナイパー,击中要害时， 威力会变得更强。,Strengthens critical hits to inflict 3× damage rather than 2×.,攻撃を　急所に　当てると 威力が　さらに　上がる。
+98,Magic Guard,魔法防守,マジックガード,不会受到攻击以外的伤害。,Protects against damage not directly caused by a move.,攻撃　以外では ダメージを　受けない。
+99,No Guard,无防守,ノーガード,由于无防守战术， 双方使出的招式都必定会击中。,Ensures all moves used by and against the Pokémon hit.,ノーガード戦法に　よって お互いの　出す　技が かならず　当たる　ようになる。
+100,Stall,慢出,あとだし,使出招式的顺序 必定会变为最后。,Makes the Pokémon move last within its move's priority bracket.,技を　出す　順番が かならず　最後に　なる。
+101,Technician,技术高手,テクニシャン,攻击时可以将 低威力招式的威力提高。,Strengthens moves of 60 base power or less to 1.5× their power.,威力が　低い　技の 威力を　高くして　攻撃できる。
+102,Leaf Guard,叶子防守,リーフガード,晴朗天气时， 不会变为异常状态。,Protects against major status ailments during strong sunlight.,天気が　晴れのときは 状態異常に　ならない。
+103,Klutz,笨拙,ぶきよう,无法使用持有的道具。,Prevents the Pokémon from using its held item in battle.,持っている　道具を 使うことが　できない。
+104,Mold Breaker,破格,かたやぶり,可以不受对手特性的干扰， 向对手使出招式。,Bypasses targets' abilities if they could hinder or prevent a move.,相手の　特性に ジャマされる　ことなく　相手に 技を　出すことが　できる。
+105,Super Luck,超幸运,きょううん,因为拥有超幸运， 攻击容易击中对手的要害。,Raises moves' critical hit rates one stage.,強運を　持っているため 相手の　急所に 攻撃が　当たりやすい。
+106,Aftermath,引爆,ゆうばく,变为濒死时， 会对接触到自己的对手造成伤害。,Damages the attacker for 1/4 its max HP when knocked out by a contact move.,ひんしに　なったとき 触った　相手に ダメージを　あたえる。
+107,Anticipation,危险预知,きけんよち,可以察觉到 对手拥有的危险招式。,"Notifies all trainers upon entering battle if an opponent has a super-effective move, self destruct, explosion, or a one-hit KO move.",相手の　持つ　危険な　技を 察知する　ことができる。
+108,Forewarn,预知梦,よちむ,出场时， 只读取１个对手拥有的招式。,Reveals the opponents' strongest move upon entering battle.,登場　したとき 相手の　持つ　技を ひとつだけ　読み取る。
+109,Unaware,纯朴,てんねん,可以无视对手能力的变化， 进行攻击。,Ignores other Pokémon's stat modifiers for damage and accuracy calculation.,相手の　能力の　変化を 無視して　攻撃が　できる。
+110,Tinted Lens,有色眼镜,いろめがね,可以将效果不好的招式 以通常的威力使出。,Doubles damage inflicted with not-very-effective moves.,効果が　いまひとつの　技を 通常の　威力で 出すことが　できる。
+111,Filter,过滤,フィルター,受到效果绝佳的攻击时， 可以减弱其威力。,Decreases damage taken from super-effective moves by 1/4.,効果バツグンに　なってしまう 攻撃の　威力を 弱める　ことが　できる。
+112,Slow Start,慢启动,スロースタート,在５回合内， 攻击和速度减半。,Halves Attack and Speed for five turns upon entering battle.,５ターンの　あいだ 攻撃と　素早さが 半分に　なる。
+113,Scrappy,胆量,きもったま,一般属性和格斗属性的招式 可以击中幽灵属性的宝可梦。,Lets the Pokémon's normal and fighting moves hit ghost Pokémon.,ゴーストタイプの　ポケモンに ノーマルタイプと　かくとうタイプの 技を　当てることが　できる。
+114,Storm Drain,引水,よびみず,将水属性的招式引到自己身上， 不会受到伤害，而是会提高特攻。,"Redirects single-target water moves to this Pokémon where possible.  Absorbs Water moves, raising Special Attack one stage.",みずタイプの　技を　自分に　よせつけ ダメージは　受けずに　特攻が　上がる。
+115,Ice Body,冰冻之躯,アイスボディ,冰雹天气时， 会缓缓回复ＨＰ。,Heals for 1/16 max HP after each turn during hail.  Protects against hail damage.,天気が　あられのとき　ＨＰを 少しずつ　回復　する。
+116,Solid Rock,坚硬岩石,ハードロック,受到效果绝佳的攻击时， 可以减弱其威力。,Decreases damage taken from super-effective moves by 1/4.,効果バツグンに　なってしまう 攻撃の　威力を 弱める　ことが　できる。
+117,Snow Warning,降雪,ゆきふらし,出场时， 会将天气变为冰雹。,Summons hail that lasts indefinitely upon entering battle.,登場　したときに 天気を　あられに　する。
+118,Honey Gather,采蜜,みつあつめ,战斗结束时， 有时候会捡来甜甜蜜。,The Pokémon may pick up honey after battle.,戦闘が　終わったとき あまいミツを　拾うことが　ある。
+119,Frisk,察觉,おみとおし,出场时， 可以察觉对手的持有物。,Reveals an opponent's held item upon entering battle.,登場　したとき 相手の　持ち物を 見通すことが　できる。
+120,Reckless,舍身,すてみ,自己会因反作用力受伤的招式， 其威力会提高。,Strengthens recoil moves to 1.2× their power.,反動で　ダメージを 受ける　技の　威力が　上がる。
+121,Multitype,多属性,マルチタイプ,自己的属性会根据持有的石板 或Ｚ纯晶的属性而改变。,Changes arceus's type and form to match its held Plate.,持っている　プレートや Ｚクリスタルの　タイプによって 自分の　タイプが　変わる。
+122,Flower Gift,花之礼,フラワーギフト,晴朗天气时， 自己与同伴的攻击和 特防能力会提高。,Increases friendly Pokémon's Attack and Special Defense to 1.5× during strong sunlight.,天気が　晴れのとき 自分と　味方の　攻撃と 特防の　能力が　上がる。
+123,Bad Dreams,梦魇,ナイトメア,给予睡眠状态的对手伤害。,Damages sleeping opponents for 1/8 their max HP after each turn.,ねむり状態の　相手に ダメージを　あたえる。
+124,Pickpocket,顺手牵羊,わるいてぐせ,盗取接触到自己的 对手的道具。,Steals attacking Pokémon's held items on contact.,触られた　相手の　道具を 盗んで　しまう。
+125,Sheer Force,强行,ちからずく,招式的追加效果消失， 但因此能以更高的威力使出招式。,"Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects.",技の　追加効果は　なくなるが そのぶん　高い　威力で 技を　出すことが　できる。
+126,Contrary,唱反调,あまのじゃく,能力的变化发生逆转， 原本提高时会降低， 而原本降低时会提高。,Inverts stat changes.,能力の　変化が　逆転して 上がるときに　下がり 下がるときに　上がる。
+127,Unnerve,紧张感,きんちょうかん,让对手紧张， 使其无法食用树果。,Prevents opposing Pokémon from eating held Berries.,相手を　緊張させて きのみを　食べられなく　させる。
+128,Defiant,不服输,まけんき,能力被降低时， 攻击会大幅提高。,Raises Attack two stages upon having any stat lowered.,能力を　下げられると 攻撃が　ぐーんと　上がる。
+129,Defeatist,软弱,よわき,ＨＰ减半时， 会变得软弱， 攻击和特攻会减半。,Halves Attack and Special Attack at 50% max HP or less.,ＨＰが　半分に　なると 弱気に　なって　攻撃と 特攻が　半減する。
+130,Cursed Body,诅咒之躯,のろわれボディ,受到攻击时， 有时会把对手的招式 变为定身法状态。,Has a 30% chance of Disabling any move that hits the Pokémon.,攻撃を　受けると　相手の　技を かなしばり状態に することが　ある。
+131,Healer,治愈之心,いやしのこころ,有时会治愈异常状态的同伴。,Has a 30% chance of curing each adjacent ally of any major status ailment after each turn.,状態異常の　味方を たまに　治してあげる。
+132,Friend Guard,友情防守,フレンドガード,可以减少我方的伤害。,Decreases all direct damage taken by friendly Pokémon to 0.75×.,味方の　ダメージを 減らすことが　できる。
+133,Weak Armor,碎裂铠甲,くだけるよろい,如果因物理招式受到伤害， 防御会降低， 速度会大幅提高。,Raises Speed and lowers Defense by one stage each upon being hit by a physical move.,物理技で　ダメージを　受けると 防御が　下がり 素早さが　ぐーんと　上がる。
+134,Heavy Metal,重金属,ヘヴィメタル,自身的重量会变为２倍。,Doubles the Pokémon's weight.,自分の　重さが ２倍に　なる。
+135,Light Metal,轻金属,ライトメタル,自身的重量会减半。,Halves the Pokémon's weight.,自分の　重さが 半分に　なる。
+136,Multiscale,多重鳞片,マルチスケイル,ＨＰ全满时， 受到的伤害会变少。,Halves damage taken from full HP.,ＨＰが　満タンの　ときに 受ける　ダメージが　少なくなる。
+137,Toxic Boost,中毒激升,どくぼうそう,变为中毒状态时， 物理招式的威力会提高。,Increases Attack to 1.5× when poisoned.,どく状態に　なったとき 物理技の　威力が　上がる。
+138,Flare Boost,受热激升,ねつぼうそう,变为灼伤状态时， 特殊招式的威力会提高。,Increases Special Attack to 1.5× when burned.,やけど状態に　なったとき 特殊技の　威力が　上がる。
+139,Harvest,收获,しゅうかく,可以多次制作出 已被使用掉的树果。,Has a 50% chance of restoring a used Berry after each turn if the Pokémon has held no items in the meantime.,使った　きのみを 何回も　作りだす。
+140,Telepathy,心灵感应,テレパシー,读取我方的攻击， 并闪避其招式伤害。,Protects against friendly Pokémon's damaging moves.,味方の　攻撃を　読み取って 技を　回避する。
+141,Moody,心情不定,ムラっけ,每一回合，能力中的某项 会大幅提高，而某项会降低。,Raises a random stat two stages and lowers another one stage after each turn.,毎ターン　能力の　どれかが ぐーんと　上がって　どれかが　下がる。
+142,Overcoat,防尘,ぼうじん,不会受到沙暴或冰雹等的伤害。 不会受到粉末类招式的攻击。,Protects against damage from weather.,すなあらしや　あられなどの ダメージを　受けない。 粉の　技を　受けない。
+143,Poison Touch,毒手,どくしゅ,只通过接触就有可能 让对手变为中毒状态。,Has a 30% chance of poisoning target Pokémon upon contact.,触る　だけで　相手を どく　状態に　することがある。
+144,Regenerator,再生力,さいせいりょく,退回同行队伍后， ＨＰ会少量回复。,Heals for 1/3 max HP upon switching out.,手持ちに　引っ込むと ＨＰが　少し　回復する。
+145,Big Pecks,健壮胸肌,はとむね,不会受到防御降低的效果。,Protects against Defense drops.,防御を　下げる 効果を　受けない。
+146,Sand Rush,拨沙,すなかき,沙暴天气时， 速度会提高。,Doubles Speed during a sandstorm.  Protects against sandstorm damage.,天気が　すなあらし　のとき 素早さが　上がる。
+147,Wonder Skin,奇迹皮肤,ミラクルスキン,成为不易受到变化招式 攻击的身体。,Lowers incoming non-damaging moves' base accuracy to exactly 50%.,変化技を　受けにくい 体に　なっている。
+148,Analytic,分析,アナライズ,如果在最后使出招式， 招式的威力会提高。,Strengthens moves to 1.3× their power when moving last.,いちばん　最後に　技を　出すと 技の　威力が　上がる。
+149,Illusion,幻觉,イリュージョン,假扮成同行队伍中的 最后一只宝可梦出场， 迷惑对手。,Takes the appearance of the last conscious party Pokémon upon being sent out until hit by a damaging move.,手持ちの　いちばん　うしろに　いる ポケモンに　なりきって　登場して 相手を　化かす。
+150,Imposter,变身者,かわりもの,变身为当前面对的宝可梦。,Transforms upon entering battle.,目の前の　ポケモンに 変身　してしまう。
+151,Infiltrator,穿透,すりぬけ,可以穿透对手的壁障 或替身进行攻击。,"Bypasses light screen, reflect, and safeguard.",相手の　壁や　身代わりを すりぬけて　攻撃　できる
+152,Mummy,木乃伊,ミイラ,被对手接触到后， 会将对手变为木乃伊。,Changes attacking Pokémon's abilities to Mummy on contact.,相手に　触られると 相手を　ミイラに　してしまう。
+153,Moxie,自信过度,じしんかじょう,如果打倒对手， 就会充满自信，攻击会提高。,Raises Attack one stage upon KOing a Pokémon.,相手を　倒すと 自信が　ついて 攻撃が　上がる。
+154,Justified,正义之心,せいぎのこころ,受到恶属性的招式攻击时， 因为正义感，攻击会提高。,Raises Attack one stage upon taking damage from a dark move.,あくタイプの　攻撃を　受けると 正義感で　攻撃が　上がる。
+155,Rattled,胆怯,びびり,受到恶属性、幽灵属性 和虫属性的招式攻击时， 会因胆怯而速度提高。,"Raises Speed one stage upon being hit by a dark, ghost, or bug move.",あくタイプと　ゴーストタイプと むしタイプの　技を　受けると びびって　素早さが　上がる。
+156,Magic Bounce,魔法镜,マジックミラー,可以不受到由对手使出的 变化招式影响，并将其反弹。,Reflects most non-damaging moves back at their user.,相手に　だされた　変化技を　受けずに そのまま　返す　ことが　できる。
+157,Sap Sipper,食草,そうしょく,受到草属性的招式攻击时， 不会受到伤害，而是攻击会提高。,"Absorbs grass moves, raising Attack one stage.",くさタイプの　技を　受けると ダメージを　受けずに 攻撃が　上がる。
+158,Prankster,恶作剧之心,いたずらごころ,可以率先使出变化招式。,Raises non-damaging moves' priority by one stage.,変化技を　先制で 出すことが　できる。
+159,Sand Force,沙之力,すなのちから,沙暴天气时， 岩石属性、地面属性 和钢属性的招式威力会提高。,"Strengthens rock, ground, and steel moves to 1.3× their power during a sandstorm.  Protects against sandstorm damage.",天気が　すなあらしの　とき いわタイプと　じめんタイプと はがねタイプの　威力が　上がる。
+160,Iron Barbs,铁刺,てつのトゲ,用铁刺给予接触到自己的 对手伤害。,Damages attacking Pokémon for 1/8 their max HP on contact.,自分に　触った　相手に 鉄のトゲで　ダメージを　あたえる。
+161,Zen Mode,达摩模式,ダルマモード,ＨＰ变为一半以下时， 样子会改变。,"Changes darmanitan's form after each turn depending on its HP: Zen Mode below 50% max HP, and Standard Mode otherwise.",ＨＰが　半分　以下に　なると 姿が　変化する。
+162,Victory Star,胜利之星,しょうりのほし,自己和同伴的命中率会提高。,Increases moves' accuracy to 1.1× for friendly Pokémon.,自分や　味方の 命中率が　上がる。
+163,Turboblaze,涡轮火焰,ターボブレイズ,可以不受对手特性的干扰， 向对手使出招式。,Bypasses targets' abilities if they could hinder or prevent moves.,相手の　特性に　ジャマされず 相手に　技を　出すことが　できる。
+164,Teravolt,兆级电压,テラボルテージ,可以不受对手特性的干扰， 向对手使出招式。,Bypasses targets' abilities if they could hinder or prevent moves.,相手の　特性に　ジャマされず 相手に　技を　出すことが　できる。
+165,Aroma Veil,芳香幕,アロマベール,可以防住向自己和同伴 发出的心灵攻击。,Protects allies against moves that affect their mental state.,自分と　味方への　メンタル 攻撃を　防ぐことが　できる。
+166,Flower Veil,花幕,フラワーベール,我方的草属性宝可梦 能力不会降低， 也不会变为异常状态。,Protects friendly grass Pokémon from having their stats lowered by other Pokémon.,味方の　草ポケモンは 能力が　下がらず 状態異常にも　ならない。
+167,Cheek Pouch,颊囊,ほおぶくろ,无论是哪种树果， 食用后，ＨＰ都会回复。,"Restores HP upon eating a Berry, in addition to the Berry's effect.",どんな　きのみでも 食べると　ＨＰも　回復する。
+168,Protean,变幻自如,へんげんじざい,变为与自己使出的招式 相同的属性。,Changes the bearer's type to match each move it uses.,自分が　出す　技と 同じ　タイプに　変化する。
+169,Fur Coat,毛皮大衣,ファーコート,对手给予的物理招式的 伤害会减半。,Halves damage from physical attacks.,相手から　受ける　物理技の ダメージが　半分に　なる。
+170,Magician,魔术师,マジシャン,夺走被自己的招式 击中的对手的道具。,Steals the target's held item when the bearer uses a damaging move.,技を　当てた　相手の 道具を　奪ってしまう。
+171,Bulletproof,防弹,ぼうだん,可以防住对手的 球和弹类招式。,"Protects against bullet, ball, and bomb-based moves.",相手の　弾や　爆弾などの 技を　防ぐことが　できる。
+172,Competitive,好胜,かちき,如果能力被降低， 特攻就会大幅提高。,Raises Special Attack by two stages upon having any stat lowered.,能力を　下げられると 特攻が　ぐーんと　上がる。
+173,Strong Jaw,强壮之颚,がんじょうあご,因为颚部强壮， 啃咬类招式的威力会提高。,Strengthens biting moves to 1.5× their power.,あごが　頑丈で 噛む　技の　威力が 高くなる。
+174,Refrigerate,冰冻皮肤,フリーズスキン,一般属性的招式 会变为冰属性。 威力会少量提高。,Turns the bearer's normal moves into ice moves and strengthens them to 1.3× their power.,ノーマルタイプの　技が こおりタイプに　なる。 威力が　少し　上がる。
+175,Sweet Veil,甜幕,スイートベール,我方的宝可梦 不会变为睡眠状态。,Prevents friendly Pokémon from sleeping.,味方の　ポケモンは 眠らなくなる。
+176,Stance Change,战斗切换,バトルスイッチ,如果使出攻击招式，会变为刀剑形态， 如果使出招式“王者盾牌”， 会变为盾牌形态。,"Changes aegislash to Blade Forme before using a damaging move, or Shield Forme before using kings shield.",攻撃技を　出すと　ブレードフォルムに 技　キングシールドを　出すと シールドフォルムに　変化する。
+177,Gale Wings,疾风之翼,はやてのつばさ,ＨＰ全满时， 飞行属性的招式可以率先使出。,Raises flying moves' priority by one stage.,ＨＰが　満タン　だと ひこうタイプの　技を 先制で　出すことが　できる。
+178,Mega Launcher,超级发射器,メガランチャー,波动和波导类招式的 威力会提高。,Strengthens aura and pulse moves to 1.5× their power.,波動の　技の 威力が　高くなる。
+179,Grass Pelt,草之毛皮,くさのけがわ,在青草场地时， 防御会提高。,Boosts Defense while grassy terrain is in effect.,グラスフィールドのとき 防御が　上がる。
+180,Symbiosis,共生,きょうせい,同伴使用道具时， 会把自己持有的道具传递给同伴。,Passes the bearer's held item to an ally when the ally uses up its item.,味方が　道具を　使うと 自分の　持っている　道具を 味方に　渡す。
+181,Tough Claws,硬爪,かたいツメ,接触到对手的招式 威力会提高。,Strengthens moves that make contact to 1.33× their power.,相手に　接触する　技の 威力が　高くなる。
+182,Pixilate,妖精皮肤,フェアリースキン,一般属性的招式 会变为妖精属性。 威力会少量提高。,Turns the bearer's normal moves into fairy moves and strengthens them to 1.3× their power.,ノーマルタイプの　技が フェアリータイプになる。 威力が　少し　上がる。
+183,Gooey,黏滑,ぬめぬめ,对于用攻击接触到自己的对手， 会降低其速度。,Lowers attacking Pokémon's Speed by one stage on contact.,攻撃で　自分に　触れた　相手の 素早さを　下げる。
+184,Aerilate,飞行皮肤,スカイスキン,一般属性的招式 会变为飞行属性。 威力会少量提高。,Turns the bearer's normal moves into flying moves and strengthens them to 1.3× their power.,ノーマルタイプの　技が ひこうタイプになる。 威力が　少し　上がる。
+185,Parental Bond,亲子爱,おやこあい,亲子俩可以合计攻击２次。,Lets the bearer hit twice with damaging moves.  The second hit has half power.,親子　２匹で　２回 攻撃することが　できる。
+186,Dark Aura,暗黑气场,ダークオーラ,全体的恶属性招式变强。,Strengthens dark moves to 1.33× their power for all friendly and opposing Pokémon.,全員の　あくタイプの 技が　強くなる。
+187,Fairy Aura,妖精气场,フェアリーオーラ,全体的妖精属性招式变强。,Strengthens fairy moves to 1.33× their power for all friendly and opposing Pokémon.,全員の　フェアリータイプの 技が　強くなる。
+188,Aura Break,气场破坏,オーラブレイク,让气场的效果发生逆转， 降低威力。,Makes dark aura and fairy aura weaken moves of their respective types.,オーラの　効果を　逆転させて 威力を　下げる。
+189,Primordial Sea,始源之海,はじまりのうみ,变为不会受到 火属性攻击的天气。,"Creates heavy rain, which has all the properties of Rain Dance, cannot be replaced, and causes damaging Fire moves to fail.",ほのおタイプの　攻撃を 受けない　天気にする。
+190,Desolate Land,终结之地,おわりのだいち,变为不会受到 水属性攻击的天气。,"Creates extremely harsh sunlight, which has all the properties of Sunny Day, cannot be replaced, and causes damaging Water moves to fail.",みずタイプの　攻撃を 受けない　天気にする。
+191,Delta Stream,德尔塔气流,デルタストリーム,变为令飞行属性的弱点 消失的天气。,"Creates a mysterious air current, which cannot be replaced and causes moves to never be super effective against Flying Pokémon.",ひこうタイプの　弱点が なくなる　天気にする。
+192,Stamina,持久力,じきゅうりょく,受到攻击时， 防御会提高。,Raises this Pokémon's Defense by one stage when it takes damage from a move.,攻撃を　受けると 防御が　上がる。
+193,Wimp Out,跃跃欲逃,にげごし,ＨＰ变为一半时， 会慌慌张张逃走， 退回同行队伍中。,This Pokémon automatically switches out when its HP drops below half.,ＨＰが　半分に　なると あわてて　逃げ出して 手持ちに　引っ込んで　しまう。
+194,Emergency Exit,危险回避,ききかいひ,ＨＰ变为一半时， 为了回避危险， 会退回到同行队伍中。,This Pokémon automatically switches out when its HP drops below half.,ＨＰが　半分に　なると 危険を　回避するため 手持ちに　引っ込んで　しまう。
+195,Water Compaction,遇水凝固,みずがため,受到水属性的招式攻击时， 防御会大幅提高。,Raises this Pokémon's Defense by two stages when it's hit by a Water move.,みずタイプの　技を　受けると 防御が　ぐーんと　上がる。
+196,Merciless,不仁不义,ひとでなし,攻击中毒状态的对手时， 必定会击中要害。,This Pokémon's moves critical hit against poisoned targets.,どく状態の 相手を　攻撃すると かならず　急所に　当たる。
+197,Shields Down,界限盾壳,リミットシールド,ＨＰ变为一半时， 壳会坏掉，变得有攻击性。,Transforms this Minior between Core Form and Meteor Form.  Prevents major status ailments and drowsiness while in Meteor Form.,ＨＰが　半分に　なると 殻が　壊れて 攻撃的に　なる。
+198,Stakeout,蹲守,はりこみ,可以对替换出场的对手 以２倍的伤害进行攻击。,This Pokémon's moves have double power against Pokémon that switched in this turn.,交代で　出てきた　相手に ２倍の　ダメージで　攻撃　できる。
+199,Water Bubble,水泡,すいほう,降低自己受到的火属性 招式的威力，不会灼伤。,"Halves damage from Fire moves, doubles damage of Water moves, and prevents burns.",自分に　対する　ほのおタイプの 技の　威力を　下げる。 やけど　しない。
+200,Steelworker,钢能力者,はがねつかい,钢属性的招式威力会提高。,This Pokémon's Steel moves have 1.5× power.,はがねタイプの　技の 威力が　上がる。
+201,Berserk,怒火冲天,ぎゃくじょう,因对手的攻击 ＨＰ变为一半时， 特攻会提高。,Raises this Pokémon's Special Attack by one stage every time its HP drops below half.,相手の　攻撃で ＨＰが　半分に　なると 特攻が　上がる。
+202,Slush Rush,拨雪,ゆきかき,冰雹天气时， 速度会提高。,"During Hail, this Pokémon has double Speed.",天気が　あられ　のとき 素早さが　上がる。
+203,Long Reach,远隔,えんかく,可以不接触对手 就使出所有的招式。,This Pokémon's moves do not make contact.,すべての　技を 相手に　接触　しないで 出すことが　できる。
+204,Liquid Voice,湿润之声,うるおいボイス,所有的声音招式 都变为水属性。,Sound-based moves become Water-type.,すべての　音技が みずタイプに　なる。
+205,Triage,先行治疗,ヒーリングシフト,可以率先使出回复招式。,This Pokémon's healing moves have their priority increased by 3.,回復技を　先制で 出すことが　できる。
+206,Galvanize,电气皮肤,エレキスキン,一般属性的招式 会变为电属性。 威力会少量提高。,This Pokémon's Normal moves are Electric and have their power increased to 1.2×.,ノーマルタイプの　技が でんきタイプになる。 威力が　少し　上がる。
+207,Surge Surfer,冲浪之尾,サーフテール,电气场地时， 速度会变为２倍。,Doubles this Pokémon's Speed on Electric Terrain.,エレキフィールド　のとき 素早さが　２倍に　なる。
+208,Schooling,鱼群,ぎょぐん,ＨＰ多的时候会聚起来变强。 ＨＰ剩余量变少时， 群体会分崩离析。,Wishiwashi becomes Schooling Form when its HP is 25% or higher.,ＨＰが　多いときは　群れて　強くなる。 ＨＰの　残りが　少なくなると 群れは　散り散りに　なってしまう。
+209,Disguise,画皮,ばけのかわ,通过画皮覆盖住身体， 可以防住１次攻击。,Prevents the first instance of battle damage.,体を　被う　化けの皮で １回　攻撃を　防ぐことが　できる。
+210,Battle Bond,牵绊变身,きずなへんげ,打倒对手时，与训练家的牵绊会增强， 变为小智版甲贺忍蛙。 飞水手里剑的招式威力会增强。,Transforms this Pokémon into Ash-Greninja after fainting an opponent.  Water Shuriken's power is 20 and always hits three times.,相手を　倒すと　トレーナーとの キズナが　深まり　サトシゲッコウガに 変化する。みずしゅりけんが　強くなる。
+211,Power Construct,群聚变形,スワームチェンジ,ＨＰ变为一半时， 细胞们会赶来支援， 变为完全体形态。,Transforms 10% or 50% Zygarde into Complete Forme when its HP is below 50%.,ＨＰが　半分に　なると セルたちが　応援に　駆けつけ パーフェクトフォルムに　姿を　変える。
+212,Corrosion,腐蚀,ふしょく,可以使钢属性和毒属性的宝可梦 也陷入中毒状态。,This Pokémon can inflict poison on Poison and Steel Pokémon.,はがねタイプや　どくタイプも どく状態に　することが　できる。
+213,Comatose,绝对睡眠,ぜったいねむり,总是半梦半醒的状态， 绝对不会醒来。 可以就这么睡着进行攻击。,This Pokémon always  acts as though it were Asleep.,つねに　夢うつつの　状態で 絶対に　目覚めない。 眠ったまま　攻撃が　できる。
+214,Queenly Majesty,女王的威严,じょおうのいげん,向对手施加威慑力， 使其无法对我方使出先制招式。,Opposing Pokémon cannot use priority attacks.,相手に　威圧感を　あたえ こちらに　むかって　先制技を 出せない　ようにする。
+215,Innards Out,飞出的内在物,とびだすなかみ,被对手打倒的时候， 会给予对手相当于 ＨＰ剩余量的伤害。,"When this Pokémon faints from an opponent's move, that opponent takes damage equal to the HP this Pokémon had remaining.",相手に　倒されたとき ＨＰの　残りの　ぶんだけ 相手に　ダメージを　あたえる。
+216,Dancer,舞者,おどりこ,有谁使出跳舞招式时， 自己也能就这么接着使出跳舞招式。,"Whenever another Pokémon uses a dance move, this Pokémon will use the same move immediately afterwards.",だれかが　踊り技を　使うと 自分も　それに　続いて 踊り技を　出すことが　できる。
+217,Battery,蓄电池,バッテリー,会提高我方的 特殊招式的威力。,Ally Pokémon's moves have their power increased to 1.3×.,味方の　特殊技の 威力を　上げる。
+218,Fluffy,毛茸茸,もふもふ,会将对手所给予的接触类招式的伤害减半， 但火属性招式的伤害会变为２倍。,Damage from contact moves is halved.  Damage from Fire moves is doubled.,相手から　受けた　接触する　技の ダメージを　半減するが　ほのおタイプの 技の　ダメージは　２倍になる。
+219,Dazzling,鲜艳之躯,ビビッドボディ,让对手吓一跳， 使其无法对我方使出先制招式。,Opposing Pokémon cannot use priority attacks.,相手を　びっくり　させて こちらに　むかって　先制技を 出せない　ようにする。
+220,Soul-Heart,魂心,ソウルハート,宝可梦每次变为濒死状态时， 特攻会提高。,This Pokémon's Special Attack rises by one stage every time any Pokémon faints.,ポケモンが　ひんしに　なるたびに 特攻が　上がる。
+221,Tangling Hair,卷发,カーリーヘアー,对于用攻击接触到自己的对手， 会降低其速度。,"When this Pokémon takes regular damage from a contact move, the attacking Pokémon's Speed lowers by one stage.",攻撃で　自分に　触れた　相手の 素早さを　下げる。
+222,Receiver,接球手,レシーバー,继承被打倒的同伴的特性， 变为相同的特性。,"When an ally faints, this Pokémon gains its Ability.",倒された　味方の　特性を 受け継いで　同じ　特性に　なる。
+223,Power of Alchemy,化学之力,かがくのちから,继承被打倒的同伴的特性， 变为相同的特性。,"When an ally faints, this Pokémon gains its Ability.",倒された　味方の　特性を　受け継ぎ 同じ　特性に　変わる。
+224,Beast Boost,异兽提升,ビーストブースト,打倒对手的时候， 自己最高的那项能力会提高。,Raises this Pokémon's highest stat by one stage when it faints another Pokémon.,相手を　倒したとき 自分の　いちばん　高い 能力が　上がる。
+225,RKS System,ＡＲ系统,ＡＲシステム,根据持有的存储碟， 自己的属性会改变。,Changes this Pokémon's type to match its held Memory.,持っている　メモリで 自分の　タイプが　変わる。
+226,Electric Surge,电气制造者,エレキメイカー,出场时， 会布下电气场地。,"When this Pokémon enters battle, it changes the terrain to Electric Terrain.",登場　したときに エレキフィールドを　はりめぐらせる。
+227,Psychic Surge,精神制造者,サイコメイカー,出场时， 会布下精神场地。,"When this Pokémon enters battle, it changes the terrain to Psychic Terrain.",登場　したときに サイコフィールドを　はりめぐらせる。
+228,Misty Surge,薄雾制造者,ミストメイカー,出场时， 会布下薄雾场地。,"When this Pokémon enters battle, it changes the terrain to Misty Terrain.",登場　したときに ミストフィールドを　はりめぐらせる。
+229,Grassy Surge,青草制造者,グラスメイカー,出场时， 会布下青草场地。,"When this Pokémon enters battle, it changes the terrain to Grassy Terrain.",登場　したときに グラスフィールドを　はりめぐらせる。
+230,Full Metal Body,金属防护,メタルプロテクト,不会因为对手的招式或特性 而被降低能力。,Other Pokémon cannot lower this Pokémon's stats.,相手の　技や　特性で 能力を　下げられない。
+231,Shadow Shield,幻影防守,ファントムガード,ＨＰ全满时， 受到的伤害会变少。,"When this Pokémon has full HP, regular damage from moves is halved.",ＨＰが　満タンの　ときに 受ける　ダメージが　少なくなる。
+232,Prism Armor,棱镜装甲,プリズムアーマー,受到效果绝佳的攻击时， 可以减弱其威力。,Reduces super-effective damage to 0.75×.,効果バツグンに　なってしまう 攻撃の　威力を 弱める　ことが　できる。
+233,Neuroforce,脑核之力,ブレインフォース,效果绝佳的攻击， 威力会变得更强。,Increases super-effective damage dealt to 1.25×.,効果バツグンの　攻撃で 威力が　さらに　上がる。
+234,Intrepid Sword,不挠之剑,ふとうのけん,出场时， 攻击会提高。,Boosts Attack in battle.,登場　したときに 攻撃が　上がる。
+235,Dauntless Shield,不屈之盾,ふくつのたて,出场时， 防御会提高。,Boosts Defense in battle.,登場　したときに 防御が　上がる。
+236,Libero,自由者,リベロ,变为与自己使出的招式 相同的属性。,Libero changes the Pokémon's type to that of its previously used attack.,自分が　出す　技と 同じ　タイプに　変化する。
+237,Ball Fetch,捡球,たまひろい,没有携带道具时， 会拾取第１个投出后 捕捉失败的精灵球。,"If the Pokémon is not holding an item, it will fetch the Poké Ball from the first failed throw of the battle.",道具を　持っていない　場合 １回目に　投げて　失敗　した モンスターボールを　拾ってくる。
+238,Cotton Down,棉絮,わたげ,受到攻击后撒下棉絮， 降低除自己以外的 所有宝可梦的速度。,When Ignores moves and abilities that draw in moves.,攻撃を　受けると　わたげを　ばらまいて 自分以外の　ポケモン　すべての 素早さを　下げる。
+239,Propeller Tail,螺旋尾鳍,スクリューおびれ,能无视具有吸引 对手招式效果的 特性或招式的影响。,Ignores moves and abilities that draw in moves.,相手の　技を　引き受ける 特性や　技の 影響を　無視　できる。
+240,Mirror Armor,镜甲,ミラーアーマー,只反弹自己受到的 能力降低效果。,Reflects any stat-lowering effects.,自分が　受けた 能力　ダウンの 効果　だけを　跳ね返す。
+241,Gulp Missile,一口导弹,うのミサイル,冲浪或潜水时会叼来猎物。 受到伤害时， 会吐出猎物进行攻击。,"If a Cramorant with Gulp Missile uses Surf or Dive, it catches prey and changes its form depending on its remaining HP.",なみのりか　ダイビングを　すると 獲物を　くわえてくる。　ダメージを 受けると　獲物を　吐きだして　攻撃。
+242,Stalwart,坚毅,すじがねいり,能无视具有吸引 对手招式效果的 特性或招式的影响。,Ignores moves and abilities that draw in moves.,相手の　技を　引き受ける 特性や　技の 影響を　無視　できる。
+243,Steam Engine,蒸汽机,じょうききかん,受到水属性或 火属性的招式攻击时， 速度会巨幅提高。,Boosts the Speed stat drastically when the Pokémon is hit by a Fire- or Water-type move.,みずタイプ　ほのおタイプの 技を　受けると 素早さが　ぐぐーんと　上がる。
+244,Punk Rock,庞克摇滚,パンクロック,声音招式的威力会提高。 受到的声音招式伤害会减半。,Boosts sound-based moves and halves damage from the same moves.,音技の　威力が　上がる。 受けた　音技の ダメージは　半分に　なる。
+245,Sand Spit,吐沙,すなはき,受到攻击时， 会刮起沙暴。,Creates a sandstorm when hit by an attack.,攻撃を　受けると 砂あらしを　起こす。
+246,Ice Scales,冰鳞粉,こおりのりんぷん,由于有冰鳞粉的守护， 受到的特殊攻击伤害会减半。,Halves damage from Special moves.,こおりのりんぷんに　守られて 特殊攻撃で　受ける ダメージが　半減　する。
+247,Ripen,熟成,じゅくせい,使树果成熟， 效果变为２倍。,Doubles the effect of berries.,熟成　させることで きのみの　効果が 倍に　なる。
+248,Ice Face,结冻头,アイスフェイス,头部的冰会代替自己承受 物理攻击，但是样子会改变。 下冰雹时，冰会恢复原状。,"The Pokémon’s ice head can take a physical attack as a substitute, but the attack also changes the Pokémon’s appearance. The ice will be restored when it snows.",物理攻撃は　頭の　氷が みがわりに　なるが　姿も　変わる。 氷は　あられが　降ると　元に戻る。
+249,Power Spot,能量点,パワースポット,只要处在相邻位置， 招式的威力就会提高。,Just being next to the Pokémon powers up moves.,隣に　いるだけで 技の　威力が　上がる。
+250,Mimicry,拟态,ぎたい,宝可梦的属性会根据 场地的状态而变化。,Changes type depending on the terrain.,フィールドの　状態に　あわせて ポケモンの　タイプが　変わる。
+251,Screen Cleaner,除障,バリアフリー,出场时，敌方和我方的光墙、 反射壁和极光幕的效果会消失。,"Nullifies effects of Light Screen, Reflect, and Aurora Veil.",登場　したときに　敵と　味方の ひかりのかべ　リフレクター オーロラベールの　効果が　消える。
+252,Steely Spirit,钢之意志,はがねのせいしん,我方的钢属性 攻击威力会提高。,Powers up ally Pokémon's Steel-type moves.,味方の　はがねタイプの 攻撃の　威力が　上がる。
+253,Perish Body,灭亡之躯,ほろびのボディ,受到接触类招式攻击时， 双方都会在３回合后变为濒死状态。 替换后效果消失。,"When hit by a move that makes direct contact, the Pokémon and the attacker will faint after three turns unless they switch out of battle.",接触する　技を　受けると お互い　３ターン　たつと　ひんしになる。 交代すると　効果は　なくなる。
+254,Wandering Spirit,游魂,さまようたましい,与使用接触类招式 攻击自己的宝可梦互换特性。,Swaps abilities with opponents on contact.,接触する　技で 攻撃　してきた　ポケモンと 特性を　入れ替える。
+255,Gorilla Tactics,一猩一意,ごりむちゅう,虽然攻击会提高， 但是只能使出 一开始所选的招式。,Boosts the Pokémon's Attack stat but only allows the use of the first selected move.,攻撃は　上がるが 最初に　選んだ 技しか　出せなくなる。
+256,Neutralizing Gas,化学变化气体,かがくへんかガス,特性为化学变化气体的宝可梦在场时， 场上所有宝可梦的 特性效果都会消失或者无法生效。,Neutralizes abilities of all Pokémon in battle.,かがくへんかガスの　ポケモンが　場にいると すべての　ポケモンの　特性の 効果が　消えたり　発動　しなくなる。
+257,Pastel Veil,粉彩护幕,パステルベール,自己和同伴都不会 陷入中毒的异常状态。,Prevents the Pokémon and its allies from being poisoned.,自分も　味方も どくの　状態異常を 受けなくなる。
+258,Hunger Switch,饱了又饿,はらぺこスイッチ,每回合结束时会在 满腹花纹与空腹花纹之间 交替改变样子。,"Causes Morpeko to change its form each turn, alternating between Full Belly Mode and Hangry Mode",ターンの　終わりに　まんぷくもよう はらぺこもよう　まんぷくもよう……と 交互に　姿を　変える。
+259,Quick Draw,速击,クイックドロウ,有时能比对手先一步行动。,Enables the Pokémon to move first occasionally.,相手より　先に 行動できることが　ある。
+260,Unseen Fist,无形拳,ふかしのこぶし,如果使出的是接触到对手的招式， 就可以无视守护效果进行攻击。,Contact moves can strike through Protect/Detect.,相手に　接触する　技なら 守りの　効果を 無視して　攻撃することが　できる。
+261,Curious Medicine,怪药,きみょうなくすり,出场时会从贝壳撒药， 将我方的能力变化复原。,Resets all stat changes upon entering battlefield.,登場　したときに 貝がらから　薬を　振りまいて 味方の　能力変化を　元に戻す。
+262,Transistor,电晶体,トランジスタ,电属性的招式威力会提高。,Powers up Electric-type moves.,でんきタイプの　技の 威力が　上がる。
+263,Dragon’s Maw,龙颚,りゅうのあぎと,龙属性的招式威力会提高。,Powers up Dragon-type moves.,ドラゴンタイプの　技の 威力が　上がる。
+264,Chilling Neigh,苍白嘶鸣,しろのいななき,打倒对手时 会用冰冷的声音嘶鸣 并提高攻击。,Boosts Attack after knocking out a Pokémon.,相手を　倒すと 冷たい　声で　いなないて 攻撃が　上がる。
+265,Grim Neigh,漆黑嘶鸣,くろのいななき,打倒对手时 会用恐怖的声音嘶鸣 并提高特攻。,Boosts Special Attack after knocking out a Pokémon.,相手を　倒すと 恐ろしい　声で　いなないて 特攻が　上がる。
+266,As One,人马一体,じんばいったい,兼备蕾冠王的紧张感和 雪暴马的苍白嘶鸣这两种特性。,This Ability combines the effects of both Calyrex's Unnerve Ability and Glastrier's Chilling Neigh Ability.,バドレックスの　きんちょうかんと ブリザポスの　しろのいななきの 二つの　特性を　あわせ持つ。
+267,As One,人马一体,じんばいったい,兼备蕾冠王的紧张感和 灵幽马的漆黑嘶鸣这两种特性。,This Ability combines the effects of both Calyrex's Unnerve Ability and Spectrier's Grim Neigh Ability.,バドレックスの　きんちょうかんと レイスポスの　くろのいななきの 二つの　特性を　あわせ持つ。
+268,Lingering Aroma,,とれないにおい,,Contact changes the attacker's Ability to Lingering Aroma.,
+269,Seed Sower,,こぼれダネ,,Turns the ground into Grassy Terrain when the Pokémon is hit by an attack.,
+270,Thermal Exchange,,ねつこうかん,,Raises Attack when hit by a Fire-type move. Cannot be burned.,
+271,Anger Shell,,いかりのこうら,,"When the Pokémon's HP drops below half, Anger Shell lowers its Defense and Special Defense but its Attack, Special Attack and Speed are raised.",
+272,Purifying Salt,,きよめのしお,,Protects from status conditions and halves damage from Ghost-type moves.,
+273,Well-Baked Body,,こんがりボディ,,"Immune to Fire-type moves, and Defense is sharply boosted.",
+274,Wind Rider,,かぜのり,,"Gives immunity to wind moves, and causes the Pokémon's Attack to increase by one stage when hit by one.",
+275,Guard Dog,,ばんけん,,"Boosts Attack if intimidated, and prevents being forced to switch out.",
+276,Rocky Payload,,いわはこび,,Powers up Rock-type moves.,
+277,Wind Power,,ふうりょくでんき,,"When hit by a wind move, the power of the next Electric-type move it uses is doubled.",
+278,Zero to Hero,,マイティチェンジ,,Transforms into its Hero Form when switching out.,
+279,Commander,,しれいとう,,Goes inside the mouth of an ally Dondozo if one is on the field.,
+280,Electromorphosis,,でんきにかえる,,"When hit by an attack, the power of the next Electric-type move it uses is doubled.",
+281,Protosynthesis,,こだいかっせい,,"Raises highest stat in harsh sunlight, or if holding Booster Energy.",
+282,Quark Drive,,クォークチャージ,,"Raises highest stat on Electric Terrain, or if holding Booster Energy.",
+283,Good as Gold,,おうごんのからだ,,Gives immunity to status moves.,
+284,Vessel of Ruin,,わざわいのうつわ,,Lowers Special Attack of all Pokémon except itself.,
+285,Sword of Ruin,,わざわいのつるぎ,,Lowers Defense of all Pokémon except itself.,
+286,Tablets of Ruin,,わざわいのおふだ,,Lowers Attack of all Pokémon except itself.,
+287,Beads of Ruin,,わざわいのたま,,Lowers Special Defense of all Pokémon except itself.,
+288,Orichalcum Pulse,,ひひいろのこどう,,"Turns the sunlight harsh when entering battle, and boosts Attack while active.",
+289,Hadron Engine,,ハドロンエンジン,,"Creates an Electric Terrain when entering battle, and boosts Special Attack while active.",
+290,Opportunist,,びんじょう,,Copies stat boosts by the opponent.,
+291,Cud Chew,,はんすう,,Causes the Pokémon to reuse an already consumed Berry at the end of the next turn.,
+292,Sharpness,,きれあじ,,Powers up slicing moves.,
+293,Supreme Overlord,,そうだいしょう,,Attack and Special Attack are boosted for each party Pokémon that has been defeated.,
+294,Costar,,きょうえん,,Copies ally's stat changes on entering battle.,
+295,Toxic Debris,,どくげしょう,,Scatters poison spikes at the feet of the opposing team when the Pokémon takes damage from physical moves.,
+296,Armor Tail,,テイルアーマー,,"Prevents the opponent from using any moves that have priority, such as Quick Attack.",
+297,Earth Eater,,どしょく,,Restores HP when hit by a Ground-type move.,
+298,Mycelium Might,,きんしのちから,,"Status moves go last, but are not affected by the opponent's ability.",
+299,Mind’s Eye,心眼,しんがん,,"The Pokémon ignores changes to opponents' evasiveness, its accuracy can't be lowered, and it can hit Ghost types with Normal- and Fighting-type moves.",
+300,Supersweet Syrup,甘露之蜜,,,"Once per battle, when a Pokémon with Supersweet Syrup enters the battle, it lowers the evasion stat of all adjacent opponents by one stage. ",
+301,Hospitality,款待,おもてなし,,"When a Pokémon with Hospitality enters a battle, it restores HP for an ally by 25%.",
+302,Toxic Chain,毒锁链,どくのくさり,,May cause bad poisoning when the Pokémon hits an opponent with a move.,
+303,Embody Aspect,面影辉映,おもかげやどし,,"Embody Aspect boosts a particular stat, depending on the form of a Terastallized Ogerpon",
+304,Tera Shift,太晶变形,テラスチェンジ,,"When Terapagos enters the battle, it turns into its Terastal Form until the end of the battle. ",
+305,Tera Shell,太晶甲壳,テラスシェル,,All damage-dealing moves that hit the Pokémon when its HP is full will not be very effective.,
+306,Teraform Zero,归零化境,ゼロフォーミング,,"As soon as Terapagos assumes its Stellar Form, it will immediately neutralize weather and terrain effects. ",
+307,Poison Puppeteer,毒傀儡,どくくぐつ,,Pokémon poisoned by Pecharunt's moves will also become confused.,
+10001,Mountaineer,,,,,
+10002,Wave Rider,,,,,
+10003,Skater,,,,,
+10004,Thrust,,,,,
+10005,Perception,,,,,
+10006,Parry,,,,,
+10007,Instinct,,,,,
+10008,Dodge,,,,,
+10009,Jagged Edge,,,,,
+10010,Frostbite,,,,,
+10011,Tenacity,,,,,
+10012,Pride,,,,,
+10013,Deep Sleep,,,,,
+10014,Power Nap,,,,,
+10015,Spirit,,,,,
+10016,Warm Blanket,,,,,
+10017,Gulp,,,,,
+10018,Herbivore,,,,,
+10019,Sandpit,,,,,
+10020,Hot Blooded,,,,,
+10021,Medic,,,,,
+10022,Life Force,,,,,
+10023,Lunchbox,,,,,
+10024,Nurse,,,,,
+10025,Melee,,,,,
+10026,Sponge,,,,,
+10027,Bodyguard,,,,,
+10028,Hero,,,,,
+10029,Last Bastion,,,,,
+10030,Stealth,,,,,
+10031,Vanguard,,,,,
+10032,Nomad,,,,,
+10033,Sequence,,,,,
+10034,Grass Cloak,,,,,
+10035,Celebrate,,,,,
+10036,Lullaby,,,,,
+10037,Calming,,,,,
+10038,Daze,,,,,
+10039,Frighten,,,,,
+10040,Interference,,,,,
+10041,Mood Maker,,,,,
+10042,Confidence,,,,,
+10043,Fortune,,,,,
+10044,Bonanza,,,,,
+10045,Explode,,,,,
+10046,Omnipotent,,,,,
+10047,Share,,,,,
+10048,Black Hole,,,,,
+10049,Shadow Dash,,,,,
+10050,Sprint,,,,,
+10051,Disgust,,,,,
+10052,High-rise,,,,,
+10053,Climber,,,,,
+10054,Flame Boost,,,,,
+10055,Aqua Boost,,,,,
+10056,Run Up,,,,,
+10057,Conqueror,,,,,
+10058,Shackle,,,,,
+10059,Decoy,,,,,
+10060,Shield,,,,,

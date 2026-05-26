@@ -1,0 +1,1944 @@
+﻿id,name_en,name_zh,name_ja,description_zh,description_en,description_ja,effect_zh,effect_en,effect_ja
+1,rain,下雨,あめ,下雨（日文︰雨，英文︰Rain）是一种天气型状态。,"Rain(Japanese:雨rain), known as adownpour(Japanese:大雨heavy rain) in Generation II, is a type ofweather. It was introduced in battle inGeneration II, and in the overworld inGeneration III.",あめとはてんきの一種。,"水属性
+招式的伤害×1.5。
+火属性
+招式的伤害×0.5。
+以上效果，防御方持有
+万能伞
+时都会被无效。
+气象球
+的属性变为
+水属性
+，威力×2。
+危险预知
+特性不会有反应。
+日光束
+与
+日光刃
+的威力×0.5。
+打雷
+与
+暴风
+招式变为必定命中，除非目标处于
+挖洞
+、
+潜水
+、
+暗影潜袭
+状态。
+受
+游戏漏洞
+影响，打雷还有30%几率突破处于
+守住
+状态的目标。
+D
+P
+以上三个效果，攻击方持有
+万能伞
+时都会被无效。
+光合作用
+，
+晨光
+，
+月光
+恢复的
+ＨＰ
+值降低到最大ＨＰ的
+1
+⁄
+4
+。
+求雨
+使用失败。
+枯叶风暴
+，
+鸣雷风暴
+，
+热沙风暴
+一定会命中，除非目标正在使用
+蓄力的招式
+并不在场地上。
+电光束
+无需1回合的蓄力可以直接发动。
+阴晴不定
+特性的
+飘浮泡泡
+的属性变为
+水属性
+，形态变为
+雨水的样子
+。
+雨盘
+特性的宝可梦，每回合结束时恢复
+1
+⁄
+16
+的最大ＨＰ。
+干燥皮肤
+特性的宝可梦，每回合结束时恢复
+1
+⁄
+8
+的最大ＨＰ。
+湿润之躯
+特性的宝可梦的
+异常状态
+消除。
+悠游自如
+特性的宝可梦的
+速度
+×2。","Increases the damage of
+Water-type
+moves by 50%.
+Decreases the damage of
+Fire-type
+moves by 50%.
+Allows
+Thunder
+,
+Hurricane
+,
+Bleakwind Storm
+,
+Wildbolt Storm
+, and
+Sandsear Storm
+to bypass the
+accuracy
+check.
+In
+Pokémon Diamond and Pearl
+, allows
+Thunder
+to hit through
+Protect
+and
+Detect
+30% of the time.
+Activates the following
+Abilities
+:
+Dry Skin
+,
+Forecast
+,
+Hydration
+,
+Rain Dish
+,
+Swift Swim
+.
+Causes Forecast to change
+Castform
+to its
+Rainy Form
+.
+Changes
+Weather Ball
+to a
+Water-type
+move and doubles its power.
+Halves the power of
+Solar Beam
+and
+Solar Blade
+.
+Causes
+Moonlight
+,
+Synthesis
+, and
+Morning Sun
+to recover ¼ of max
+HP
+(half the normal amount in
+Generation II
+).
+In the
+Pokémon Mystery Dungeon series
+, rain causes the floor to become
+defused
+, preventing any explosions from occurring. In Gates to Infinity, rain also prevents Pokémon from restoring HP naturally by walking.
+Allows
+Electro Shot
+to be used instantly.
+Causes
+Fire-type
+damaging moves to fail if used (including
+moves that change type
+, if they would be Fire-type).
+If a Pokémon affected by
+Powder
+uses a Fire-type move, it will take damage from Powder.
+If a Pokémon attempts to use
+Natural Gift
+while holding a
+Berry
+that makes the move Fire-type, the Berry is not consumed.
+If a
+frozen
+Pokémon attempts to use a Fire-type move that
+would thaw itself
+(such as
+Flame Wheel
+), it will still thaw itself before the move fails.
+Causes the moves
+Sunny Day
+,
+Rain Dance
+,
+Sandstorm
+, and
+Hail
+to fail if used. This cannot be subverted even with
+Cloud Nine
+or
+Air Lock
+.
+If a Pokémon affected by
+Powder
+uses Sunny Day, it will take damage from Powder.
+Causes the Abilities
+Drought
+,
+Drizzle
+,
+Sand Stream
+, and
+Snow Warning
+to fail. This cannot be subverted even with
+Cloud Nine
+or
+Air Lock
+.
+In
+Pokémon Sword and Shield
+, causes a persistent
+Electric Terrain
+unless overridden (in addition to the usual effects of rain).","影響する
+わざ
+みず
+タイプのわざで受けるダメージが1.5倍になる。
+ほのお
+タイプのわざで受けるダメージが0.5倍になる。
+使用される
+かみなり
+・
+かみなりあらし
+・
+こがらしあらし
+・
+ねっさのあらし
+・
+ぼうふう
+が必ず命中する。
+使用する
+エレクトロビーム
+が1ターンで発動できるようになる。
+使用する
+ウェザーボール
+の威力が2倍になって、
+みず
+タイプになる。
+あさのひざし
+・
+こうごうせい
+・
+つきのひかり
+で回復するHPの量が最大の1/4になる。(通常時は1/2)
+使用する
+ソーラービーム
+・
+ソーラーブレード
+のダメージが0.5倍になる。
+影響する
+とくせい
+てんきや
+の
+ポワルン
+の
+姿
+が変わり、タイプが
+みず
+になる。
+あめうけざら
+のポケモンの
+HP
+が1/16ずつ回復する。
+かんそうはだ
+のポケモンの
+HP
+が1/8ずつ回復する。
+うるおいボディ
+のポケモンの
+状態異常
+が回復する。
+すいすい
+のポケモンの
+すばやさ
+が2倍になる。
+その他
+ヌメイル
+を
+ヌメルゴン
+に進化させるためには雨のフィールドでヌメイルをレベル50以上にする必要がある（
+第七世代
+のみ
+きり
+のフィールドでも進化できた）。
+ヌメイル
+（
+ヒスイのすがた
+）の場合は
+ヌメルゴン
+（
+ヒスイのすがた
+）に進化する。"
+2,sunny,大晴天,はれ,大晴天（日文︰にほんばれ，英文︰Harsh Sunlight）是一种天气型状态，又称日照强烈（日文︰ひざしがつよい，英文︰Sunny）。,"Harsh sunlight(Japanese:日差しが強いintense sunlight), sometimes referred to asSunny, is a type ofweatherintroduced in battle inGeneration II. It was introduced in the overworld inGeneration III.",はれは、ポケモン不思議のダンジョンシリーズに登場する天気の1つ。,"火属性
+招式的伤害×1.5。
+水属性
+招式的伤害×0.5。（除了
+水蒸气
+）
+以上效果，防御方持有
+万能伞
+时都会被无效。
+气象球
+的属性变为
+火属性
+，威力×2。
+危险预知
+特性不会有反应。
+日光束
+与
+日光刃
+无需1回合的蓄力可以直接发动。
+打雷
+与
+暴风
+招式命中率降低为50%。
+以上三个效果，攻击方持有
+万能伞
+时都会被无效。
+光合作用
+，
+晨光
+，
+月光
+回复的
+ＨＰ
+值提升为最大ＨＰ的
+2
+⁄
+3
+。
+大晴天
+使用失败。
+生长
+可以额外提高1级效果。
+水蒸气
+的威力×1.5。
+阴晴不定
+特性的
+飘浮泡泡
+的属性变为
+火属性
+，形态变为
+太阳的样子
+。
+花之礼
+特性的
+樱花儿
+以及同伴的
+攻击
+和
+特防
+×1.5，樱花儿的形态变为
+晴天形态
+。
+叶子防守
+特性的宝可梦不会陷入
+异常状态
+。
+大晴天出现之前陷入的
+异常状态
+不回复。
+睡觉
+、
+火焰宝珠
+、
+剧毒宝珠
+没有效果。
+干燥皮肤
+特性的宝可梦，每回合结束时损失
+1
+⁄
+8
+的最大ＨＰ。
+太阳之力
+特性的宝可梦的
+特攻
+×1.5，每回合结束时损失
+1
+⁄
+8
+的最大ＨＰ。
+以上两个特性，处于
+挖洞
+或
+潜水
+状态的宝可梦不受伤害。处于
+替身
+状态的宝可梦由本体受到伤害。
+叶绿素
+特性的宝可梦的
+速度
+×2。
+收获
+特性的宝可梦收获果实的成功率提升为100%。
+绯红脉动
+特性的宝可梦攻击提高33%。
+古代活性
+特性的宝可梦数值除ＨＰ以外最高的能力会提高30%，若该项能力为
+速度
+，则会提高50%。","Increases the damage of
+Fire-type
+moves by 50%.
+Decreases the damage of
+Water-type
+moves by 50%.
+Hydro Steam
+is an exception; its damage will be boosted by 50% instead.
+Allows
+Solar Beam
+and
+Solar Blade
+to be used instantly.
+From Generation V onward, causes
+Growth
+to raise
+Attack
+and
+Special Attack
+two stages each.
+Activates the following
+Abilities
+:
+Chlorophyll
+,
+Dry Skin
+,
+Flower Gift
+,
+Forecast
+,
+Leaf Guard
+,
+Solar Power
+,
+Protosynthesis
+,
+Orichalcum Pulse
+.
+Causes Forecast to change
+Castform
+to its
+Sunny Form
+.
+Causes Flower Gift to change
+Cherrim
+to its
+Sunshine Form
+.
+Guarantees
+Harvest
+will restore a held
+Berry
+.
+Changes
+Weather Ball
+to a
+Fire-type
+move and doubles its power.
+Prevents Pokémon from becoming
+frozen
+(it, however, will not thaw out Pokémon that are already frozen when it becomes active).
+Causes
+Moonlight
+,
+Synthesis
+, and
+Morning Sun
+to recover ⅔ of max
+HP
+(twice the normal amount in
+Generation II
+).
+Lowers accuracy of
+Thunder
+and
+Hurricane
+to 50%.
+Causes
+Water-type
+damaging moves to fail if used.
+If a Pokémon attempts to use
+Natural Gift
+while holding a
+Berry
+that makes the move Water-type, the Berry is not consumed.
+If a
+frozen
+Pokémon attempts to use
+Scald
+or
+Steam Eruption
+, it will still thaw itself before the move fails.
+Causes the moves
+Sunny Day
+,
+Rain Dance
+,
+Sandstorm
+, and
+Hail
+to fail if used. This cannot be subverted even with
+Cloud Nine
+or
+Air Lock
+.
+If a Pokémon affected by
+Powder
+uses Sunny Day, it will take damage from Powder.
+Causes the Abilities
+Drought
+,
+Drizzle
+,
+Sand Stream
+, and
+Snow Warning
+to fail. This cannot be subverted even with
+Cloud Nine
+or
+Air Lock
+.","てんき
+に変化がない状態。
+この天気のフロアに来ても特にメッセージは出ない。"
+3,sandstorm,沙暴,すなあらし (天気),沙暴（日文︰すなあらし，英文︰Sandstorm）是一种天气型状态。,Sandstorm(Japanese:砂あらしSandstorm) is a type ofweatherintroduced in battle inGeneration II. It was introduced in the overworld inGeneration III.,すなあらしとはてんきの一種。,"岩石属性
+宝可梦的
+特防
+×1.5。
+每个回合结束时，所有
+岩石属性
+、
+地面属性
+和
+钢属性
+以外的在场宝可梦受到最大ＨＰ
+1
+⁄
+16
+的伤害。
+特性
+沙之力
+、
+沙隐
+、
+拨沙
+、
+魔法防守
+、
+防尘
+，携带道具
+防尘护目镜
+能够防止此伤害。
+处于
+挖洞
+或
+潜水
+状态的宝可梦不受伤害。处于
+替身
+状态的宝可梦由本体受到伤害。
+守住
+状态不能防止此伤害。
+因为此伤害而使ＨＰ变为1/2以下时，
+怒火冲天
+特性不会触发。
+神奇守护
+特性不能防止此伤害。
+画皮
+特性不能防止此伤害，此伤害也不会触发
+画皮
+。此伤害不会使
+幻觉
+特性失效。
+日光束
+与
+日光刃
+的威力×0.5。
+光合作用
+，
+晨光
+，
+月光
+恢复的
+ＨＰ
+值降低到最大ＨＰ的
+1
+⁄
+4
+。
+集沙
+恢复的
+ＨＰ
+值增加到最大ＨＰ的
+2
+⁄
+3
+。
+气象球
+的属性变为
+岩石属性
+，威力×2。
+危险预知
+特性不会有反应。
+沙暴
+使用失败。
+沙之力
+特性的宝可梦使用的岩石属性、钢属性、地面属性招式威力提升30%，并不受沙暴伤害。
+沙隐
+特性的宝可梦
+闪避率
+提升20%，并不受沙暴伤害。
+拨沙
+特性的宝可梦的
+速度
+×2，并不受沙暴伤害。","At the end of each turn, damages each Pokémon for
+1
+/
+16
+(⅛ in
+Generation II
+) of its maximum HP, unless it is
+Rock
+-,
+Steel
+-, or
+Ground-type
+; has one of the Abilities
+Sand Force
+,
+Sand Rush
+,
+Sand Veil
+,
+Magic Guard
+, or
+Overcoat
+; or is holding
+Safety Goggles
+.
+Activates the following
+Abilities
+:
+Sand Force
+,
+Sand Rush
+,
+Sand Veil
+.
+From Generation IV onward, raises the
+Special Defense
+of all
+Rock-type
+Pokémon by 50%.
+Changes
+Weather Ball
+to a
+Rock-type
+move and doubles its power.
+From Generation III onward, halves the power of
+Solar Beam
+and
+Solar Blade
+.
+Causes
+Shore Up
+to recover ⅔ of max
+HP
+instead of ½.
+Causes
+Moonlight
+,
+Synthesis
+, and
+Morning Sun
+to recover ¼ of max
+HP
+(half the normal amount in
+Generation II
+).","いわ
+タイプのポケモンの
+とくぼう
+が1.5倍になる(
+第四世代
+以降)。
+とくせい
+ダウンロード
+が発動した際は、すなあらしの効果を除外したとくぼうの値が参照される。
+毎回ターン終了時、
+いわ
+、
+じめん
+、
+はがね
+タイプ以外のポケモンは
+HP
+が減る。
+第二世代
+では最大HPの1/8、
+第三世代
+以降では最大HPの1/16のダメージを受ける。小数点以下は切り捨てるが、切り捨てた結果0になったときは1のダメージを受ける。
+みがわり
+状態のポケモンも、本体のHPが減る。
+とくせいが
+ふしぎなまもり
+のポケモンもHPが減る。
+そらをとぶ
+状態・
+シャドーダイブ
+状態・
+まもる
+状態のポケモンもHPが減る。
+ぼうじんゴーグル
+を持ったポケモンはHPが減らない。
+とくせいが
+すなかき
+・
+すながくれ
+・
+すなのちから
+・
+マジックガード
+・
+ぼうじん
+のポケモンはタイプに関わらずHPが減らない。
+あなをほる
+状態・
+ダイビング
+状態のポケモンはHPが減らない。
+とくせい
+しれいとう
+で姿を隠しているポケモンもHPが減る。
+影響する
+わざ
+ウェザーボール
+の威力が倍になり、タイプが
+いわ
+になる。
+ソーラービーム
+・
+ソーラーブレード
+で与える
+ダメージ
+が0.5倍になる(第三世代以降)。
+あさのひざし
+・
+こうごうせい
+・
+つきのひかり
+で回復するHPの量が「最大HPの1/4」になる(通常時は1/2)。
+すなあつめ
+で回復するHPの量が「最大HPの2/3」になる(通常時は1/2)。
+影響する
+とくせい
+すながくれ
+のポケモンに対する
+命中
+率が0.8倍になる。
+すなかき
+のポケモンの
+すばやさ
+が2倍になる。
+すなのちから
+のポケモンのいわ、じめん、はがねタイプのわざの威力が1.3倍になる。"
+4,hail,冰雹,あられ (天気),冰雹（日文︰あられ，英文︰Hail）是一种天气型状态。在《朱／紫》中被替换为下雪。,Hail(Japanese:あられHail) is a type ofweatherintroduced in battle inGeneration III. It was introduced in the overworld inGeneration IV.,あられとは第八世代まで登場したてんきの一種。第九世代ではゆきに置き換えられた。,"每个回合结束时，所有
+冰属性
+以外的在场宝可梦受到最大
+ＨＰ
+的
+1
+⁄
+16
+的伤害。
+特性
+冰冻之躯
+、
+雪隐
+、
+魔法防守
+、
+防尘
+，携带道具
+防尘护目镜
+能够防止此伤害。
+处于
+挖洞
+或
+潜水
+状态的宝可梦不受伤害。处于
+替身
+状态的宝可梦由本体受到伤害。
+守住
+状态不能防止此伤害。
+因为此伤害而使ＨＰ变为1/2以下时，
+怒火冲天
+特性不会触发。
+神奇守护
+特性不能防止此伤害。
+画皮
+特性不能防止此伤害，此伤害也不会触发
+画皮
+。此伤害不会使
+幻觉
+特性失效。
+日光束
+与
+日光刃
+的威力×0.5。
+光合作用
+，
+晨光
+，
+月光
+恢复的
+ＨＰ
+值降低到最大ＨＰ的
+1
+⁄
+4
+。
+暴风雪
+必定命中，除非目标处于
+飞翔
+、
+挖洞
+、
+潜水
+、
+暗影潜袭
+状态。
+受
+游戏漏洞
+影响，暴风雪还有30%几率突破处于
+守住
+状态的目标。
+D
+P
+气象球
+的属性变为
+冰属性
+，威力×2。
+危险预知
+特性不会有反应。
+冰雹
+使用失败。
+可以使用
+极光幕
+。
+阴晴不定
+特性的
+飘浮泡泡
+的属性变为
+冰属性
+，形态变为
+雪云的样子
+。
+冰冻之躯
+特性的宝可梦，每回合结束时恢复
+1
+⁄
+16
+的最大ＨＰ，并不受冰雹伤害。
+雪隐
+特性的宝可梦
+闪避率
+提升20%，并不受冰雹伤害。
+拨雪
+特性的宝可梦的
+速度
+×2。
+结冻头
+特性的
+冰砌鹅
+形态变为
+结冻头
+。","At the end of each turn, damages each Pokémon for
+1
+/
+16
+of its maximum HP, unless it is
+Ice-type
+; has one of the Abilities
+Ice Body
+,
+Snow Cloak
+,
+Magic Guard
+, or
+Overcoat
+; or is holding
+Safety Goggles
+.
+Activates the following
+Abilities
+:
+Forecast
+,
+Ice Body
+,
+Snow Cloak
+, and
+Slush Rush
+. Additionally,
+Ice Face
+turns
+Eiscue
+from its Noice Face form to its Ice Face form.
+Causes Forecast to change
+Castform
+to its
+Snowy Form
+.
+Changes
+Weather Ball
+to an
+Ice-type
+move and doubles its power.
+From
+Generation IV
+onward, allows
+Blizzard
+to bypass accuracy check.
+In
+Pokémon Diamond and Pearl
+, allows
+Blizzard
+to hit through
+Protect
+and
+Detect
+30% of the time.
+Halves the power of
+Solar Beam
+and
+Solar Blade
+.
+Causes
+Moonlight
+,
+Synthesis
+, and
+Morning Sun
+to recover ¼ of the user's maximum
+HP
+.
+Allows
+Aurora Veil
+to be used, though the effect lingers even after Hail ends.","こおり
+タイプ以外のポケモンは毎ターン終了時にHPが最大HPの1/16だけ減る。小数点以下は切り捨てるが、切り捨てた結果0になったときは1のダメージを受ける。
+みがわり
+状態のポケモンも、本体のHPが減る。
+とくせい
+が
+ふしぎなまもり
+のポケモンもHPが減る。
+そらをとぶ
+状態・
+シャドーダイブ
+状態・
+まもる
+状態のポケモンもHPが減る。
+ぼうじんゴーグル
+を持ったポケモンはHPが減らない。
+とくせいが
+アイスボディ
+・
+マジックガード
+・
+ぼうじん
+・
+ゆきがくれ
+のポケモンはタイプに関わらずHPが減らない。
+あなをほる
+状態・
+ダイビング
+状態のポケモンはHPが減らない。
+影響する
+わざ
+ふぶき
+が必ず命中する(
+第四世代
+以降)。
+ウェザーボール
+の
+威力
+が2倍になり、タイプが
+こおり
+になる。
+ソーラービーム
+・
+ソーラーブレード
+は
+第四世代
+までは与える
+ダメージ
+が0.5倍に、
+第五世代
+からは威力が0.5倍になる。
+あさのひざし
+・
+こうごうせい
+・
+つきのひかり
+で回復するHPの量が最大HPの1/4になる。(通常時は1/2)
+オーロラベール
+が成功するようになる。技が成功した後あられが収まったことで
+オーロラベール
+状態が消えることは無い。
+影響する
+とくせい
+てんきや
+の
+ポワルン
+の
+姿
+が変わり、タイプが
+こおり
+になる。
+ゆきがくれ
+のポケモンに対する
+命中
+率が0.8倍になる。
+アイスボディ
+のポケモンの
+HP
+が1/16ずつ回復する。
+ゆきかき
+のポケモンの
+すばやさ
+が2倍になる。
+アイスフェイス
+のポケモンは、天気があられになるとナイスフェイスからアイスフェイスに
+フォルムチェンジ
+できる。"
+5,snow,下雪,ゆき (天気),下雪（日文︰雪，英文︰Snow）是一种天气型状态。,"Snow(Japanese:雪snow) is a type ofweatherfirst seen inPokémon Mystery Dungeon: Red and Blue Rescue Team, before appearing for the first time in thecore seriesgames inPokémon Legends: Arceus.",,"冰属性
+宝可梦的
+防御
+×1.5。
+日光束
+与
+日光刃
+的威力×0.5。
+光合作用
+，
+晨光
+，
+月光
+恢复的
+ＨＰ
+值降低到最大ＨＰ的
+1
+⁄
+4
+。
+暴风雪
+必定命中，除非目标处于
+飞翔
+、
+挖洞
+、
+潜水
+、
+暗影潜袭
+状态。
+雪景
+和
+冷笑话
+使用失败。
+可以使用
+极光幕
+。
+冰冻之躯
+特性的宝可梦，每回合结束时恢复
+1
+⁄
+16
+的最大ＨＰ。
+雪隐
+特性的宝可梦
+闪避率
+提升20%。
+拨雪
+特性的宝可梦的
+速度
+×2。
+结冻头
+特性的
+冰砌鹅
+形态变为
+结冻头
+。","In
+Pokémon Legends: Arceus
+,
+drowsy
+Pokémon become even less likely to act, and the chances of moves inflicting
+frostbite
+are doubled. The
+Speed
+stat of
+Ice-type
+Pokémon is increased.
+Activates the following
+Abilities
+:
+Ice Body
+,
+Snow Cloak
+, and
+Slush Rush
+. Additionally,
+Ice Face
+turns
+Eiscue
+from its Noice Face form to its Ice Face form.
+Changes
+Weather Ball
+to an
+Ice-type
+move and doubles its power.
+Allows
+Blizzard
+to bypass accuracy checks.
+Halves the power of
+Solar Beam
+and
+Solar Blade
+.
+Causes
+Moonlight
+,
+Synthesis
+, and
+Morning Sun
+to recover ¼ of the user's maximum
+HP
+.
+Allows
+Aurora Veil
+to be used, though the effect lingers even after snow ends.
+Raises the
+Defense
+of all
+Ice-type
+Pokémon by 50%.",
+6,extremely-harsh-sunlight,大日照,にほんばれ (天気),大日照（日文︰おおひでり，英文︰Extremely Harsh Sunlight）是一种天气型状态。,"Harsh sunlight(Japanese:日差しが強いintense sunlight), sometimes referred to asSunny, is a type ofweatherintroduced in battle inGeneration II. It was introduced in the overworld inGeneration III.",にほんばれとはてんきの一種。晴れと呼ばれることもある。,"火属性
+招式的威力×1.5。
+水属性
+攻击招式使用失败。包括根据不同情况而改变属性的招式，例如：水属性
+觉醒之舞
+。
+日光束
+与
+日光刃
+无需1回合的蓄力可以直接发动。
+光合作用
+，
+晨光
+，
+月光
+恢复的
+ＨＰ
+值提升到最大ＨＰ的
+2
+⁄
+3
+。
+打雷
+与
+暴风
+招式命中率降低为50%。
+气象球
+的属性变为
+火属性
+，威力×2。
+危险预知
+特性不会有反应。
+生长
+可以额外提高1级效果。
+求雨
+、
+沙暴
+、
+冰雹
+、
+大晴天
+使用失败。
+包括在
+无关天气
+或
+气闸
+特性作用期间。
+阴晴不定
+特性的
+飘浮泡泡
+的属性变为
+火属性
+，形态变为
+太阳的样子
+。
+花之礼
+特性的
+樱花儿
+以及同伴的
+攻击
+和
+特防
+×1.5，樱花儿的形态变为
+晴天形态
+。
+叶子防守
+特性的宝可梦不会陷入异常状态。
+大日照出现之前陷入的异常状态不恢复。
+睡觉
+、
+火焰宝珠
+、
+剧毒宝珠
+没有效果。
+干燥皮肤
+特性的宝可梦，每回合结束时损失
+1
+⁄
+8
+的最大ＨＰ。
+太阳之力
+特性的宝可梦的
+特攻
+×1.5，每回合结束时损失
+1
+⁄
+8
+的最大ＨＰ。
+叶绿素
+特性的宝可梦的
+速度
+×2。
+收获
+特性的宝可梦收获果实的成功率提升为100%。
+降雨
+、
+日照
+、
+扬沙
+、
+降雪
+无法改变天气。
+包括在
+无关天气
+或
+气闸
+特性作用期间。","Increases the damage of
+Fire-type
+moves by 50%.
+Decreases the damage of
+Water-type
+moves by 50%.
+Hydro Steam
+is an exception; its damage will be boosted by 50% instead.
+Allows
+Solar Beam
+and
+Solar Blade
+to be used instantly.
+From Generation V onward, causes
+Growth
+to raise
+Attack
+and
+Special Attack
+two stages each.
+Activates the following
+Abilities
+:
+Chlorophyll
+,
+Dry Skin
+,
+Flower Gift
+,
+Forecast
+,
+Leaf Guard
+,
+Solar Power
+,
+Protosynthesis
+,
+Orichalcum Pulse
+.
+Causes Forecast to change
+Castform
+to its
+Sunny Form
+.
+Causes Flower Gift to change
+Cherrim
+to its
+Sunshine Form
+.
+Guarantees
+Harvest
+will restore a held
+Berry
+.
+Changes
+Weather Ball
+to a
+Fire-type
+move and doubles its power.
+Prevents Pokémon from becoming
+frozen
+(it, however, will not thaw out Pokémon that are already frozen when it becomes active).
+Causes
+Moonlight
+,
+Synthesis
+, and
+Morning Sun
+to recover ⅔ of max
+HP
+(twice the normal amount in
+Generation II
+).
+Lowers accuracy of
+Thunder
+and
+Hurricane
+to 50%.
+Causes
+Water-type
+damaging moves to fail if used.
+If a Pokémon attempts to use
+Natural Gift
+while holding a
+Berry
+that makes the move Water-type, the Berry is not consumed.
+If a
+frozen
+Pokémon attempts to use
+Scald
+or
+Steam Eruption
+, it will still thaw itself before the move fails.
+Causes the moves
+Sunny Day
+,
+Rain Dance
+,
+Sandstorm
+, and
+Hail
+to fail if used. This cannot be subverted even with
+Cloud Nine
+or
+Air Lock
+.
+If a Pokémon affected by
+Powder
+uses Sunny Day, it will take damage from Powder.
+Causes the Abilities
+Drought
+,
+Drizzle
+,
+Sand Stream
+, and
+Snow Warning
+to fail. This cannot be subverted even with
+Cloud Nine
+or
+Air Lock
+.","こおり
+状態にならない。
+こおり状態になってからにほんばれ状態になってもこおりは溶けない。
+影響する
+わざ
+ほのお
+タイプのわざで受けるダメージが1.5倍になる。
+みず
+タイプのわざで受けるダメージが0.5倍になる。
+使用する
+ソーラービーム
+・
+ソーラーブレード
+が1ターンで発動できるようになる。
+あさのひざし
+・
+こうごうせい
+・
+つきのひかり
+で回復するHPの量が増える(通常時は最大HPの1/2)。
+最大HP分回復(
+第二世代
+)。
+最大HPの2/3回復(
+第三世代
+・
+第四世代
+)。
+最大HPの2732/4096≒2/3回復(
+第五世代
+以降)。
+使用する
+かみなり
+・
+ぼうふう
+の
+命中
+率が70%ではなく50%になる。
+使用する
+ウェザーボール
+の威力が2倍になって、
+ほのお
+タイプになる。
+せいちょう
+で
+こうげき
+・
+とくこう
+が1段階ではなく2段階上昇するようになる(
+第五世代
+以降)。
+使用する
+ハイドロスチーム
+は天気によるダメージ補正率が0.5倍ではなく1.5倍になる。
+影響する
+とくせい
+ようりょくそ
+のポケモンの
+すばやさ
+が2倍になる。
+フラワーギフト
+のポケモンが場にいるとき、自分を含めた味方のポケモンの
+こうげき
+と
+とくぼう
+が1.5倍になる。
+第五世代
+以降は、フラワーギフト所持者がポジフォルムの
+チェリム
+でなければ効果は発動しない。
+サンパワー
+のポケモンの
+とくこう
+が1.5倍になる。
+サンパワー・
+かんそうはだ
+のポケモンの
+HP
+が毎ターン1/8ずつ減る。
+リーフガード
+のポケモンは
+状態異常
+にならない。状態異常が回復する効果は無い。
+ねむる
+は
+第四世代
+のみ成功する。
+第五世代
+以降は失敗する。
+しゅうかく
+のポケモンは消費した
+きのみ
+を必ず取り戻すことができる。
+てんきや
+の
+ポワルン
+のタイプが
+ほのお
+になる。
+ひひいろのこどう
+のポケモンは攻撃が4/3倍になる。
+こだいかっせい
+のポケモンは自分の一番高い能力が上がる。
+フォルムチェンジ
+ポワルンの
+姿
+が変わる。
+チェリム
+の
+フォルム
+が変わる。
+第五世代
+以降は
+ポワルン
+・
+チェリム
+の特性
+てんきや
+・
+フラワーギフト
+が失われるとフォルムチェンジはできなくなる。"
+7,heavy-rain,大雨,あめ,大雨（日文︰おおあめ，英文︰Heavy Rain）是一种天气型状态。,"Rain(Japanese:雨rain), known as adownpour(Japanese:大雨heavy rain) in Generation II, is a type ofweather. It was introduced in battle inGeneration II, and in the overworld inGeneration III.",あめとはてんきの一種。,"水属性
+招式的威力×1.5。
+火属性
+攻击招式使用失败。包括根据不同情况而改变属性的招式，例如：火属性
+觉醒之舞
+。
+气象球
+的属性变为
+水属性
+，威力×2。
+危险预知
+特性不会有反应。
+日光束
+与
+日光刃
+的威力×0.5。
+打雷
+与
+暴风
+招式变为必定命中，除非目标处于
+挖洞
+、
+潜水
+、
+暗影潜袭
+状态。
+以上三个效果，攻击方持有
+万能伞
+时都会被无效。
+光合作用
+，
+晨光
+，
+月光
+恢复的
+ＨＰ
+值降低到最大ＨＰ的
+1
+⁄
+4
+。
+求雨
+、
+沙暴
+、
+冰雹
+、
+大晴天
+使用失败。
+包括在
+无关天气
+或
+气闸
+特性作用期间。
+电光束
+无需1回合的蓄力可以直接发动。
+阴晴不定
+特性的
+飘浮泡泡
+的属性变为
+水属性
+，形态变为
+雨水的样子
+。
+雨盘
+特性的宝可梦，每回合结束时恢复
+1
+⁄
+16
+的最大ＨＰ。
+干燥皮肤
+特性的宝可梦，每回合结束时恢复
+1
+⁄
+8
+的最大ＨＰ。
+湿润之躯
+特性的宝可梦的
+异常状态
+消除。
+悠游自如
+特性的宝可梦的
+速度
+×2。
+降雨
+、
+日照
+、
+扬沙
+、
+降雪
+无法改变天气。
+包括在
+无关天气
+或
+气闸
+特性作用期间。","Increases the damage of
+Water-type
+moves by 50%.
+Decreases the damage of
+Fire-type
+moves by 50%.
+Allows
+Thunder
+,
+Hurricane
+,
+Bleakwind Storm
+,
+Wildbolt Storm
+, and
+Sandsear Storm
+to bypass the
+accuracy
+check.
+In
+Pokémon Diamond and Pearl
+, allows
+Thunder
+to hit through
+Protect
+and
+Detect
+30% of the time.
+Activates the following
+Abilities
+:
+Dry Skin
+,
+Forecast
+,
+Hydration
+,
+Rain Dish
+,
+Swift Swim
+.
+Causes Forecast to change
+Castform
+to its
+Rainy Form
+.
+Changes
+Weather Ball
+to a
+Water-type
+move and doubles its power.
+Halves the power of
+Solar Beam
+and
+Solar Blade
+.
+Causes
+Moonlight
+,
+Synthesis
+, and
+Morning Sun
+to recover ¼ of max
+HP
+(half the normal amount in
+Generation II
+).
+In the
+Pokémon Mystery Dungeon series
+, rain causes the floor to become
+defused
+, preventing any explosions from occurring. In Gates to Infinity, rain also prevents Pokémon from restoring HP naturally by walking.
+Allows
+Electro Shot
+to be used instantly.
+Causes
+Fire-type
+damaging moves to fail if used (including
+moves that change type
+, if they would be Fire-type).
+If a Pokémon affected by
+Powder
+uses a Fire-type move, it will take damage from Powder.
+If a Pokémon attempts to use
+Natural Gift
+while holding a
+Berry
+that makes the move Fire-type, the Berry is not consumed.
+If a
+frozen
+Pokémon attempts to use a Fire-type move that
+would thaw itself
+(such as
+Flame Wheel
+), it will still thaw itself before the move fails.
+Causes the moves
+Sunny Day
+,
+Rain Dance
+,
+Sandstorm
+, and
+Hail
+to fail if used. This cannot be subverted even with
+Cloud Nine
+or
+Air Lock
+.
+If a Pokémon affected by
+Powder
+uses Sunny Day, it will take damage from Powder.
+Causes the Abilities
+Drought
+,
+Drizzle
+,
+Sand Stream
+, and
+Snow Warning
+to fail. This cannot be subverted even with
+Cloud Nine
+or
+Air Lock
+.
+In
+Pokémon Sword and Shield
+, causes a persistent
+Electric Terrain
+unless overridden (in addition to the usual effects of rain).","影響する
+わざ
+みず
+タイプのわざで受けるダメージが1.5倍になる。
+ほのお
+タイプのわざで受けるダメージが0.5倍になる。
+使用される
+かみなり
+・
+かみなりあらし
+・
+こがらしあらし
+・
+ねっさのあらし
+・
+ぼうふう
+が必ず命中する。
+使用する
+エレクトロビーム
+が1ターンで発動できるようになる。
+使用する
+ウェザーボール
+の威力が2倍になって、
+みず
+タイプになる。
+あさのひざし
+・
+こうごうせい
+・
+つきのひかり
+で回復するHPの量が最大の1/4になる。(通常時は1/2)
+使用する
+ソーラービーム
+・
+ソーラーブレード
+のダメージが0.5倍になる。
+影響する
+とくせい
+てんきや
+の
+ポワルン
+の
+姿
+が変わり、タイプが
+みず
+になる。
+あめうけざら
+のポケモンの
+HP
+が1/16ずつ回復する。
+かんそうはだ
+のポケモンの
+HP
+が1/8ずつ回復する。
+うるおいボディ
+のポケモンの
+状態異常
+が回復する。
+すいすい
+のポケモンの
+すばやさ
+が2倍になる。
+その他
+ヌメイル
+を
+ヌメルゴン
+に進化させるためには雨のフィールドでヌメイルをレベル50以上にする必要がある（
+第七世代
+のみ
+きり
+のフィールドでも進化できた）。
+ヌメイル
+（
+ヒスイのすがた
+）の場合は
+ヌメルゴン
+（
+ヒスイのすがた
+）に進化する。"
+8,strong-winds,乱流,らんきりゅう,乱流（日文︰らんきりゅう，英文︰Strong Winds）是一种天气型状态。,Strong winds(Japanese:乱気流turbulence) are a type ofweatherintroduced inPokémon Omega Ruby and Alpha Sapphire. They do not appear in the overworld.,らんきりゅうとはてんきの一種。,"电属性
+、
+冰属性
+和
+岩石属性
+不对
+飞行属性
+效果绝佳
+。
+相应的，
+弱点保险
+也不会发动。
+但
+隐形岩
+和
+危险预知
+特性的效果不受影响。
+反转对战
+中，
+草属性
+、
+虫属性
+、
+地面属性
+和
+格斗属性
+不对
+飞行属性
+效果绝佳。
+但
+危险预知
+特性的效果不受影响。
+求雨
+、
+沙暴
+、
+冰雹
+、
+大晴天
+使用失败。
+包括在
+无关天气
+或
+气闸
+特性作用期间。
+降雨
+、
+日照
+、
+扬沙
+、
+降雪
+无法改变天气。
+包括在
+无关天气
+或
+气闸
+特性作用期间。","Strong winds cause
+moves
+that would be
+super effective
+against the
+Flying
+type to only be normally effective against it.
+Outside of
+Inverse Battles
+, this causes
+Electric
+-,
+Ice
+-, and
+Rock-type
+moves to deal neutral damage to Flying-type Pokémon.
+During Inverse Battles, this causes
+Bug
+-,
+Fighting
+-,
+Grass
+-, and
+Ground-type
+moves to deal neutral damage to Flying-type Pokémon.
+If a move is not super effective against the Pokémon's other
+type
+(for dual-typed Pokémon), this no longer counts as a supereffective hit (for the purposes of
+damage-reducing Berries
+,
+Expert Belt
+,
+Wonder Guard
+, etc.).
+This has no effect on
+Stealth Rock
+and
+Anticipation
+.
+Causes the moves
+Sunny Day
+,
+Rain Dance
+,
+Sandstorm
+, and
+Hail
+to fail if used. This cannot be subverted even with
+Cloud Nine
+or
+Air Lock
+.
+Causes the Abilities
+Drought
+,
+Drizzle
+,
+Sand Stream
+, and
+Snow Warning
+to fail. This cannot be subverted even with Cloud Nine or Air Lock.
+Weather Ball
+remains a
+Normal-type
+move during strong winds and does not have its
+power
+doubled.
+The moves
+Moonlight
+,
+Morning Sun
+, and
+Synthesis
+continue to recover ½ of max HP, as they do in clear weather.","ひこう
+タイプのポケモンに対し、弱点となるタイプ(
+でんき
+/
+いわ
+/
+こおり
+)の技のダメージが半減する。
+特性デルタストリームを持ったポケモンが場に出ている間は永続するが、引っこめるか別の特性に書き換えられると通常に戻る。
+他の天気に変える技(
+あまごい
+など)、特性(
+あめふらし
+など)の発動ができなくなるが、
+はじまりのうみ
+/
+おわりのだいち
+でのみ変えることが出来る。"

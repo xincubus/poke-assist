@@ -1,0 +1,290 @@
+{
+  "generated_at": "2026-05-19T17:41:10.237840",
+  "summary": {
+    "new_entries": 13,
+    "renamed_entries": 23,
+    "stale_entries": 0,
+    "suggested_updates": 0
+  },
+  "new_entries": [
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗气象",
+      "wiki_title": "黑暗气象（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗气象（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "水平斩",
+      "wiki_title": "水平斩（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/水平斩（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "真空斩",
+      "wiki_title": "真空斩（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/真空斩（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗冲锋",
+      "wiki_title": "黑暗衝鋒（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗衝鋒（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗攻击",
+      "wiki_title": "黑暗攻击（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗攻击（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗终结",
+      "wiki_title": "黑暗终结（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗终结（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗恐慌",
+      "wiki_title": "黑暗恐慌（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗恐慌（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗气旋",
+      "wiki_title": "黑暗气旋（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗气旋（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗平分",
+      "wiki_title": "黑暗平分（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗平分（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "归无之光",
+      "wiki_title": "归无之光（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/归无之光（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗闪电",
+      "wiki_title": "黑暗闪电（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗闪电（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗急冻",
+      "wiki_title": "黑暗急冻（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗急冻（招式）",
+      "change_type": "new"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "黑暗火炎",
+      "wiki_title": "黑暗火炎（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/黑暗火炎（招式）",
+      "change_type": "new"
+    }
+  ],
+  "renamed_entries": [
+    {
+      "entity_type": "moves",
+      "name_zh": "极落钳",
+      "old_name": "断头钳",
+      "wiki_title": "极落钳（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/极落钳（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "居合劈",
+      "old_name": "居合斩",
+      "wiki_title": "居合劈（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/居合劈（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "深渊翻滚",
+      "old_name": "地狱翻滚",
+      "wiki_title": "深渊翻滚（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/深渊翻滚（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "玉石俱碎",
+      "old_name": "自爆",
+      "wiki_title": "玉石俱碎（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/玉石俱碎（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "汲取",
+      "old_name": "吸血",
+      "wiki_title": "汲取（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/汲取（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "终结门牙",
+      "old_name": "必杀门牙",
+      "wiki_title": "终结门牙（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/终结门牙（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "咒术",
+      "old_name": "诅咒",
+      "wiki_title": "咒术（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/咒术（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "绝处逢生",
+      "old_name": "起死回生",
+      "wiki_title": "绝处逢生（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/绝处逢生（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "可怕面孔",
+      "old_name": "鬼面",
+      "wiki_title": "可怕面孔（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/可怕面孔（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "终焉之歌",
+      "old_name": "灭亡之歌",
+      "wiki_title": "终焉之歌（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/终焉之歌（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "磷火",
+      "old_name": "鬼火",
+      "wiki_title": "磷火（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/磷火（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "化为己用",
+      "old_name": "抢夺",
+      "wiki_title": "化为己用（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/化为己用（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "流沙深渊",
+      "old_name": "流沙地狱",
+      "wiki_title": "流沙深渊（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/流沙深渊（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "空气之刃",
+      "old_name": "空气斩",
+      "wiki_title": "空气之刃（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/空气之刃（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "移花接木",
+      "old_name": "欺诈",
+      "wiki_title": "移花接木（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/移花接木（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "烈火深渊",
+      "old_name": "炼狱",
+      "wiki_title": "烈火深渊（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/烈火深渊（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "烧净",
+      "old_name": "烧尽",
+      "wiki_title": "烧净（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/烧净（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "归天之翼",
+      "old_name": "死亡之翼",
+      "wiki_title": "归天之翼（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/归天之翼（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "纠缠不休",
+      "old_name": "死缠烂打",
+      "wiki_title": "纠缠不休（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/纠缠不休（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "森林咒术",
+      "old_name": "森林诅咒",
+      "wiki_title": "森林咒术（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/森林咒术（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "深渊突刺",
+      "old_name": "地狱突刺",
+      "wiki_title": "深渊突刺（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/深渊突刺（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "茁茁炸弹",
+      "old_name": "茁茁轰炸",
+      "wiki_title": "茁茁炸弹（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/茁茁炸弹（招式）",
+      "change_type": "renamed"
+    },
+    {
+      "entity_type": "moves",
+      "name_zh": "仆斩",
+      "old_name": "仆刀",
+      "wiki_title": "仆斩（招式）",
+      "wiki_url": "https://wiki.52poke.com/wiki/仆斩（招式）",
+      "change_type": "renamed"
+    }
+  ],
+  "stale_entries": [],
+  "changes": []
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PokemonApp.Views.DamageCalcTabPage"
+             Title="伤害计算器"
+             BackgroundColor="{AppThemeBinding Light=#F5F5F5, Dark=#1f1f1f}">
+
+    <Grid>
+        <!-- WebView -->
+        <WebView x:Name="CalcWebView" />
+
+        <!-- 加载失败提示 -->
+        <VerticalStackLayout x:Name="ErrorOverlay"
+                             IsVisible="False"
+                             BackgroundColor="{AppThemeBinding Light=#F5F5F5, Dark=#1f1f1f}"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Spacing="16"
+                             Padding="32">
+            <Label Text="&#x26A0;"
+                   FontSize="48"
+                   HorizontalOptions="Center" />
+            <Label x:Name="ErrorLabel"
+                   Text="无法加载计算器"
+                   FontSize="14"
+                   TextColor="{AppThemeBinding Light=#666, Dark=#AAAAAA}"
+                   HorizontalTextAlignment="Center"
+                   LineBreakMode="WordWrap" />
+            <Button Text="重试"
+                    Clicked="OnRetryClicked"
+                    BackgroundColor="#5B75F5"
+                    TextColor="White"
+                    CornerRadius="10"
+                    HeightRequest="44"
+                    FontSize="15"
+                    HorizontalOptions="Center"
+                    WidthRequest="120" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

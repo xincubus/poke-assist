@@ -1,0 +1,249 @@
+{
+  "generated_at": "2026-05-21T03:38:31.037932",
+  "entity_type": "items",
+  "since": "2025-10-01",
+  "until": "2026-04-01",
+  "model": "mimo-v2.5",
+  "total_stale": 417,
+  "total_changes": 14,
+  "changes": [
+    {
+      "entity_type": "items",
+      "name_zh": "焦点镜",
+      "name_en": "scope-lens",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "fling_power",
+          "current_value": "30",
+          "new_value": "10",
+          "reason": "根据道具信息框的throw字段，值为10，与数据库值30不一致"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/焦点镜（道具）",
+      "wiki_title": "焦点镜（道具）"
+    },
+    {
+      "entity_type": "items",
+      "name_zh": "冰冷岩石",
+      "name_en": "icy-rock",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "fling_power",
+          "current_value": "40",
+          "new_value": "60",
+          "reason": "信息框中throw字段为60，表示投掷威力为60。"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/冰冷岩石（道具）",
+      "wiki_title": "冰冷岩石（道具）"
+    },
+    {
+      "entity_type": "items",
+      "name_zh": "公园球",
+      "name_en": "park-ball",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "category",
+          "current_value": "standard-balls",
+          "new_value": "special-balls",
+          "reason": "公园球是特殊精灵球，用于伙伴公园或捕虫大赛，不属于标准球，根据wiki中bag字段为'精灵球'且道具用途推断，应映射为special-balls"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/公园球（道具）",
+      "wiki_title": "公园球（道具）"
+    },
+    {
+      "entity_type": "items",
+      "name_zh": "紧绑束带",
+      "name_en": "binding-band",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "fling_power",
+          "current_value": "30",
+          "new_value": "10",
+          "reason": "从wiki道具信息框throw字段提取"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/紧绑束带（道具）",
+      "wiki_title": "紧绑束带（道具）"
+    },
+    {
+      "entity_type": "items",
+      "name_zh": "全息影像通讯器",
+      "name_en": "holo-caster--green",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "category",
+          "current_value": "gameplay",
+          "new_value": "plot-advancement",
+          "reason": "wiki中bag字段为'重要物品'，对应剧情进展道具，应映射到plot-advancement分类"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/全息影像通讯器（道具）",
+      "wiki_title": "全息影像通讯器（道具）"
+    },
+    {
+      "entity_type": "items",
+      "name_zh": "究极奈克洛Ｚ",
+      "name_en": "ultranecrozium-z--held",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "category",
+          "current_value": "unused",
+          "new_value": "z-crystals",
+          "reason": "bag字段为'Ｚ纯晶'，映射到英文分类列表中的'z-crystals'"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/究极奈克洛Ｚ（道具）",
+      "wiki_title": "究极奈克洛Ｚ（道具）"
+    },
+    {
+      "entity_type": "items",
+      "name_zh": "究极奈克洛Ｚ",
+      "name_en": "ultranecrozium-z--bag",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "category",
+          "current_value": "unused",
+          "new_value": "z-crystals",
+          "reason": "从bag字段'Ｚ纯晶'映射到英文分类'z-crystals'"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/究极奈克洛Ｚ（道具）",
+      "wiki_title": "究极奈克洛Ｚ（道具）"
+    },
+    {
+      "entity_type": "items",
+      "name_zh": "奈克洛露奈合体器",
+      "name_en": "n-lunarizer--merge",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "category",
+          "current_value": "unused",
+          "new_value": "plot-advancement",
+          "reason": "道具信息框中bag字段为'重要物品'，在PokeAPI分类中对应'plot-advancement'"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/奈克洛露奈合体器（道具）",
+      "wiki_title": "奈克洛露奈合体器（道具）"
+    },
+    {
+      "entity_type": "items",
+      "name_zh": "敏捷糖果",
+      "name_en": "quick-candy",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "category",
+          "current_value": "vitamins",
+          "new_value": "species-candies",
+          "reason": "从 wiki 页面的 bag2 字段'糖果罐'和描述'敏捷糖果是一种糖果'，推断分类应为 species-candies"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/敏捷糖果（道具）",
+      "wiki_title": "敏捷糖果（道具）"
+    },
+    {
+      "entity_type": "items",
+      "name_zh": "超极粉",
+      "name_en": "gigantamix",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "fling_power",
+          "current_value": "50",
+          "new_value": "10",
+          "reason": "从道具信息框 throw 字段提取数字为 10"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/超极粉（道具）",
+      "wiki_title": "超极粉（道具）"
+    },
+    {
+      "entity_type": "items",
+      "name_zh": "大金刚宝玉",
+      "name_en": "adamant-crystal",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "category",
+          "current_value": "gameplay",
+          "new_value": "held-items",
+          "reason": "从wiki的bag字段'道具'映射到英文分类'held-items'，且道具为携带物品"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/大金刚宝玉（道具）",
+      "wiki_title": "大金刚宝玉（道具）"
+    },
+    {
+      "entity_type": "items",
+      "name_zh": "大白宝玉",
+      "name_en": "lustrous-globe",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "category",
+          "current_value": "gameplay",
+          "new_value": "held-items",
+          "reason": "根据 wiki bag 字段和道具描述，大白宝玉是携带物品，应分类为 held-items"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/大白宝玉（道具）",
+      "wiki_title": "大白宝玉（道具）"
+    },
+    {
+      "entity_type": "items",
+      "name_zh": "模仿香草",
+      "name_en": "mirror-herb",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "fling_power",
+          "current_value": "",
+          "new_value": "30",
+          "reason": "从道具信息框throw字段提取数字30"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/模仿香草（道具）",
+      "wiki_title": "模仿香草（道具）"
+    },
+    {
+      "entity_type": "items",
+      "name_zh": "机变骰子",
+      "name_en": "loaded-dice",
+      "change_type": "value_changed",
+      "changes": [
+        {
+          "field": "fling_power",
+          "current_value": "",
+          "new_value": "30",
+          "reason": "从道具信息框的throw字段提取，数字为30"
+        }
+      ],
+      "confidence": "high",
+      "wiki_url": "https://wiki.52poke.com/wiki/机变骰子（道具）",
+      "wiki_title": "机变骰子（道具）"
+    }
+  ]
+}

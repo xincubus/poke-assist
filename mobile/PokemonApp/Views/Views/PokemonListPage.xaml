@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PokemonApp.Views.PokemonListPage"
+             Title="宝可梦"
+             BackgroundColor="{AppThemeBinding Light=#F5F5F5, Dark=#1f1f1f}">
+
+    <Grid RowDefinitions="Auto,*">
+        <!-- Tab 切换 -->
+        <Grid ColumnDefinitions="*,*" Padding="16,10"
+              BackgroundColor="{AppThemeBinding Light=White, Dark=#1f1f1f}">
+            <Button Text="宝可梦" BackgroundColor="#5B75F5" TextColor="White"
+                    CornerRadius="8" FontSize="14" />
+            <Button Grid.Column="1" Text="队伍"
+                    BackgroundColor="{AppThemeBinding Light=#F0F0F0, Dark=#333}"
+                    TextColor="{AppThemeBinding Light=#666, Dark=#AAAAAA}"
+                    CornerRadius="8" FontSize="14" Clicked="GoToTeams" />
+        </Grid>
+
+        <!-- 宝可梦网格 -->
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Pokemons}" Margin="10">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="3"
+                                 HorizontalItemSpacing="8" VerticalItemSpacing="8" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border BackgroundColor="{AppThemeBinding Light=White, Dark=#2d2d2d}"
+                            Stroke="Transparent" StrokeShape="RoundRectangle 10" Padding="8">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnPokemonTapped" />
+                        </Border.GestureRecognizers>
+                        <VerticalStackLayout HorizontalOptions="Center" Spacing="4">
+                            <Image Source="{Binding ImageUrl}" HeightRequest="72" WidthRequest="72"
+                                   Aspect="AspectFit" />
+                            <Label Text="{Binding Name}" FontSize="12" HorizontalOptions="Center"
+                                   LineBreakMode="TailTruncation" MaxLines="1" />
+                            <Label Text="{Binding Nature}" FontSize="10"
+                                   TextColor="{AppThemeBinding Light=#888, Dark=#AAA}"
+                                   HorizontalOptions="Center" />
+                        </VerticalStackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            <CollectionView.EmptyView>
+                <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="8">
+                    <Label Text="还没有宝可梦" FontSize="16"
+                           TextColor="{AppThemeBinding Light=#999, Dark=#AAAAAA}"
+                           HorizontalOptions="Center" />
+                    <Label Text="点击右下角 + 添加" FontSize="13"
+                           TextColor="{AppThemeBinding Light=#CCC, Dark=#666}"
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+            </CollectionView.EmptyView>
+        </CollectionView>
+
+        <!-- FAB 添加按钮 -->
+        <Button Grid.Row="1" Text="+" FontSize="24" TextColor="White"
+                BackgroundColor="#5B75F5" CornerRadius="28"
+                WidthRequest="56" HeightRequest="56"
+                HorizontalOptions="End" VerticalOptions="End"
+                Margin="0,0,20,20" Clicked="OnAddClicked" />
+    </Grid>
+</ContentPage>
